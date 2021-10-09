@@ -1,0 +1,8 @@
+private greaterThan 2 {
+    $1 $2 - neg? true ret.
+    false
+}
+
+global {
+    2 5 greaterThan? "5 is greater than 2" out.
+}

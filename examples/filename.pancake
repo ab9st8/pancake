@@ -1,0 +1,4 @@
+global {
+	"Hello world! Welcoming you from filename:" out
+	$1 out
+}

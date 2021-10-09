@@ -1,0 +1,7 @@
+public cat 1 {
+    in dup $1 =!? out $1 cat.
+}
+
+global {
+    "stop" cat
+}
