@@ -12,7 +12,7 @@ global {
 }
 ```
 
-**What Pancake isn't:**
+**Pancake isn't:**
 * serious,
 * well-made,
 * performant,
@@ -20,7 +20,7 @@ global {
 * a proper demostration of Nim's capabilities in language development,
 * idiomatic Nim code.
 
-**What Pancake is:**
+**Pancake is:**
 * fun to play around with,
 * an interesting concept that could be expanded into even more interesting territory.
 
@@ -44,8 +44,10 @@ pancake FILENAME
 ```
 I'm planning on compiling this project with the JS backend and somehow make a playground site so you don't have to install Nim just to play around with Pancake.
 
-## Design and syntax
-Every Pancake source file consists of a number of private and public procedure definitions and a single global procedure definition. The global procedure is the entrypoint of the program; you can think of it like "main" in C / C++. Everything inside `global` is Pancake code, which consists either of stack operations, conditional clauses, variable assigments or procedure calls. That is also what other procedures are made up of.
+If this goes into more "stable" territory I'll also try to add this repo to the Nimble register so you can just run `nimble install pancake`.
+
+## Design and syntax, or "How to Pancake"
+Every Pancake source file consists of a number of private and public procedure definitions and a single global procedure definition. The global procedure is the entrypoint of the program; you can think of it like "main" in C/C++. Everything inside `global` is Pancake code, which consists either of stack operations, conditional clauses, variable assigments or procedure calls. That is also what other procedures are made up of.
 
 ### Stack operations
 A value is placed on its local stack simply by being referenced in the code. You can manipulate the stack using various operators and procedures:
@@ -105,7 +107,7 @@ Another note about public procedures is; even if you're not planning on using an
 ### Conditional structures
 Along with variable assignment, conditional structures are the only type of Pancake code which is not deterministic in a reverse-Polish notation sense. That is to say, you can't really say how many instructions an if-clause should have. You could let the theoretical `if` operator know how many instructions it should execute (or skip if the condition is false), but that is like playing oracle. As I've said, conditionals in Pancake are not truly reverse-Polish notation compatible, but they're implemented in a comfy (in my opinion) manner which disguises its relative design flaws.
 
-An if-clause begins with the `?` operator and ends at the `.` operator. The `?` operator pops a single value from its local stack and checks for its falseyness. A falsey value in Pancake is either 0 or false. If the value is false, runtime simply skips to the next `.` token. If the value is true, runtime proceeds. For an example, a simple stoppable `cat` program:
+An if-clause begins with the `?` operator and ends at the `.` operator. The `?` operator pops a single value from its local stack and checks for its falseyness. A falsey value in Pancake is either 0 or false. If the value is false, runtime simply skips to the next `.` token. If the value is true, runtime proceeds. As an example, a simple stoppable `cat` program:
 
 ```
 public cat 1 {
@@ -158,11 +160,9 @@ Which is really surprising!! I never would've thought Pancake would even work as
 
 Something which is interesting, to me at least, is the contrast between the two benchmarks. I wonder what makes Pancake slow down so much with Fibonacci and speed up so much with the factorial. I implemented both Fibonacci and the factorial as a public procedure in order to minimize private stack-related shenanigans in the runtime.
 
-I put the code I used for both of the benchmarks in the "benchmarks" directory.
+I put the code I used for both of the benchmarks in the "benchmarks" directory. There are also some other Pancake examples in the "examples" directory. If you have ideas for some other ways to represent how Pancake works with code snippets, feel free to contribute some examples.
 
 ## Future
-A known incomptenece of Pancake (aside from just the language itself) is every time a private procedure is called, Pancake c`reates a new stack. This is rather inefficient memory-wise and could be fixed, for example, by creating a new stack only for every level of procedure nestation.
-
 Features expected in the future are
 * data structures — I can't really tell if arrays have a place in this language, but at the same time it's odd to not have them,
 * a way to import Pancake files into other Pancake files in order to use its procedures. That brings us to
