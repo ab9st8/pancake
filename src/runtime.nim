@@ -19,6 +19,7 @@ type
         name: string
         content: seq[Token]
         argCount: uint
+        isPrivate: bool
 
     ## A runtime environment is the set of data regarding
     ## runtime that we have currently and that could change.
@@ -27,10 +28,10 @@ type
     Environment = object
         procedure: Procedure               ## The current procedure
         variables: TableRef[string, Value] ## Variables in the current procedure scope
-        stack: Stack[Value]                ## The local stack
+        stack:     Stack[Value]            ## The local stack
         arguments: seq[Value]              ## Arguments of the local procedure (console arguments in case of `global`)
         condState: ConditionalState        ## Conditional state (e.g. whether we should skip execution in the given moment)
-        pc: uint                           ## Program counter (points to the token being dealt with)
+        pc:        uint                    ## Program counter (points to the token being dealt with)
 
 
     ConditionalState = ref object
@@ -40,16 +41,11 @@ type
     ## Packages data regarding Pancake runtime.
     Runtime = ref object
         error*: Option[PancakeError]
-
         tokens: seq[Token]
         source: string
-
-        lastHash: string
-
+        nestation: uint
         token: uint
-
         environment: Environment
-
         procs: TableRef[string, Procedure]
         stacks*: TableRef[string, Stack[Value]]
 
@@ -60,8 +56,9 @@ type
 ## Used to refer to the current token during runtime.
 template pcVal(): untyped = self.environment.procedure.content[self.environment.pc]
 
-## Shortcut to construct a new Procedure.
-template newProc(c: seq[Token], a: uint): untyped = Procedure(content: c, argCount: a)
+## Shortcuts for constructing new Procedures.
+template newPublicProc(n: string, c: seq[Token], a: uint): untyped = Procedure(name: n, content: c, argCount: a, isPrivate: false)
+template newPrivateProc(n: string, c: seq[Token], a: uint): untyped = Procedure(name: n, content: c, argCount: a, isPrivate: true)
 
 ## Checks whether a given name (string) is a reserved name; that is
 ## whether it shouldn't be used for a new procedure or variable.
@@ -102,7 +99,7 @@ template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
     
     self.environment.stack.push(
         newValue(
-            operator(val2.get().valueAs.val, val1.get().valueAs.val)
+            operator(val1.get().valueAs.val, val2.get().valueAs.val)
         )
     )
 
@@ -132,19 +129,15 @@ proc runStack(self: Runtime): Option[Value]
 proc newRuntime*(tokens: seq[Token], source: string): Runtime =
     result = Runtime(
         error: none[PancakeError](),
-
         tokens: tokens,
         source: source,
-
         stacks: newTable[string, Stack[Value]](),
         procs: newTable[string, Procedure](),
-
-        lastHash: $hash(source),
-
+        nestation: 0,
         token: 0
     )
     result.stacks["global"] = newStack[Value]()
-    result.procs["global"] = newProc(newSeq[Token](), uint(paramCount()))
+    result.procs["global"] = newPublicProc("global", newSeq[Token](), uint(paramCount()))
 
     result.environment = Environment(
         procedure: result.procs["global"],
@@ -218,7 +211,7 @@ proc run*(self: Runtime) =
 
             if self.expect(TK_Number) and '.' notin self.tokens[self.token + 1].lexeme:
                 discard parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount)
-                self.procs[name] = newProc(newSeq[Token](), argCount)
+                self.procs[name] = newPublicProc(name, newSeq[Token](), argCount)
             else:
                 constructError("Expected non-negative integer argument count after procedure name", sourcePosition, "parsing error")
                 return
@@ -255,7 +248,7 @@ proc run*(self: Runtime) =
             var argCount: uint = 0
 
             if self.expect(TK_Number) and parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount) != 0:
-                self.procs[name] = newProc(newSeq[Token](), argCount)
+                self.procs[name] = newPrivateProc(name, newSeq[Token](), argCount)
             else:
                 constructError("Expected argument count after procedure name", sourcePosition, "parsing error")
                 return
@@ -403,19 +396,12 @@ proc runStack(self: Runtime): Option[Value] =
             # procedure and variable calliing
             of TK_Identifier:
                 let id = pcVal.lexeme
-                if id in self.procs: # public procedure
+                if id in self.procs:
                     let old = self.environment
-                    var arguments = newSeq[Value]()
-                    for i in countup(1, int(self.environment.procedure.argCount)):
-                        let val = self.environment.stack.pop()
-                        if val.isNone():
-                            constructError(&"Invalid number of arguments provided for public procedure \"{self.environment.procedure.name}\"", runPosition)
-                            return
-                        arguments.add(val.get())
 
                     self.environment = Environment(
                         procedure: self.procs[pcVal.lexeme],
-                        arguments: arguments,
+                        arguments: newSeq[Value](),
                         variables: newTable[string, Value](),
                         stack: old.stack, # public procedures keep executing on their local stack
                         condState: ConditionalState(
@@ -425,40 +411,28 @@ proc runStack(self: Runtime): Option[Value] =
                         pc: 0
                     )
 
-                    discard self.runStack()
-                    if self.error.isSome(): return
-
-                    self.environment = old
-
-                elif id & ".PRIVATE" in self.procs:
-                    let old = self.environment
-                    self.stacks[self.lastHash] = newStack[Value]()
-                    self.environment = Environment(
-                        procedure: self.procs[pcVal.lexeme],
-                        variables: newTable[string, Value](),
-                        stack: self.stacks[self.lastHash],
-                        arguments: newSeq[Value](),
-                        condState: ConditionalState(
-                            isSkipping: false,
-                            ifCounter: 0
-                        ),
-                        pc: 0
-                    )
                     for i in countup(1, int(self.environment.procedure.argCount)):
                         let val = self.environment.stack.pop()
                         if val.isNone():
-                            constructError(&"Invalid number of arguments provided for private procedure \"{self.environment.procedure.name}\"", runPosition)
+                            constructError(&"Invalid number of arguments provided for public procedure \"{self.environment.procedure.name}\"", runPosition)
                             return
                         self.environment.arguments.add(val.get())
 
-                    self.lastHash = $hash(self.lastHash)
-
+                    if self.environment.procedure.isPrivate:
+                        if $self.nestation in self.stacks:
+                            self.stacks[$self.nestation].reset()
+                        else:
+                            self.stacks[$self.nestation] = newStack[Value]()
+                    
+                    inc self.nestation
                     let val = self.runStack()
+                    dec self.nestation
                     if self.error.isSome(): return
-                    self.environment = old
 
-                    if val.isSome():
-                        self.environment.stack.push(val.get())
+                    if self.environment.procedure.isPrivate and val.isSome:
+                        old.stack.push(val.get())
+
+                    self.environment = old
 
                 elif id in self.environment.variables:
                     self.environment.stack.push(self.environment.variables[id])
