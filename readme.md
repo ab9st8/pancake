@@ -3,12 +3,18 @@ Pancake is the result of a month-or-two of tinkering around in Nim with an idea 
 
 ```
 private factorial 1 {
-    $1 1 =? 1 ret.
-    $1 1 - factorial $1 *
+    1 $1 =? 1 ret.
+    1 $1 - factorial $1 *
 }
 
 global {
-    5 factorial out
+    "Enter a number smaller than 10, and I'll print its factorial:" out
+    in to input
+    input 10 - neg?
+        "Please enter a number smaller than 10!" out
+        ret.
+    "Factorial is:" out
+    input factorial out
 }
 ```
 
