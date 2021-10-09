@@ -1,6 +1,6 @@
 public factorial 1 {
-    $1 1 =? 1 ret.
-    $1 dup 1 - factorial *
+    1 $1 =? 1 ret.
+    1 $1 - factorial $1 *
 }
 
 global {
