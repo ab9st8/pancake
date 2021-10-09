@@ -180,9 +180,6 @@ proc expect(self: Runtime, kind: TokenKind): bool =
 
 
 proc run*(self: Runtime) =
-    ## Runs the whole program and dispatches appropriate runStack calls.
-    
-
     # This first while loop parses (just slices from left to right brace) stack definitions and plops
     # them into Runtime.procs. They are run afterwards (starting from global).
     while self.error.isNone():

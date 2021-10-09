@@ -66,7 +66,6 @@ proc newLexer*(source: string): Lexer =
         line: 1,
         column: 1,
         tokens: newSeq[Token](),
-        # ok: true,
         error: none[PancakeError]()
     )
 
