@@ -116,7 +116,7 @@ proc chomp(self: Lexer) =
                 break
             inc self.current
     
-    elif self.getCurrent() in {'+', '-', '/', '*', '{', '}', '!', '=', '&', '|', '?', ':', '.', '~'}:
+    elif self.getCurrent() in {'+', '-', '/', '*', '{', '}', '!', '=', '&', '|', '?', '.', '~'}:
         inc self.current
     elif self.getCurrent() == '$':
         inc self.current
@@ -170,7 +170,6 @@ proc run*(self: Lexer) =
         of "|":                        tok.kind = TK_Or
         of "=":                        tok.kind = TK_Equal
         of "?":                        tok.kind = TK_BeginIf
-        of ":":                        tok.kind = TK_Else
         of ".":                        tok.kind = TK_EndIf
         of "~":                        tok.kind = TK_Pop
         else:
