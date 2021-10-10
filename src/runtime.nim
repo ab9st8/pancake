@@ -42,7 +42,6 @@ type
     Runtime = ref object
         error*: Option[PancakeError]
         tokens: seq[Token]
-        source: string
         nestation: uint
         token: uint
         environment: Environment
@@ -56,9 +55,8 @@ type
 ## Used to refer to the current token during runtime.
 template pcVal(): untyped = self.environment.procedure.content[self.environment.pc]
 
-## Shortcuts for constructing new Procedures.
-template newPublicProc(n: string, c: seq[Token], a: uint): untyped = Procedure(name: n, content: c, argCount: a, isPrivate: false)
-template newPrivateProc(n: string, c: seq[Token], a: uint): untyped = Procedure(name: n, content: c, argCount: a, isPrivate: true)
+## Shortcut for constructing new Procedures.
+template newProc(n: string, c: seq[Token], a: uint, p: bool): untyped = Procedure(name: n, content: c, argCount: a, isPrivate: p)
 
 ## Checks whether a given name (string) is a reserved name; that is
 ## whether it shouldn't be used for a new procedure or variable.
@@ -103,17 +101,26 @@ template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
         )
     )
 
+## Used inside Runtime.runStack() to avoid copy-paste code. Describes the addition of a literal to the local stack.
+template literal(v: untyped): untyped =
+    let val = newValue(v)
+    self.environment.stack.push(val)
+
+
 
 #==================================#
 # PROC DEFINITIONS ----------------#
 #==================================#
 
 ## Prepares and returns a new Runtime instance.
-proc newRuntime*(tokens: seq[Token], source: string): Runtime
+proc newRuntime*(tokens: seq[Token]): Runtime
 
 ## "Expects" a specific token kind (`kind`). If the next token
 ## is not of `kind`, false is returned.
 proc expect(self: Runtime, kind: TokenKind): bool
+
+## Parses a private / public procedure definition.
+proc parseProcedure(self: Runtime, isPrivate: bool)
 
 ## Parses and runs the whole program.
 proc run*(self: Runtime)
@@ -126,18 +133,17 @@ proc runStack(self: Runtime): Option[Value]
 # PROC IMPLEMENTATIONS ------------#
 #==================================#
 
-proc newRuntime*(tokens: seq[Token], source: string): Runtime =
+proc newRuntime*(tokens: seq[Token]): Runtime =
     result = Runtime(
         error: none[PancakeError](),
         tokens: tokens,
-        source: source,
         stacks: newTable[string, Stack[Value]](),
         procs: newTable[string, Procedure](),
         nestation: 0,
         token: 0
     )
     result.stacks["global"] = newStack[Value]()
-    result.procs["global"] = newPublicProc("global", newSeq[Token](), uint(paramCount()))
+    result.procs["global"] = newProc("global", newSeq[Token](), uint(paramCount()), false)
 
     result.environment = Environment(
         procedure: result.procs["global"],
@@ -171,6 +177,58 @@ proc expect(self: Runtime, kind: TokenKind): bool =
     return if self.isAtEndOfSource() or self.isPastEndOfSource(): false
     else: self.tokens[self.token + 1].kind == kind
 
+proc parseProcedure(self: Runtime, isPrivate: bool) =
+    # first, expect the procedure's name
+    if not self.expect(TK_Identifier):
+        constructError(if isPrivate: "Private procedure name expected"
+            else: "Public procedure name expected",
+            sourcePosition
+        )
+        return
+    inc self.token
+
+    let name = self.tokens[self.token].lexeme
+    # then check if the name is available
+    if name.isReservedName():
+        constructError(if isPrivate: &"Attempted to use reserved name \"{name}\" for new private procedure"
+            else: &"Attempted to use reserved name \"{name}\" for new public procedure",
+            sourcePosition
+        )
+        return
+
+    # get the argument count of the procedure; make sure it's a non-negative integer
+    var argCount: uint = 0
+    if self.expect(TK_Number) and '.' notin self.tokens[self.token + 1].lexeme:
+        discard parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount)
+        self.procs[name] = newProc(name, newSeq[Token](), argCount, isPrivate)
+    else:
+        constructError("Expected non-negative integer argument count after procedure name", sourcePosition, "parsing error")
+        return
+
+    inc self.token
+
+    # expect the opening brace
+    if not self.expect(TK_LeftBrace):
+        constructError(if isPrivate: &"Left brace expected after \"{name}\" private procedure definition"
+            else: &"Left brace expected after \"{name}\" public procedure definition",
+        sourcePosition, "parsing error")
+        return
+        
+    self.token = self.token + 2
+
+    # get the procedure code up until the closing brace
+    while self.tokens[self.token].kind != TK_RightBrace:
+        self.procs[name].content.add(self.tokens[self.token])
+        inc self.token
+        if self.isPastEndOfSource():
+            constructError(if isPrivate: &"Unterminated private procedure \"{name}\" implementation"
+                else: &"Unterminated public procedure \"{name}\" implementation",
+            sourcePosition, "parsing error")
+            return
+    
+    # add "end-of-procedure" token
+    self.procs[name].content.add(Token(kind: TK_EOP))
+    inc self.token
 
 proc run*(self: Runtime) =
     # This first while loop parses (just slices from left to right brace) stack definitions and plops
@@ -196,82 +254,9 @@ proc run*(self: Runtime) =
             
             inc self.token # go past right brace
         
-        of TK_Public:
-            if not self.expect(TK_Identifier):
-                constructError("Public stack name expected", sourcePosition)
-                return
-            inc self.token
-
-            let name = self.tokens[self.token].lexeme
-            if name.isReservedName():
-                constructError(&"Attempted to redefine procedure \"{name}\"", sourcePosition)
-                return
-            
-            var argCount: uint = 0
-
-            if self.expect(TK_Number) and '.' notin self.tokens[self.token + 1].lexeme:
-                discard parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount)
-                self.procs[name] = newPublicProc(name, newSeq[Token](), argCount)
-            else:
-                constructError("Expected non-negative integer argument count after procedure name", sourcePosition, "parsing error")
-                return
-
-            inc self.token
-
-            if not self.expect(TK_LeftBrace):
-                constructError(&"Left brace expected after \"{name}\" public stack definition", sourcePosition, "parsing error")
-                return
-            
-            self.token = self.token + 2
-
-            while self.tokens[self.token].kind != TK_RightBrace:
-                self.procs[name].content.add(self.tokens[self.token])
-                inc self.token
-                if self.isPastEndOfSource():
-                    constructError(&"Unterminated public stack \"{name}\" implementation", sourcePosition, "parsing error")
-                    return
-            self.procs[name].content.add(Token(kind: TK_EOP))
-            self.procs[name].name = name
-            inc self.token
-        
-        of TK_Private:
-            if not self.expect(TK_Identifier):
-                constructError("Private stack name expected", sourcePosition, "parsing error")
-                return
-            inc self.token
-
-            let name = self.tokens[self.token].lexeme
-            if name.isReservedName():
-                constructError("Attempted to redefine procedure \"{name}\"", sourcePosition, "parsing error")
-                return
-
-            var argCount: uint = 0
-
-            if self.expect(TK_Number) and parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount) != 0:
-                self.procs[name] = newPrivateProc(name, newSeq[Token](), argCount)
-            else:
-                constructError("Expected argument count after procedure name", sourcePosition, "parsing error")
-                return
-
-            inc self.token
-
-            if not self.expect(TK_LeftBrace):
-                constructError(&"Left brace expected after \"{name}\" private stack definition", sourcePosition, "parsing error")
-                return
-            
-            self.token = self.token + 2
-
-            while self.tokens[self.token].kind != TK_RightBrace:
-                self.procs[name].content.add(self.tokens[self.token])
-                inc self.token
-                if self.isPastEndOfSource():
-                    constructError(&"Unterminated private stack \"{name}\" implementation", sourcePosition, "parsing error")
-                    return
-            self.procs[name].content.add(Token(kind: TK_EOP))
-            self.procs[name].name = name
-            inc self.token
-
-        of TK_EOF: break
+        of TK_Public:  self.parseProcedure(false)
+        of TK_Private: self.parseProcedure(true)
+        of TK_EOF:     break
 
         else:
             constructError(&"Unexpected {TOKEN_AS_WORD[self.tokens[self.token].kind]}", sourcePosition, "parsing error")
@@ -286,7 +271,6 @@ proc run*(self: Runtime) =
 
 proc runStack(self: Runtime): Option[Value] =
     while pcVal.kind != TK_EOP:
-
         # Check for branch skipping (and stop skipping if we're after a full false if-clause)
         if self.environment.condState.isSkipping:
             if pcVal.kind == TK_BeginIf: inc self.environment.condState.ifCounter
@@ -315,17 +299,9 @@ proc runStack(self: Runtime): Option[Value] =
                 self.environment.stack.push(self.environment.arguments[idx-1])
 
             # literals
-            of TK_Number:
-                let val = newValue(pcVal.lexeme.parseFloat())
-                self.environment.stack.push(val)
-
-            of TK_String:
-                let val = newValue(pcVal.lexeme)
-                self.environment.stack.push(val)
-            
-            of TK_True, TK_False:
-                let val = newValue(pcVal.lexeme.parseBool())
-                self.environment.stack.push(val)
+            of TK_Number:         literal(pcVal.lexeme.parseFloat())
+            of TK_String:         literal(pcVal.lexeme)
+            of TK_True, TK_False: literal(pcVal.lexeme.parseBool())
 
             # keywords / important stack procedures
             of TK_Out:

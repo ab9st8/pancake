@@ -25,7 +25,7 @@ when isMainModule:
 #==================================#
 # RUNTIME -------------------------#
 #==================================#
-        let runt = newRuntime(lex.tokens, source)
+        let runt = newRuntime(lex.tokens)
         runt.run()
         if runt.error.isSome():
             raise runt.error.get()
