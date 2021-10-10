@@ -55,6 +55,17 @@ If this goes into more "stable" territory I'll also try to add this repo to the 
 ## Design and syntax, or "How to Pancake"
 Every Pancake source file consists of a number of private and public procedure definitions and a single global procedure definition. The global procedure is the entrypoint of the program; you can think of it like "main" in C/C++. Everything inside `global` is Pancake code, which consists either of stack operations, conditional clauses, variable assigments or procedure calls. That is also what other procedures are made up of.
 
+### Comments
+Comments span one line each, they start with a semi-colon `;`.
+```
+; this is a comment
+; you can have two lines of comments!
+; ... three even!
+global {
+    "Hello world!" out ; this is also a comment
+}
+```
+
 ### Stack operations
 A value is placed on its local stack simply by being referenced in the code. You can manipulate the stack using various operators and procedures:
 
