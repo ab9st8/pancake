@@ -1,23 +1,23 @@
 type
+    ## Denotes the possible kinds of a Pancake literal.
     ValueKind* = enum
-        ## Denotes the possible kinds of a Pancake literal.
         VK_String,
         VK_Number,
         VK_Bool
 
+    ## A hack to make value-handling easier and leaner. Due
+    ## to the fact that unions can only hold one value at a time,
+    ## and a Pancake value can only be one type at a time as well,
+    ## this is a good solution to representing values dynamically during
+    ## runtime.
+    ## Yes, stolen from Crafting Interpreters.
     ValueUnion {.union.} = ref object
-        ## A hack to make value-handling easier and leaner. Due
-        ## to the fact that unions can only hold one value at a time,
-        ## and a Pancake value can only be one type at a time as well,
-        ## this is a good solution to representing values dynamically during
-        ## runtime.
-        ## Yes, stolen from Crafting Interpreters.
         str*: string
         num*: float
         boolean*: bool
 
+    ## Represents a Pancake literal during runtime.
     Value* = ref object
-        ## Represents a Pancake literal during runtime.
         kind*: ValueKind
         valueAs*: ValueUnion
 
