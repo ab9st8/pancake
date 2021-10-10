@@ -426,7 +426,7 @@ proc runStack(self: Runtime): Option[Value] =
                 if tok.kind != TK_Identifier:
                     constructError(&"Expected identifier when assigning to variable, got {TOKEN_AS_WORD[tok.kind]}", runPosition)
                     return
-                if tok.lexeme.isReservedName():
+                if tok.lexeme notin self.environment.variables and tok.lexeme.isReservedName():
                     constructError(&"Tried to use reserved name \"{tok.lexeme}\" for variable name", runPosition)
                     return
                 let val = self.environment.stack.pop()
