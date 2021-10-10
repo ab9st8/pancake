@@ -1,32 +1,38 @@
 from tables import toTable
 
 type
+    ## Denotes the possible types of a token.
     TokenKind* = enum
-        TK_LeftBrace, TK_RightBrace,
-        TK_Plus, TK_Minus, TK_Star, TK_Slash,
-        TK_Neg,
-        TK_Global, TK_Public, TK_Private,
-        TK_Number,
-        TK_String,
-        TK_Identifier,
-        TK_True, TK_False,
-        TK_And, TK_Or,
-        TK_Not,
-        TK_Equal,
-        TK_BeginIf, TK_Else, TK_EndIf,
-        TK_To,
-        TK_Argument,
-        TK_Out, TK_In,
-        TK_Dup, TK_Pop, TK_Swap, TK_Rotate,
-        TK_Return,
-        TK_EOF,
-        TK_EOP # end of procedure
+        TK_LeftBrace, TK_RightBrace,          ## { }
+        TK_Plus, TK_Minus, TK_Star, TK_Slash, ## + - * /
+        TK_Neg,                               ## neg
+        TK_Global, TK_Public, TK_Private,     ## global public private
+        TK_Equal,                             ## =
+        TK_BeginIf, TK_EndIf,                 ## ? .
+        TK_To,                                ## to
+        TK_Argument,                          ## $ followed by a non-negative integer
+        TK_Out, TK_In,                        ## out in
+        TK_Dup, TK_Pop, TK_Swap, TK_Rotate,   ## dup ~ sw rot
+        TK_Return,                            ## ret
+        TK_True, TK_False,                    ## true false
+        TK_And, TK_Or,                        ## & |
+        TK_Not,                               ## !
+        TK_Number,                            ## any integer or floating point number in base 10
+        TK_String,                            ## utf-8 characters excluding newline enclosed with "
+        TK_Identifier,                        ## any characters from {a..z} | {A..Z} | {_}
+        TK_EOF,                               ## end of file
+        TK_EOP                                ## end of procedure
 
+    ## Packages data regarding a token. A seq[Token]
+    ## is the result of the process of lexing and it does not
+    ## get parsed into any lower-level representation, just chopped
+    ## up into procedure implementations and run from there.
     Token* = ref object
-        kind*: TokenKind
-        lexeme*: string
-        line*, column*: uint
+        kind*:          TokenKind
+        lexeme*:        string    # The "value" of the token, what portion of the source string it corresponds to
+        line*, column*: uint      # The position of the token in the file
 
+## Used in reporting errors during runtime.
 const TOKEN_AS_WORD* = {
     TK_BeginIf: "\"begin if\" operator",
     TK_Return: "\"return\" keyword",

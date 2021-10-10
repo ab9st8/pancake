@@ -6,11 +6,11 @@ import strformat, strutils
 type
     ## Packages data regarding the lexing process.
     Lexer* = ref object
-        source: string               ## The given source string
-        start, current: uint         ## Lexer.source[Lexer.start]..<Lexer.source[Lexer.current] denotes the lexeme being currently processed
-        line, column: uint           ## Indicates where in the input the lexer is working, saved to Token.line and Token.column for every token
-        tokens*: seq[Token]          ## The resulting tokens
-        error*: Option[PancakeError] ## Potential lexing error
+        source:         string               ## The given source string
+        start, current: uint                 ## Lexer.source[Lexer.start]..<Lexer.source[Lexer.current] denotes the lexeme being currently processed
+        line, column:   uint                 ## Indicates where in the input the lexer is working, saved to Token.line and Token.column for every token
+        tokens*:        seq[Token]           ## The resulting tokens
+        error*:         Option[PancakeError] ## Potential lexing error
 
 #==================================#
 # TEMPLATES -----------------------#

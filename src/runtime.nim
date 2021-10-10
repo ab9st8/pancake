@@ -16,9 +16,9 @@ from value import Value, ValueKind, newValue
 type
     ## Packages data regarding a procedure.
     Procedure = ref object
-        name: string                                ## Name of the procedure
-        content: seq[Token]                         ## The procedure code, always ends with Token(kind: TK_EOP)
-        argCount: uint                              ## Expected argument count
+        name:      string                           ## Name of the procedure
+        content:   seq[Token]                       ## The procedure code, always ends with Token(kind: TK_EOP)
+        argCount:  uint                             ## Expected argument count
         isPrivate: bool                             ## Whether the procedure is private (false for global, could be true, doesn't matter)
 
     ## The runtime environment is the set of data regarding
@@ -34,6 +34,9 @@ type
         pc:        uint                             ## Program counter (points to the token being dealt with)
 
 
+    ## Helps determine the state of the machine in conditional
+    ## clause terms; whether we've entered a false if-clause and
+    ## should skip to the next end-if operator.
     ConditionalState = ref object
         isSkipping: bool                            ## Whether we should skip execution because of a false if-clause.
         ifCounter:  uint                            ## Helps us skip if-statements inside false if-clauses (if not for this, we'd stop skipping at the first end-if operator).

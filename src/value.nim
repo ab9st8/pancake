@@ -12,13 +12,13 @@ type
     ## runtime.
     ## Yes, stolen from Crafting Interpreters.
     ValueUnion {.union.} = ref object
-        str*: string
-        num*: float
+        str*:     string
+        num*:     float
         boolean*: bool
 
     ## Represents a Pancake literal during runtime.
     Value* = ref object
-        kind*: ValueKind
+        kind*:    ValueKind
         valueAs*: ValueUnion
 
 
