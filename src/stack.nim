@@ -1,8 +1,43 @@
 from options import Option, some, none
 
 type
+    ## This is a helper type for all stack-related shenanigans
+    ## throughout this project.
     Stack*[T] = ref object
-        content*: seq[T]
+        content*: seq[T] ## Content of the stack
+
+#==================================#
+# PROC DEFINITIONS ----------------#
+#==================================#
+
+## Prepares and returns a new stack with content
+## of type T.
+proc newStack*[T](): Stack[T]
+
+## Checks whether Stack.content is empty.
+proc empty*(self: Stack): bool
+
+## Resets the stack, deletes all items.
+proc reset*(self: Stack)
+
+## Returns the number of items on the stack.
+proc len*(self: Stack): uint
+
+## Returns the top value of the stack encased in
+## a some(). If the stack is empty, returns none().
+proc topValue*[T](self: Stack[T]): Option[T]
+
+## Pushes `value` onto the stack.
+proc push*[T](self: Stack[T], value: T)
+
+## Pops one value from the stack and returns it,
+## encased in a some(). If the stack is empty, returns
+## none().
+proc pop*[T](self: Stack[T]): Option[T]
+
+#==================================#
+# PROC IMPLEMENTATIONS ------------#
+#==================================#
 
 proc newStack*[T](): Stack[T] =
     Stack[T](
