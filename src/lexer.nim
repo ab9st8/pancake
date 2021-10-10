@@ -45,11 +45,11 @@ proc newLexer*(source: string): Lexer
 ## Warps Lexer.start to Lexer.current and takes care of columns.
 proc warp(self: Lexer)
 
-## Goes through whitespace and stops at a non-whitespace character
+## Goes through whitespace and stops at a non-whitespace character.
 proc skipWhitespace(self: Lexer)
 
-## Chomps on input and stops Lexer.current at a place such that
-##  getSlice() forms a valid lexeme.
+## "Chomps" on input and stops Lexer.current at a place such that
+## getSlice() forms a valid lexeme.
 proc chomp(self: Lexer)
 
 ## Processes the input.
@@ -76,13 +76,18 @@ proc warp(self: Lexer) =
     self.start = self.current
 
 proc skipWhitespace(self: Lexer) =
+    var comment = false
     while not self.isPastEnd():
         case self.getCurrent()
         of ' ': discard
         of '\n', '\r':
             inc self.line
             self.column = 1
-        else: break
+            if comment: comment = false
+        of ';':
+            while not self.isPastEnd() and self.getCurrent() != '\n': inc self.current
+        else:
+            if not comment: break
         inc self.current
     self.warp()
 
