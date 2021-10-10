@@ -1,3 +1,8 @@
+; this example illustrates how Pancake's
+; public procedures can be used to create 
+; operators which are baked into Pancake
+; by default.
+
 public mySwap 2 {
     $1 $2
 }

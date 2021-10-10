@@ -1,3 +1,5 @@
+; arguments in `global` correspond to console arguments.
+; this example illustrates that.
 global {
 	"Hello world! Welcoming you from filename:" out
 	$1 out

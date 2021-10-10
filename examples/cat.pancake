@@ -1,7 +1,8 @@
 public cat 1 {
-    in dup $1 =!? out $1 cat.
+    in dup $1 =!?   ; if the input is NOT equal to the argument...
+        out $1 cat. ; print it out and recur
 }
 
 global {
-    "stop" cat
+    "stop" cat      ; you can put any string here in place of "stop"
 }
