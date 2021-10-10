@@ -16,37 +16,37 @@ from value import Value, ValueKind, newValue
 type
     ## Packages data regarding a procedure.
     Procedure = ref object
-        name: string
-        content: seq[Token]
-        argCount: uint
-        isPrivate: bool
+        name: string        ## Name of the procedure
+        content: seq[Token]                        ## The procedure code, always ends with Token(kind: TK_EOP)
+        argCount: uint                             ## Expected argument count
+        isPrivate: bool                            ## Whether the procedure is private (false for global, could be true, doesn't matter)
 
-    ## A runtime environment is the set of data regarding
+    ## The runtime environment is the set of data regarding
     ## runtime that we have currently and that could change.
     ## An environment changes globally when calling another procedure
     ## and locally inside a procedure.
     Environment = object
-        procedure: Procedure               ## The current procedure
-        variables: TableRef[string, Value] ## Variables in the current procedure scope
-        stack:     Stack[Value]            ## The local stack
-        arguments: seq[Value]              ## Arguments of the local procedure (console arguments in case of `global`)
-        condState: ConditionalState        ## Conditional state (e.g. whether we should skip execution in the given moment)
-        pc:        uint                    ## Program counter (points to the token being dealt with)
+        procedure: Procedure                       ## The current procedure
+        variables: TableRef[string, Value]         ## Variables in the current procedure scope
+        stack:     Stack[Value]                    ## The local stack
+        arguments: seq[Value]                      ## Arguments of the local procedure (console arguments in case of `global`)
+        condState: ConditionalState                ## Conditional state (e.g. whether we should skip execution in the given moment)
+        pc:        uint                            ## Program counter (points to the token being dealt with)
 
 
     ConditionalState = ref object
-        isSkipping: bool ## Whether we should skip execution because of a false if-clause.
-        ifCounter: uint  ## Helps us skip if-statements inside false if-clauses.
+        isSkipping: bool                           ## Whether we should skip execution because of a false if-clause.
+        ifCounter:  uint                           ## Helps us skip if-statements inside false if-clauses (if not for this, we'd stop skipping at the first end-if operator).
 
     ## Packages data regarding Pancake runtime.
     Runtime = ref object
-        error*: Option[PancakeError]
-        tokens: seq[Token]
-        nestation: uint
-        token: uint
-        environment: Environment
-        procs: TableRef[string, Procedure]
-        stacks*: TableRef[string, Stack[Value]]
+        error*:      Option[PancakeError]          ## Potential runtime error container
+        tokens:      seq[Token]                    ## Our token list which we parse and execute
+        nestation:   uint                          ## Informs us about the level of procedure call nestation, also the name of the local private stack
+        token:       uint                          ## The current token pointer (during parsing)
+        environment: Environment                   ## Our runtime environment
+        procs:       TableRef[string, Procedure]   ## Runtime procedure collection
+        stacks:     TableRef[string, Stack[Value]] ## Runtime stack collection (stacks["global"] for global stack, stacks[$nestation] for any private stack)
 
 #==================================#
 # TEMPLATES -----------------------#
