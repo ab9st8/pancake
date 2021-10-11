@@ -85,7 +85,7 @@ proc skipWhitespace(self: Lexer) =
             self.column = 1
             if comment: comment = false
         of ';':
-            while not self.isPastEnd() and self.getCurrent() != '\n': inc self.current
+            comment = true
         else:
             if not comment: break
         inc self.current
