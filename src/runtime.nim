@@ -1,6 +1,5 @@
-from strutils import parseFloat, parseBool, parseUInt, endsWith
+from strutils import parseFloat, parseBool, parseUInt
 from parseutils import parseFloat, parseUInt
-from hashes import hash
 from os import paramCount, paramStr
 from math import floor
 import strformat
