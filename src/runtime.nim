@@ -127,7 +127,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool)
 ## Parses and runs the whole program.
 proc run*(self: Runtime)
 
-## Runs a specific stack signature from Runtime.procs.
+## Runs a specific procedure signature from Runtime.procs.
 proc runProcedure(self: Runtime): Option[Value]
 
 
