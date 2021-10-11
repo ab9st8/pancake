@@ -8,15 +8,14 @@ type
         TK_Neg,                               ## neg
         TK_Global, TK_Public, TK_Private,     ## global public private
         TK_Equal,                             ## =
-        TK_BeginIf, TK_EndIf,                 ## ? .
+        TK_EndIf, TK_BeginIf,                 ## . ?
         TK_To,                                ## to
         TK_Argument,                          ## $ followed by a non-negative integer
         TK_Out, TK_In,                        ## out in
         TK_Dup, TK_Pop, TK_Swap, TK_Rotate,   ## dup ~ sw rot
         TK_Return,                            ## ret
         TK_True, TK_False,                    ## true false
-        TK_And, TK_Or,                        ## & |
-        TK_Not,                               ## !
+        TK_And, TK_Or, TK_Not                 ## & | !
         TK_Number,                            ## any integer or floating point number in base 10
         TK_String,                            ## utf-8 characters excluding newline enclosed with "
         TK_Identifier,                        ## any characters from {a..z} | {A..Z} | {_}
