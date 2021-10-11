@@ -84,7 +84,7 @@ template isAtEndOfSource(self: Runtime): untyped = int(self.token + 2) == self.t
 ## Indicates whether we're looking past the last token in the source code.
 template isPastEndOfSource(self: Runtime): untyped = int(self.token) + 1 >= self.tokens.len() # 1 = TK_EOF
 
-## Used inside Runtime.runStack() to avoid copy-paste code. Describes how a binary operator should work.
+## Used inside Runtime.runProcedure() to avoid copy-paste code. Describes how a binary operator should work.
 template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
     let val1 = self.environment.stack.pop()
     let val2 = self.environment.stack.pop()
@@ -103,7 +103,7 @@ template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
         )
     )
 
-## Used inside Runtime.runStack() to avoid copy-paste code. Describes the addition of a literal to the local stack.
+## Used inside Runtime.runProcedure() to avoid copy-paste code. Describes the addition of a literal to the local stack.
 template literal(v: untyped): untyped =
     let val = newValue(v)
     self.environment.stack.push(val)
@@ -128,7 +128,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool)
 proc run*(self: Runtime)
 
 ## Runs a specific stack signature from Runtime.procs.
-proc runStack(self: Runtime): Option[Value]
+proc runProcedure(self: Runtime): Option[Value]
 
 
 #==================================#
@@ -268,10 +268,10 @@ proc run*(self: Runtime) =
         constructError("No global procedure definition given", "0:0", "parsing error") # we don't have anywhere specific to point to
         return
 
-    discard self.runStack() # so long, brother
+    discard self.runProcedure() # so long, brother
 
 
-proc runStack(self: Runtime): Option[Value] =
+proc runProcedure(self: Runtime): Option[Value] =
     while pcVal.kind != TK_EOP:
         # Check for branch skipping (and stop skipping if we're after a full false if-clause)
         if self.environment.condState.isSkipping:
@@ -403,7 +403,7 @@ proc runStack(self: Runtime): Option[Value] =
                             self.stacks[$self.nestation] = newStack[Value]()
                     
                     inc self.nestation
-                    let val = self.runStack()
+                    let val = self.runProcedure()
                     dec self.nestation
                     if self.error.isSome(): return
 
