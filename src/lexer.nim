@@ -72,7 +72,7 @@ proc newLexer*(source: string): Lexer =
     )
 
 proc warp(self: Lexer) =
-    self.column += self.current - self.start - 1
+    self.column += self.current - self.start
     self.start = self.current
 
 proc skipWhitespace(self: Lexer) =
