@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.1.1"
+version       = "0.1.2"
 author        = "c1m5j"
 description   = "stack-oriented pain-maximising toy programming language"
 license       = "MIT"
