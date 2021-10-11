@@ -1,0 +1,15 @@
+; in order to check whether $1 is greater than $2,
+; we can see if the difference $2 - $1 is negative.
+private greater 2 {
+    $1 $2 - neg
+}
+
+private lesser 2 {
+    $2 $1 greater!
+}
+
+global {
+    2 5 greater? "5 is greater than 2" out.
+
+    10 9 lesser? "9 is lesser than 10" out.
+}
