@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+
+html {
+    background-color: #101010;
+    color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex: 0;
+    height: 90%;
+}
+
+#source {
+    flex: 1;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    background-color: #333;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    color: antiquewhite;
+    margin-bottom: 30px;
+    resize: none;
+    margin-left: 100px;
+    height: 400px;
+}
+
+#run {
+    align-self: center;
+    width: 100px;
+    height: 50px;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: #222;
+    color: antiquewhite;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.1s linear;
+
+}
+
+#run:hover {
+    background-color: #555;
+}
+
+#output {
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 100px;
+    text-align: start;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #333;
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    font-size: 13px;
+    height: 400px;
+    resize: none;
+    color: antiquewhite;
+}
