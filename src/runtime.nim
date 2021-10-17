@@ -1,16 +1,53 @@
+# import jsconsole
 from strutils import parseFloat, parseBool, parseUInt
 from parseutils import parseFloat, parseUInt
-from os import paramCount, paramStr
 from math import floor
+import strutils
 import strformat
 import tables
 import options
 
 
-import error
-from token import Token, TokenKind, TOKEN_AS_WORD
+# import error
+from token import Token, TokenKind
 from stack import Stack, newStack, push, pop, topValue, reset
 from value import Value, ValueKind, newValue
+
+const TOKEN_AS_WORD: array[32, string] = [
+    "left brace",
+    "right brace",
+    "plus sign",
+    "minus sign",
+    "star sign",
+    "slash",
+    "\"is negative\" operator",
+    "\"global\" keyword",
+    "\"public\" keyword",
+    "\"private\" keyword",
+    "\"equal\" operator",
+    "\"end if\" operator",
+    "\"begin if\" operator",
+    "\"to\" keyword",
+    "argument call operator",
+    "\"out\" keyword",
+    "\"in\" keyword",
+    "\"dup\" keyword",
+    "\"pop\" operator",
+    "\"swap\" operator",
+    "\"rotate\" operator",
+    "\"return\" keyword",
+    "\"true\" value",
+    "\"false\" value",
+    "\"and\" boolean operator",
+    "\"or\" boolean operator",
+    "\"not\" boolean operator",
+    "number literal",
+    "string literal",
+    "identifier",
+    "end-of-file",
+    "end-of-procedure"
+]
+
 
 type
     ## Packages data regarding a procedure.
@@ -42,13 +79,14 @@ type
 
     ## Packages data regarding Pancake runtime.
     Runtime = ref object
-        error*:      Option[PancakeError]           ## Potential runtime error container
+        hadError*:   bool
         tokens:      seq[Token]                     ## Our token list which we parse and execute
         nestation:   uint                           ## Informs us about the level of procedure call nestation, also the name of the local private stack
         token:       uint                           ## The current token pointer (during parsing)
         environment: Environment                    ## Our runtime environment
         procs:       TableRef[string, Procedure]    ## Runtime procedure collection
         stacks:      TableRef[string, Stack[Value]] ## Runtime stack collection (stacks["global"] for global stack, stacks[$nestation] for any private stack)
+        output*:     string                         ## Standard output (only on branch web, JS backend)
 
 #==================================#
 # TEMPLATES -----------------------#
@@ -69,14 +107,16 @@ template isReservedName(name: typed): untyped =
     name in self.environment.variables
 
 ## Used when reporting errors during parsing to avoid copy-paste code.
-template sourcePosition(): untyped = &"{self.tokens[self.token].line}:{self.tokens[self.token].column}"
+template sourcePosition(): string = $self.tokens[self.token].line & ":" & $self.tokens[self.token].column
 
 ## Used when reporting errors during runtime to avoid copy-paste code.
-template runPosition(): untyped = &"{pcVal.line}:{pcVal.column}"
+template runPosition(): string = $pcVal.line & ":" & $pcVal.column
 
 ## Constructs an error in the runtime with the given position, message, and error kind.
-template constructError(m: untyped, p: untyped, k: untyped = "runtime error"): untyped =
-    self.error = some(PancakeError(message: m, pos: p, kind: k))
+template constructError(m: untyped, p: any, k: untyped = "runtime error"): untyped =
+    let pos = p
+    self.output = "(" & k & ", " & pos & ") " & m
+    self.hadError = true
 
 ## Indicates whether we're looking at the last token in the source code.
 template isAtEndOfSource(self: Runtime): untyped = int(self.token + 2) == self.tokens.len() # 2 = offset + TK_EOF
@@ -91,10 +131,11 @@ template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
 
 
     if val1.isNone() or val2.isNone():
-        constructError(&"Expected two operands for binary operation, got one or less", runPosition)
+        constructError("Expected two operands for binary operation, got one or less", runPosition)
+        # self.error = PancakeError(message: "Expected two operands for binary operation, got one or less", pos: runPosition, kind: "runtime error")
         return
     if val1.get().kind != k or val2.get().kind != k:
-        constructError(&"Invalid types for binary operation", runPosition)
+        constructError("Invalid types for binary operation", runPosition)
         return
     
     self.environment.stack.push(
@@ -137,15 +178,19 @@ proc runProcedure(self: Runtime): Option[Value]
 
 proc newRuntime*(tokens: seq[Token]): Runtime =
     result = Runtime(
-        error: none[PancakeError](),
+        hadError: false,
         tokens: tokens,
         stacks: newTable[string, Stack[Value]](),
         procs: newTable[string, Procedure](),
         nestation: 0,
-        token: 0
+        token: 0,
+        output: ""
     )
     result.stacks["global"] = newStack[Value]()
-    result.procs["global"] = newProc("global", newSeq[Token](), uint(paramCount()), false)
+    #! NOT APPLICABLE ON JS BACKEND !#
+    # result.procs["global"] = newProc("global", newSeq[Token](), uint(paramCount()), false)
+    #! NOT APPLICABLE ON JS BACKEND !#
+    result.procs["global"] = newProc("global", newSeq[Token](), 0, false)
 
     result.environment = Environment(
         procedure: result.procs["global"],
@@ -159,20 +204,23 @@ proc newRuntime*(tokens: seq[Token]): Runtime =
         pc: 0
     )
 
+
+    #! NOT APPLICABLE ON JS BACKEND !#
     # get console arguments
-    for i in countup(1, paramCount()):
-        let str = paramStr(i)
-        var valueAsNum: float
-        var value: Value
-        if parseutils.parseFloat(str, valueAsNum) != 0:
-            value = newValue(valueAsNum)
-        elif str == "true":
-            value = newValue(true)
-        elif str == "false":
-            value = newValue(false)
-        else:
-            value = newValue(str)
-        result.environment.arguments.add(value)
+    # for i in countup(1, paramCount()):
+    #     let str = paramStr(i)
+    #     var valueAsNum: float
+    #     var value: Value
+    #     if parseutils.parseFloat(str, valueAsNum) != 0:
+    #         value = newValue(valueAsNum)
+    #     elif str == "true":
+    #         value = newValue(true)
+    #     elif str == "false":
+    #         value = newValue(false)
+    #     else:
+    #         value = newValue(str)
+    #     result.environment.arguments.add(value)
+    #! NOT APPLICABLE ON JS BACKEND !#
 
 
 proc expect(self: Runtime, kind: TokenKind): bool =
@@ -192,8 +240,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
     let name = self.tokens[self.token].lexeme
     # then check if the name is available
     if name.isReservedName():
-        constructError(if isPrivate: &"Attempted to use reserved name \"{name}\" for new private procedure"
-            else: &"Attempted to use reserved name \"{name}\" for new public procedure",
+        constructError(if isPrivate: "Attempted to use reserved name \"" & name & "\" for new private procedure"
+            else: "Attempted to use reserved name \"" & name & "\" for new public procedure",
             sourcePosition
         )
         return
@@ -211,8 +259,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
 
     # expect the opening brace
     if not self.expect(TK_LeftBrace):
-        constructError(if isPrivate: &"Left brace expected after \"{name}\" private procedure definition"
-            else: &"Left brace expected after \"{name}\" public procedure definition",
+        constructError(if isPrivate: "Left brace expected after \"" & name & "\" private procedure definition"
+            else: &"Left brace expected after \"" & name & "\" public procedure definition",
         sourcePosition, "parsing error")
         return
         
@@ -223,8 +271,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
         self.procs[name].content.add(self.tokens[self.token])
         inc self.token
         if self.isPastEndOfSource():
-            constructError(if isPrivate: &"Unterminated private procedure \"{name}\" implementation"
-                else: &"Unterminated public procedure \"{name}\" implementation",
+            constructError(if isPrivate: "Unterminated private procedure \"" & name & "\" implementation"
+                else: "Unterminated public procedure \"" & name & "\" implementation",
             sourcePosition, "parsing error")
             return
     
@@ -235,7 +283,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
 proc run*(self: Runtime) =
     # This first while loop parses (just slices from left to right brace) stack definitions and plops
     # them into Runtime.procs. They are run afterwards (starting from global).
-    while self.error.isNone():
+    while not self.hadError:
         case self.tokens[self.token].kind
         of TK_Global:
             if self.procs["global"].content.len() != 0:
@@ -261,7 +309,7 @@ proc run*(self: Runtime) =
         of TK_EOF:     break
 
         else:
-            constructError(&"Unexpected {TOKEN_AS_WORD[self.tokens[self.token].kind]}", sourcePosition, "parsing error")
+            constructError("Unexpected " & TOKEN_AS_WORD[self.tokens[self.token].kind.ord], sourcePosition, "parsing error")
             return
 
     if self.procs["global"].content.len() == 0:
@@ -295,7 +343,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                 
                 if idx > self.environment.procedure.argCount or idx == 0:
                     constructError(
-                        &"Argument operator calls argument no. {idx}, but current procedure only accepts {self.environment.procedure.argCount} arguments", runPosition
+                        "Argument operator calls argument no. " & $idx & ", but current procedure only accepts " & $self.environment.procedure.argCount & " arguments", runPosition
                     )
                     return
                 self.environment.stack.push(self.environment.arguments[idx-1])
@@ -310,28 +358,33 @@ proc runProcedure(self: Runtime): Option[Value] =
                 let val = self.environment.stack.pop()
                 if val.isSome():
                     case val.get().kind
-                    of VK_String: stdout.writeLine(val.get().valueAs.str)
+                    of VK_String: self.output.add(val.get().valueAs.str)
                     of VK_Number:
                         if floor(val.get().valueAs.num) == val.get().valueAs.num:
-                            stdout.writeLine(int(val.get().valueAs.num))
+                            self.output.add($int(val.get().valueAs.num))
                         else:
-                            stdout.writeLine(val.get().valueAs.num)
-                    of VK_Bool: stdout.writeLine(val.get().valueAs.boolean)
-                else: stdout.writeLine("void")
+                            self.output.add($val.get().valueAs.num)
+                    of VK_Bool: self.output.add($val.get().valueAs.boolean)
+
+                    self.output.add("\n")
+                else: self.output.add("void\n")
+
             
             of TK_In:
-                let input = stdin.readLine()
-                var valueAsNum: float
-                var value: Value
-                if parseutils.parseFloat(input, valueAsNum) != 0:
-                    value = newValue(valueAsNum)
-                elif input == "true":
-                    value = newValue(true)
-                elif input == "false":
-                    value = newValue(false)
-                else:
-                    value = newValue(input)
-                self.environment.stack.push(value)
+                # let input = stdin.readLine()
+                # var valueAsNum: float
+                # var value: Value
+                # if parseutils.parseFloat(input, valueAsNum) != 0:
+                #     value = newValue(valueAsNum)
+                # elif input == "true":
+                #     value = newValue(true)
+                # elif input == "false":
+                #     value = newValue(false)
+                # else:
+                #     value = newValue(input)
+                # self.environment.stack.push(value)
+                constructError("`in` keyword not implemented in JS backend", runPosition)
+                return
 
 
             of TK_Dup:
@@ -392,7 +445,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                     for i in countup(1, int(self.environment.procedure.argCount)):
                         let val = self.environment.stack.pop()
                         if val.isNone():
-                            constructError(&"Invalid number of arguments provided for public procedure \"{self.environment.procedure.name}\"", runPosition)
+                            constructError("Invalid number of arguments provided for public procedure \"" & self.environment.procedure.name & "\"", runPosition)
                             return
                         self.environment.arguments.add(val.get())
 
@@ -405,7 +458,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                     inc self.nestation
                     let val = self.runProcedure()
                     dec self.nestation
-                    if self.error.isSome(): return
+                    if self.hadError: return
 
                     if self.environment.procedure.isPrivate and val.isSome:
                         old.stack.push(val.get())
@@ -416,21 +469,21 @@ proc runProcedure(self: Runtime): Option[Value] =
                     self.environment.stack.push(self.environment.variables[id])
                 
                 else:
-                    constructError(&"Unknown identifier \"{id}\"", runPosition)
+                    constructError("Unknown identifier \"" & id & "\"", runPosition)
                     return
 
             of TK_To:
                 inc self.environment.pc
                 let tok = pcVal
                 if tok.kind != TK_Identifier:
-                    constructError(&"Expected identifier when assigning to variable, got {TOKEN_AS_WORD[tok.kind]}", runPosition)
+                    constructError("Expected identifier when assigning to variable, got " & TOKEN_AS_WORD[tok.kind.ord], runPosition)
                     return
                 if tok.lexeme notin self.environment.variables and tok.lexeme.isReservedName():
-                    constructError(&"Tried to use reserved name \"{tok.lexeme}\" for variable name", runPosition)
+                    constructError("Tried to use reserved name \"" & tok.lexeme & "\" for variable name", runPosition)
                     return
                 let val = self.environment.stack.pop()
                 if val.isNone():
-                    constructError(&"Did not provide value to assign to variable \"{tok.lexeme}\"", runPosition)
+                    constructError("Did not provide value to assign to variable \"" & tok.lexeme & "\"", runPosition)
                     return
                 self.environment.variables[tok.lexeme] = val.get()
 
@@ -480,7 +533,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                 return self.environment.stack.topValue() # simply abort executing this procedure
             
             else:
-                constructError(&"Unexpected {TOKEN_AS_WORD[pcVal.kind]}", runPosition)
+                constructError("Unexpected " & TOKEN_AS_WORD[pcVal.kind.ord], runPosition)
                 return
 
         inc self.environment.pc # advance

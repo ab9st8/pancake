@@ -11,7 +11,7 @@ type
     ## this is a good solution to representing values dynamically during
     ## runtime.
     ## Yes, stolen from Crafting Interpreters.
-    ValueUnion {.union.} = ref object
+    ValueUnion = ref object
         str*:     string
         num*:     float
         boolean*: bool

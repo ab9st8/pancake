@@ -6,10 +6,10 @@ description   = "stack-oriented pain-maximising toy programming language"
 license       = "MIT"
 srcDir        = "src"
 bin           = @["pancake"]
-binDir        = "build"
+backend       = "js"
+binDir        = "docs"
 
 
 # Dependencies
 
 requires "nim >= 1.4.0"
-requires "argparse"

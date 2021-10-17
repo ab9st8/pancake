@@ -1,45 +1,35 @@
 from options import isSome, get
-from terminal import styledWrite, styleDim, resetStyle
-import error
-import argparse
+import sugar
+import dom
 import lexer, runtime
 
+proc run(button: Element) =
+    let textarea = document.getElementById("source")
+    let source = textarea.value
+    let output = document.getElementById("output")
 
-when isMainModule:
-    let parser = newParser("pancake"):
-        help("This is the CLI that lets you communicate with your Pancake interpreter.")
-        arg("filename", help="Path to file for Pancake to interpret")
-    try:
-        let res = parser.parse()
+    button.disabled = true
+    
+    let l = newLexer($source)
+    l.run()
+    if l.hadError:
+        output.value = l.output
+        button.disabled = false
+        return
 
-        let source = open(res.filename).readAll()
+    let r = newRuntime(l.tokens)
+    r.run()
+    # this is virtually unnecessary
+    # if r.hadError:
+    #     output.value = r.output
+    #     button.disabled = false
+    #     return
 
-#==================================#
-# LEXING --------------------------#
-#==================================#
-        let lex = newLexer(source)
-        lex.run()
-        if lex.error.isSome():
-            raise lex.error.get()
-        
-#==================================#
-# RUNTIME -------------------------#
-#==================================#
-        let runt = newRuntime(lex.tokens)
-        runt.run()
-        if runt.error.isSome():
-            raise runt.error.get()
+    output.value = r.output
 
-#==================================#
-# ERROR HANDLING ------------------#
-#==================================#
-    except PancakeError as err:
-        stdout.styledWrite(styleDim, "(", err.kind, ", ", err.pos, ") ", resetStyle, err.message, "\n")
-        quit(1)
+    button.disabled = false
 
-    except IOError:
-        echo "Error: could not read file"
 
-    except UsageError, ShortCircuit:
-        echo parser.help()
-        quit(1)
+when isMainModule and defined(js):
+    let button = document.getElementById("run")
+    button.addEventListener("mousedown", (ev: Event) => run(button))

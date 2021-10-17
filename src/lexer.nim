@@ -1,6 +1,4 @@
-from options import Option, none, some, isSome
-import token except TOKEN_AS_WORD
-import error
+import token
 import strformat, strutils
 
 type
@@ -10,7 +8,8 @@ type
         start, current: uint                 ## Lexer.source[Lexer.start]..<Lexer.source[Lexer.current] denotes the lexeme being currently processed
         line, column:   uint                 ## Indicates where in the input the lexer is working, saved to Token.line and Token.column for every token
         tokens*:        seq[Token]           ## The resulting tokens
-        error*:         Option[PancakeError] ## Potential lexing error
+        hadError*:      bool
+        output*:        string
 
 #==================================#
 # TEMPLATES -----------------------#
@@ -29,8 +28,9 @@ template getCurrent(self: Lexer): char = self.source[self.current]
 template sourcePosition(): untyped = &"{self.line}:{self.column}"
 
 ## Constructs an error in the lexer with the given position and message.
-template constructError(m: untyped, p: untyped): untyped =
-    self.error = some(PancakeError(message: m, pos: p, kind: "lexing error"))
+template constructError(m: string, p: string): untyped =
+    self.output = "(lexing error, " & p & ") " & m
+    self.hadError = true
 
 ## Fetches the string slice from Lexer.start to Lexer.current.
 template getSlice(self: Lexer): string = self.source[self.start..<self.current]
@@ -68,7 +68,7 @@ proc newLexer*(source: string): Lexer =
         line: 1,
         column: 1,
         tokens: newSeq[Token](),
-        error: none[PancakeError]()
+        hadError: false
     )
 
 proc warp(self: Lexer) =
@@ -134,7 +134,7 @@ proc run*(self: Lexer) =
         self.skipWhitespace()
         if self.isPastEnd(): break
         self.chomp()
-        if self.error.isSome(): return
+        if self.hadError: return
 
         let slice = self.getSlice()
 
