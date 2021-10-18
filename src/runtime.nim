@@ -285,13 +285,7 @@ proc runProcedure(self: Runtime): Option[Value] =
             case pcVal.kind
             # argument calling
             of TK_Argument:
-                var idx: uint
-
-                try:
-                    idx = strutils.parseUInt(pcVal.lexeme)
-                except ValueError:
-                    echo "whoops! you shouldn't see this, for some reason you managed to break the lexing algorithm which only accepted positive integers. here you go, have a cookie 🍪"
-                    quit(1)
+                var idx = strutils.parseUInt(pcVal.lexeme)
                 
                 if idx > self.environment.procedure.argCount or idx == 0:
                     constructError(

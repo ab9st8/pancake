@@ -120,6 +120,9 @@ proc chomp(self: Lexer) =
         inc self.current
     elif self.getCurrent() == '$':
         inc self.current
+        if self.getCurrent() notin Digits:
+            constructError("Expected natural number after argument call operator", sourcePosition)
+            return
         while not self.isPastEnd() and self.getCurrent() in Digits: inc self.current
     elif self.getCurrent() in IdentStartChars:
         while not self.isPastEnd() and self.getCurrent() in IdentStartChars: inc self.current # (we don't allow numbers in identifiers)
