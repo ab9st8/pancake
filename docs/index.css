@@ -6,7 +6,6 @@ html {
     background-color: #101010;
     color: antiquewhite;
     font-family: 'Inter', sans-serif;
-    width: 100%;
     height: 100%;
 }
 
@@ -18,8 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px;
-    width: 100%;
-    height: 100%;
+    height: calc(100% - 20px);
 }
 
 #container {
