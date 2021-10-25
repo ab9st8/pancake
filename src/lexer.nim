@@ -1,5 +1,6 @@
 import token
 import strformat, strutils
+import unicode
 
 type
     ## Packages data regarding the lexing process.
@@ -102,7 +103,7 @@ proc chomp(self: Lexer) =
         var isFloat = false
         while not self.isPastEnd() and self.getCurrent() in Digits + {'.'}:
             if self.getCurrent() == '.' and isFloat:
-                constructError(&"Bad number signature", sourcePosition)
+                constructError("Bad number signature", sourcePosition)
                 break
             elif self.getCurrent() == '.' and not isFloat:
                 isFloat = true
@@ -112,7 +113,7 @@ proc chomp(self: Lexer) =
         inc self.current
         while self.getCurrent() != '"':
             if self.isPastEnd() or self.getCurrent() == '\n':
-                constructError(&"Unterminated string", sourcePosition)
+                constructError("Unterminated string", sourcePosition)
                 break
             inc self.current
     
@@ -120,11 +121,15 @@ proc chomp(self: Lexer) =
         inc self.current
     elif self.getCurrent() == '$':
         inc self.current
+        if self.getCurrent() notin Digits:
+            constructError("Expected natural number after argument call operator", sourcePosition)
+            return
         while not self.isPastEnd() and self.getCurrent() in Digits: inc self.current
     elif self.getCurrent() in IdentStartChars:
         while not self.isPastEnd() and self.getCurrent() in IdentStartChars: inc self.current # (we don't allow numbers in identifiers)
     else:
-        constructError(&"Unrecognized token", sourcePosition)
+        constructError(&"Unrecognized character", sourcePosition)
+        echo self.getCurrent()
         return
 
 
@@ -187,7 +192,7 @@ proc run*(self: Lexer) =
                 tok.lexeme = tok.lexeme[1..^1]
                 tok.kind = TK_Argument
             else:
-                constructError(&"Unrecognized token", sourcePosition)
+                constructError(&"Unrecognized lexeme", sourcePosition)
                 break
         self.tokens.add(tok)
         self.warp()

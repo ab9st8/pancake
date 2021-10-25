@@ -2,50 +2,49 @@
 var framePtr = null;
 var excHandler = 0;
 var lastJSError = null;
-var NTI2140204 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI11228463 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11735180 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI1194657 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI11228078 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228025 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11228074 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228045 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11228023 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228054 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228051 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228048 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11245204 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
+var NTI11248463 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11785180 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248078 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248025 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11248074 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248045 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11248023 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248054 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248051 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248048 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI1194645 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI11228030 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228028 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228021 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11228107 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228104 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228101 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248030 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248028 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248021 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11248107 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248104 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248101 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI1188064 = {size: 0,kind: 1,base: null,node: null,finalizer: null};
 var NTI1188005 = {size: 0,kind: 36,base: null,node: null,finalizer: null};
-var NTI11227024 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11227018 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11227016 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI11227029 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11227020 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11228072 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228069 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228068 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11051122 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI11228139 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI11228136 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
-var NTI11228133 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI2311017 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
-var NTI2311067 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
-var NTI2311019 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
-var NTI11228389 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11247024 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11247018 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11247016 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI11247029 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11247020 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11248072 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248069 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248068 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11066122 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI11248139 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11248136 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
+var NTI11248133 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI2306017 = {size: 0, kind: 14, base: null, node: null, finalizer: null};
+var NTI2306067 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI2306019 = {size: 0,kind: 22,base: null,node: null,finalizer: null};
+var NTI11248389 = {size: 0,kind: 24,base: null,node: null,finalizer: null};
 var NTI1188054 = {size: 0,kind: 40,base: null,node: null,finalizer: null};
-var NTI10995216 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI11010216 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI1194641 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1194621 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1194643 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
-var NTI5580232 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
-var NTI5835011 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
+var NTI5575232 = {size: 0,kind: 31,base: null,node: null,finalizer: null};
+var NTI5830011 = {size: 0, kind: 18, base: null, node: null, finalizer: null};
 var NTI1194635 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1194653 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
 var NTI1194633 = {size: 0, kind: 17, base: null, node: null, finalizer: null};
@@ -93,9 +92,9 @@ NTI1194653.base = NTI1194619;
 var NNI1194635 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI1194635.node = NNI1194635;
 NTI1194635.base = NTI1194633;
-var NNI5835011 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI5580232, name: "a", sons: null}, 
+var NNI5830011 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI5575232, name: "a", sons: null}, 
 {kind: 1, offset: "b", len: 0, typ: NTI1188044, name: "b", sons: null}]};
-NTI5835011.node = NNI5835011;
+NTI5830011.node = NNI5830011;
 var NNI1194643 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI1194643.node = NNI1194643;
 var NNI1194621 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
@@ -105,123 +104,120 @@ NTI1194643.base = NTI1194621;
 var NNI1194641 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI1194641.node = NNI1194641;
 NTI1194641.base = NTI1194619;
-var NNI10995216 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI1188054, name: "a", sons: null}, 
+var NNI11010216 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "a", len: 0, typ: NTI1188054, name: "a", sons: null}, 
 {kind: 1, offset: "b", len: 0, typ: NTI1188054, name: "b", sons: null}]};
-NTI10995216.node = NNI10995216;
-var NNI2311017 = {kind: 2, offset: 0, typ: null, name: null, len: 32, sons: {"0": {kind: 1, offset: 0, typ: NTI2311017, name: "TK_LeftBrace", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI2311017, name: "TK_RightBrace", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI2311017, name: "TK_Plus", len: 0, sons: null}, 
-"3": {kind: 1, offset: 3, typ: NTI2311017, name: "TK_Minus", len: 0, sons: null}, 
-"4": {kind: 1, offset: 4, typ: NTI2311017, name: "TK_Star", len: 0, sons: null}, 
-"5": {kind: 1, offset: 5, typ: NTI2311017, name: "TK_Slash", len: 0, sons: null}, 
-"6": {kind: 1, offset: 6, typ: NTI2311017, name: "TK_Neg", len: 0, sons: null}, 
-"7": {kind: 1, offset: 7, typ: NTI2311017, name: "TK_Global", len: 0, sons: null}, 
-"8": {kind: 1, offset: 8, typ: NTI2311017, name: "TK_Public", len: 0, sons: null}, 
-"9": {kind: 1, offset: 9, typ: NTI2311017, name: "TK_Private", len: 0, sons: null}, 
-"10": {kind: 1, offset: 10, typ: NTI2311017, name: "TK_Equal", len: 0, sons: null}, 
-"11": {kind: 1, offset: 11, typ: NTI2311017, name: "TK_EndIf", len: 0, sons: null}, 
-"12": {kind: 1, offset: 12, typ: NTI2311017, name: "TK_BeginIf", len: 0, sons: null}, 
-"13": {kind: 1, offset: 13, typ: NTI2311017, name: "TK_To", len: 0, sons: null}, 
-"14": {kind: 1, offset: 14, typ: NTI2311017, name: "TK_Argument", len: 0, sons: null}, 
-"15": {kind: 1, offset: 15, typ: NTI2311017, name: "TK_Out", len: 0, sons: null}, 
-"16": {kind: 1, offset: 16, typ: NTI2311017, name: "TK_In", len: 0, sons: null}, 
-"17": {kind: 1, offset: 17, typ: NTI2311017, name: "TK_Dup", len: 0, sons: null}, 
-"18": {kind: 1, offset: 18, typ: NTI2311017, name: "TK_Pop", len: 0, sons: null}, 
-"19": {kind: 1, offset: 19, typ: NTI2311017, name: "TK_Swap", len: 0, sons: null}, 
-"20": {kind: 1, offset: 20, typ: NTI2311017, name: "TK_Rotate", len: 0, sons: null}, 
-"21": {kind: 1, offset: 21, typ: NTI2311017, name: "TK_Return", len: 0, sons: null}, 
-"22": {kind: 1, offset: 22, typ: NTI2311017, name: "TK_True", len: 0, sons: null}, 
-"23": {kind: 1, offset: 23, typ: NTI2311017, name: "TK_False", len: 0, sons: null}, 
-"24": {kind: 1, offset: 24, typ: NTI2311017, name: "TK_And", len: 0, sons: null}, 
-"25": {kind: 1, offset: 25, typ: NTI2311017, name: "TK_Or", len: 0, sons: null}, 
-"26": {kind: 1, offset: 26, typ: NTI2311017, name: "TK_Not", len: 0, sons: null}, 
-"27": {kind: 1, offset: 27, typ: NTI2311017, name: "TK_Number", len: 0, sons: null}, 
-"28": {kind: 1, offset: 28, typ: NTI2311017, name: "TK_String", len: 0, sons: null}, 
-"29": {kind: 1, offset: 29, typ: NTI2311017, name: "TK_Identifier", len: 0, sons: null}, 
-"30": {kind: 1, offset: 30, typ: NTI2311017, name: "TK_EOF", len: 0, sons: null}, 
-"31": {kind: 1, offset: 31, typ: NTI2311017, name: "TK_EOP", len: 0, sons: null}}};
-NTI2311017.node = NNI2311017;
-var NNI2311067 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI2311017, name: "kind", sons: null}, 
+NTI11010216.node = NNI11010216;
+var NNI2306017 = {kind: 2, offset: 0, typ: null, name: null, len: 32, sons: {"0": {kind: 1, offset: 0, typ: NTI2306017, name: "TK_LeftBrace", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI2306017, name: "TK_RightBrace", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI2306017, name: "TK_Plus", len: 0, sons: null}, 
+"3": {kind: 1, offset: 3, typ: NTI2306017, name: "TK_Minus", len: 0, sons: null}, 
+"4": {kind: 1, offset: 4, typ: NTI2306017, name: "TK_Star", len: 0, sons: null}, 
+"5": {kind: 1, offset: 5, typ: NTI2306017, name: "TK_Slash", len: 0, sons: null}, 
+"6": {kind: 1, offset: 6, typ: NTI2306017, name: "TK_Neg", len: 0, sons: null}, 
+"7": {kind: 1, offset: 7, typ: NTI2306017, name: "TK_Global", len: 0, sons: null}, 
+"8": {kind: 1, offset: 8, typ: NTI2306017, name: "TK_Public", len: 0, sons: null}, 
+"9": {kind: 1, offset: 9, typ: NTI2306017, name: "TK_Private", len: 0, sons: null}, 
+"10": {kind: 1, offset: 10, typ: NTI2306017, name: "TK_Equal", len: 0, sons: null}, 
+"11": {kind: 1, offset: 11, typ: NTI2306017, name: "TK_EndIf", len: 0, sons: null}, 
+"12": {kind: 1, offset: 12, typ: NTI2306017, name: "TK_BeginIf", len: 0, sons: null}, 
+"13": {kind: 1, offset: 13, typ: NTI2306017, name: "TK_To", len: 0, sons: null}, 
+"14": {kind: 1, offset: 14, typ: NTI2306017, name: "TK_Argument", len: 0, sons: null}, 
+"15": {kind: 1, offset: 15, typ: NTI2306017, name: "TK_Out", len: 0, sons: null}, 
+"16": {kind: 1, offset: 16, typ: NTI2306017, name: "TK_In", len: 0, sons: null}, 
+"17": {kind: 1, offset: 17, typ: NTI2306017, name: "TK_Dup", len: 0, sons: null}, 
+"18": {kind: 1, offset: 18, typ: NTI2306017, name: "TK_Pop", len: 0, sons: null}, 
+"19": {kind: 1, offset: 19, typ: NTI2306017, name: "TK_Swap", len: 0, sons: null}, 
+"20": {kind: 1, offset: 20, typ: NTI2306017, name: "TK_Rotate", len: 0, sons: null}, 
+"21": {kind: 1, offset: 21, typ: NTI2306017, name: "TK_Return", len: 0, sons: null}, 
+"22": {kind: 1, offset: 22, typ: NTI2306017, name: "TK_True", len: 0, sons: null}, 
+"23": {kind: 1, offset: 23, typ: NTI2306017, name: "TK_False", len: 0, sons: null}, 
+"24": {kind: 1, offset: 24, typ: NTI2306017, name: "TK_And", len: 0, sons: null}, 
+"25": {kind: 1, offset: 25, typ: NTI2306017, name: "TK_Or", len: 0, sons: null}, 
+"26": {kind: 1, offset: 26, typ: NTI2306017, name: "TK_Not", len: 0, sons: null}, 
+"27": {kind: 1, offset: 27, typ: NTI2306017, name: "TK_Number", len: 0, sons: null}, 
+"28": {kind: 1, offset: 28, typ: NTI2306017, name: "TK_String", len: 0, sons: null}, 
+"29": {kind: 1, offset: 29, typ: NTI2306017, name: "TK_Identifier", len: 0, sons: null}, 
+"30": {kind: 1, offset: 30, typ: NTI2306017, name: "TK_EOF", len: 0, sons: null}, 
+"31": {kind: 1, offset: 31, typ: NTI2306017, name: "TK_EOP", len: 0, sons: null}}};
+NTI2306017.node = NNI2306017;
+var NNI2306067 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI2306017, name: "kind", sons: null}, 
 {kind: 1, offset: "lexeme", len: 0, typ: NTI1188013, name: "lexeme", sons: null}, 
 {kind: 1, offset: "line", len: 0, typ: NTI1188054, name: "line", sons: null}, 
 {kind: 1, offset: "column", len: 0, typ: NTI1188054, name: "column", sons: null}]};
-NTI2311067.node = NNI2311067;
-NTI2311019.base = NTI2311067;
-NTI11228389.base = NTI2311019;
-var NNI11227016 = {kind: 2, offset: 0, typ: null, name: null, len: 3, sons: {"0": {kind: 1, offset: 0, typ: NTI11227016, name: "VK_String", len: 0, sons: null}, 
-"1": {kind: 1, offset: 1, typ: NTI11227016, name: "VK_Number", len: 0, sons: null}, 
-"2": {kind: 1, offset: 2, typ: NTI11227016, name: "VK_Bool", len: 0, sons: null}}};
-NTI11227016.node = NNI11227016;
-var NNI11227024 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "str", len: 0, typ: NTI1188013, name: "str", sons: null}, 
+NTI2306067.node = NNI2306067;
+NTI2306019.base = NTI2306067;
+NTI11248389.base = NTI2306019;
+var NNI11247016 = {kind: 2, offset: 0, typ: null, name: null, len: 3, sons: {"0": {kind: 1, offset: 0, typ: NTI11247016, name: "VK_String", len: 0, sons: null}, 
+"1": {kind: 1, offset: 1, typ: NTI11247016, name: "VK_Number", len: 0, sons: null}, 
+"2": {kind: 1, offset: 2, typ: NTI11247016, name: "VK_Bool", len: 0, sons: null}}};
+NTI11247016.node = NNI11247016;
+var NNI11247024 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "str", len: 0, typ: NTI1188013, name: "str", sons: null}, 
 {kind: 1, offset: "num", len: 0, typ: NTI1188005, name: "num", sons: null}, 
 {kind: 1, offset: "boolean", len: 0, typ: NTI1188064, name: "boolean", sons: null}]};
-NTI11227024.node = NNI11227024;
-NTI11227018.base = NTI11227024;
-var NNI11227029 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI11227016, name: "kind", sons: null}, 
-{kind: 1, offset: "valueAs", len: 0, typ: NTI11227018, name: "valueAs", sons: null}]};
-NTI11227029.node = NNI11227029;
-NTI11227020.base = NTI11227029;
-NTI11228072.base = NTI11227020;
-var NNI11228069 = {kind: 1, offset: "content", len: 0, typ: NTI11228072, name: "content", sons: null};
-NTI11228069.node = NNI11228069;
-NTI11228068.base = NTI11228069;
-var NNI11228139 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11051122, name: "Field0", sons: null}, 
+NTI11247024.node = NNI11247024;
+NTI11247018.base = NTI11247024;
+var NNI11247029 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "kind", len: 0, typ: NTI11247016, name: "kind", sons: null}, 
+{kind: 1, offset: "valueAs", len: 0, typ: NTI11247018, name: "valueAs", sons: null}]};
+NTI11247029.node = NNI11247029;
+NTI11247020.base = NTI11247029;
+NTI11248072.base = NTI11247020;
+var NNI11248069 = {kind: 1, offset: "content", len: 0, typ: NTI11248072, name: "content", sons: null};
+NTI11248069.node = NNI11248069;
+NTI11248068.base = NTI11248069;
+var NNI11248139 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11066122, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI1188013, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI11228068, name: "Field2", sons: null}]};
-NTI11228139.node = NNI11228139;
-NTI11228136.base = NTI11228139;
-var NNI11228133 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11228136, name: "data", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI11248068, name: "Field2", sons: null}]};
+NTI11248139.node = NNI11248139;
+NTI11248136.base = NTI11248139;
+var NNI11248133 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11248136, name: "data", sons: null}, 
 {kind: 1, offset: "counter", len: 0, typ: NTI1188044, name: "counter", sons: null}]};
-NTI11228133.node = NNI11228133;
-NTI11228030.base = NTI2311019;
-var NNI11228028 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "name", len: 0, typ: NTI1188013, name: "name", sons: null}, 
-{kind: 1, offset: "content", len: 0, typ: NTI11228030, name: "content", sons: null}, 
+NTI11248133.node = NNI11248133;
+NTI11248030.base = NTI2306019;
+var NNI11248028 = {kind: 2, len: 4, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "name", len: 0, typ: NTI1188013, name: "name", sons: null}, 
+{kind: 1, offset: "content", len: 0, typ: NTI11248030, name: "content", sons: null}, 
 {kind: 1, offset: "argCount", len: 0, typ: NTI1188054, name: "argCount", sons: null}, 
 {kind: 1, offset: "isPrivate", len: 0, typ: NTI1188064, name: "isPrivate", sons: null}]};
-NTI11228028.node = NNI11228028;
-NTI11228021.base = NTI11228028;
-var NNI11228107 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11051122, name: "Field0", sons: null}, 
+NTI11248028.node = NNI11248028;
+NTI11248021.base = NTI11248028;
+var NNI11248107 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11066122, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI1188013, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI11228021, name: "Field2", sons: null}]};
-NTI11228107.node = NNI11228107;
-NTI11228104.base = NTI11228107;
-var NNI11228101 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11228104, name: "data", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI11248021, name: "Field2", sons: null}]};
+NTI11248107.node = NNI11248107;
+NTI11248104.base = NTI11248107;
+var NNI11248101 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11248104, name: "data", sons: null}, 
 {kind: 1, offset: "counter", len: 0, typ: NTI1188044, name: "counter", sons: null}]};
-NTI11228101.node = NNI11228101;
+NTI11248101.node = NNI11248101;
 var NNI1194645 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
 NTI1194645.node = NNI1194645;
 NTI1194645.base = NTI1194643;
-var NNI11228054 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11051122, name: "Field0", sons: null}, 
+var NNI11248054 = {kind: 2, len: 3, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "Field0", len: 0, typ: NTI11066122, name: "Field0", sons: null}, 
 {kind: 1, offset: "Field1", len: 0, typ: NTI1188013, name: "Field1", sons: null}, 
-{kind: 1, offset: "Field2", len: 0, typ: NTI11227020, name: "Field2", sons: null}]};
-NTI11228054.node = NNI11228054;
-NTI11228051.base = NTI11228054;
-var NNI11228048 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11228051, name: "data", sons: null}, 
+{kind: 1, offset: "Field2", len: 0, typ: NTI11247020, name: "Field2", sons: null}]};
+NTI11248054.node = NNI11248054;
+NTI11248051.base = NTI11248054;
+var NNI11248048 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "data", len: 0, typ: NTI11248051, name: "data", sons: null}, 
 {kind: 1, offset: "counter", len: 0, typ: NTI1188044, name: "counter", sons: null}]};
-NTI11228048.node = NNI11228048;
-NTI11228045.base = NTI11228048;
-NTI11228074.base = NTI11227020;
-var NNI11228078 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "isSkipping", len: 0, typ: NTI1188064, name: "isSkipping", sons: null}, 
+NTI11248048.node = NNI11248048;
+NTI11248045.base = NTI11248048;
+NTI11248074.base = NTI11247020;
+var NNI11248078 = {kind: 2, len: 2, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "isSkipping", len: 0, typ: NTI1188064, name: "isSkipping", sons: null}, 
 {kind: 1, offset: "ifCounter", len: 0, typ: NTI1188054, name: "ifCounter", sons: null}]};
-NTI11228078.node = NNI11228078;
-NTI11228025.base = NTI11228078;
-var NNI11228023 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "procedure", len: 0, typ: NTI11228021, name: "procedure", sons: null}, 
-{kind: 1, offset: "variables", len: 0, typ: NTI11228045, name: "variables", sons: null}, 
-{kind: 1, offset: "stack", len: 0, typ: NTI11228068, name: "stack", sons: null}, 
-{kind: 1, offset: "arguments", len: 0, typ: NTI11228074, name: "arguments", sons: null}, 
-{kind: 1, offset: "condState", len: 0, typ: NTI11228025, name: "condState", sons: null}, 
+NTI11248078.node = NNI11248078;
+NTI11248025.base = NTI11248078;
+var NNI11248023 = {kind: 2, len: 6, offset: 0, typ: null, name: null, sons: [{kind: 1, offset: "procedure", len: 0, typ: NTI11248021, name: "procedure", sons: null}, 
+{kind: 1, offset: "variables", len: 0, typ: NTI11248045, name: "variables", sons: null}, 
+{kind: 1, offset: "stack", len: 0, typ: NTI11248068, name: "stack", sons: null}, 
+{kind: 1, offset: "arguments", len: 0, typ: NTI11248074, name: "arguments", sons: null}, 
+{kind: 1, offset: "condState", len: 0, typ: NTI11248025, name: "condState", sons: null}, 
 {kind: 1, offset: "pc", len: 0, typ: NTI1188054, name: "pc", sons: null}]};
-NTI11228023.node = NNI11228023;
-var NNI1194657 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI1194657.node = NNI1194657;
-NTI1194657.base = NTI1194619;
-var NNI11735180 = {kind: 1, offset: "val", len: 0, typ: NTI11227020, name: "val", sons: null};
-NTI11735180.node = NNI11735180;
-var NNI11228463 = {kind: 1, offset: "val", len: 0, typ: NTI11227020, name: "val", sons: null};
-NTI11228463.node = NNI11228463;
-var NNI2140204 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
-NTI2140204.node = NNI2140204;
-NTI2140204.base = NTI1194619;
+NTI11248023.node = NNI11248023;
+var NNI11785180 = {kind: 1, offset: "val", len: 0, typ: NTI11247020, name: "val", sons: null};
+NTI11785180.node = NNI11785180;
+var NNI11248463 = {kind: 1, offset: "val", len: 0, typ: NTI11247020, name: "val", sons: null};
+NTI11248463.node = NNI11248463;
+var NNI11245204 = {kind: 2, len: 0, offset: 0, typ: null, name: null, sons: []};
+NTI11245204.node = NNI11245204;
+NTI11245204.base = NTI1194619;
 function setConstr() {
         var result = {};
     for (var i = 0; i < arguments.length; ++i) {
@@ -593,11 +589,22 @@ function addChar(x_1505031, c_1505032) {
 }
 var ConstSet12 = setConstr(43, 45, 47, 42, 123, 125, 33, 61, 38, 124, 63, 46, 126);
 var ConstSet13 = setConstr([48, 57]);
-var ConstSet14 = setConstr([97, 122], [65, 90], 95);
+var ConstSet14 = setConstr([48, 57]);
 var ConstSet15 = setConstr([97, 122], [65, 90], 95);
-var ConstSet16 = setConstr(45, [48, 57]);
-var ConstSet17 = setConstr([97, 122], [65, 90], 95);
-var ConstSet18 = setConstr([97, 122], [65, 90], [48, 57], 95);
+var ConstSet16 = setConstr([97, 122], [65, 90], 95);
+function rawEcho() {
+          var buf = "";
+      for (var i = 0; i < arguments.length; ++i) {
+        buf += toJSStr(arguments[i]);
+      }
+      console.log(buf);
+    
+
+  
+}
+var ConstSet17 = setConstr(45, [48, 57]);
+var ConstSet18 = setConstr([97, 122], [65, 90], 95);
+var ConstSet19 = setConstr([97, 122], [65, 90], [48, 57], 95);
 function modInt(a_1460491, b_1460492) {
         if (b_1460492 == 0) raiseDivByZero();
     if (b_1460492 == -1 && a_1460491 == 2147483647) raiseOverflow();
@@ -620,73 +627,17 @@ function eqStrings(a_1460222, b_1460223) {
 
   
 }
-var ConstSet19 = setConstr([48, 57]);
 var ConstSet20 = setConstr([48, 57]);
 var ConstSet21 = setConstr([48, 57]);
-            var TOKEN_AS_WORD_11228019 = [makeNimstrLit("left brace"), makeNimstrLit("right brace"), makeNimstrLit("plus sign"), makeNimstrLit("minus sign"), makeNimstrLit("star sign"), makeNimstrLit("slash"), makeNimstrLit("\"is negative\" operator"), makeNimstrLit("\"global\" keyword"), makeNimstrLit("\"public\" keyword"), makeNimstrLit("\"private\" keyword"), makeNimstrLit("\"equal\" operator"), makeNimstrLit("\"end if\" operator"), makeNimstrLit("\"begin if\" operator"), makeNimstrLit("\"to\" keyword"), makeNimstrLit("argument call operator"), makeNimstrLit("\"out\" keyword"), makeNimstrLit("\"in\" keyword"), makeNimstrLit("\"dup\" keyword"), makeNimstrLit("\"pop\" operator"), makeNimstrLit("\"swap\" operator"), makeNimstrLit("\"rotate\" operator"), makeNimstrLit("\"return\" keyword"), makeNimstrLit("\"true\" value"), makeNimstrLit("\"false\" value"), makeNimstrLit("\"and\" boolean operator"), makeNimstrLit("\"or\" boolean operator"), makeNimstrLit("\"not\" boolean operator"), makeNimstrLit("number literal"), makeNimstrLit("string literal"), makeNimstrLit("identifier"), makeNimstrLit("end-of-file"), makeNimstrLit("end-of-procedure")];
-function isObj(obj_1500062, subclass_1500063) {
-  var result_1500064 = false;
-
-  BeforeRet: do {
-    var x_1500065 = obj_1500062;
-    if ((x_1500065 == subclass_1500063)) {
-    result_1500064 = true;
-    break BeforeRet;
-    }
-    
-    L1: do {
-        L2: while (true) {
-        if (!!((x_1500065 == subclass_1500063))) break L2;
-          if ((x_1500065 == null)) {
-          result_1500064 = false;
-          break BeforeRet;
-          }
-          
-          x_1500065 = x_1500065.base;
-        }
-    } while(false);
-    result_1500064 = true;
-    break BeforeRet;
-  } while (false);
-
-  return result_1500064;
-
-}
-function rawEcho() {
-          var buf = "";
-      for (var i = 0; i < arguments.length; ++i) {
-        buf += toJSStr(arguments[i]);
-      }
-      console.log(buf);
-    
-
-  
-}
-function reraiseException() {
-    if ((lastJSError == null)) {
-    raiseException({message: makeNimstrLit("no exception to reraise"), parent: null, m_type: NTI1194657, name: null, trace: [], up: null}, "ReraiseDefect");
-    }
-    else {
-      if ((excHandler == 0)) {
-      if (isNimException_1375704()) {
-      unhandledException(lastJSError);
-      }
-      
-      }
-      
-      throw lastJSError;
-    }
-    
-
-  
-}
-var ConstSet22 = setConstr([97, 122], [65, 90], [48, 57], 95);
+var ConstSet22 = setConstr([48, 57]);
+            var TOKEN_AS_WORD_11248019 = [makeNimstrLit("left brace"), makeNimstrLit("right brace"), makeNimstrLit("plus sign"), makeNimstrLit("minus sign"), makeNimstrLit("star sign"), makeNimstrLit("slash"), makeNimstrLit("\"is negative\" operator"), makeNimstrLit("\"global\" keyword"), makeNimstrLit("\"public\" keyword"), makeNimstrLit("\"private\" keyword"), makeNimstrLit("\"equal\" operator"), makeNimstrLit("\"end if\" operator"), makeNimstrLit("\"begin if\" operator"), makeNimstrLit("\"to\" keyword"), makeNimstrLit("argument call operator"), makeNimstrLit("\"out\" keyword"), makeNimstrLit("\"in\" keyword"), makeNimstrLit("\"dup\" keyword"), makeNimstrLit("\"pop\" operator"), makeNimstrLit("\"swap\" operator"), makeNimstrLit("\"rotate\" operator"), makeNimstrLit("\"return\" keyword"), makeNimstrLit("\"true\" value"), makeNimstrLit("\"false\" value"), makeNimstrLit("\"and\" boolean operator"), makeNimstrLit("\"or\" boolean operator"), makeNimstrLit("\"not\" boolean operator"), makeNimstrLit("number literal"), makeNimstrLit("string literal"), makeNimstrLit("identifier"), makeNimstrLit("end-of-file"), makeNimstrLit("end-of-procedure")];
 var ConstSet23 = setConstr([97, 122], [65, 90], [48, 57], 95);
-var ConstSet24 = setConstr([48, 57]);
+var ConstSet24 = setConstr([97, 122], [65, 90], [48, 57], 95);
 var ConstSet25 = setConstr([48, 57]);
-var ConstSet26 = setConstr(101, 69);
-var ConstSet27 = setConstr([48, 57]);
+var ConstSet26 = setConstr([48, 57]);
+var ConstSet27 = setConstr(101, 69);
 var ConstSet28 = setConstr([48, 57]);
+var ConstSet29 = setConstr([48, 57]);
 function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, start_1505079) {
   var result_1505081 = 0;
 
@@ -720,7 +671,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     if (((s_1505076[i_1505084] == 78) || (s_1505076[i_1505084] == 110))) {
     if (((s_1505076[(i_1505084 + 1)] == 65) || (s_1505076[(i_1505084 + 1)] == 97))) {
     if (((s_1505076[(i_1505084 + 2)] == 78) || (s_1505076[(i_1505084 + 2)] == 110))) {
-    if (!((ConstSet22[s_1505076[(i_1505084 + 3)]] != undefined))) {
+    if (!((ConstSet23[s_1505076[(i_1505084 + 3)]] != undefined))) {
     F.line = 723;
     number_1505078[number_1505078_Idx] = NaN;
     F.line = 724;
@@ -740,7 +691,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     if (((s_1505076[i_1505084] == 73) || (s_1505076[i_1505084] == 105))) {
     if (((s_1505076[(i_1505084 + 1)] == 78) || (s_1505076[(i_1505084 + 1)] == 110))) {
     if (((s_1505076[(i_1505084 + 2)] == 70) || (s_1505076[(i_1505084 + 2)] == 102))) {
-    if (!((ConstSet23[s_1505076[(i_1505084 + 3)]] != undefined))) {
+    if (!((ConstSet24[s_1505076[(i_1505084 + 3)]] != undefined))) {
     F.line = 730;
     number_1505078[number_1505078_Idx] = (Infinity * sign_1505083);
     F.line = 731;
@@ -760,7 +711,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     L1: do {
       F.line = 733;
         L2: while (true) {
-        if (!(ConstSet24[s_1505076[i_1505084]] != undefined)) break L2;
+        if (!(ConstSet25[s_1505076[i_1505084]] != undefined)) break L2;
           F.line = 735;
           flags_1505086 = (flags_1505086 | 1);
           F.line = 736;
@@ -785,7 +736,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     L5: do {
       F.line = 743;
         L6: while (true) {
-        if (!(ConstSet25[s_1505076[i_1505084]] != undefined)) break L6;
+        if (!(ConstSet26[s_1505076[i_1505084]] != undefined)) break L6;
           F.line = 745;
           flags_1505086 = (flags_1505086 | 2);
           F.line = 746;
@@ -814,7 +765,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     break BeforeRet;
     }
     
-    if ((ConstSet26[s_1505076[i_1505084]] != undefined)) {
+    if ((ConstSet27[s_1505076[i_1505084]] != undefined)) {
     F.line = 755;
     i_1505084 += 1;
     if ((s_1505076[i_1505084] == 43)) {
@@ -829,7 +780,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     i_1505084 += 1;
     }
     }
-    if (!((ConstSet27[s_1505076[i_1505084]] != undefined))) {
+    if (!((ConstSet28[s_1505076[i_1505084]] != undefined))) {
     F.line = 762;
     result_1505081 = 0;
     break BeforeRet;
@@ -838,7 +789,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
     L9: do {
       F.line = 763;
         L10: while (true) {
-        if (!(ConstSet28[s_1505076[i_1505084]] != undefined)) break L10;
+        if (!(ConstSet29[s_1505076[i_1505084]] != undefined)) break L10;
           F.line = 764;
           exponent_1505085 = (((exponent_1505085 * 10) + s_1505076[i_1505084]) - 48);
           F.line = 765;
@@ -876,7 +827,7 @@ function nimParseBiggestFloat(s_1505076, number_1505078, number_1505078_Idx, sta
   return result_1505081;
 
 }
-var ConstSet29 = setConstr([65, 90]);
+var ConstSet30 = setConstr([65, 90]);
 function nimFloatToString(a_1460649) {
   var result_1460650 = null;
 
@@ -917,700 +868,634 @@ if (!Math.trunc) {
   };
 }
 
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
-var F={procname:"module pancake",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/pancake.nim",line:0};
-framePtr = F;
-framePtr = F.prev;
 var F={procname:"module sugar",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/sugar.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module sugar",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/sugar.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module macros",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/core/macros.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module typetraits",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/typetraits.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module sugar",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/sugar.nim",line:0};
@@ -3303,6 +3188,9 @@ var F={procname:"module strformat",prev:framePtr,filename:"/Users/antoni/.choose
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module strformat",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module lexer",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module lexer",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
@@ -3443,7 +3331,7 @@ framePtr = F.prev;
 var F={procname:"module hashes",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
 framePtr = F;
 F.line = 155;
-var objectID_11055031 = [0];
+var objectID_11070031 = [0];
 framePtr = F.prev;
 var F={procname:"module hashes",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
 framePtr = F;
@@ -4046,6 +3934,69 @@ var F={procname:"module tables",prev:framePtr,filename:"/Users/antoni/.choosenim
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module runtime",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
+framePtr = F;
+framePtr = F.prev;
+var F={procname:"module options",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
 framePtr = F;
 framePtr = F.prev;
 var F={procname:"module runtime",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
@@ -4359,13 +4310,13 @@ function auxWriteStackTrace_1380038(f_1380040) {
     
     L6: do {
       var j_1395236 = 0;
-      var colontmp__12390274 = 0;
-      colontmp__12390274 = (i_1380053 - 1);
-      var res_12390279 = colontmp__12390274;
+      var colontmp__12470274 = 0;
+      colontmp__12470274 = (i_1380053 - 1);
+      var res_12470279 = colontmp__12470274;
       L7: do {
           L8: while (true) {
-          if (!(0 <= res_12390279)) break L8;
-            j_1395236 = res_12390279;
+          if (!(0 <= res_12470279)) break L8;
+            j_1395236 = res_12470279;
             result_1380041[0].push.apply(result_1380041[0], cstrToNimstr(tempFrames_1380062[j_1395236].Field2));;
             if ((0 < tempFrames_1380062[j_1395236].Field1)) {
             result_1380041[0].push.apply(result_1380041[0], makeNimstrLit("("));;
@@ -4381,7 +4332,7 @@ function auxWriteStackTrace_1380038(f_1380040) {
             result_1380041[0].push.apply(result_1380041[0], makeNimstrLit(" at "));;
             add_1357211(result_1380041, 0, tempFrames_1380062[j_1395236].Field0);
             result_1380041[0].push.apply(result_1380041[0], makeNimstrLit("\x0A"));;
-            res_12390279 -= 1;
+            res_12470279 -= 1;
           }
       } while(false);
     } while(false);
@@ -4465,56 +4416,56 @@ function checkOverflowInt(a_1460403) {
 
   
 }
-function nsuFindChar(s_10295216, sub_10295217, start_10295218, last_10295219) {
+function nsuFindChar(s_10290216, sub_10290217, start_10290218, last_10290219) {
     var Tmp1;
 
-  var result_10295221 = 0;
+  var result_10290221 = 0;
 
   var F={procname:"strutils.find",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 1966;
-    if ((last_10295219 == 0)) {
-    Tmp1 = (s_10295216).length - 1;
+    if ((last_10290219 == 0)) {
+    Tmp1 = (s_10290216).length - 1;
     }
     else {
-    Tmp1 = last_10295219;
+    Tmp1 = last_10290219;
     }
     
-    var last_10295223 = Tmp1;
+    var last_10290223 = Tmp1;
     L2: do {
       F.line = 1978;
-      var i_10295606 = 0;
+      var i_10290606 = 0;
       F.line = 66;
-      var colontmp__12390296 = 0;
+      var colontmp__12470296 = 0;
       F.line = 1978;
-      colontmp__12390296 = start_10295218;
+      colontmp__12470296 = start_10290218;
       F.line = 77;
-      var res_12390297 = colontmp__12390296;
+      var res_12470297 = colontmp__12470296;
       L3: do {
         F.line = 78;
           L4: while (true) {
-          if (!(res_12390297 <= last_10295223)) break L4;
+          if (!(res_12470297 <= last_10290223)) break L4;
             F.line = 1978;
-            i_10295606 = res_12390297;
-            if ((sub_10295217 == s_10295216[chckIndx(i_10295606, 0, (s_10295216).length-1)])) {
+            i_10290606 = res_12470297;
+            if ((sub_10290217 == s_10290216[chckIndx(i_10290606, 0, (s_10290216).length-1)])) {
             F.line = 1979;
-            result_10295221 = i_10295606;
+            result_10290221 = i_10290606;
             break BeforeRet;
             }
             
             F.line = 80;
-            res_12390297 = addInt(res_12390297, 1);
+            res_12470297 = addInt(res_12470297, 1);
           }
       } while(false);
     } while(false);
     F.line = 1980;
-    result_10295221 = -1;
+    result_10290221 = -1;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_10295221;
+  return result_10290221;
 
 }
 function raiseRangeError() {
@@ -4537,21 +4488,21 @@ function substr_1571022(s_1571024, first_1571025, last_1571026) {
       F.line = 3020;
       var i_1571039 = 0;
       F.line = 66;
-      var colontmp__12390305 = 0;
+      var colontmp__12470305 = 0;
       F.line = 3020;
-      colontmp__12390305 = subInt(L_1571030, 1);
+      colontmp__12470305 = subInt(L_1571030, 1);
       F.line = 77;
-      var res_12390306 = 0;
+      var res_12470306 = 0;
       L2: do {
         F.line = 78;
           L3: while (true) {
-          if (!(res_12390306 <= colontmp__12390305)) break L3;
+          if (!(res_12470306 <= colontmp__12470305)) break L3;
             F.line = 3020;
-            i_1571039 = res_12390306;
+            i_1571039 = res_12470306;
             F.line = 3021;
             result_1571027[chckIndx(i_1571039, 0, (result_1571027).length-1)] = s_1571024[chckIndx(addInt(i_1571039, first_1571028), 0, (s_1571024).length-1)];
             F.line = 80;
-            res_12390306 = addInt(res_12390306, 1);
+            res_12470306 = addInt(res_12470306, 1);
           }
       } while(false);
     } while(false);
@@ -4572,56 +4523,56 @@ function substr_1571053(s_1571055, first_1571056) {
   return result_1571058;
 
 }
-function nsuInitSkipTable(a_10290081, sub_10290082) {
+function nsuInitSkipTable(a_10285081, sub_10285082) {
   var F={procname:"strutils.initSkipTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 1902;
-    var m_10290083 = (sub_10290082).length;
+    var m_10285083 = (sub_10285082).length;
     F.line = 1903;
-    var i_10290085 = 0;
+    var i_10285085 = 0;
     L1: do {
       F.line = 1904;
         L2: while (true) {
-        if (!(i_10290085 <= 248)) break L2;
+        if (!(i_10285085 <= 248)) break L2;
           F.line = 1905;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 0), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 0), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1906;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 1), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 1), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1907;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 2), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 2), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1908;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 3), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 3), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1909;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 4), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 4), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1910;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 5), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 5), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1911;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 6), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 6), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1912;
-          a_10290081[chckIndx(chckRange(addInt(i_10290085, 7), 0, 255), 0, (a_10290081).length-1)] = m_10290083;
+          a_10285081[chckIndx(chckRange(addInt(i_10285085, 7), 0, 255), 0, (a_10285081).length-1)] = m_10285083;
           F.line = 1913;
-          i_10290085 = addInt(i_10290085, 8);
+          i_10285085 = addInt(i_10285085, 8);
         }
     } while(false);
     L3: do {
       F.line = 1915;
-      var i_10290101 = 0;
+      var i_10285101 = 0;
       F.line = 104;
-      var colontmp__12390313 = 0;
+      var colontmp__12470313 = 0;
       F.line = 1915;
-      colontmp__12390313 = subInt(m_10290083, 1);
+      colontmp__12470313 = subInt(m_10285083, 1);
       F.line = 106;
-      var i_12390314 = 0;
+      var i_12470314 = 0;
       L4: do {
         F.line = 107;
           L5: while (true) {
-          if (!(i_12390314 < colontmp__12390313)) break L5;
+          if (!(i_12470314 < colontmp__12470313)) break L5;
             F.line = 1915;
-            i_10290101 = i_12390314;
+            i_10285101 = i_12470314;
             F.line = 1916;
-            a_10290081[chckIndx(sub_10290082[chckIndx(i_10290101, 0, (sub_10290082).length-1)], 0, (a_10290081).length-1)] = subInt(subInt(m_10290083, 1), i_10290101);
+            a_10285081[chckIndx(sub_10285082[chckIndx(i_10285101, 0, (sub_10285082).length-1)], 0, (a_10285081).length-1)] = subInt(subInt(m_10285083, 1), i_10285101);
             F.line = 109;
-            i_12390314 = addInt(i_12390314, 1);
+            i_12470314 = addInt(i_12470314, 1);
           }
       } while(false);
     } while(false);
@@ -4629,223 +4580,223 @@ function nsuInitSkipTable(a_10290081, sub_10290082) {
 
   
 }
-function nsuFindStrA(a_10290117, s_10290118, sub_10290119, start_10290120, last_10290121) {
+function nsuFindStrA(a_10285117, s_10285118, sub_10285119, start_10285120, last_10285121) {
     var Tmp1;
 
-  var result_10290123 = 0;
+  var result_10285123 = 0;
 
   var F={procname:"strutils.find",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 1926;
-    if ((last_10290121 == 0)) {
-    Tmp1 = (s_10290118).length - 1;
+    if ((last_10285121 == 0)) {
+    Tmp1 = (s_10285118).length - 1;
     }
     else {
-    Tmp1 = last_10290121;
+    Tmp1 = last_10285121;
     }
     
-    var last_10290125 = Tmp1;
+    var last_10285125 = Tmp1;
     F.line = 1927;
-    var subLast_10290126 = subInt((sub_10290119).length, 1);
-    if ((subLast_10290126 == -1)) {
+    var subLast_10285126 = subInt((sub_10285119).length, 1);
+    if ((subLast_10285126 == -1)) {
     F.line = 1932;
-    result_10290123 = start_10290120;
+    result_10285123 = start_10285120;
     break BeforeRet;
     }
     
     F.line = 1936;
-    var skip_10290127 = start_10290120;
+    var skip_10285127 = start_10285120;
     L2: do {
       F.line = 1938;
         L3: while (true) {
-        if (!(subLast_10290126 <= subInt(last_10290125, skip_10290127))) break L3;
+        if (!(subLast_10285126 <= subInt(last_10285125, skip_10285127))) break L3;
           F.line = 1939;
-          var i_10295001 = subLast_10290126;
+          var i_10290001 = subLast_10285126;
           L4: do {
             F.line = 1940;
               L5: while (true) {
-              if (!(s_10290118[chckIndx(addInt(skip_10290127, i_10295001), 0, (s_10290118).length-1)] == sub_10290119[chckIndx(i_10295001, 0, (sub_10290119).length-1)])) break L5;
-                if ((i_10295001 == 0)) {
+              if (!(s_10285118[chckIndx(addInt(skip_10285127, i_10290001), 0, (s_10285118).length-1)] == sub_10285119[chckIndx(i_10290001, 0, (sub_10285119).length-1)])) break L5;
+                if ((i_10290001 == 0)) {
                 F.line = 1942;
-                result_10290123 = skip_10290127;
+                result_10285123 = skip_10285127;
                 break BeforeRet;
                 }
                 
                 F.line = 1943;
-                i_10295001 = subInt(i_10295001, 1);
+                i_10290001 = subInt(i_10290001, 1);
               }
           } while(false);
           F.line = 1944;
-          skip_10290127 = addInt(skip_10290127, a_10290117[chckIndx(s_10290118[chckIndx(addInt(skip_10290127, subLast_10290126), 0, (s_10290118).length-1)], 0, (a_10290117).length-1)]);
+          skip_10285127 = addInt(skip_10285127, a_10285117[chckIndx(s_10285118[chckIndx(addInt(skip_10285127, subLast_10285126), 0, (s_10285118).length-1)], 0, (a_10285117).length-1)]);
         }
     } while(false);
     F.line = 1945;
-    result_10290123 = -1;
+    result_10285123 = -1;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_10290123;
+  return result_10285123;
 
 }
-function nsuReplaceStr(s_10365016, sub_10365017, by_10365018) {
-  var result_10365019 = [];
+function nsuReplaceStr(s_10360016, sub_10360017, by_10360018) {
+  var result_10360019 = [];
 
   var F={procname:"strutils.replace",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 2171;
-    result_10365019 = nimCopy(null, [], NTI1188013);
+    result_10360019 = nimCopy(null, [], NTI1188013);
     F.line = 2172;
-    var subLen_10365020 = (sub_10365017).length;
-    if ((subLen_10365020 == 0)) {
+    var subLen_10360020 = (sub_10360017).length;
+    if ((subLen_10360020 == 0)) {
     F.line = 2174;
-    result_10365019 = nimCopy(null, s_10365016, NTI1188013);
+    result_10360019 = nimCopy(null, s_10360016, NTI1188013);
     }
     else {
-    if ((subLen_10365020 == 1)) {
+    if ((subLen_10360020 == 1)) {
     F.line = 2178;
-    var c_10365021 = sub_10365017[chckIndx(0, 0, (sub_10365017).length-1)];
+    var c_10360021 = sub_10360017[chckIndx(0, 0, (sub_10360017).length-1)];
     F.line = 2179;
-    var last_10365023 = (s_10365016).length - 1;
+    var last_10360023 = (s_10360016).length - 1;
     F.line = 2180;
-    var i_10365025 = 0;
+    var i_10360025 = 0;
     L1: do {
       F.line = 2181;
         L2: while (true) {
         if (!true) break L2;
           F.line = 2182;
-          var j_10365026 = nsuFindChar(s_10365016, c_10365021, chckRange(i_10365025, 0, 2147483647), last_10365023);
-          if ((j_10365026 < 0)) {
+          var j_10360026 = nsuFindChar(s_10360016, c_10360021, chckRange(i_10360025, 0, 2147483647), last_10360023);
+          if ((j_10360026 < 0)) {
           F.line = 2183;
           break L1;
           }
           
           F.line = 2184;
-          result_10365019.push.apply(result_10365019, substr_1571022(s_10365016, i_10365025, subInt(j_10365026, 1)));;
+          result_10360019.push.apply(result_10360019, substr_1571022(s_10360016, i_10360025, subInt(j_10360026, 1)));;
           F.line = 2185;
-          result_10365019.push.apply(result_10365019, by_10365018);;
+          result_10360019.push.apply(result_10360019, by_10360018);;
           F.line = 2186;
-          i_10365025 = addInt(j_10365026, subLen_10365020);
+          i_10360025 = addInt(j_10360026, subLen_10360020);
         }
     } while(false);
     F.line = 2188;
-    result_10365019.push.apply(result_10365019, substr_1571053(s_10365016, i_10365025));;
+    result_10360019.push.apply(result_10360019, substr_1571053(s_10360016, i_10360025));;
     }
     else {
       F.line = 2190;
-      var a_10365027 = [new Int32Array(256)];
+      var a_10360027 = [new Int32Array(256)];
       F.line = 2191;
-      nsuInitSkipTable(a_10365027[0], sub_10365017);
+      nsuInitSkipTable(a_10360027[0], sub_10360017);
       F.line = 2192;
-      var last_10365030 = (s_10365016).length - 1;
+      var last_10360030 = (s_10360016).length - 1;
       F.line = 2193;
-      var i_10365032 = 0;
+      var i_10360032 = 0;
       L3: do {
         F.line = 2194;
           L4: while (true) {
           if (!true) break L4;
             F.line = 2195;
-            var j_10365033 = nsuFindStrA(a_10365027[0], s_10365016, sub_10365017, chckRange(i_10365032, 0, 2147483647), last_10365030);
-            if ((j_10365033 < 0)) {
+            var j_10360033 = nsuFindStrA(a_10360027[0], s_10360016, sub_10360017, chckRange(i_10360032, 0, 2147483647), last_10360030);
+            if ((j_10360033 < 0)) {
             F.line = 2196;
             break L3;
             }
             
             F.line = 2197;
-            result_10365019.push.apply(result_10365019, substr_1571022(s_10365016, i_10365032, subInt(j_10365033, 1)));;
+            result_10360019.push.apply(result_10360019, substr_1571022(s_10360016, i_10360032, subInt(j_10360033, 1)));;
             F.line = 2198;
-            result_10365019.push.apply(result_10365019, by_10365018);;
+            result_10360019.push.apply(result_10360019, by_10360018);;
             F.line = 2199;
-            i_10365032 = addInt(j_10365033, subLen_10365020);
+            i_10360032 = addInt(j_10360033, subLen_10360020);
           }
       } while(false);
       F.line = 2201;
-      result_10365019.push.apply(result_10365019, substr_1571053(s_10365016, i_10365032));;
+      result_10360019.push.apply(result_10360019, substr_1571053(s_10360016, i_10360032));;
     }
     }
   framePtr = F.prev;
 
-  return result_10365019;
+  return result_10360019;
 
 }
-function newSeq_10721230(len_10721233) {
-  var result_10721235 = [];
+function newSeq_10716243(len_10716246) {
+  var result_10716248 = [];
 
   var F={procname:"newSeq.newSeq",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 656;
-    result_10721235 = new Array(len_10721233); for (var i=0;i<len_10721233;++i) {result_10721235[i]=null;}  framePtr = F.prev;
+    result_10716248 = new Array(len_10716246); for (var i=0;i<len_10716246;++i) {result_10716248[i]=null;}  framePtr = F.prev;
 
-  return result_10721235;
+  return result_10716248;
 
 }
-function newLexer_10721149(source_10721151) {
-  var result_10721219 = null;
+function newLexer_10716162(source_10716164) {
+  var result_10716232 = null;
 
   var F={procname:"lexer.newLexer",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
   framePtr = F;
-    F.line = 64;
-    result_10721219 = {source: nsuReplaceStr(source_10721151, makeNimstrLit("\x09"), makeNimstrLit("    ")), start: 0, current: 0, line: 1, column: 1, tokens: newSeq_10721230(0), hadError: false, output: []};
+    F.line = 65;
+    result_10716232 = {source: nsuReplaceStr(source_10716164, makeNimstrLit("\x09"), makeNimstrLit("    ")), start: 0, current: 0, line: 1, column: 1, tokens: newSeq_10716243(0), hadError: false, output: []};
   framePtr = F.prev;
 
-  return result_10721219;
+  return result_10716232;
 
 }
-function warp_10721165(self_10721167) {
+function warp_10716178(self_10716180) {
   var F={procname:"lexer.warp",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
   framePtr = F;
-    F.line = 75;
-    self_10721167.column = ((self_10721167.column + ((self_10721167.current - self_10721167.start) >>> 0)) >>> 0);
     F.line = 76;
-    self_10721167.start = self_10721167.current;
+    self_10716180.column = ((self_10716180.column + ((self_10716180.current - self_10716180.start) >>> 0)) >>> 0);
+    F.line = 77;
+    self_10716180.start = self_10716180.current;
   framePtr = F.prev;
 
   
 }
-function skipWhitespace_10721181(self_10721183) {
+function skipWhitespace_10716194(self_10716196) {
   var F={procname:"lexer.skipWhitespace",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
   framePtr = F;
-    F.line = 79;
-    var comment_10721355 = false;
+    F.line = 80;
+    var comment_10716368 = false;
     L1: do {
-      F.line = 80;
+      F.line = 81;
         L2: while (true) {
-        if (!!(((self_10721183.source).length <= chckRange(self_10721183.current, -2147483648, 2147483647)))) break L2;
-          F.line = 81;
-          switch (self_10721183.source[chckIndx(self_10721183.current, 0, (self_10721183.source).length-1)]) {
+        if (!!(((self_10716196.source).length <= chckRange(self_10716196.current, -2147483648, 2147483647)))) break L2;
+          F.line = 82;
+          switch (self_10716196.source[chckIndx(self_10716196.current, 0, (self_10716196.source).length-1)]) {
           case 32:
             break;
           case 10:
           case 13:
-            F.line = 84;
-            self_10721183.line = ((self_10721183.line + 1) >>> 0);
             F.line = 85;
-            self_10721183.column = 1;
-            if (comment_10721355) {
+            self_10716196.line = ((self_10716196.line + 1) >>> 0);
             F.line = 86;
-            comment_10721355 = false;
+            self_10716196.column = 1;
+            if (comment_10716368) {
+            F.line = 87;
+            comment_10716368 = false;
             }
             
             break;
           case 59:
-            F.line = 88;
-            comment_10721355 = true;
+            F.line = 89;
+            comment_10716368 = true;
             break;
           default: 
-            if (!(comment_10721355)) {
-            F.line = 90;
+            if (!(comment_10716368)) {
+            F.line = 91;
             break L1;
             }
             
             break;
           }
-          F.line = 91;
-          self_10721183.current = ((self_10721183.current + 1) >>> 0);
+          F.line = 92;
+          self_10716196.current = ((self_10716196.current + 1) >>> 0);
         }
     } while(false);
-    F.line = 92;
-    warp_10721165(self_10721183);
+    F.line = 93;
+    warp_10716178(self_10716196);
   framePtr = F.prev;
 
   
@@ -4867,194 +4818,194 @@ function raiseDivByZero() {
 
   
 }
-function parseSaturatedNatural_2425017(s_2425019, b_2425021, b_2425021_Idx, start_2425022) {
+function parseSaturatedNatural_2420017(s_2420019, b_2420021, b_2420021_Idx, start_2420022) {
       var Tmp1;
           var Tmp4;
 
-  var result_2425024 = 0;
+  var result_2420024 = 0;
 
   var F={procname:"parseutils.parseSaturatedNatural",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 490;
-    var i_2425025 = start_2425022;
-    if (((i_2425025 < (s_2425019).length) && (s_2425019[chckIndx(i_2425025, 0, (s_2425019).length-1)] == 43))) {
+    var i_2420025 = start_2420022;
+    if (((i_2420025 < (s_2420019).length) && (s_2420019[chckIndx(i_2420025, 0, (s_2420019).length-1)] == 43))) {
     F.line = 491;
-    i_2425025 = addInt(i_2425025, 1);
+    i_2420025 = addInt(i_2420025, 1);
     }
     
-      if (!(i_2425025 < (s_2425019).length)) Tmp1 = false; else {        Tmp1 = (ConstSet9[s_2425019[chckIndx(i_2425025, 0, (s_2425019).length-1)]] != undefined);      }    if (Tmp1) {
+      if (!(i_2420025 < (s_2420019).length)) Tmp1 = false; else {        Tmp1 = (ConstSet9[s_2420019[chckIndx(i_2420025, 0, (s_2420019).length-1)]] != undefined);      }    if (Tmp1) {
     F.line = 493;
-    b_2425021[b_2425021_Idx] = 0;
+    b_2420021[b_2420021_Idx] = 0;
     L2: do {
       F.line = 494;
         L3: while (true) {
-          if (!(i_2425025 < (s_2425019).length)) Tmp4 = false; else {            Tmp4 = (ConstSet10[s_2425019[chckIndx(i_2425025, 0, (s_2425019).length-1)]] != undefined);          }        if (!Tmp4) break L3;
+          if (!(i_2420025 < (s_2420019).length)) Tmp4 = false; else {            Tmp4 = (ConstSet10[s_2420019[chckIndx(i_2420025, 0, (s_2420019).length-1)]] != undefined);          }        if (!Tmp4) break L3;
           F.line = 495;
-          var c_2435016 = subInt(s_2425019[chckIndx(i_2425025, 0, (s_2425019).length-1)], 48);
-          if ((b_2425021[b_2425021_Idx] <= divInt(subInt(2147483647, c_2435016), 10))) {
+          var c_2430016 = subInt(s_2420019[chckIndx(i_2420025, 0, (s_2420019).length-1)], 48);
+          if ((b_2420021[b_2420021_Idx] <= divInt(subInt(2147483647, c_2430016), 10))) {
           F.line = 497;
-          b_2425021[b_2425021_Idx] = addInt(mulInt(b_2425021[b_2425021_Idx], 10), c_2435016);
+          b_2420021[b_2420021_Idx] = addInt(mulInt(b_2420021[b_2420021_Idx], 10), c_2430016);
           }
           else {
             F.line = 499;
-            b_2425021[b_2425021_Idx] = 2147483647;
+            b_2420021[b_2420021_Idx] = 2147483647;
           }
           
           F.line = 500;
-          i_2425025 = addInt(i_2425025, 1);
+          i_2420025 = addInt(i_2420025, 1);
           L5: do {
             F.line = 501;
               L6: while (true) {
-              if (!((i_2425025 < (s_2425019).length) && (s_2425019[chckIndx(i_2425025, 0, (s_2425019).length-1)] == 95))) break L6;
+              if (!((i_2420025 < (s_2420019).length) && (s_2420019[chckIndx(i_2420025, 0, (s_2420019).length-1)] == 95))) break L6;
                 F.line = 501;
-                i_2425025 = addInt(i_2425025, 1);
+                i_2420025 = addInt(i_2420025, 1);
               }
           } while(false);
         }
     } while(false);
     F.line = 502;
-    result_2425024 = subInt(i_2425025, start_2425022);
+    result_2420024 = subInt(i_2420025, start_2420022);
     }
     
   framePtr = F.prev;
 
-  return result_2425024;
+  return result_2420024;
 
 }
-function HEX5BHEX5D_5835068(s_5835072, x_5835074) {
-  var result_5835075 = [];
+function HEX5BHEX5D_5830068(s_5830072, x_5830074) {
+  var result_5830075 = [];
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 2507;
-    var a_5835201 = x_5835074.a;
+    var a_5830201 = x_5830074.a;
     F.line = 2508;
-    var L_5835401 = addInt(subInt(subInt((s_5835072).length, x_5835074.b), a_5835201), 1);
+    var L_5830401 = addInt(subInt(subInt((s_5830072).length, x_5830074.b), a_5830201), 1);
     F.line = 2509;
-    result_5835075 = nimCopy(null, mnewString(chckRange(L_5835401, 0, 2147483647)), NTI1188013);
+    result_5830075 = nimCopy(null, mnewString(chckRange(L_5830401, 0, 2147483647)), NTI1188013);
     L1: do {
       F.line = 2510;
-      var i_5835409 = 0;
+      var i_5830409 = 0;
       F.line = 106;
-      var i_12390343 = 0;
+      var i_12470343 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12390343 < L_5835401)) break L3;
+          if (!(i_12470343 < L_5830401)) break L3;
             F.line = 2510;
-            i_5835409 = i_12390343;
+            i_5830409 = i_12470343;
             F.line = 2510;
-            result_5835075[chckIndx(i_5835409, 0, (result_5835075).length-1)] = s_5835072[chckIndx(addInt(i_5835409, a_5835201), 0, (s_5835072).length-1)];
+            result_5830075[chckIndx(i_5830409, 0, (result_5830075).length-1)] = s_5830072[chckIndx(addInt(i_5830409, a_5830201), 0, (s_5830072).length-1)];
             F.line = 109;
-            i_12390343 = addInt(i_12390343, 1);
+            i_12470343 = addInt(i_12470343, 1);
           }
       } while(false);
     } while(false);
   framePtr = F.prev;
 
-  return result_5835075;
+  return result_5830075;
 
 }
-function HEX2EHEX2E_5835001(a_5835006, b_5835008) {
-  var result_5835014 = ({a: 0, b: 0});
+function HEX2EHEX2E_5830001(a_5830006, b_5830008) {
+  var result_5830014 = ({a: 0, b: 0});
 
   var F={procname:".....",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 481;
-    nimCopy(result_5835014, {a: a_5835006, b: b_5835008}, NTI5835011);
+    nimCopy(result_5830014, {a: a_5830006, b: b_5830008}, NTI5830011);
   framePtr = F.prev;
 
-  return result_5835014;
+  return result_5830014;
 
 }
-function parseStandardFormatSpecifier_10605322(s_10605324, start_10605325, ignoreUnknownSuffix_10605327) {
+function parseStandardFormatSpecifier_10600322(s_10600324, start_10600325, ignoreUnknownSuffix_10600327) {
       var Tmp1;
       var Tmp2;
       var Tmp3;
 
-  var result_10605328 = ({fill: 0, align: 0, sign: 0, alternateForm: false, padWithZero: false, minimumWidth: 0, precision: 0, typ: 0, endPosition: 0});
+  var result_10600328 = ({fill: 0, align: 0, sign: 0, alternateForm: false, padWithZero: false, minimumWidth: 0, precision: 0, typ: 0, endPosition: 0});
 
   var F={procname:"strformat.parseStandardFormatSpecifier",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
   framePtr = F;
     F.line = 424;
-    result_10605328.fill = 32;
+    result_10600328.fill = 32;
     F.line = 425;
-    result_10605328.align = 0;
+    result_10600328.align = 0;
     F.line = 426;
-    result_10605328.sign = 45;
+    result_10600328.sign = 45;
     F.line = 427;
-    var i_10605331 = start_10605325;
-    if (((addInt(i_10605331, 1) < (s_10605324).length) && (ConstSet5[s_10605324[chckIndx(addInt(i_10605331, 1), 0, (s_10605324).length-1)]] != undefined))) {
+    var i_10600331 = start_10600325;
+    if (((addInt(i_10600331, 1) < (s_10600324).length) && (ConstSet5[s_10600324[chckIndx(addInt(i_10600331, 1), 0, (s_10600324).length-1)]] != undefined))) {
     F.line = 429;
-    result_10605328.fill = s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)];
+    result_10600328.fill = s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)];
     F.line = 430;
-    result_10605328.align = s_10605324[chckIndx(addInt(i_10605331, 1), 0, (s_10605324).length-1)];
+    result_10600328.align = s_10600324[chckIndx(addInt(i_10600331, 1), 0, (s_10600324).length-1)];
     F.line = 431;
-    i_10605331 = addInt(i_10605331, 2);
+    i_10600331 = addInt(i_10600331, 2);
     }
     else {
-    if (((i_10605331 < (s_10605324).length) && (ConstSet6[s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)]] != undefined))) {
+    if (((i_10600331 < (s_10600324).length) && (ConstSet6[s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)]] != undefined))) {
     F.line = 433;
-    result_10605328.align = s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)];
+    result_10600328.align = s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)];
     F.line = 434;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     }
     }
-    if (((i_10605331 < (s_10605324).length) && (ConstSet7[s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)]] != undefined))) {
+    if (((i_10600331 < (s_10600324).length) && (ConstSet7[s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)]] != undefined))) {
     F.line = 437;
-    result_10605328.sign = s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)];
+    result_10600328.sign = s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)];
     F.line = 438;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     }
     
-    if (((i_10605331 < (s_10605324).length) && (s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)] == 35))) {
+    if (((i_10600331 < (s_10600324).length) && (s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)] == 35))) {
     F.line = 441;
-    result_10605328.alternateForm = true;
+    result_10600328.alternateForm = true;
     F.line = 442;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     }
     
-      if (!((addInt(i_10605331, 1) < (s_10605324).length) && (s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)] == 48))) Tmp1 = false; else {        Tmp1 = (ConstSet8[s_10605324[chckIndx(addInt(i_10605331, 1), 0, (s_10605324).length-1)]] != undefined);      }    if (Tmp1) {
+      if (!((addInt(i_10600331, 1) < (s_10600324).length) && (s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)] == 48))) Tmp1 = false; else {        Tmp1 = (ConstSet8[s_10600324[chckIndx(addInt(i_10600331, 1), 0, (s_10600324).length-1)]] != undefined);      }    if (Tmp1) {
     F.line = 445;
-    result_10605328.padWithZero = true;
+    result_10600328.padWithZero = true;
     F.line = 446;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     }
     
     F.line = 448;
-    var parsedLength_10625015 = parseSaturatedNatural_2425017(s_10605324, result_10605328, "minimumWidth", i_10605331);
+    var parsedLength_10620015 = parseSaturatedNatural_2420017(s_10600324, result_10600328, "minimumWidth", i_10600331);
     F.line = 449;
-    i_10605331 = addInt(i_10605331, parsedLength_10625015);
-    if (((i_10605331 < (s_10605324).length) && (s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)] == 46))) {
+    i_10600331 = addInt(i_10600331, parsedLength_10620015);
+    if (((i_10600331 < (s_10600324).length) && (s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)] == 46))) {
     F.line = 451;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     F.line = 452;
-    var parsedLengthB_10625029 = parseSaturatedNatural_2425017(s_10605324, result_10605328, "precision", i_10605331);
+    var parsedLengthB_10620029 = parseSaturatedNatural_2420017(s_10600324, result_10600328, "precision", i_10600331);
     F.line = 453;
-    i_10605331 = addInt(i_10605331, parsedLengthB_10625029);
+    i_10600331 = addInt(i_10600331, parsedLengthB_10620029);
     }
     else {
       F.line = 455;
-      result_10605328.precision = -1;
+      result_10600328.precision = -1;
     }
     
-      if (!(i_10605331 < (s_10605324).length)) Tmp2 = false; else {        Tmp2 = (ConstSet11[s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)]] != undefined);      }    if (Tmp2) {
+      if (!(i_10600331 < (s_10600324).length)) Tmp2 = false; else {        Tmp2 = (ConstSet11[s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)]] != undefined);      }    if (Tmp2) {
     F.line = 458;
-    result_10605328.typ = s_10605324[chckIndx(i_10605331, 0, (s_10605324).length-1)];
+    result_10600328.typ = s_10600324[chckIndx(i_10600331, 0, (s_10600324).length-1)];
     F.line = 459;
-    i_10605331 = addInt(i_10605331, 1);
+    i_10600331 = addInt(i_10600331, 1);
     }
     
     F.line = 460;
-    result_10605328.endPosition = i_10605331;
-      if (!!((i_10605331 == (s_10605324).length))) Tmp3 = false; else {        Tmp3 = !(ignoreUnknownSuffix_10605327);      }    if (Tmp3) {
+    result_10600328.endPosition = i_10600331;
+      if (!!((i_10600331 == (s_10600324).length))) Tmp3 = false; else {        Tmp3 = !(ignoreUnknownSuffix_10600327);      }    if (Tmp3) {
     F.line = 462;
-    raiseException({message: (makeNimstrLit("invalid format string, cannot parse: ") || []).concat(HEX5BHEX5D_5835068(s_10605324, HEX2EHEX2E_5835001(i_10605331, 1)) || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+    raiseException({message: (makeNimstrLit("invalid format string, cannot parse: ") || []).concat(HEX5BHEX5D_5830068(s_10600324, HEX2EHEX2E_5830001(i_10600331, 1)) || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
     }
     
   framePtr = F.prev;
 
-  return result_10605328;
+  return result_10600328;
 
 }
 function sysFatal_1305418(message_1305422) {
@@ -5084,215 +5035,215 @@ function failedAssertImpl_1305480(msg_1305482) {
 
   
 }
-function mkDigit_10596014(v_10596016, typ_10596017) {
+function mkDigit_10591014(v_10591016, typ_10591017) {
       var Tmp1;
 
-  var result_10596018 = [];
+  var result_10591018 = [];
 
   var F={procname:"strformat.mkDigit",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
   framePtr = F;
-    if (!((v_10596016 < 26))) {
+    if (!((v_10591016 < 26))) {
     F.line = 315;
     failedAssertImpl_1305480(makeNimstrLit("/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim(315, 9) `v < 26` "));
     }
     
-    if ((v_10596016 < 10)) {
+    if ((v_10591016 < 10)) {
     F.line = 317;
-    result_10596018 = nimCopy(null, nimCharToStr(chckRange(addInt(48, v_10596016), 0, 255)), NTI1188013);
+    result_10591018 = nimCopy(null, nimCharToStr(chckRange(addInt(48, v_10591016), 0, 255)), NTI1188013);
     }
     else {
       F.line = 319;
-      if ((typ_10596017 == 120)) {
+      if ((typ_10591017 == 120)) {
       Tmp1 = 97;
       }
       else {
       Tmp1 = 65;
       }
       
-      result_10596018 = nimCopy(null, nimCharToStr(chckRange(subInt(addInt(Tmp1, v_10596016), 10), 0, 255)), NTI1188013);
+      result_10591018 = nimCopy(null, nimCharToStr(chckRange(subInt(addInt(Tmp1, v_10591016), 10), 0, 255)), NTI1188013);
     }
     
   framePtr = F.prev;
 
-  return result_10596018;
+  return result_10591018;
 
 }
-function nsuRepeatChar(c_10120124, count_10120125) {
-  var result_10120126 = [];
+function nsuRepeatChar(c_10115124, count_10115125) {
+  var result_10115126 = [];
 
   var F={procname:"strutils.repeat",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 1368;
-    result_10120126 = nimCopy(null, mnewString(count_10120125), NTI1188013);
+    result_10115126 = nimCopy(null, mnewString(count_10115125), NTI1188013);
     L1: do {
       F.line = 1369;
-      var i_10120135 = 0;
+      var i_10115135 = 0;
       F.line = 66;
-      var colontmp__12390360 = 0;
+      var colontmp__12470360 = 0;
       F.line = 1369;
-      colontmp__12390360 = subInt(count_10120125, 1);
+      colontmp__12470360 = subInt(count_10115125, 1);
       F.line = 77;
-      var res_12390361 = 0;
+      var res_12470361 = 0;
       L2: do {
         F.line = 78;
           L3: while (true) {
-          if (!(res_12390361 <= colontmp__12390360)) break L3;
+          if (!(res_12470361 <= colontmp__12470360)) break L3;
             F.line = 1369;
-            i_10120135 = res_12390361;
+            i_10115135 = res_12470361;
             F.line = 1369;
-            result_10120126[chckIndx(i_10120135, 0, (result_10120126).length-1)] = c_10120124;
+            result_10115126[chckIndx(i_10115135, 0, (result_10115126).length-1)] = c_10115124;
             F.line = 80;
-            res_12390361 = addInt(res_12390361, 1);
+            res_12470361 = addInt(res_12470361, 1);
           }
       } while(false);
     } while(false);
   framePtr = F.prev;
 
-  return result_10120126;
+  return result_10115126;
 
 }
-function formatInt_10810002(n_10810005, radix_10810006, spec_10810007) {
+function formatInt_10800002(n_10800005, radix_10800006, spec_10800007) {
     var Tmp7;
 
-  var result_10810008 = [];
+  var result_10800008 = [];
 
   var F={procname:"formatInt.formatInt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
   framePtr = F;
     F.line = 360;
-    var v_10810201 = n_10810005;
+    var v_10800201 = n_10800005;
     F.line = 361;
-    var negative_10810202 = false;
+    var negative_10800202 = false;
     F.line = 369;
-    var xx_10810203 = [];
-    if (spec_10810007.alternateForm) {
+    var xx_10800203 = [];
+    if (spec_10800007.alternateForm) {
     F.line = 371;
-    switch (spec_10810007.typ) {
+    switch (spec_10800007.typ) {
     case 88:
       F.line = 372;
-      xx_10810203 = nimCopy(null, makeNimstrLit("0x"), NTI1188013);
+      xx_10800203 = nimCopy(null, makeNimstrLit("0x"), NTI1188013);
       break;
     case 120:
       F.line = 373;
-      xx_10810203 = nimCopy(null, makeNimstrLit("0x"), NTI1188013);
+      xx_10800203 = nimCopy(null, makeNimstrLit("0x"), NTI1188013);
       break;
     case 98:
       F.line = 374;
-      xx_10810203 = nimCopy(null, makeNimstrLit("0b"), NTI1188013);
+      xx_10800203 = nimCopy(null, makeNimstrLit("0b"), NTI1188013);
       break;
     case 111:
       F.line = 375;
-      xx_10810203 = nimCopy(null, makeNimstrLit("0o"), NTI1188013);
+      xx_10800203 = nimCopy(null, makeNimstrLit("0o"), NTI1188013);
       break;
     default: 
       break;
     }
     }
     
-    if ((v_10810201 == 0)) {
+    if ((v_10800201 == 0)) {
     F.line = 379;
-    result_10810008 = nimCopy(null, makeNimstrLit("0"), NTI1188013);
+    result_10800008 = nimCopy(null, makeNimstrLit("0"), NTI1188013);
     }
     else {
       F.line = 381;
-      result_10810008 = nimCopy(null, [], NTI1188013);
+      result_10800008 = nimCopy(null, [], NTI1188013);
       L1: do {
         F.line = 382;
           L2: while (true) {
-          if (!(0 < v_10810201)) break L2;
+          if (!(0 < v_10800201)) break L2;
             F.line = 383;
-            var d_10810206 = (v_10810201 % radix_10810006);
+            var d_10800206 = (v_10800201 % radix_10800006);
             F.line = 384;
-            v_10810201 = ((v_10810201 / radix_10810006) );
+            v_10800201 = ((v_10800201 / radix_10800006) );
             F.line = 385;
-            result_10810008.push.apply(result_10810008, mkDigit_10596014(chckRange(d_10810206, -2147483648, 2147483647), spec_10810007.typ));;
+            result_10800008.push.apply(result_10800008, mkDigit_10591014(chckRange(d_10800206, -2147483648, 2147483647), spec_10800007.typ));;
           }
       } while(false);
       L3: do {
         F.line = 386;
-        var idx_10810215 = 0;
+        var idx_10800215 = 0;
         F.line = 104;
-        var colontmp__12390350 = 0;
+        var colontmp__12470350 = 0;
         F.line = 386;
-        colontmp__12390350 = divInt((result_10810008).length, 2);
+        colontmp__12470350 = divInt((result_10800008).length, 2);
         F.line = 106;
-        var i_12390351 = 0;
+        var i_12470351 = 0;
         L4: do {
           F.line = 107;
             L5: while (true) {
-            if (!(i_12390351 < colontmp__12390350)) break L5;
+            if (!(i_12470351 < colontmp__12470350)) break L5;
               F.line = 386;
-              idx_10810215 = i_12390351;
+              idx_10800215 = i_12470351;
               F.line = 387;
-              var Tmp6 = result_10810008[chckIndx(idx_10810215, 0, (result_10810008).length-1)]; result_10810008[chckIndx(idx_10810215, 0, (result_10810008).length-1)] = result_10810008[chckIndx(subInt(subInt((result_10810008).length, idx_10810215), 1), 0, (result_10810008).length-1)]; result_10810008[chckIndx(subInt(subInt((result_10810008).length, idx_10810215), 1), 0, (result_10810008).length-1)] = Tmp6;              F.line = 109;
-              i_12390351 = addInt(i_12390351, 1);
+              var Tmp6 = result_10800008[chckIndx(idx_10800215, 0, (result_10800008).length-1)]; result_10800008[chckIndx(idx_10800215, 0, (result_10800008).length-1)] = result_10800008[chckIndx(subInt(subInt((result_10800008).length, idx_10800215), 1), 0, (result_10800008).length-1)]; result_10800008[chckIndx(subInt(subInt((result_10800008).length, idx_10800215), 1), 0, (result_10800008).length-1)] = Tmp6;              F.line = 109;
+              i_12470351 = addInt(i_12470351, 1);
             }
         } while(false);
       } while(false);
     }
     
-    if (spec_10810007.padWithZero) {
+    if (spec_10800007.padWithZero) {
     F.line = 389;
-    if (negative_10810202) Tmp7 = true; else {      Tmp7 = !((spec_10810007.sign == 45));    }    var sign_10820008 = Tmp7;
+    if (negative_10800202) Tmp7 = true; else {      Tmp7 = !((spec_10800007.sign == 45));    }    var sign_10810008 = Tmp7;
     F.line = 390;
-    var toFill_10820013 = subInt(subInt(subInt(spec_10810007.minimumWidth, (result_10810008).length), (xx_10810203).length), (sign_10820008 ? 1:0));
-    if ((0 < toFill_10820013)) {
+    var toFill_10810013 = subInt(subInt(subInt(spec_10800007.minimumWidth, (result_10800008).length), (xx_10800203).length), (sign_10810008 ? 1:0));
+    if ((0 < toFill_10810013)) {
     F.line = 392;
-    result_10810008 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_10820013, 0, 2147483647)) || []).concat(result_10810008 || []), NTI1188013);
+    result_10800008 = nimCopy(null, (nsuRepeatChar(48, chckRange(toFill_10810013, 0, 2147483647)) || []).concat(result_10800008 || []), NTI1188013);
     }
     
     }
     
-    if (negative_10810202) {
+    if (negative_10800202) {
     F.line = 395;
-    result_10810008 = nimCopy(null, (makeNimstrLit("-") || []).concat(xx_10810203 || [],result_10810008 || []), NTI1188013);
+    result_10800008 = nimCopy(null, (makeNimstrLit("-") || []).concat(xx_10800203 || [],result_10800008 || []), NTI1188013);
     }
     else {
-    if (!((spec_10810007.sign == 45))) {
+    if (!((spec_10800007.sign == 45))) {
     F.line = 397;
-    result_10810008 = nimCopy(null, [spec_10810007.sign].concat(xx_10810203 || [],result_10810008 || []), NTI1188013);
+    result_10800008 = nimCopy(null, [spec_10800007.sign].concat(xx_10800203 || [],result_10800008 || []), NTI1188013);
     }
     else {
       F.line = 399;
-      result_10810008 = nimCopy(null, (xx_10810203 || []).concat(result_10810008 || []), NTI1188013);
+      result_10800008 = nimCopy(null, (xx_10800203 || []).concat(result_10800008 || []), NTI1188013);
     }
     }
-    if ((spec_10810007.align == 60)) {
+    if ((spec_10800007.align == 60)) {
     L8: do {
       F.line = 402;
-      var i_10820019 = 0;
+      var i_10810019 = 0;
       F.line = 104;
-      var colontmp__12390354 = 0;
+      var colontmp__12470354 = 0;
       F.line = 402;
-      colontmp__12390354 = (result_10810008).length;
+      colontmp__12470354 = (result_10800008).length;
       F.line = 106;
-      var i_12390355 = colontmp__12390354;
+      var i_12470355 = colontmp__12470354;
       L9: do {
         F.line = 107;
           L10: while (true) {
-          if (!(i_12390355 < spec_10810007.minimumWidth)) break L10;
+          if (!(i_12470355 < spec_10800007.minimumWidth)) break L10;
             F.line = 402;
-            i_10820019 = i_12390355;
+            i_10810019 = i_12470355;
             F.line = 403;
-            addChar(result_10810008, spec_10810007.fill);;
+            addChar(result_10800008, spec_10800007.fill);;
             F.line = 109;
-            i_12390355 = addInt(i_12390355, 1);
+            i_12470355 = addInt(i_12470355, 1);
           }
       } while(false);
     } while(false);
     }
     else {
       F.line = 405;
-      var toFill_10820020 = subInt(spec_10810007.minimumWidth, (result_10810008).length);
-      if ((spec_10810007.align == 94)) {
+      var toFill_10810020 = subInt(spec_10800007.minimumWidth, (result_10800008).length);
+      if ((spec_10800007.align == 94)) {
       F.line = 407;
-      var half_10820021 = divInt(toFill_10820020, 2);
+      var half_10810021 = divInt(toFill_10810020, 2);
       F.line = 408;
-      result_10810008 = nimCopy(null, (nsuRepeatChar(spec_10810007.fill, chckRange(half_10820021, 0, 2147483647)) || []).concat(result_10810008 || [],nsuRepeatChar(spec_10810007.fill, chckRange(subInt(toFill_10820020, half_10820021), 0, 2147483647)) || []), NTI1188013);
+      result_10800008 = nimCopy(null, (nsuRepeatChar(spec_10800007.fill, chckRange(half_10810021, 0, 2147483647)) || []).concat(result_10800008 || [],nsuRepeatChar(spec_10800007.fill, chckRange(subInt(toFill_10810020, half_10810021), 0, 2147483647)) || []), NTI1188013);
       }
       else {
-        if ((0 < toFill_10820020)) {
+        if ((0 < toFill_10810020)) {
         F.line = 411;
-        result_10810008 = nimCopy(null, (nsuRepeatChar(spec_10810007.fill, chckRange(toFill_10820020, 0, 2147483647)) || []).concat(result_10810008 || []), NTI1188013);
+        result_10800008 = nimCopy(null, (nsuRepeatChar(spec_10800007.fill, chckRange(toFill_10810020, 0, 2147483647)) || []).concat(result_10800008 || []), NTI1188013);
         }
         
       }
@@ -5301,55 +5252,55 @@ function formatInt_10810002(n_10810005, radix_10810006, spec_10810007) {
     
   framePtr = F.prev;
 
-  return result_10810008;
+  return result_10800008;
 
 }
-function formatValue_10805001(result_10805004, result_10805004_Idx, value_10805005, specifier_10805006) {
+function formatValue_10795001(result_10795004, result_10795004_Idx, value_10795005, specifier_10795006) {
   var F={procname:"formatValue.formatValue",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (((specifier_10805006).length == 0)) {
+    if (((specifier_10795006).length == 0)) {
     F.line = 471;
-    result_10805004[result_10805004_Idx].push.apply(result_10805004[result_10805004_Idx], HEX24_1365066(value_10805005));;
+    result_10795004[result_10795004_Idx].push.apply(result_10795004[result_10795004_Idx], HEX24_1365066(value_10795005));;
     F.line = 472;
     break BeforeRet;
     }
     
     F.line = 473;
-    var spec_10805007 = parseStandardFormatSpecifier_10605322(specifier_10805006, 0, false);
+    var spec_10795007 = parseStandardFormatSpecifier_10600322(specifier_10795006, 0, false);
     F.line = 474;
-    var radix_10805009 = 10;
+    var radix_10795009 = 10;
     F.line = 475;
-    switch (spec_10805007.typ) {
+    switch (spec_10795007.typ) {
     case 120:
     case 88:
       F.line = 476;
-      radix_10805009 = 16;
+      radix_10795009 = 16;
       break;
     case 100:
     case 0:
       break;
     case 98:
       F.line = 478;
-      radix_10805009 = 2;
+      radix_10795009 = 2;
       break;
     case 111:
       F.line = 479;
-      radix_10805009 = 8;
+      radix_10795009 = 8;
       break;
     default: 
       F.line = 481;
-      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_10805007.typ]), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("invalid type in format string for number, expected one  of \'x\', \'X\', \'b\', \'d\', \'o\' but got: ") || []).concat([spec_10795007.typ]), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
       break;
     }
     F.line = 484;
-    result_10805004[result_10805004_Idx].push.apply(result_10805004[result_10805004_Idx], formatInt_10810002(value_10805005, radix_10805009, spec_10805007));;
+    result_10795004[result_10795004_Idx].push.apply(result_10795004[result_10795004_Idx], formatInt_10800002(value_10795005, radix_10795009, spec_10795007));;
   } while (false);
   framePtr = F.prev;
 
   
 }
-function chomp_10721197(self_10721199) {
+function chomp_10716210(self_10716212) {
       var Tmp1;
         var Tmp2;
         var Tmp3;
@@ -5363,130 +5314,141 @@ function chomp_10721197(self_10721199) {
   var F={procname:"lexer.chomp",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-      if ((ConstSet2[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined)) Tmp1 = true; else {        if (!(self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 45)) Tmp3 = false; else {          Tmp3 = !((chckRange(((self_10721199.current + 1) >>> 0), -2147483648, 2147483647) == (self_10721199.source).length));        }        if (!Tmp3) Tmp2 = false; else {          Tmp2 = (ConstSet3[self_10721199.source[chckIndx(((self_10721199.current + 1) >>> 0), 0, (self_10721199.source).length-1)]] != undefined);        }        Tmp1 = Tmp2;      }    if (Tmp1) {
-    if ((self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 45)) {
-    F.line = 100;
-    self_10721199.current = ((self_10721199.current + 1) >>> 0);
+      if ((ConstSet2[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined)) Tmp1 = true; else {        if (!(self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 45)) Tmp3 = false; else {          Tmp3 = !((chckRange(((self_10716212.current + 1) >>> 0), -2147483648, 2147483647) == (self_10716212.source).length));        }        if (!Tmp3) Tmp2 = false; else {          Tmp2 = (ConstSet3[self_10716212.source[chckIndx(((self_10716212.current + 1) >>> 0), 0, (self_10716212.source).length-1)]] != undefined);        }        Tmp1 = Tmp2;      }    if (Tmp1) {
+    if ((self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 45)) {
+    F.line = 101;
+    self_10716212.current = ((self_10716212.current + 1) >>> 0);
     }
     
-    F.line = 102;
-    var isFloat_10765011 = false;
+    F.line = 103;
+    var isFloat_10760011 = false;
     L4: do {
-      F.line = 103;
+      F.line = 104;
         L5: while (true) {
-          if (!!(((self_10721199.source).length <= chckRange(self_10721199.current, -2147483648, 2147483647)))) Tmp6 = false; else {            Tmp6 = (ConstSet4[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined);          }        if (!Tmp6) break L5;
-            if (!(self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 46)) Tmp7 = false; else {              Tmp7 = isFloat_10765011;            }          if (Tmp7) {
-          F.line = 32;
-          F.line = 28;
-          var fmtRes_10800001 = [mnewString(0)];
-          F.line = 28;
-          formatValue_10805001(fmtRes_10800001, 0, self_10721199.line, []);
-          F.line = 28;
-          fmtRes_10800001[0].push.apply(fmtRes_10800001[0], makeNimstrLit(":"));;
-          F.line = 28;
-          formatValue_10805001(fmtRes_10800001, 0, self_10721199.column, []);
-          F.line = 105;
-          var fmtRes_10790008 = mnewString(0);
-          F.line = 105;
-          fmtRes_10790008.push.apply(fmtRes_10790008, makeNimstrLit("Bad number signature"));;
-          self_10721199.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10800001[0] || [],makeNimstrLit(") ") || [],fmtRes_10790008 || []), NTI1188013);
+          if (!!(((self_10716212.source).length <= chckRange(self_10716212.current, -2147483648, 2147483647)))) Tmp6 = false; else {            Tmp6 = (ConstSet4[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined);          }        if (!Tmp6) break L5;
+            if (!(self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 46)) Tmp7 = false; else {              Tmp7 = isFloat_10760011;            }          if (Tmp7) {
           F.line = 33;
-          self_10721199.hadError = true;
-          F.line = 106;
+          F.line = 29;
+          var fmtRes_10790004 = [mnewString(0)];
+          F.line = 29;
+          formatValue_10795001(fmtRes_10790004, 0, self_10716212.line, []);
+          F.line = 29;
+          fmtRes_10790004[0].push.apply(fmtRes_10790004[0], makeNimstrLit(":"));;
+          F.line = 29;
+          formatValue_10795001(fmtRes_10790004, 0, self_10716212.column, []);
+          self_10716212.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10790004[0] || [],makeNimstrLit(") Bad number signature") || []), NTI1188013);
+          F.line = 34;
+          self_10716212.hadError = true;
+          F.line = 107;
           break L4;
           }
           else {
-            if (!(self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 46)) Tmp8 = false; else {              Tmp8 = !(isFloat_10765011);            }          if (Tmp8) {
-          F.line = 108;
-          isFloat_10765011 = true;
-          }
-          }
+            if (!(self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 46)) Tmp8 = false; else {              Tmp8 = !(isFloat_10760011);            }          if (Tmp8) {
           F.line = 109;
-          self_10721199.current = ((self_10721199.current + 1) >>> 0);
+          isFloat_10760011 = true;
+          }
+          }
+          F.line = 110;
+          self_10716212.current = ((self_10716212.current + 1) >>> 0);
         }
     } while(false);
     }
     else {
-    if ((self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 34)) {
-    F.line = 112;
-    self_10721199.current = ((self_10721199.current + 1) >>> 0);
+    if ((self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 34)) {
+    F.line = 113;
+    self_10716212.current = ((self_10716212.current + 1) >>> 0);
     L9: do {
-      F.line = 113;
+      F.line = 114;
         L10: while (true) {
-        if (!!((self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 34))) break L10;
-            if (((self_10721199.source).length <= chckRange(self_10721199.current, -2147483648, 2147483647))) Tmp11 = true; else {              Tmp11 = (self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 10);            }          if (Tmp11) {
-          F.line = 32;
-          F.line = 28;
-          var fmtRes_10870001 = [mnewString(0)];
-          F.line = 28;
-          formatValue_10805001(fmtRes_10870001, 0, self_10721199.line, []);
-          F.line = 28;
-          fmtRes_10870001[0].push.apply(fmtRes_10870001[0], makeNimstrLit(":"));;
-          F.line = 28;
-          formatValue_10805001(fmtRes_10870001, 0, self_10721199.column, []);
-          F.line = 115;
-          var fmtRes_10860005 = mnewString(0);
-          F.line = 115;
-          fmtRes_10860005.push.apply(fmtRes_10860005, makeNimstrLit("Unterminated string"));;
-          self_10721199.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10870001[0] || [],makeNimstrLit(") ") || [],fmtRes_10860005 || []), NTI1188013);
+        if (!!((self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 34))) break L10;
+            if (((self_10716212.source).length <= chckRange(self_10716212.current, -2147483648, 2147483647))) Tmp11 = true; else {              Tmp11 = (self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 10);            }          if (Tmp11) {
           F.line = 33;
-          self_10721199.hadError = true;
-          F.line = 116;
+          F.line = 29;
+          var fmtRes_10855001 = [mnewString(0)];
+          F.line = 29;
+          formatValue_10795001(fmtRes_10855001, 0, self_10716212.line, []);
+          F.line = 29;
+          fmtRes_10855001[0].push.apply(fmtRes_10855001[0], makeNimstrLit(":"));;
+          F.line = 29;
+          formatValue_10795001(fmtRes_10855001, 0, self_10716212.column, []);
+          self_10716212.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10855001[0] || [],makeNimstrLit(") Unterminated string") || []), NTI1188013);
+          F.line = 34;
+          self_10716212.hadError = true;
+          F.line = 117;
           break L9;
           }
           
-          F.line = 117;
-          self_10721199.current = ((self_10721199.current + 1) >>> 0);
+          F.line = 118;
+          self_10716212.current = ((self_10716212.current + 1) >>> 0);
         }
     } while(false);
     }
     else {
-    if ((ConstSet12[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined)) {
-    F.line = 120;
-    self_10721199.current = ((self_10721199.current + 1) >>> 0);
+    if ((ConstSet12[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined)) {
+    F.line = 121;
+    self_10716212.current = ((self_10716212.current + 1) >>> 0);
     }
     else {
-    if ((self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)] == 36)) {
-    F.line = 122;
-    self_10721199.current = ((self_10721199.current + 1) >>> 0);
+    if ((self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)] == 36)) {
+    F.line = 123;
+    self_10716212.current = ((self_10716212.current + 1) >>> 0);
+    if (!((ConstSet13[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined))) {
+    F.line = 33;
+    F.line = 29;
+    var fmtRes_10895001 = [mnewString(0)];
+    F.line = 29;
+    formatValue_10795001(fmtRes_10895001, 0, self_10716212.line, []);
+    F.line = 29;
+    fmtRes_10895001[0].push.apply(fmtRes_10895001[0], makeNimstrLit(":"));;
+    F.line = 29;
+    formatValue_10795001(fmtRes_10895001, 0, self_10716212.column, []);
+    self_10716212.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10895001[0] || [],makeNimstrLit(") Expected natural number after argument call operator") || []), NTI1188013);
+    F.line = 34;
+    self_10716212.hadError = true;
+    F.line = 126;
+    break BeforeRet;
+    }
+    
     L12: do {
-      F.line = 123;
+      F.line = 127;
         L13: while (true) {
-          if (!!(((self_10721199.source).length <= chckRange(self_10721199.current, -2147483648, 2147483647)))) Tmp14 = false; else {            Tmp14 = (ConstSet13[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined);          }        if (!Tmp14) break L13;
-          F.line = 123;
-          self_10721199.current = ((self_10721199.current + 1) >>> 0);
+          if (!!(((self_10716212.source).length <= chckRange(self_10716212.current, -2147483648, 2147483647)))) Tmp14 = false; else {            Tmp14 = (ConstSet14[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined);          }        if (!Tmp14) break L13;
+          F.line = 127;
+          self_10716212.current = ((self_10716212.current + 1) >>> 0);
         }
     } while(false);
     }
     else {
-    if ((ConstSet14[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined)) {
+    if ((ConstSet15[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined)) {
     L15: do {
-      F.line = 125;
+      F.line = 129;
         L16: while (true) {
-          if (!!(((self_10721199.source).length <= chckRange(self_10721199.current, -2147483648, 2147483647)))) Tmp17 = false; else {            Tmp17 = (ConstSet15[self_10721199.source[chckIndx(self_10721199.current, 0, (self_10721199.source).length-1)]] != undefined);          }        if (!Tmp17) break L16;
-          F.line = 125;
-          self_10721199.current = ((self_10721199.current + 1) >>> 0);
+          if (!!(((self_10716212.source).length <= chckRange(self_10716212.current, -2147483648, 2147483647)))) Tmp17 = false; else {            Tmp17 = (ConstSet16[self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]] != undefined);          }        if (!Tmp17) break L16;
+          F.line = 129;
+          self_10716212.current = ((self_10716212.current + 1) >>> 0);
         }
     } while(false);
     }
     else {
-      F.line = 32;
-      F.line = 28;
-      var fmtRes_10955001 = [mnewString(0)];
-      F.line = 28;
-      formatValue_10805001(fmtRes_10955001, 0, self_10721199.line, []);
-      F.line = 28;
-      fmtRes_10955001[0].push.apply(fmtRes_10955001[0], makeNimstrLit(":"));;
-      F.line = 28;
-      formatValue_10805001(fmtRes_10955001, 0, self_10721199.column, []);
-      F.line = 127;
-      var fmtRes_10945017 = mnewString(0);
-      F.line = 127;
-      fmtRes_10945017.push.apply(fmtRes_10945017, makeNimstrLit("Unrecognized token"));;
-      self_10721199.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10955001[0] || [],makeNimstrLit(") ") || [],fmtRes_10945017 || []), NTI1188013);
       F.line = 33;
-      self_10721199.hadError = true;
-      F.line = 128;
+      F.line = 29;
+      var fmtRes_10965001 = [mnewString(0)];
+      F.line = 29;
+      formatValue_10795001(fmtRes_10965001, 0, self_10716212.line, []);
+      F.line = 29;
+      fmtRes_10965001[0].push.apply(fmtRes_10965001[0], makeNimstrLit(":"));;
+      F.line = 29;
+      formatValue_10795001(fmtRes_10965001, 0, self_10716212.column, []);
+      F.line = 131;
+      var fmtRes_10955017 = mnewString(0);
+      F.line = 131;
+      fmtRes_10955017.push.apply(fmtRes_10955017, makeNimstrLit("Unrecognized character"));;
+      self_10716212.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_10965001[0] || [],makeNimstrLit(") ") || [],fmtRes_10955017 || []), NTI1188013);
+      F.line = 34;
+      self_10716212.hadError = true;
+      F.line = 132;
+      rawEcho(nimCharToStr(self_10716212.source[chckIndx(self_10716212.current, 0, (self_10716212.source).length-1)]));
+      F.line = 133;
       break BeforeRet;
     }
     }}}}
@@ -5495,695 +5457,695 @@ function chomp_10721197(self_10721199) {
 
   
 }
-function HEX5BHEX5D_10995288(s_10995292, x_10995294) {
-  var result_10995295 = [];
+function HEX5BHEX5D_11010288(s_11010292, x_11010294) {
+  var result_11010295 = [];
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 2507;
-    var a_10995401 = chckRange(x_10995294.a, -2147483648, 2147483647);
+    var a_11010401 = chckRange(x_11010294.a, -2147483648, 2147483647);
     F.line = 2508;
-    var L_10995601 = addInt(subInt(chckRange(x_10995294.b, -2147483648, 2147483647), a_10995401), 1);
+    var L_11010601 = addInt(subInt(chckRange(x_11010294.b, -2147483648, 2147483647), a_11010401), 1);
     F.line = 2509;
-    result_10995295 = nimCopy(null, mnewString(chckRange(L_10995601, 0, 2147483647)), NTI1188013);
+    result_11010295 = nimCopy(null, mnewString(chckRange(L_11010601, 0, 2147483647)), NTI1188013);
     L1: do {
       F.line = 2510;
-      var i_10995609 = 0;
+      var i_11010609 = 0;
       F.line = 106;
-      var i_12390367 = 0;
+      var i_12470367 = 0;
       L2: do {
         F.line = 107;
           L3: while (true) {
-          if (!(i_12390367 < L_10995601)) break L3;
+          if (!(i_12470367 < L_11010601)) break L3;
             F.line = 2510;
-            i_10995609 = i_12390367;
+            i_11010609 = i_12470367;
             F.line = 2510;
-            result_10995295[chckIndx(i_10995609, 0, (result_10995295).length-1)] = s_10995292[chckIndx(addInt(i_10995609, a_10995401), 0, (s_10995292).length-1)];
+            result_11010295[chckIndx(i_11010609, 0, (result_11010295).length-1)] = s_11010292[chckIndx(addInt(i_11010609, a_11010401), 0, (s_11010292).length-1)];
             F.line = 109;
-            i_12390367 = addInt(i_12390367, 1);
+            i_12470367 = addInt(i_12470367, 1);
           }
       } while(false);
     } while(false);
   framePtr = F.prev;
 
-  return result_10995295;
+  return result_11010295;
 
 }
-function HEX2EHEX2E_10995206(a_10995211, b_10995213) {
-  var result_10995219 = ({a: 0, b: 0});
+function HEX2EHEX2E_11010206(a_11010211, b_11010213) {
+  var result_11010219 = ({a: 0, b: 0});
 
   var F={procname:".....",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 481;
-    nimCopy(result_10995219, {a: a_10995211, b: b_10995213}, NTI10995216);
+    nimCopy(result_11010219, {a: a_11010211, b: b_11010213}, NTI11010216);
   framePtr = F.prev;
 
-  return result_10995219;
+  return result_11010219;
 
 }
-function nsuStartsWith(s_10200016, prefix_10200017) {
+function nsuStartsWith(s_10195016, prefix_10195017) {
             var Tmp3;
 
-  var result_10200018 = false;
+  var result_10195018 = false;
 
   var F={procname:"strutils.startsWith",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 1641;
-    var i_10200020 = 0;
+    var i_10195020 = 0;
     L1: do {
       F.line = 1642;
         L2: while (true) {
         if (!true) break L2;
-          if (((prefix_10200017).length <= i_10200020)) {
+          if (((prefix_10195017).length <= i_10195020)) {
           F.line = 1643;
-          result_10200018 = true;
+          result_10195018 = true;
           break BeforeRet;
           }
           
-            if (((s_10200016).length <= i_10200020)) Tmp3 = true; else {              Tmp3 = !((s_10200016[chckIndx(i_10200020, 0, (s_10200016).length-1)] == prefix_10200017[chckIndx(i_10200020, 0, (prefix_10200017).length-1)]));            }          if (Tmp3) {
+            if (((s_10195016).length <= i_10195020)) Tmp3 = true; else {              Tmp3 = !((s_10195016[chckIndx(i_10195020, 0, (s_10195016).length-1)] == prefix_10195017[chckIndx(i_10195020, 0, (prefix_10195017).length-1)]));            }          if (Tmp3) {
           F.line = 1644;
-          result_10200018 = false;
+          result_10195018 = false;
           break BeforeRet;
           }
           
           F.line = 1645;
-          i_10200020 = addInt(i_10200020, 1);
+          i_10195020 = addInt(i_10195020, 1);
         }
     } while(false);
   } while (false);
   framePtr = F.prev;
 
-  return result_10200018;
+  return result_10195018;
 
 }
-function nsuValidIdentifier(s_10420017) {
+function nsuValidIdentifier(s_10415017) {
       var Tmp1;
 
-  var result_10420018 = false;
+  var result_10415018 = false;
 
   var F={procname:"strutils.validIdentifier",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-      if (!(0 < (s_10420017).length)) Tmp1 = false; else {        Tmp1 = (ConstSet17[s_10420017[chckIndx(0, 0, (s_10420017).length-1)]] != undefined);      }    if (Tmp1) {
+      if (!(0 < (s_10415017).length)) Tmp1 = false; else {        Tmp1 = (ConstSet18[s_10415017[chckIndx(0, 0, (s_10415017).length-1)]] != undefined);      }    if (Tmp1) {
     L2: do {
       F.line = 2399;
-      var i_10430015 = 0;
+      var i_10425015 = 0;
       F.line = 66;
-      var colontmp__12390373 = 0;
+      var colontmp__12470373 = 0;
       F.line = 2399;
-      colontmp__12390373 = subInt((s_10420017).length, 1);
+      colontmp__12470373 = subInt((s_10415017).length, 1);
       F.line = 77;
-      var res_12390374 = 1;
+      var res_12470374 = 1;
       L3: do {
         F.line = 78;
           L4: while (true) {
-          if (!(res_12390374 <= colontmp__12390373)) break L4;
+          if (!(res_12470374 <= colontmp__12470373)) break L4;
             F.line = 2399;
-            i_10430015 = res_12390374;
-            if (!((ConstSet18[s_10420017[chckIndx(i_10430015, 0, (s_10420017).length-1)]] != undefined))) {
+            i_10425015 = res_12470374;
+            if (!((ConstSet19[s_10415017[chckIndx(i_10425015, 0, (s_10415017).length-1)]] != undefined))) {
             F.line = 2400;
-            result_10420018 = false;
+            result_10415018 = false;
             break BeforeRet;
             }
             
             F.line = 80;
-            res_12390374 = addInt(res_12390374, 1);
+            res_12470374 = addInt(res_12470374, 1);
           }
       } while(false);
     } while(false);
     F.line = 2401;
-    result_10420018 = true;
+    result_10415018 = true;
     break BeforeRet;
     }
     
   } while (false);
   framePtr = F.prev;
 
-  return result_10420018;
+  return result_10415018;
 
 }
-function run_10721213(self_10721215) {
+function run_10716226(self_10716228) {
   var F={procname:"lexer.run",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/lexer.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     L1: do {
-      F.line = 133;
+      F.line = 138;
         L2: while (true) {
-        if (!!(((self_10721215.source).length <= chckRange(self_10721215.current, -2147483648, 2147483647)))) break L2;
-          F.line = 134;
-          skipWhitespace_10721181(self_10721215);
-          if (((self_10721215.source).length <= chckRange(self_10721215.current, -2147483648, 2147483647))) {
-          F.line = 135;
+        if (!!(((self_10716228.source).length <= chckRange(self_10716228.current, -2147483648, 2147483647)))) break L2;
+          F.line = 139;
+          skipWhitespace_10716194(self_10716228);
+          if (((self_10716228.source).length <= chckRange(self_10716228.current, -2147483648, 2147483647))) {
+          F.line = 140;
           break L1;
           }
           
-          F.line = 136;
-          chomp_10721197(self_10721215);
-          if (self_10721215.hadError) {
-          F.line = 137;
+          F.line = 141;
+          chomp_10716210(self_10716228);
+          if (self_10716228.hadError) {
+          F.line = 142;
           break BeforeRet;
           }
           
-          F.line = 139;
-          var slice_11005014 = HEX5BHEX5D_10995288(self_10721215.source, HEX2EHEX2E_10995206(self_10721215.start, ((self_10721215.current - 1) >>> 0)));
-          F.line = 141;
-          var tok_11005015 = {lexeme: nimCopy(null, slice_11005014, NTI1188013), line: self_10721215.line, column: self_10721215.column, kind: 0};
-          F.line = 147;
-          switch (toJSStr(slice_11005014)) {
+          F.line = 144;
+          var slice_11020014 = HEX5BHEX5D_11010288(self_10716228.source, HEX2EHEX2E_11010206(self_10716228.start, ((self_10716228.current - 1) >>> 0)));
+          F.line = 146;
+          var tok_11020015 = {lexeme: nimCopy(null, slice_11020014, NTI1188013), line: self_10716228.line, column: self_10716228.column, kind: 0};
+          F.line = 152;
+          switch (toJSStr(slice_11020014)) {
           case "":
-            F.line = 148;
+            F.line = 153;
             break L1;
             break;
           case "out":
-            F.line = 149;
-            tok_11005015.kind = 15;
+            F.line = 154;
+            tok_11020015.kind = 15;
             break;
           case "neg":
-            F.line = 150;
-            tok_11005015.kind = 6;
+            F.line = 155;
+            tok_11020015.kind = 6;
             break;
           case "in":
-            F.line = 151;
-            tok_11005015.kind = 16;
+            F.line = 156;
+            tok_11020015.kind = 16;
             break;
           case "dup":
-            F.line = 152;
-            tok_11005015.kind = 17;
+            F.line = 157;
+            tok_11020015.kind = 17;
             break;
           case "global":
-            F.line = 153;
-            tok_11005015.kind = 7;
+            F.line = 158;
+            tok_11020015.kind = 7;
             break;
           case "public":
-            F.line = 154;
-            tok_11005015.kind = 8;
+            F.line = 159;
+            tok_11020015.kind = 8;
             break;
           case "private":
-            F.line = 155;
-            tok_11005015.kind = 9;
+            F.line = 160;
+            tok_11020015.kind = 9;
             break;
           case "true":
-            F.line = 156;
-            tok_11005015.kind = 22;
+            F.line = 161;
+            tok_11020015.kind = 22;
             break;
           case "false":
-            F.line = 157;
-            tok_11005015.kind = 23;
+            F.line = 162;
+            tok_11020015.kind = 23;
             break;
           case "ret":
-            F.line = 158;
-            tok_11005015.kind = 21;
+            F.line = 163;
+            tok_11020015.kind = 21;
             break;
           case "to":
-            F.line = 159;
-            tok_11005015.kind = 13;
+            F.line = 164;
+            tok_11020015.kind = 13;
             break;
           case "sw":
-            F.line = 160;
-            tok_11005015.kind = 19;
+            F.line = 165;
+            tok_11020015.kind = 19;
             break;
           case "rot":
-            F.line = 161;
-            tok_11005015.kind = 20;
+            F.line = 166;
+            tok_11020015.kind = 20;
             break;
           case "{":
-            F.line = 162;
-            tok_11005015.kind = 0;
+            F.line = 167;
+            tok_11020015.kind = 0;
             break;
           case "}":
-            F.line = 163;
-            tok_11005015.kind = 1;
+            F.line = 168;
+            tok_11020015.kind = 1;
             break;
           case "+":
-            F.line = 164;
-            tok_11005015.kind = 2;
+            F.line = 169;
+            tok_11020015.kind = 2;
             break;
           case "-":
-            F.line = 165;
-            tok_11005015.kind = 3;
+            F.line = 170;
+            tok_11020015.kind = 3;
             break;
           case "*":
-            F.line = 166;
-            tok_11005015.kind = 4;
+            F.line = 171;
+            tok_11020015.kind = 4;
             break;
           case "/":
-            F.line = 167;
-            tok_11005015.kind = 5;
+            F.line = 172;
+            tok_11020015.kind = 5;
             break;
           case "!":
-            F.line = 168;
-            tok_11005015.kind = 26;
+            F.line = 173;
+            tok_11020015.kind = 26;
             break;
           case "&":
-            F.line = 169;
-            tok_11005015.kind = 24;
+            F.line = 174;
+            tok_11020015.kind = 24;
             break;
           case "|":
-            F.line = 170;
-            tok_11005015.kind = 25;
+            F.line = 175;
+            tok_11020015.kind = 25;
             break;
           case "=":
-            F.line = 171;
-            tok_11005015.kind = 10;
+            F.line = 176;
+            tok_11020015.kind = 10;
             break;
           case "?":
-            F.line = 172;
-            tok_11005015.kind = 12;
+            F.line = 177;
+            tok_11020015.kind = 12;
             break;
           case ".":
-            F.line = 173;
-            tok_11005015.kind = 11;
+            F.line = 178;
+            tok_11020015.kind = 11;
             break;
           case "~":
-            F.line = 174;
-            tok_11005015.kind = 18;
+            F.line = 179;
+            tok_11020015.kind = 18;
             break;
           default: 
-            if (nsuStartsWith(slice_11005014, makeNimstrLit("\""))) {
-            F.line = 178;
-            tok_11005015.lexeme = nimCopy(null, HEX5BHEX5D_5835068(tok_11005015.lexeme, HEX2EHEX2E_5835001(1, 1)), NTI1188013);
-            F.line = 179;
-            tok_11005015.kind = 28;
-            F.line = 180;
-            self_10721215.current = ((self_10721215.current + 1) >>> 0);
-            }
-            else {
-            if ((ConstSet16[slice_11005014[chckIndx(0, 0, (slice_11005014).length-1)]] != undefined)) {
-            F.line = 182;
-            tok_11005015.kind = 27;
-            }
-            else {
-            if (nsuValidIdentifier(slice_11005014)) {
+            if (nsuStartsWith(slice_11020014, makeNimstrLit("\""))) {
+            F.line = 183;
+            tok_11020015.lexeme = nimCopy(null, HEX5BHEX5D_5830068(tok_11020015.lexeme, HEX2EHEX2E_5830001(1, 1)), NTI1188013);
             F.line = 184;
-            tok_11005015.kind = 29;
+            tok_11020015.kind = 28;
+            F.line = 185;
+            self_10716228.current = ((self_10716228.current + 1) >>> 0);
             }
             else {
-            if (nsuStartsWith(slice_11005014, makeNimstrLit("$"))) {
+            if ((ConstSet17[slice_11020014[chckIndx(0, 0, (slice_11020014).length-1)]] != undefined)) {
             F.line = 187;
-            tok_11005015.lexeme = nimCopy(null, HEX5BHEX5D_5835068(tok_11005015.lexeme, HEX2EHEX2E_5835001(1, 1)), NTI1188013);
-            F.line = 188;
-            tok_11005015.kind = 14;
+            tok_11020015.kind = 27;
             }
             else {
-              F.line = 32;
-              F.line = 28;
-              var fmtRes_11040001 = [mnewString(0)];
-              F.line = 28;
-              formatValue_10805001(fmtRes_11040001, 0, self_10721215.line, []);
-              F.line = 28;
-              fmtRes_11040001[0].push.apply(fmtRes_11040001[0], makeNimstrLit(":"));;
-              F.line = 28;
-              formatValue_10805001(fmtRes_11040001, 0, self_10721215.column, []);
-              F.line = 190;
-              var fmtRes_11030036 = mnewString(0);
-              F.line = 190;
-              fmtRes_11030036.push.apply(fmtRes_11030036, makeNimstrLit("Unrecognized token"));;
-              self_10721215.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_11040001[0] || [],makeNimstrLit(") ") || [],fmtRes_11030036 || []), NTI1188013);
+            if (nsuValidIdentifier(slice_11020014)) {
+            F.line = 189;
+            tok_11020015.kind = 29;
+            }
+            else {
+            if (nsuStartsWith(slice_11020014, makeNimstrLit("$"))) {
+            F.line = 192;
+            tok_11020015.lexeme = nimCopy(null, HEX5BHEX5D_5830068(tok_11020015.lexeme, HEX2EHEX2E_5830001(1, 1)), NTI1188013);
+            F.line = 193;
+            tok_11020015.kind = 14;
+            }
+            else {
               F.line = 33;
-              self_10721215.hadError = true;
-              F.line = 191;
+              F.line = 29;
+              var fmtRes_11055001 = [mnewString(0)];
+              F.line = 29;
+              formatValue_10795001(fmtRes_11055001, 0, self_10716228.line, []);
+              F.line = 29;
+              fmtRes_11055001[0].push.apply(fmtRes_11055001[0], makeNimstrLit(":"));;
+              F.line = 29;
+              formatValue_10795001(fmtRes_11055001, 0, self_10716228.column, []);
+              F.line = 195;
+              var fmtRes_11045036 = mnewString(0);
+              F.line = 195;
+              fmtRes_11045036.push.apply(fmtRes_11045036, makeNimstrLit("Unrecognized lexeme"));;
+              self_10716228.output = nimCopy(null, (makeNimstrLit("(lexing error, ") || []).concat(fmtRes_11055001[0] || [],makeNimstrLit(") ") || [],fmtRes_11045036 || []), NTI1188013);
+              F.line = 34;
+              self_10716228.hadError = true;
+              F.line = 196;
               break L1;
             }
             }}}
             break;
           }
-          F.line = 192;
-          self_10721215.tokens.push(tok_11005015);;
-          F.line = 193;
-          warp_10721165(self_10721215);
+          F.line = 197;
+          self_10716228.tokens.push(tok_11020015);;
+          F.line = 198;
+          warp_10716178(self_10716228);
         }
     } while(false);
-    F.line = 195;
-    self_10721215.tokens.push({kind: 30, lexeme: [], line: 0, column: 0});;
+    F.line = 200;
+    self_10716228.tokens.push({kind: 30, lexeme: [], line: 0, column: 0});;
   } while (false);
   framePtr = F.prev;
 
   
 }
-function nextPowerOfTwo_9530014(x_9530016) {
-  var result_9530017 = 0;
+function nextPowerOfTwo_9525014(x_9525016) {
+  var result_9525017 = 0;
 
-    result_9530017 = (x_9530016 - 1);
-    result_9530017 = (result_9530017 | (result_9530017 >> 16));
-    result_9530017 = (result_9530017 | (result_9530017 >> 8));
-    result_9530017 = (result_9530017 | (result_9530017 >> 4));
-    result_9530017 = (result_9530017 | (result_9530017 >> 2));
-    result_9530017 = (result_9530017 | (result_9530017 >> 1));
-    result_9530017 += (1 + ((x_9530016 <= 0) ? 1:0));
+    result_9525017 = (x_9525016 - 1);
+    result_9525017 = (result_9525017 | (result_9525017 >> 16));
+    result_9525017 = (result_9525017 | (result_9525017 >> 8));
+    result_9525017 = (result_9525017 | (result_9525017 >> 4));
+    result_9525017 = (result_9525017 | (result_9525017 >> 2));
+    result_9525017 = (result_9525017 | (result_9525017 >> 1));
+    result_9525017 += (1 + ((x_9525016 <= 0) ? 1:0));
 
-  return result_9530017;
+  return result_9525017;
 
 }
-function slotsNeeded_11130048(count_11130050) {
-  var result_11130051 = 0;
+function slotsNeeded_11145048(count_11145050) {
+  var result_11145051 = 0;
 
   var F={procname:"tables.slotsNeeded",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
     F.line = 39;
-    result_11130051 = nextPowerOfTwo_9530014(addInt(divInt(mulInt(count_11130050, 3), 2), 4));
+    result_11145051 = nextPowerOfTwo_9525014(addInt(divInt(mulInt(count_11145050, 3), 2), 4));
   framePtr = F.prev;
 
-  return result_11130051;
+  return result_11145051;
 
 }
-function initTable_11306028(initialSize_11306032) {
-  var result_11306034 = ({data: [], counter: 0});
+function initTable_11326028(initialSize_11326032) {
+  var result_11326034 = ({data: [], counter: 0});
 
   var F={procname:"initTable.initTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 163;
-    var correctSizeHEX60gensym16_11310001 = slotsNeeded_11130048(chckRange(initialSize_11306032, 0, 2147483647));
+    var correctSizeHEX60gensym16_11330001 = slotsNeeded_11145048(chckRange(initialSize_11326032, 0, 2147483647));
     F.line = 167;
-    result_11306034.counter = 0;
+    result_11326034.counter = 0;
     F.line = 168;
-    result_11306034.data = new Array(chckRange(correctSizeHEX60gensym16_11310001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym16_11310001, 0, 2147483647);++i) {result_11306034.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
+    result_11326034.data = new Array(chckRange(correctSizeHEX60gensym16_11330001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym16_11330001, 0, 2147483647);++i) {result_11326034.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
 
-  return result_11306034;
+  return result_11326034;
 
 }
-function newTable_11385778(initialSize_11385782) {
-  var result_11385784 = null;
+function newTable_11405778(initialSize_11405782) {
+  var result_11405784 = null;
 
   var F={procname:"newTable.newTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 810;
-    result_11385784 = ({data: [], counter: 0});
+    result_11405784 = ({data: [], counter: 0});
     F.line = 811;
-    nimCopy(result_11385784, initTable_11306028(initialSize_11385782), NTI11228133);
+    nimCopy(result_11405784, initTable_11326028(initialSize_11405782), NTI11248133);
   framePtr = F.prev;
 
-  return result_11385784;
+  return result_11405784;
 
 }
-function initTable_11228579(initialSize_11228583) {
-  var result_11228585 = ({data: [], counter: 0});
+function initTable_11248579(initialSize_11248583) {
+  var result_11248585 = ({data: [], counter: 0});
 
   var F={procname:"initTable.initTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 163;
-    var correctSizeHEX60gensym0_11230001 = slotsNeeded_11130048(chckRange(initialSize_11228583, 0, 2147483647));
+    var correctSizeHEX60gensym0_11250001 = slotsNeeded_11145048(chckRange(initialSize_11248583, 0, 2147483647));
     F.line = 167;
-    result_11228585.counter = 0;
+    result_11248585.counter = 0;
     F.line = 168;
-    result_11228585.data = new Array(chckRange(correctSizeHEX60gensym0_11230001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym0_11230001, 0, 2147483647);++i) {result_11228585.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
+    result_11248585.data = new Array(chckRange(correctSizeHEX60gensym0_11250001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym0_11250001, 0, 2147483647);++i) {result_11248585.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
 
-  return result_11228585;
+  return result_11248585;
 
 }
-function newTable_11305778(initialSize_11305782) {
-  var result_11305784 = null;
+function newTable_11325778(initialSize_11325782) {
+  var result_11325784 = null;
 
   var F={procname:"newTable.newTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 810;
-    result_11305784 = ({data: [], counter: 0});
+    result_11325784 = ({data: [], counter: 0});
     F.line = 811;
-    nimCopy(result_11305784, initTable_11228579(initialSize_11305782), NTI11228101);
+    nimCopy(result_11325784, initTable_11248579(initialSize_11325782), NTI11248101);
   framePtr = F.prev;
 
-  return result_11305784;
+  return result_11325784;
 
 }
-function imul_11066082(a_11066084, b_11066085) {
-  var result_11066086 = 0;
+function imul_11081082(a_11081084, b_11081085) {
+  var result_11081086 = 0;
 
   var F={procname:"hashes.imul",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
   framePtr = F;
     F.line = 207;
-    var mask_11066087 = 65535;
+    var mask_11081087 = 65535;
     F.line = 209;
-    var aHi_11066096 = (((a_11066084 >>> 0) >>> 16) & mask_11066087);
+    var aHi_11081096 = (((a_11081084 >>> 0) >>> 16) & mask_11081087);
     F.line = 210;
-    var aLo_11066097 = (a_11066084 & mask_11066087);
+    var aLo_11081097 = (a_11081084 & mask_11081087);
     F.line = 211;
-    var bHi_11066106 = (((b_11066085 >>> 0) >>> 16) & mask_11066087);
+    var bHi_11081106 = (((b_11081085 >>> 0) >>> 16) & mask_11081087);
     F.line = 212;
-    var bLo_11066107 = (b_11066085 & mask_11066087);
+    var bLo_11081107 = (b_11081085 & mask_11081087);
     F.line = 213;
-    result_11066086 = ((((aLo_11066097 * bLo_11066107) >>> 0) + (((((aHi_11066096 * bLo_11066107) >>> 0) + ((aLo_11066097 * bHi_11066106) >>> 0)) >>> 0) << 16)) >>> 0);
+    result_11081086 = ((((aLo_11081097 * bLo_11081107) >>> 0) + (((((aHi_11081096 * bLo_11081107) >>> 0) + ((aLo_11081097 * bHi_11081106) >>> 0)) >>> 0) << 16)) >>> 0);
   framePtr = F.prev;
 
-  return result_11066086;
+  return result_11081086;
 
 }
-function rotl32_11066201(x_11066203, r_11066204) {
-  var result_11066205 = 0;
+function rotl32_11081201(x_11081203, r_11081204) {
+  var result_11081205 = 0;
 
   var F={procname:"hashes.rotl32",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
   framePtr = F;
     F.line = 218;
-    result_11066205 = ((x_11066203 << r_11066204) | ((x_11066203 >>> 0) >>> subInt(32, r_11066204)));
+    result_11081205 = ((x_11081203 << r_11081204) | ((x_11081203 >>> 0) >>> subInt(32, r_11081204)));
   framePtr = F.prev;
 
-  return result_11066205;
+  return result_11081205;
 
 }
-function murmurHash_11066229(x_11066232) {
-  var result_11066233 = 0;
+function murmurHash_11081229(x_11081232) {
+  var result_11081233 = 0;
 
   var F={procname:"hashes.murmurHash",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 229;
-    var size_11066243 = (x_11066232).length;
+    var size_11081243 = (x_11081232).length;
     F.line = 230;
-    var stepSize_11066245 = 4;
+    var stepSize_11081245 = 4;
     F.line = 231;
-    var n_11066246 = divInt(size_11066243, stepSize_11066245);
+    var n_11081246 = divInt(size_11081243, stepSize_11081245);
     F.line = 233;
-    var h1_11066247 = 0;
+    var h1_11081247 = 0;
     F.line = 234;
-    var i_11066249 = 0;
+    var i_11081249 = 0;
     L1: do {
       F.line = 237;
         L2: while (true) {
-        if (!(i_11066249 < mulInt(n_11066246, stepSize_11066245))) break L2;
+        if (!(i_11081249 < mulInt(n_11081246, stepSize_11081245))) break L2;
           F.line = 238;
-          var k1_11066250 = 0;
+          var k1_11081250 = 0;
           F.line = 240;
-          var j_11066251 = stepSize_11066245;
+          var j_11081251 = stepSize_11081245;
           L3: do {
             F.line = 241;
               L4: while (true) {
-              if (!(0 < j_11066251)) break L4;
+              if (!(0 < j_11081251)) break L4;
                 F.line = 242;
-                j_11066251 = subInt(j_11066251, 1);
+                j_11081251 = subInt(j_11081251, 1);
                 F.line = 243;
-                k1_11066250 = ((k1_11066250 << 8) | x_11066232[chckIndx(addInt(i_11066249, j_11066251), 0, (x_11066232).length-1)]);
+                k1_11081250 = ((k1_11081250 << 8) | x_11081232[chckIndx(addInt(i_11081249, j_11081251), 0, (x_11081232).length-1)]);
               }
           } while(false);
           F.line = 246;
-          i_11066249 = addInt(i_11066249, stepSize_11066245);
+          i_11081249 = addInt(i_11081249, stepSize_11081245);
           F.line = 248;
-          k1_11066250 = imul_11066082(k1_11066250, 3432918353);
+          k1_11081250 = imul_11081082(k1_11081250, 3432918353);
           F.line = 249;
-          k1_11066250 = rotl32_11066201(k1_11066250, 15);
+          k1_11081250 = rotl32_11081201(k1_11081250, 15);
           F.line = 250;
-          k1_11066250 = imul_11066082(k1_11066250, 461845907);
+          k1_11081250 = imul_11081082(k1_11081250, 461845907);
           F.line = 252;
-          h1_11066247 = (h1_11066247 ^ k1_11066250);
+          h1_11081247 = (h1_11081247 ^ k1_11081250);
           F.line = 253;
-          h1_11066247 = rotl32_11066201(h1_11066247, 13);
+          h1_11081247 = rotl32_11081201(h1_11081247, 13);
           F.line = 254;
-          h1_11066247 = ((((h1_11066247 * 5) >>> 0) + 3864292196) >>> 0);
+          h1_11081247 = ((((h1_11081247 * 5) >>> 0) + 3864292196) >>> 0);
         }
     } while(false);
     F.line = 257;
-    var k1_11070207 = 0;
+    var k1_11085207 = 0;
     F.line = 258;
-    var rem_11070208 = modInt(size_11066243, stepSize_11066245);
+    var rem_11085208 = modInt(size_11081243, stepSize_11081245);
     L5: do {
       F.line = 259;
         L6: while (true) {
-        if (!(0 < rem_11070208)) break L6;
+        if (!(0 < rem_11085208)) break L6;
           F.line = 260;
-          rem_11070208 = subInt(rem_11070208, 1);
+          rem_11085208 = subInt(rem_11085208, 1);
           F.line = 261;
-          k1_11070207 = ((k1_11070207 << 8) | x_11066232[chckIndx(addInt(i_11066249, rem_11070208), 0, (x_11066232).length-1)]);
+          k1_11085207 = ((k1_11085207 << 8) | x_11081232[chckIndx(addInt(i_11081249, rem_11085208), 0, (x_11081232).length-1)]);
         }
     } while(false);
     F.line = 262;
-    k1_11070207 = imul_11066082(k1_11070207, 3432918353);
+    k1_11085207 = imul_11081082(k1_11085207, 3432918353);
     F.line = 263;
-    k1_11070207 = rotl32_11066201(k1_11070207, 15);
+    k1_11085207 = rotl32_11081201(k1_11085207, 15);
     F.line = 264;
-    k1_11070207 = imul_11066082(k1_11070207, 461845907);
+    k1_11085207 = imul_11081082(k1_11085207, 461845907);
     F.line = 265;
-    h1_11066247 = (h1_11066247 ^ k1_11070207);
+    h1_11081247 = (h1_11081247 ^ k1_11085207);
     F.line = 268;
-    h1_11066247 = (h1_11066247 ^ size_11066243);
+    h1_11081247 = (h1_11081247 ^ size_11081243);
     F.line = 269;
-    h1_11066247 = (h1_11066247 ^ ((h1_11066247 >>> 0) >>> 16));
+    h1_11081247 = (h1_11081247 ^ ((h1_11081247 >>> 0) >>> 16));
     F.line = 270;
-    h1_11066247 = imul_11066082(h1_11066247, 2246822507);
+    h1_11081247 = imul_11081082(h1_11081247, 2246822507);
     F.line = 271;
-    h1_11066247 = (h1_11066247 ^ ((h1_11066247 >>> 0) >>> 13));
+    h1_11081247 = (h1_11081247 ^ ((h1_11081247 >>> 0) >>> 13));
     F.line = 272;
-    h1_11066247 = imul_11066082(h1_11066247, 3266489909);
+    h1_11081247 = imul_11081082(h1_11081247, 3266489909);
     F.line = 273;
-    h1_11066247 = (h1_11066247 ^ ((h1_11066247 >>> 0) >>> 16));
+    h1_11081247 = (h1_11081247 ^ ((h1_11081247 >>> 0) >>> 16));
     F.line = 274;
-    result_11066233 = (h1_11066247|0);
+    result_11081233 = (h1_11081247|0);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11066233;
+  return result_11081233;
 
 }
-function hash_11105214(x_11105216) {
-  var result_11105217 = 0;
+function hash_11120214(x_11120216) {
+  var result_11120217 = 0;
 
   var F={procname:"hashes.hash",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/hashes.nim",line:0};
   framePtr = F;
     F.line = 303;
-    result_11105217 = murmurHash_11066229((x_11105216.slice(0, (x_11105216).length - 1+1)));
+    result_11120217 = murmurHash_11081229((x_11120216.slice(0, (x_11120216).length - 1+1)));
   framePtr = F.prev;
 
-  return result_11105217;
+  return result_11120217;
 
 }
-function isFilled_11126218(hcode_11126220) {
-  var result_11126221 = false;
+function isFilled_11141218(hcode_11141220) {
+  var result_11141221 = false;
 
   var F={procname:"tables.isFilled",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
     F.line = 27;
-    result_11126221 = !((hcode_11126220 == 0));
+    result_11141221 = !((hcode_11141220 == 0));
   framePtr = F.prev;
 
-  return result_11126221;
+  return result_11141221;
 
 }
-function nextTry_11130014(h_11130016, maxHash_11130017) {
-  var result_11130018 = 0;
+function nextTry_11145014(h_11145016, maxHash_11145017) {
+  var result_11145018 = 0;
 
   var F={procname:"tables.nextTry",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
     F.line = 30;
-    result_11130018 = (addInt(h_11130016, 1) & maxHash_11130017);
+    result_11145018 = (addInt(h_11145016, 1) & maxHash_11145017);
   framePtr = F.prev;
 
-  return result_11130018;
+  return result_11145018;
 
 }
-function rawGet_11330602(t_11330606, key_11330607, hc_11330608, hc_11330608_Idx) {
+function rawGet_11350602(t_11350606, key_11350607, hc_11350608, hc_11350608_Idx) {
             var Tmp3;
 
-  var result_11330609 = 0;
+  var result_11350609 = 0;
 
   var F={procname:"rawGet.rawGet",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 69;
-    hc_11330608[hc_11330608_Idx] = hash_11105214(key_11330607);
-    if ((hc_11330608[hc_11330608_Idx] == 0)) {
+    hc_11350608[hc_11350608_Idx] = hash_11120214(key_11350607);
+    if ((hc_11350608[hc_11350608_Idx] == 0)) {
     F.line = 71;
-    hc_11330608[hc_11330608_Idx] = 314159265;
+    hc_11350608[hc_11350608_Idx] = 314159265;
     }
     
-    if (((t_11330606.data).length == 0)) {
+    if (((t_11350606.data).length == 0)) {
     F.line = 53;
-    result_11330609 = -1;
+    result_11350609 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11340138 = (hc_11330608[hc_11330608_Idx] & (t_11330606.data).length - 1);
+    var h_11360138 = (hc_11350608[hc_11350608_Idx] & (t_11350606.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11330606.data[chckIndx(h_11340138, 0, (t_11330606.data).length-1)].Field0)) break L2;
-            if (!(t_11330606.data[chckIndx(h_11340138, 0, (t_11330606.data).length-1)].Field0 == hc_11330608[hc_11330608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11330606.data[chckIndx(h_11340138, 0, (t_11330606.data).length-1)].Field1, key_11330607);            }          if (Tmp3) {
+        if (!isFilled_11141218(t_11350606.data[chckIndx(h_11360138, 0, (t_11350606.data).length-1)].Field0)) break L2;
+            if (!(t_11350606.data[chckIndx(h_11360138, 0, (t_11350606.data).length-1)].Field0 == hc_11350608[hc_11350608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11350606.data[chckIndx(h_11360138, 0, (t_11350606.data).length-1)].Field1, key_11350607);            }          if (Tmp3) {
           F.line = 61;
-          result_11330609 = h_11340138;
+          result_11350609 = h_11360138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11340138 = nextTry_11130014(h_11340138, (t_11330606.data).length - 1);
+          h_11360138 = nextTry_11145014(h_11360138, (t_11350606.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11330609 = subInt(-1, h_11340138);
+    result_11350609 = subInt(-1, h_11360138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11330609;
+  return result_11350609;
 
 }
-function mustRehash_11355601(t_11355604) {
-  var result_11355605 = false;
+function mustRehash_11375601(t_11375604) {
+  var result_11375605 = false;
 
   var F={procname:"mustRehash.mustRehash",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
-    if (!((t_11355604.counter < (t_11355604.data).length))) {
+    if (!((t_11375604.counter < (t_11375604.data).length))) {
     F.line = 34;
     failedAssertImpl_1305480(makeNimstrLit("/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim(34, 9) `\x0At.counter < t.dataLen` "));
     }
     
     F.line = 35;
-    result_11355605 = ((mulInt((t_11355604.data).length, 2) < mulInt(t_11355604.counter, 3)) || (subInt((t_11355604.data).length, t_11355604.counter) < 4));
+    result_11375605 = ((mulInt((t_11375604.data).length, 2) < mulInt(t_11375604.counter, 3)) || (subInt((t_11375604.data).length, t_11375604.counter) < 4));
   framePtr = F.prev;
 
-  return result_11355605;
+  return result_11375605;
 
 }
-function rawInsert_11381108(t_11381114, data_11381117, data_11381117_Idx, key_11381118, val_11381120, hc_11381121, h_11381122) {
+function rawInsert_11401108(t_11401114, data_11401117, data_11401117_Idx, key_11401118, val_11401120, hc_11401121, h_11401122) {
   var F={procname:"rawInsert.rawInsert",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tableimpl.nim",line:0};
   framePtr = F;
     F.line = 22;
-    data_11381117[data_11381117_Idx][chckIndx(h_11381122, 0, (data_11381117[data_11381117_Idx]).length-1)].Field1 = nimCopy(null, key_11381118, NTI1188013);
+    data_11401117[data_11401117_Idx][chckIndx(h_11401122, 0, (data_11401117[data_11401117_Idx]).length-1)].Field1 = nimCopy(null, key_11401118, NTI1188013);
     F.line = 23;
-    data_11381117[data_11381117_Idx][chckIndx(h_11381122, 0, (data_11381117[data_11381117_Idx]).length-1)].Field2 = val_11381120;
+    data_11401117[data_11401117_Idx][chckIndx(h_11401122, 0, (data_11401117[data_11401117_Idx]).length-1)].Field2 = val_11401120;
     F.line = 24;
-    data_11381117[data_11381117_Idx][chckIndx(h_11381122, 0, (data_11381117[data_11381117_Idx]).length-1)].Field0 = hc_11381121;
+    data_11401117[data_11401117_Idx][chckIndx(h_11401122, 0, (data_11401117[data_11401117_Idx]).length-1)].Field0 = hc_11401121;
   framePtr = F.prev;
 
   
 }
-function enlarge_11380161(t_11380167) {
+function enlarge_11400161(t_11400167) {
   var F={procname:"enlarge.enlarge",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 267;
-    var n_11380175 = [];
+    var n_11400175 = [];
     F.line = 268;
-    n_11380175 = new Array(chckRange(mulInt((t_11380167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11380167.data).length, 2), 0, 2147483647);++i) {n_11380175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
-    var Tmp1 = t_11380167.data; t_11380167.data = n_11380175; n_11380175 = Tmp1;    L2: do {
+    n_11400175 = new Array(chckRange(mulInt((t_11400167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11400167.data).length, 2), 0, 2147483647);++i) {n_11400175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
+    var Tmp1 = t_11400167.data; t_11400167.data = n_11400175; n_11400175 = Tmp1;    L2: do {
       F.line = 270;
-      var i_11380334 = 0;
+      var i_11400334 = 0;
       F.line = 39;
-      var colontmp__12390390 = 0;
+      var colontmp__12470390 = 0;
       F.line = 270;
-      colontmp__12390390 = (n_11380175).length - 1;
+      colontmp__12470390 = (n_11400175).length - 1;
       F.line = 56;
-      var res_12390395 = 0;
+      var res_12470395 = 0;
       L3: do {
         F.line = 57;
           L4: while (true) {
-          if (!(res_12390395 <= colontmp__12390390)) break L4;
+          if (!(res_12470395 <= colontmp__12470390)) break L4;
             F.line = 270;
-            i_11380334 = res_12390395;
+            i_11400334 = res_12470395;
             F.line = 271;
-            var eh_11380483 = n_11380175[chckIndx(i_11380334, 0, (n_11380175).length-1)].Field0;
-            if (isFilled_11126218(eh_11380483)) {
+            var eh_11400483 = n_11400175[chckIndx(i_11400334, 0, (n_11400175).length-1)].Field0;
+            if (isFilled_11141218(eh_11400483)) {
             F.line = 273;
-            var j_11380490 = (eh_11380483 & (t_11380167.data).length - 1);
+            var j_11400490 = (eh_11400483 & (t_11400167.data).length - 1);
             L5: do {
               F.line = 274;
                 L6: while (true) {
-                if (!isFilled_11126218(t_11380167.data[chckIndx(j_11380490, 0, (t_11380167.data).length-1)].Field0)) break L6;
+                if (!isFilled_11141218(t_11400167.data[chckIndx(j_11400490, 0, (t_11400167.data).length-1)].Field0)) break L6;
                   F.line = 275;
-                  j_11380490 = nextTry_11130014(j_11380490, (t_11380167.data).length - 1);
+                  j_11400490 = nextTry_11145014(j_11400490, (t_11400167.data).length - 1);
                 }
             } while(false);
             F.line = 277;
-            rawInsert_11381108(t_11380167, t_11380167, "data", n_11380175[chckIndx(i_11380334, 0, (n_11380175).length-1)].Field1, n_11380175[chckIndx(i_11380334, 0, (n_11380175).length-1)].Field2, eh_11380483, j_11380490);
+            rawInsert_11401108(t_11400167, t_11400167, "data", n_11400175[chckIndx(i_11400334, 0, (n_11400175).length-1)].Field1, n_11400175[chckIndx(i_11400334, 0, (n_11400175).length-1)].Field2, eh_11400483, j_11400490);
             }
             
             F.line = 59;
-            res_12390395 = addInt(res_12390395, 1);
+            res_12470395 = addInt(res_12470395, 1);
           }
       } while(false);
     } while(false);
@@ -6191,237 +6153,237 @@ function enlarge_11380161(t_11380167) {
 
   
 }
-function rawGetKnownHC_11381609(t_11381613, key_11381614, hc_11381615) {
-  var result_11381616 = 0;
+function rawGetKnownHC_11401609(t_11401613, key_11401614, hc_11401615) {
+  var result_11401616 = 0;
 
   var F={procname:"rawGetKnownHC.rawGetKnownHC",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (((t_11381613.data).length == 0)) {
+    if (((t_11401613.data).length == 0)) {
     F.line = 53;
-    result_11381616 = -1;
+    result_11401616 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11385138 = (hc_11381615 & (t_11381613.data).length - 1);
+    var h_11405138 = (hc_11401615 & (t_11401613.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11381613.data[chckIndx(h_11385138, 0, (t_11381613.data).length-1)].Field0)) break L2;
-          if (((t_11381613.data[chckIndx(h_11385138, 0, (t_11381613.data).length-1)].Field0 == hc_11381615) && eqStrings(t_11381613.data[chckIndx(h_11385138, 0, (t_11381613.data).length-1)].Field1, key_11381614))) {
+        if (!isFilled_11141218(t_11401613.data[chckIndx(h_11405138, 0, (t_11401613.data).length-1)].Field0)) break L2;
+          if (((t_11401613.data[chckIndx(h_11405138, 0, (t_11401613.data).length-1)].Field0 == hc_11401615) && eqStrings(t_11401613.data[chckIndx(h_11405138, 0, (t_11401613.data).length-1)].Field1, key_11401614))) {
           F.line = 61;
-          result_11381616 = h_11385138;
+          result_11401616 = h_11405138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11385138 = nextTry_11130014(h_11385138, (t_11381613.data).length - 1);
+          h_11405138 = nextTry_11145014(h_11405138, (t_11401613.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11381616 = subInt(-1, h_11385138);
+    result_11401616 = subInt(-1, h_11405138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11381616;
+  return result_11401616;
 
 }
-function HEX5BHEX5DHEX3D_11315778(t_11315784, key_11315785, val_11315787) {
+function HEX5BHEX5DHEX3D_11335778(t_11335784, key_11335785, val_11335787) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
-    if (((t_11315784.data).length == 0)) {
+    if (((t_11335784.data).length == 0)) {
     F.line = 163;
-    var correctSizeHEX60gensym19_11325001 = slotsNeeded_11130048(32);
+    var correctSizeHEX60gensym19_11345001 = slotsNeeded_11145048(32);
     F.line = 167;
-    t_11315784.counter = 0;
+    t_11335784.counter = 0;
     F.line = 168;
-    t_11315784.data = new Array(chckRange(correctSizeHEX60gensym19_11325001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym19_11325001, 0, 2147483647);++i) {t_11315784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
+    t_11335784.data = new Array(chckRange(correctSizeHEX60gensym19_11345001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym19_11345001, 0, 2147483647);++i) {t_11335784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
     
     F.line = 57;
-    var hc_11330601 = [0];
+    var hc_11350601 = [0];
     F.line = 58;
-    var index_11340620 = rawGet_11330602(t_11315784, key_11315785, hc_11330601, 0);
-    if ((0 <= index_11340620)) {
+    var index_11360620 = rawGet_11350602(t_11335784, key_11335785, hc_11350601, 0);
+    if ((0 <= index_11360620)) {
     F.line = 59;
-    t_11315784.data[chckIndx(index_11340620, 0, (t_11315784.data).length-1)].Field2 = val_11315787;
+    t_11335784.data[chckIndx(index_11360620, 0, (t_11335784.data).length-1)].Field2 = val_11335787;
     }
     else {
-      if (((t_11315784.data).length == 0)) {
+      if (((t_11335784.data).length == 0)) {
       F.line = 163;
-      var correctSizeHEX60gensym24_11350001 = slotsNeeded_11130048(32);
+      var correctSizeHEX60gensym24_11370001 = slotsNeeded_11145048(32);
       F.line = 167;
-      t_11315784.counter = 0;
+      t_11335784.counter = 0;
       F.line = 168;
-      t_11315784.data = new Array(chckRange(correctSizeHEX60gensym24_11350001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym24_11350001, 0, 2147483647);++i) {t_11315784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
+      t_11335784.data = new Array(chckRange(correctSizeHEX60gensym24_11370001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym24_11370001, 0, 2147483647);++i) {t_11335784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
       
-      if (mustRehash_11355601(t_11315784)) {
+      if (mustRehash_11375601(t_11335784)) {
       F.line = 49;
-      enlarge_11380161(t_11315784);
+      enlarge_11400161(t_11335784);
       F.line = 50;
-      index_11340620 = rawGetKnownHC_11381609(t_11315784, key_11315785, hc_11330601[0]);
+      index_11360620 = rawGetKnownHC_11401609(t_11335784, key_11335785, hc_11350601[0]);
       }
       
       F.line = 51;
-      index_11340620 = subInt(-1, index_11340620);
+      index_11360620 = subInt(-1, index_11360620);
       F.line = 52;
-      rawInsert_11381108(t_11315784, t_11315784, "data", key_11315785, val_11315787, hc_11330601[0], index_11340620);
+      rawInsert_11401108(t_11335784, t_11335784, "data", key_11335785, val_11335787, hc_11350601[0], index_11360620);
       F.line = 60;
-      t_11315784.counter = addInt(t_11315784.counter, 1);
+      t_11335784.counter = addInt(t_11335784.counter, 1);
     }
     
   framePtr = F.prev;
 
   
 }
-function HEX5BHEX5DHEX3D_11386096(t_11386101, key_11386102, val_11386104) {
+function HEX5BHEX5DHEX3D_11406096(t_11406101, key_11406102, val_11406104) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 874;
-    HEX5BHEX5DHEX3D_11315778(t_11386101, key_11386102, val_11386104);
+    HEX5BHEX5DHEX3D_11335778(t_11406101, key_11406102, val_11406104);
   framePtr = F.prev;
 
   
 }
-function newSeq_11385985(len_11385988) {
-  var result_11385990 = [];
+function newSeq_11405985(len_11405988) {
+  var result_11405990 = [];
 
   var F={procname:"newSeq.newSeq",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 656;
-    result_11385990 = new Array(len_11385988); for (var i=0;i<len_11385988;++i) {result_11385990[i]=null;}  framePtr = F.prev;
+    result_11405990 = new Array(len_11405988); for (var i=0;i<len_11405988;++i) {result_11405990[i]=null;}  framePtr = F.prev;
 
-  return result_11385990;
+  return result_11405990;
 
 }
-function newStack_11385975() {
-  var result_11385979 = null;
+function newStack_11405975() {
+  var result_11405979 = null;
 
   var F={procname:"newStack.newStack",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
     F.line = 43;
-    result_11385979 = {content: newSeq_11385985(0)};
+    result_11405979 = {content: newSeq_11405985(0)};
   framePtr = F.prev;
 
-  return result_11385979;
+  return result_11405979;
 
 }
-function rawGet_11250602(t_11250606, key_11250607, hc_11250608, hc_11250608_Idx) {
+function rawGet_11270602(t_11270606, key_11270607, hc_11270608, hc_11270608_Idx) {
             var Tmp3;
 
-  var result_11250609 = 0;
+  var result_11270609 = 0;
 
   var F={procname:"rawGet.rawGet",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 69;
-    hc_11250608[hc_11250608_Idx] = hash_11105214(key_11250607);
-    if ((hc_11250608[hc_11250608_Idx] == 0)) {
+    hc_11270608[hc_11270608_Idx] = hash_11120214(key_11270607);
+    if ((hc_11270608[hc_11270608_Idx] == 0)) {
     F.line = 71;
-    hc_11250608[hc_11250608_Idx] = 314159265;
+    hc_11270608[hc_11270608_Idx] = 314159265;
     }
     
-    if (((t_11250606.data).length == 0)) {
+    if (((t_11270606.data).length == 0)) {
     F.line = 53;
-    result_11250609 = -1;
+    result_11270609 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11260138 = (hc_11250608[hc_11250608_Idx] & (t_11250606.data).length - 1);
+    var h_11280138 = (hc_11270608[hc_11270608_Idx] & (t_11270606.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11250606.data[chckIndx(h_11260138, 0, (t_11250606.data).length-1)].Field0)) break L2;
-            if (!(t_11250606.data[chckIndx(h_11260138, 0, (t_11250606.data).length-1)].Field0 == hc_11250608[hc_11250608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11250606.data[chckIndx(h_11260138, 0, (t_11250606.data).length-1)].Field1, key_11250607);            }          if (Tmp3) {
+        if (!isFilled_11141218(t_11270606.data[chckIndx(h_11280138, 0, (t_11270606.data).length-1)].Field0)) break L2;
+            if (!(t_11270606.data[chckIndx(h_11280138, 0, (t_11270606.data).length-1)].Field0 == hc_11270608[hc_11270608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11270606.data[chckIndx(h_11280138, 0, (t_11270606.data).length-1)].Field1, key_11270607);            }          if (Tmp3) {
           F.line = 61;
-          result_11250609 = h_11260138;
+          result_11270609 = h_11280138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11260138 = nextTry_11130014(h_11260138, (t_11250606.data).length - 1);
+          h_11280138 = nextTry_11145014(h_11280138, (t_11270606.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11250609 = subInt(-1, h_11260138);
+    result_11270609 = subInt(-1, h_11280138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11250609;
+  return result_11270609;
 
 }
-function mustRehash_11275601(t_11275604) {
-  var result_11275605 = false;
+function mustRehash_11295601(t_11295604) {
+  var result_11295605 = false;
 
   var F={procname:"mustRehash.mustRehash",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
-    if (!((t_11275604.counter < (t_11275604.data).length))) {
+    if (!((t_11295604.counter < (t_11295604.data).length))) {
     F.line = 34;
     failedAssertImpl_1305480(makeNimstrLit("/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim(34, 9) `\x0At.counter < t.dataLen` "));
     }
     
     F.line = 35;
-    result_11275605 = ((mulInt((t_11275604.data).length, 2) < mulInt(t_11275604.counter, 3)) || (subInt((t_11275604.data).length, t_11275604.counter) < 4));
+    result_11295605 = ((mulInt((t_11295604.data).length, 2) < mulInt(t_11295604.counter, 3)) || (subInt((t_11295604.data).length, t_11295604.counter) < 4));
   framePtr = F.prev;
 
-  return result_11275605;
+  return result_11295605;
 
 }
-function rawInsert_11301108(t_11301114, data_11301117, data_11301117_Idx, key_11301118, val_11301120, hc_11301121, h_11301122) {
+function rawInsert_11321108(t_11321114, data_11321117, data_11321117_Idx, key_11321118, val_11321120, hc_11321121, h_11321122) {
   var F={procname:"rawInsert.rawInsert",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tableimpl.nim",line:0};
   framePtr = F;
     F.line = 22;
-    data_11301117[data_11301117_Idx][chckIndx(h_11301122, 0, (data_11301117[data_11301117_Idx]).length-1)].Field1 = nimCopy(null, key_11301118, NTI1188013);
+    data_11321117[data_11321117_Idx][chckIndx(h_11321122, 0, (data_11321117[data_11321117_Idx]).length-1)].Field1 = nimCopy(null, key_11321118, NTI1188013);
     F.line = 23;
-    data_11301117[data_11301117_Idx][chckIndx(h_11301122, 0, (data_11301117[data_11301117_Idx]).length-1)].Field2 = val_11301120;
+    data_11321117[data_11321117_Idx][chckIndx(h_11321122, 0, (data_11321117[data_11321117_Idx]).length-1)].Field2 = val_11321120;
     F.line = 24;
-    data_11301117[data_11301117_Idx][chckIndx(h_11301122, 0, (data_11301117[data_11301117_Idx]).length-1)].Field0 = hc_11301121;
+    data_11321117[data_11321117_Idx][chckIndx(h_11321122, 0, (data_11321117[data_11321117_Idx]).length-1)].Field0 = hc_11321121;
   framePtr = F.prev;
 
   
 }
-function enlarge_11300161(t_11300167) {
+function enlarge_11320161(t_11320167) {
   var F={procname:"enlarge.enlarge",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 267;
-    var n_11300175 = [];
+    var n_11320175 = [];
     F.line = 268;
-    n_11300175 = new Array(chckRange(mulInt((t_11300167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11300167.data).length, 2), 0, 2147483647);++i) {n_11300175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
-    var Tmp1 = t_11300167.data; t_11300167.data = n_11300175; n_11300175 = Tmp1;    L2: do {
+    n_11320175 = new Array(chckRange(mulInt((t_11320167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11320167.data).length, 2), 0, 2147483647);++i) {n_11320175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
+    var Tmp1 = t_11320167.data; t_11320167.data = n_11320175; n_11320175 = Tmp1;    L2: do {
       F.line = 270;
-      var i_11300334 = 0;
+      var i_11320334 = 0;
       F.line = 39;
-      var colontmp__12390405 = 0;
+      var colontmp__12470405 = 0;
       F.line = 270;
-      colontmp__12390405 = (n_11300175).length - 1;
+      colontmp__12470405 = (n_11320175).length - 1;
       F.line = 56;
-      var res_12390406 = 0;
+      var res_12470406 = 0;
       L3: do {
         F.line = 57;
           L4: while (true) {
-          if (!(res_12390406 <= colontmp__12390405)) break L4;
+          if (!(res_12470406 <= colontmp__12470405)) break L4;
             F.line = 270;
-            i_11300334 = res_12390406;
+            i_11320334 = res_12470406;
             F.line = 271;
-            var eh_11300483 = n_11300175[chckIndx(i_11300334, 0, (n_11300175).length-1)].Field0;
-            if (isFilled_11126218(eh_11300483)) {
+            var eh_11320483 = n_11320175[chckIndx(i_11320334, 0, (n_11320175).length-1)].Field0;
+            if (isFilled_11141218(eh_11320483)) {
             F.line = 273;
-            var j_11300490 = (eh_11300483 & (t_11300167.data).length - 1);
+            var j_11320490 = (eh_11320483 & (t_11320167.data).length - 1);
             L5: do {
               F.line = 274;
                 L6: while (true) {
-                if (!isFilled_11126218(t_11300167.data[chckIndx(j_11300490, 0, (t_11300167.data).length-1)].Field0)) break L6;
+                if (!isFilled_11141218(t_11320167.data[chckIndx(j_11320490, 0, (t_11320167.data).length-1)].Field0)) break L6;
                   F.line = 275;
-                  j_11300490 = nextTry_11130014(j_11300490, (t_11300167.data).length - 1);
+                  j_11320490 = nextTry_11145014(j_11320490, (t_11320167.data).length - 1);
                 }
             } while(false);
             F.line = 277;
-            rawInsert_11301108(t_11300167, t_11300167, "data", n_11300175[chckIndx(i_11300334, 0, (n_11300175).length-1)].Field1, n_11300175[chckIndx(i_11300334, 0, (n_11300175).length-1)].Field2, eh_11300483, j_11300490);
+            rawInsert_11321108(t_11320167, t_11320167, "data", n_11320175[chckIndx(i_11320334, 0, (n_11320175).length-1)].Field1, n_11320175[chckIndx(i_11320334, 0, (n_11320175).length-1)].Field2, eh_11320483, j_11320490);
             }
             
             F.line = 59;
-            res_12390406 = addInt(res_12390406, 1);
+            res_12470406 = addInt(res_12470406, 1);
           }
       } while(false);
     } while(false);
@@ -6429,433 +6391,737 @@ function enlarge_11300161(t_11300167) {
 
   
 }
-function rawGetKnownHC_11301609(t_11301613, key_11301614, hc_11301615) {
-  var result_11301616 = 0;
+function rawGetKnownHC_11321609(t_11321613, key_11321614, hc_11321615) {
+  var result_11321616 = 0;
 
   var F={procname:"rawGetKnownHC.rawGetKnownHC",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (((t_11301613.data).length == 0)) {
+    if (((t_11321613.data).length == 0)) {
     F.line = 53;
-    result_11301616 = -1;
+    result_11321616 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11305138 = (hc_11301615 & (t_11301613.data).length - 1);
+    var h_11325138 = (hc_11321615 & (t_11321613.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11301613.data[chckIndx(h_11305138, 0, (t_11301613.data).length-1)].Field0)) break L2;
-          if (((t_11301613.data[chckIndx(h_11305138, 0, (t_11301613.data).length-1)].Field0 == hc_11301615) && eqStrings(t_11301613.data[chckIndx(h_11305138, 0, (t_11301613.data).length-1)].Field1, key_11301614))) {
+        if (!isFilled_11141218(t_11321613.data[chckIndx(h_11325138, 0, (t_11321613.data).length-1)].Field0)) break L2;
+          if (((t_11321613.data[chckIndx(h_11325138, 0, (t_11321613.data).length-1)].Field0 == hc_11321615) && eqStrings(t_11321613.data[chckIndx(h_11325138, 0, (t_11321613.data).length-1)].Field1, key_11321614))) {
           F.line = 61;
-          result_11301616 = h_11305138;
+          result_11321616 = h_11325138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11305138 = nextTry_11130014(h_11305138, (t_11301613.data).length - 1);
+          h_11325138 = nextTry_11145014(h_11325138, (t_11321613.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11301616 = subInt(-1, h_11305138);
+    result_11321616 = subInt(-1, h_11325138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11301616;
+  return result_11321616;
 
 }
-function HEX5BHEX5DHEX3D_11235778(t_11235784, key_11235785, val_11235787) {
+function HEX5BHEX5DHEX3D_11255778(t_11255784, key_11255785, val_11255787) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
-    if (((t_11235784.data).length == 0)) {
+    if (((t_11255784.data).length == 0)) {
     F.line = 163;
-    var correctSizeHEX60gensym3_11245001 = slotsNeeded_11130048(32);
+    var correctSizeHEX60gensym3_11265001 = slotsNeeded_11145048(32);
     F.line = 167;
-    t_11235784.counter = 0;
+    t_11255784.counter = 0;
     F.line = 168;
-    t_11235784.data = new Array(chckRange(correctSizeHEX60gensym3_11245001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym3_11245001, 0, 2147483647);++i) {t_11235784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
+    t_11255784.data = new Array(chckRange(correctSizeHEX60gensym3_11265001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym3_11265001, 0, 2147483647);++i) {t_11255784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
     
     F.line = 57;
-    var hc_11250601 = [0];
+    var hc_11270601 = [0];
     F.line = 58;
-    var index_11260620 = rawGet_11250602(t_11235784, key_11235785, hc_11250601, 0);
-    if ((0 <= index_11260620)) {
+    var index_11280620 = rawGet_11270602(t_11255784, key_11255785, hc_11270601, 0);
+    if ((0 <= index_11280620)) {
     F.line = 59;
-    t_11235784.data[chckIndx(index_11260620, 0, (t_11235784.data).length-1)].Field2 = val_11235787;
+    t_11255784.data[chckIndx(index_11280620, 0, (t_11255784.data).length-1)].Field2 = val_11255787;
     }
     else {
-      if (((t_11235784.data).length == 0)) {
+      if (((t_11255784.data).length == 0)) {
       F.line = 163;
-      var correctSizeHEX60gensym8_11270001 = slotsNeeded_11130048(32);
+      var correctSizeHEX60gensym8_11290001 = slotsNeeded_11145048(32);
       F.line = 167;
-      t_11235784.counter = 0;
+      t_11255784.counter = 0;
       F.line = 168;
-      t_11235784.data = new Array(chckRange(correctSizeHEX60gensym8_11270001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym8_11270001, 0, 2147483647);++i) {t_11235784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
+      t_11255784.data = new Array(chckRange(correctSizeHEX60gensym8_11290001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym8_11290001, 0, 2147483647);++i) {t_11255784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
       
-      if (mustRehash_11275601(t_11235784)) {
+      if (mustRehash_11295601(t_11255784)) {
       F.line = 49;
-      enlarge_11300161(t_11235784);
+      enlarge_11320161(t_11255784);
       F.line = 50;
-      index_11260620 = rawGetKnownHC_11301609(t_11235784, key_11235785, hc_11250601[0]);
+      index_11280620 = rawGetKnownHC_11321609(t_11255784, key_11255785, hc_11270601[0]);
       }
       
       F.line = 51;
-      index_11260620 = subInt(-1, index_11260620);
+      index_11280620 = subInt(-1, index_11280620);
       F.line = 52;
-      rawInsert_11301108(t_11235784, t_11235784, "data", key_11235785, val_11235787, hc_11250601[0], index_11260620);
+      rawInsert_11321108(t_11255784, t_11255784, "data", key_11255785, val_11255787, hc_11270601[0], index_11280620);
       F.line = 60;
-      t_11235784.counter = addInt(t_11235784.counter, 1);
+      t_11255784.counter = addInt(t_11255784.counter, 1);
     }
     
   framePtr = F.prev;
 
   
 }
-function HEX5BHEX5DHEX3D_11390058(t_11390063, key_11390064, val_11390066) {
+function HEX5BHEX5DHEX3D_11410058(t_11410063, key_11410064, val_11410066) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 874;
-    HEX5BHEX5DHEX3D_11235778(t_11390063, key_11390064, val_11390066);
+    HEX5BHEX5DHEX3D_11255778(t_11410063, key_11410064, val_11410066);
   framePtr = F.prev;
 
   
 }
-function HEX5BHEX5D_11390785(t_11390791, key_11390792) {
-  var result_11390794 = null;
-  var result_11390794_Idx = 0;
+function HEX5BHEX5D_11410785(t_11410791, key_11410792) {
+  var result_11410794 = null;
+  var result_11410794_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 257;
-    var hcHEX60gensym22_11390795 = [0];
+    var hcHEX60gensym22_11410795 = [0];
     F.line = 258;
-    var indexHEX60gensym22_11390804 = rawGet_11250602(t_11390791, key_11390792, hcHEX60gensym22_11390795, 0);
-    if ((0 <= indexHEX60gensym22_11390804)) {
+    var indexHEX60gensym22_11410804 = rawGet_11270602(t_11410791, key_11410792, hcHEX60gensym22_11410795, 0);
+    if ((0 <= indexHEX60gensym22_11410804)) {
     F.line = 259;
-    result_11390794 = t_11390791.data[chckIndx(indexHEX60gensym22_11390804, 0, (t_11390791.data).length-1)]; result_11390794_Idx = "Field2";
+    result_11410794 = t_11410791.data[chckIndx(indexHEX60gensym22_11410804, 0, (t_11410791.data).length-1)]; result_11410794_Idx = "Field2";
     }
     else {
       F.line = 262;
-      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_11390792 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
+      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_11410792 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
     }
     
   framePtr = F.prev;
 
-  return [result_11390794, result_11390794_Idx];
+  return [result_11410794, result_11410794_Idx];
 
 }
-function HEX5BHEX5D_11390488(t_11390493, key_11390494) {
+function HEX5BHEX5D_11410488(t_11410493, key_11410494) {
     var Tmp1;
 
-  var result_11390496 = null;
-  var result_11390496_Idx = 0;
+  var result_11410496 = null;
+  var result_11410496_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 858;
-    result_11390496 = (Tmp1 = HEX5BHEX5D_11390785(t_11390493, key_11390494), Tmp1)[0]; result_11390496_Idx = Tmp1[1];
+    result_11410496 = (Tmp1 = HEX5BHEX5D_11410785(t_11410493, key_11410494), Tmp1)[0]; result_11410496_Idx = Tmp1[1];
   framePtr = F.prev;
 
-  return [result_11390496, result_11390496_Idx];
+  return [result_11410496, result_11410496_Idx];
 
 }
-function initTable_11395172(initialSize_11395176) {
-  var result_11395178 = ({data: [], counter: 0});
+function initTable_11415172(initialSize_11415176) {
+  var result_11415178 = ({data: [], counter: 0});
 
   var F={procname:"initTable.initTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 163;
-    var correctSizeHEX60gensym34_11400001 = slotsNeeded_11130048(chckRange(initialSize_11395176, 0, 2147483647));
+    var correctSizeHEX60gensym34_11420001 = slotsNeeded_11145048(chckRange(initialSize_11415176, 0, 2147483647));
     F.line = 167;
-    result_11395178.counter = 0;
+    result_11415178.counter = 0;
     F.line = 168;
-    result_11395178.data = new Array(chckRange(correctSizeHEX60gensym34_11400001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym34_11400001, 0, 2147483647);++i) {result_11395178.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
+    result_11415178.data = new Array(chckRange(correctSizeHEX60gensym34_11420001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym34_11420001, 0, 2147483647);++i) {result_11415178.data[i]={Field0: 0, Field1: [], Field2: null};}  framePtr = F.prev;
 
-  return result_11395178;
+  return result_11415178;
 
 }
-function newTable_11475778(initialSize_11475782) {
-  var result_11475784 = null;
+function newTable_11495778(initialSize_11495782) {
+  var result_11495784 = null;
 
   var F={procname:"newTable.newTable",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 810;
-    result_11475784 = ({data: [], counter: 0});
+    result_11495784 = ({data: [], counter: 0});
     F.line = 811;
-    nimCopy(result_11475784, initTable_11395172(initialSize_11475782), NTI11228048);
+    nimCopy(result_11495784, initTable_11415172(initialSize_11495782), NTI11248048);
   framePtr = F.prev;
 
-  return result_11475784;
+  return result_11495784;
 
 }
-function HEX5BHEX5D_11476364(t_11476370, key_11476371) {
-  var result_11476373 = null;
-  var result_11476373_Idx = 0;
+function HEX5BHEX5D_11496364(t_11496370, key_11496371) {
+  var result_11496373 = null;
+  var result_11496373_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 257;
-    var hcHEX60gensym22_11476374 = [0];
+    var hcHEX60gensym22_11496374 = [0];
     F.line = 258;
-    var indexHEX60gensym22_11476383 = rawGet_11330602(t_11476370, key_11476371, hcHEX60gensym22_11476374, 0);
-    if ((0 <= indexHEX60gensym22_11476383)) {
+    var indexHEX60gensym22_11496383 = rawGet_11350602(t_11496370, key_11496371, hcHEX60gensym22_11496374, 0);
+    if ((0 <= indexHEX60gensym22_11496383)) {
     F.line = 259;
-    result_11476373 = t_11476370.data[chckIndx(indexHEX60gensym22_11476383, 0, (t_11476370.data).length-1)]; result_11476373_Idx = "Field2";
+    result_11496373 = t_11496370.data[chckIndx(indexHEX60gensym22_11496383, 0, (t_11496370.data).length-1)]; result_11496373_Idx = "Field2";
     }
     else {
       F.line = 262;
-      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_11476371 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
+      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_11496371 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
     }
     
   framePtr = F.prev;
 
-  return [result_11476373, result_11476373_Idx];
+  return [result_11496373, result_11496373_Idx];
 
 }
-function HEX5BHEX5D_11476067(t_11476072, key_11476073) {
+function HEX5BHEX5D_11496067(t_11496072, key_11496073) {
     var Tmp1;
 
-  var result_11476075 = null;
-  var result_11476075_Idx = 0;
+  var result_11496075 = null;
+  var result_11496075_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 858;
-    result_11476075 = (Tmp1 = HEX5BHEX5D_11476364(t_11476072, key_11476073), Tmp1)[0]; result_11476075_Idx = Tmp1[1];
+    result_11496075 = (Tmp1 = HEX5BHEX5D_11496364(t_11496072, key_11496073), Tmp1)[0]; result_11496075_Idx = Tmp1[1];
   framePtr = F.prev;
 
-  return [result_11476075, result_11476075_Idx];
+  return [result_11496075, result_11496075_Idx];
 
 }
-function newRuntime_11228387(tokens_11228390) {
+function newRuntime_11248387(tokens_11248390) {
     var Tmp1;
     var Tmp2;
 
-  var result_11228478 = null;
+  var result_11248478 = null;
 
   var F={procname:"runtime.newRuntime",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
   framePtr = F;
-    F.line = 180;
-    result_11228478 = {hadError: false, tokens: nimCopy(null, tokens_11228390, NTI11228389), stacks: newTable_11385778(32), procs: newTable_11305778(32), nestation: 0, token: 0, output: [], environment: ({procedure: null, variables: null, stack: null, arguments: [], condState: null, pc: 0})};
-    F.line = 189;
-    HEX5BHEX5DHEX3D_11386096(result_11228478.stacks, makeNimstrLit("global"), newStack_11385975());
-    F.line = 193;
-    HEX5BHEX5DHEX3D_11390058(result_11228478.procs, makeNimstrLit("global"), {name: makeNimstrLit("global"), content: newSeq_10721230(0), argCount: 0, isPrivate: false});
-    F.line = 195;
-    nimCopy(result_11228478.environment, {procedure: (Tmp1 = HEX5BHEX5D_11390488(result_11228478.procs, makeNimstrLit("global")), Tmp1)[0][Tmp1[1]], variables: newTable_11475778(32), stack: (Tmp2 = HEX5BHEX5D_11476067(result_11228478.stacks, makeNimstrLit("global")), Tmp2)[0][Tmp2[1]], condState: {isSkipping: false, ifCounter: 0}, arguments: newSeq_11385985(0), pc: 0}, NTI11228023);
+    F.line = 177;
+    result_11248478 = {hadError: false, tokens: nimCopy(null, tokens_11248390, NTI11248389), stacks: newTable_11405778(32), procs: newTable_11325778(32), nestation: 0, token: 0, output: [], environment: ({procedure: null, variables: null, stack: null, arguments: [], condState: null, pc: 0})};
+    F.line = 186;
+    HEX5BHEX5DHEX3D_11406096(result_11248478.stacks, makeNimstrLit("global"), newStack_11405975());
+    F.line = 190;
+    HEX5BHEX5DHEX3D_11410058(result_11248478.procs, makeNimstrLit("global"), {name: makeNimstrLit("global"), content: newSeq_10716243(0), argCount: 0, isPrivate: false});
+    F.line = 192;
+    nimCopy(result_11248478.environment, {procedure: (Tmp1 = HEX5BHEX5D_11410488(result_11248478.procs, makeNimstrLit("global")), Tmp1)[0][Tmp1[1]], variables: newTable_11495778(32), stack: (Tmp2 = HEX5BHEX5D_11496067(result_11248478.stacks, makeNimstrLit("global")), Tmp2)[0][Tmp2[1]], condState: {isSkipping: false, ifCounter: 0}, arguments: newSeq_11405985(0), pc: 0}, NTI11248023);
   framePtr = F.prev;
 
-  return result_11228478;
+  return result_11248478;
 
 }
-function expect_11228404(self_11228406, kind_11228407) {
+function expect_11248404(self_11248406, kind_11248407) {
     var Tmp1;
       var Tmp2;
 
-  var result_11480165 = false;
+  var result_11500165 = false;
 
   var F={procname:"runtime.expect",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 227;
-      if ((chckRange(((self_11228406.token + 2) >>> 0), -2147483648, 2147483647) == (self_11228406.tokens).length)) Tmp2 = true; else {        Tmp2 = ((self_11228406.tokens).length <= addInt(chckRange(self_11228406.token, -2147483648, 2147483647), 1));      }    if (Tmp2) {
+    F.line = 224;
+      if ((chckRange(((self_11248406.token + 2) >>> 0), -2147483648, 2147483647) == (self_11248406.tokens).length)) Tmp2 = true; else {        Tmp2 = ((self_11248406.tokens).length <= addInt(chckRange(self_11248406.token, -2147483648, 2147483647), 1));      }    if (Tmp2) {
     Tmp1 = false;
     }
     else {
-    Tmp1 = (self_11228406.tokens[chckIndx(((self_11228406.token + 1) >>> 0), 0, (self_11228406.tokens).length-1)].kind == kind_11228407);
+    Tmp1 = (self_11248406.tokens[chckIndx(((self_11248406.token + 1) >>> 0), 0, (self_11248406.tokens).length-1)].kind == kind_11248407);
     }
     
-    result_11480165 = Tmp1;
+    result_11500165 = Tmp1;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11480165;
+  return result_11500165;
 
 }
-function hasKey_11515458(t_11515463, key_11515464) {
-  var result_11515465 = false;
+function hasKey_11535458(t_11535463, key_11535464) {
+  var result_11535465 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 389;
-    var hc_11515466 = [0];
+    var hc_11535466 = [0];
     F.line = 390;
-    result_11515465 = (0 <= rawGet_11250602(t_11515463, key_11515464, hc_11515466, 0));
+    result_11535465 = (0 <= rawGet_11270602(t_11535463, key_11535464, hc_11535466, 0));
   framePtr = F.prev;
 
-  return result_11515465;
+  return result_11535465;
 
 }
-function hasKey_11515197(t_11515202, key_11515203) {
-  var result_11515204 = false;
+function hasKey_11535197(t_11535202, key_11535203) {
+  var result_11535204 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 892;
-    result_11515204 = hasKey_11515458(t_11515202, key_11515203);
+    result_11535204 = hasKey_11535458(t_11535202, key_11535203);
   framePtr = F.prev;
 
-  return result_11515204;
+  return result_11535204;
 
 }
-function contains_11515117(t_11515122, key_11515123) {
-  var result_11515124 = false;
+function contains_11535117(t_11535122, key_11535123) {
+  var result_11535124 = false;
 
   var F={procname:"contains.contains",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 902;
-    result_11515124 = hasKey_11515197(t_11515122, key_11515123);
+    result_11535124 = hasKey_11535197(t_11535122, key_11535123);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11515124;
+  return result_11535124;
 
 }
-function rawGet_11420602(t_11420606, key_11420607, hc_11420608, hc_11420608_Idx) {
+function rawGet_11440602(t_11440606, key_11440607, hc_11440608, hc_11440608_Idx) {
             var Tmp3;
 
-  var result_11420609 = 0;
+  var result_11440609 = 0;
 
   var F={procname:"rawGet.rawGet",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 69;
-    hc_11420608[hc_11420608_Idx] = hash_11105214(key_11420607);
-    if ((hc_11420608[hc_11420608_Idx] == 0)) {
+    hc_11440608[hc_11440608_Idx] = hash_11120214(key_11440607);
+    if ((hc_11440608[hc_11440608_Idx] == 0)) {
     F.line = 71;
-    hc_11420608[hc_11420608_Idx] = 314159265;
+    hc_11440608[hc_11440608_Idx] = 314159265;
     }
     
-    if (((t_11420606.data).length == 0)) {
+    if (((t_11440606.data).length == 0)) {
     F.line = 53;
-    result_11420609 = -1;
+    result_11440609 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11430138 = (hc_11420608[hc_11420608_Idx] & (t_11420606.data).length - 1);
+    var h_11450138 = (hc_11440608[hc_11440608_Idx] & (t_11440606.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11420606.data[chckIndx(h_11430138, 0, (t_11420606.data).length-1)].Field0)) break L2;
-            if (!(t_11420606.data[chckIndx(h_11430138, 0, (t_11420606.data).length-1)].Field0 == hc_11420608[hc_11420608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11420606.data[chckIndx(h_11430138, 0, (t_11420606.data).length-1)].Field1, key_11420607);            }          if (Tmp3) {
+        if (!isFilled_11141218(t_11440606.data[chckIndx(h_11450138, 0, (t_11440606.data).length-1)].Field0)) break L2;
+            if (!(t_11440606.data[chckIndx(h_11450138, 0, (t_11440606.data).length-1)].Field0 == hc_11440608[hc_11440608_Idx])) Tmp3 = false; else {              Tmp3 = eqStrings(t_11440606.data[chckIndx(h_11450138, 0, (t_11440606.data).length-1)].Field1, key_11440607);            }          if (Tmp3) {
           F.line = 61;
-          result_11420609 = h_11430138;
+          result_11440609 = h_11450138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11430138 = nextTry_11130014(h_11430138, (t_11420606.data).length - 1);
+          h_11450138 = nextTry_11145014(h_11450138, (t_11440606.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11420609 = subInt(-1, h_11430138);
+    result_11440609 = subInt(-1, h_11450138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11420609;
+  return result_11440609;
 
 }
-function hasKey_11520458(t_11520463, key_11520464) {
-  var result_11520465 = false;
+function hasKey_11540458(t_11540463, key_11540464) {
+  var result_11540465 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 389;
-    var hc_11520466 = [0];
+    var hc_11540466 = [0];
     F.line = 390;
-    result_11520465 = (0 <= rawGet_11420602(t_11520463, key_11520464, hc_11520466, 0));
+    result_11540465 = (0 <= rawGet_11440602(t_11540463, key_11540464, hc_11540466, 0));
   framePtr = F.prev;
 
-  return result_11520465;
+  return result_11540465;
 
 }
-function hasKey_11520197(t_11520202, key_11520203) {
-  var result_11520204 = false;
+function hasKey_11540197(t_11540202, key_11540203) {
+  var result_11540204 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 892;
-    result_11520204 = hasKey_11520458(t_11520202, key_11520203);
+    result_11540204 = hasKey_11540458(t_11540202, key_11540203);
   framePtr = F.prev;
 
-  return result_11520204;
+  return result_11540204;
 
 }
-function contains_11520117(t_11520122, key_11520123) {
-  var result_11520124 = false;
+function contains_11540117(t_11540122, key_11540123) {
+  var result_11540124 = false;
 
   var F={procname:"contains.contains",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 902;
-    result_11520124 = hasKey_11520197(t_11520122, key_11520123);
+    result_11540124 = hasKey_11540197(t_11540122, key_11540123);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11520124;
+  return result_11540124;
 
 }
-function find_11535009(a_11535013, item_11535014) {
-  var result_11535015 = 0;
+function nucruneLen(s_2502025) {
+  var result_2502026 = 0;
+
+  var F={procname:"unicode.runeLen",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/unicode.nim",line:0};
+  framePtr = F;
+    F.line = 42;
+    result_2502026 = 0;
+    F.line = 43;
+    var i_2502028 = 0;
+    L1: do {
+      F.line = 44;
+        L2: while (true) {
+        if (!(i_2502028 < (s_2502025).length)) break L2;
+          if ((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] <= 127)) {
+          F.line = 45;
+          i_2502028 = addInt(i_2502028, 1);
+          }
+          else {
+          if ((((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] >>> 0) >>> 5) == 6)) {
+          F.line = 46;
+          i_2502028 = addInt(i_2502028, 2);
+          }
+          else {
+          if ((((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] >>> 0) >>> 4) == 14)) {
+          F.line = 47;
+          i_2502028 = addInt(i_2502028, 3);
+          }
+          else {
+          if ((((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] >>> 0) >>> 3) == 30)) {
+          F.line = 48;
+          i_2502028 = addInt(i_2502028, 4);
+          }
+          else {
+          if ((((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] >>> 0) >>> 2) == 62)) {
+          F.line = 49;
+          i_2502028 = addInt(i_2502028, 5);
+          }
+          else {
+          if ((((s_2502025[chckIndx(i_2502028, 0, (s_2502025).length-1)] >>> 0) >>> 1) == 126)) {
+          F.line = 50;
+          i_2502028 = addInt(i_2502028, 6);
+          }
+          else {
+            F.line = 51;
+          i_2502028 = addInt(i_2502028, 1);
+          }
+          }}}}}
+          F.line = 52;
+          result_2502026 = addInt(result_2502026, 1);
+        }
+    } while(false);
+  framePtr = F.prev;
+
+  return result_2502026;
+
+}
+function runeLenAt_2502128(s_2502130, i_2502131) {
+  var result_2502132 = 0;
+
+  var F={procname:"unicode.runeLenAt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/unicode.nim",line:0};
+  framePtr = F;
+    if ((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] <= 127)) {
+    F.line = 64;
+    result_2502132 = 1;
+    }
+    else {
+    if ((((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] >>> 0) >>> 5) == 6)) {
+    F.line = 65;
+    result_2502132 = 2;
+    }
+    else {
+    if ((((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] >>> 0) >>> 4) == 14)) {
+    F.line = 66;
+    result_2502132 = 3;
+    }
+    else {
+    if ((((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] >>> 0) >>> 3) == 30)) {
+    F.line = 67;
+    result_2502132 = 4;
+    }
+    else {
+    if ((((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] >>> 0) >>> 2) == 62)) {
+    F.line = 68;
+    result_2502132 = 5;
+    }
+    else {
+    if ((((s_2502130[chckIndx(i_2502131, 0, (s_2502130).length-1)] >>> 0) >>> 1) == 126)) {
+    F.line = 69;
+    result_2502132 = 6;
+    }
+    else {
+      F.line = 70;
+      result_2502132 = 1;
+    }
+    }}}}}
+  framePtr = F.prev;
+
+  return result_2502132;
+
+}
+function runeOffset_3125259(s_3125261, pos_3125262, start_3125263) {
+  var result_3125264 = 0;
+
+  var F={procname:"unicode.runeOffset",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/unicode.nim",line:0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 321;
+    var i_3125266 = 0;
+    F.line = 322;
+    var o_3125267 = start_3125263;
+    L1: do {
+      F.line = 323;
+        L2: while (true) {
+        if (!(i_3125266 < pos_3125262)) break L2;
+          F.line = 324;
+          o_3125267 = addInt(o_3125267, chckRange(runeLenAt_2502128(s_3125261, o_3125267), 0, 2147483647));
+          if (((s_3125261).length <= o_3125267)) {
+          F.line = 326;
+          result_3125264 = -1;
+          break BeforeRet;
+          }
+          
+          F.line = 327;
+          i_3125266 = addInt(i_3125266, 1);
+        }
+    } while(false);
+    F.line = 328;
+    result_3125264 = o_3125267;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_3125264;
+
+}
+function validateUtf8_2745244(s_2745246) {
+            var Tmp3;
+            var Tmp4;
+            var Tmp5;
+            var Tmp6;
+            var Tmp7;
+            var Tmp8;
+
+  var result_2745247 = 0;
+
+  var F={procname:"unicode.validateUtf8",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/unicode.nim",line:0};
+  framePtr = F;
+  BeforeRet: do {
+    F.line = 174;
+    var i_2745249 = 0;
+    F.line = 175;
+    var L_2745250 = (s_2745246).length;
+    L1: do {
+      F.line = 176;
+        L2: while (true) {
+        if (!(i_2745249 < L_2745250)) break L2;
+          if ((s_2745246[chckIndx(i_2745249, 0, (s_2745246).length-1)] <= 127)) {
+          F.line = 178;
+          i_2745249 = addInt(i_2745249, 1);
+          }
+          else {
+          if ((((s_2745246[chckIndx(i_2745249, 0, (s_2745246).length-1)] >>> 0) >>> 5) == 6)) {
+          if ((s_2745246[chckIndx(i_2745249, 0, (s_2745246).length-1)] < 194)) {
+          F.line = 180;
+          result_2745247 = i_2745249;
+          break BeforeRet;
+          }
+          
+            if (!(addInt(i_2745249, 1) < L_2745250)) Tmp3 = false; else {              Tmp3 = (((s_2745246[chckIndx(addInt(i_2745249, 1), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }          if (Tmp3) {
+          F.line = 181;
+          i_2745249 = addInt(i_2745249, 2);
+          }
+          else {
+            F.line = 182;
+            result_2745247 = i_2745249;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if ((((s_2745246[chckIndx(i_2745249, 0, (s_2745246).length-1)] >>> 0) >>> 4) == 14)) {
+            if (!(addInt(i_2745249, 2) < L_2745250)) Tmp5 = false; else {              Tmp5 = (((s_2745246[chckIndx(addInt(i_2745249, 1), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }            if (!Tmp5) Tmp4 = false; else {              Tmp4 = (((s_2745246[chckIndx(addInt(i_2745249, 2), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }          if (Tmp4) {
+          F.line = 185;
+          i_2745249 = addInt(i_2745249, 3);
+          }
+          else {
+            F.line = 186;
+            result_2745247 = i_2745249;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+          if ((((s_2745246[chckIndx(i_2745249, 0, (s_2745246).length-1)] >>> 0) >>> 3) == 30)) {
+            if (!(addInt(i_2745249, 3) < L_2745250)) Tmp8 = false; else {              Tmp8 = (((s_2745246[chckIndx(addInt(i_2745249, 1), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }            if (!Tmp8) Tmp7 = false; else {              Tmp7 = (((s_2745246[chckIndx(addInt(i_2745249, 2), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }            if (!Tmp7) Tmp6 = false; else {              Tmp6 = (((s_2745246[chckIndx(addInt(i_2745249, 3), 0, (s_2745246).length-1)] >>> 0) >>> 6) == 2);            }          if (Tmp6) {
+          F.line = 191;
+          i_2745249 = addInt(i_2745249, 4);
+          }
+          else {
+            F.line = 192;
+            result_2745247 = i_2745249;
+            break BeforeRet;
+          }
+          
+          }
+          else {
+            F.line = 194;
+            result_2745247 = i_2745249;
+            break BeforeRet;
+          }
+          }}}
+        }
+    } while(false);
+    F.line = 195;
+    result_2745247 = -1;
+    break BeforeRet;
+  } while (false);
+  framePtr = F.prev;
+
+  return result_2745247;
+
+}
+function alignString_10600222(s_10600224, minimumWidth_10600225, align_10600226, fill_10600227) {
+      var Tmp1;
+
+  var result_10600228 = [];
+
+  var F={procname:"strformat.alignString",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
+  framePtr = F;
+    if ((minimumWidth_10600225 == 0)) {
+    F.line = 327;
+    result_10600228 = nimCopy(null, s_10600224, NTI1188013);
+    }
+    else {
+      F.line = 329;
+      if ((validateUtf8_2745244(s_10600224) == -1)) {
+      Tmp1 = nucruneLen(s_10600224);
+      }
+      else {
+      Tmp1 = (s_10600224).length;
+      }
+      
+      var sRuneLen_10600229 = Tmp1;
+      F.line = 330;
+      var toFill_10600230 = subInt(minimumWidth_10600225, sRuneLen_10600229);
+      if ((toFill_10600230 <= 0)) {
+      F.line = 332;
+      result_10600228 = nimCopy(null, s_10600224, NTI1188013);
+      }
+      else {
+      if (((align_10600226 == 60) || (align_10600226 == 0))) {
+      F.line = 334;
+      result_10600228 = nimCopy(null, (s_10600224 || []).concat(nsuRepeatChar(fill_10600227, chckRange(toFill_10600230, 0, 2147483647)) || []), NTI1188013);
+      }
+      else {
+      if ((align_10600226 == 94)) {
+      F.line = 336;
+      var half_10600231 = divInt(toFill_10600230, 2);
+      F.line = 337;
+      result_10600228 = nimCopy(null, (nsuRepeatChar(fill_10600227, chckRange(half_10600231, 0, 2147483647)) || []).concat(s_10600224 || [],nsuRepeatChar(fill_10600227, chckRange(subInt(toFill_10600230, half_10600231), 0, 2147483647)) || []), NTI1188013);
+      }
+      else {
+        F.line = 339;
+        result_10600228 = nimCopy(null, (nsuRepeatChar(fill_10600227, chckRange(toFill_10600230, 0, 2147483647)) || []).concat(s_10600224 || []), NTI1188013);
+      }
+      }}
+    }
+    
+  framePtr = F.prev;
+
+  return result_10600228;
+
+}
+function formatValue_10645080(result_10645083, result_10645083_Idx, value_10645084, specifier_10645085) {
+  var F={procname:"strformat.formatValue",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strformat.nim",line:0};
+  framePtr = F;
+    F.line = 547;
+    var spec_10645086 = parseStandardFormatSpecifier_10600322(specifier_10645085, 0, false);
+    F.line = 548;
+    var value_10645087 = nimCopy(null, value_10645084, NTI1188013);
+    F.line = 549;
+    switch (spec_10645086.typ) {
+    case 115:
+    case 0:
+      break;
+    default: 
+      F.line = 552;
+      raiseException({message: (makeNimstrLit("invalid type in format string for string, expected \'s\', but got ") || []).concat([spec_10645086.typ]), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+      break;
+    }
+    if (!((spec_10645086.precision == -1))) {
+    if ((spec_10645086.precision < nucruneLen(value_10645087))) {
+    F.line = 557;
+    (value_10645087.length = chckRange(runeOffset_3125259(value_10645087, chckRange(spec_10645086.precision, 0, 2147483647), 0), 0, 2147483647));
+    }
+    
+    }
+    
+    F.line = 558;
+    result_10645083[result_10645083_Idx].push.apply(result_10645083[result_10645083_Idx], alignString_10600222(value_10645087, spec_10645086.minimumWidth, spec_10645086.align, spec_10645086.fill));;
+  framePtr = F.prev;
+
+  
+}
+function find_11565009(a_11565013, item_11565014) {
+  var result_11565015 = 0;
 
   var F={procname:"find.find",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 1803;
-    result_11535015 = 0;
+    result_11565015 = 0;
     L1: do {
       F.line = 1804;
-      var i_11535046 = 0;
+      var i_11565046 = 0;
       F.line = 18;
-      var i_12390423 = 0;
+      var i_12470450 = 0;
       L2: do {
         F.line = 19;
           L3: while (true) {
-          if (!(i_12390423 < (a_11535013).length)) break L3;
+          if (!(i_12470450 < (a_11565013).length)) break L3;
             F.line = 1804;
-            i_11535046 = a_11535013[chckIndx(i_12390423, 0, (a_11535013).length-1)];
-            if ((i_11535046 == item_11535014)) {
+            i_11565046 = a_11565013[chckIndx(i_12470450, 0, (a_11565013).length-1)];
+            if ((i_11565046 == item_11565014)) {
             F.line = 1805;
             break BeforeRet;
             }
             
             F.line = 1806;
-            result_11535015 = addInt(result_11535015, 1);
+            result_11565015 = addInt(result_11565015, 1);
             F.line = 21;
-            i_12390423 = addInt(i_12390423, 1);
+            i_12470450 = addInt(i_12470450, 1);
           }
       } while(false);
     } while(false);
     F.line = 1807;
-    result_11535015 = -1;
+    result_11565015 = -1;
   } while (false);
   framePtr = F.prev;
 
-  return result_11535015;
+  return result_11565015;
 
 }
-function contains_11535002(a_11535006, item_11535007) {
-  var result_11535008 = false;
+function contains_11565002(a_11565006, item_11565007) {
+  var result_11565008 = false;
 
   var F={procname:"contains.contains",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 1821;
-    result_11535008 = (0 <= find_11535009(a_11535006, item_11535007));
+    result_11565008 = (0 <= find_11565009(a_11565006, item_11565007));
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11535008;
+  return result_11565008;
 
 }
-function integerOutOfRangeError_2390049() {
+function integerOutOfRangeError_2385049() {
   var F={procname:"parseutils.integerOutOfRangeError",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 411;
@@ -6864,109 +7130,109 @@ function integerOutOfRangeError_2390049() {
 
   
 }
-function rawParseUInt_2435061(s_2435063, b_2435065, b_2435065_Idx, start_2435066) {
+function rawParseUInt_2430061(s_2430063, b_2430065, b_2430065_Idx, start_2430066) {
       var Tmp1;
       var Tmp2;
           var Tmp5;
 
-  var result_2435068 = 0;
+  var result_2430068 = 0;
 
   var F={procname:"parseutils.rawParseUInt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 506;
-    var res_2435069 = 0;
+    var res_2430069 = 0;
     F.line = 507;
-    var prev_2435070 = 0;
+    var prev_2430070 = 0;
     F.line = 508;
-    var i_2435071 = start_2435066;
-      if (!((i_2435071 < subInt((s_2435063).length, 1)) && (s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)] == 45))) Tmp1 = false; else {        Tmp1 = (ConstSet19[s_2435063[chckIndx(addInt(i_2435071, 1), 0, (s_2435063).length-1)]] != undefined);      }    if (Tmp1) {
+    var i_2430071 = start_2430066;
+      if (!((i_2430071 < subInt((s_2430063).length, 1)) && (s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)] == 45))) Tmp1 = false; else {        Tmp1 = (ConstSet20[s_2430063[chckIndx(addInt(i_2430071, 1), 0, (s_2430063).length-1)]] != undefined);      }    if (Tmp1) {
     F.line = 510;
-    integerOutOfRangeError_2390049();
+    integerOutOfRangeError_2385049();
     }
     
-    if (((i_2435071 < (s_2435063).length) && (s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)] == 43))) {
+    if (((i_2430071 < (s_2430063).length) && (s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)] == 43))) {
     F.line = 511;
-    i_2435071 = addInt(i_2435071, 1);
+    i_2430071 = addInt(i_2430071, 1);
     }
     
-      if (!(i_2435071 < (s_2435063).length)) Tmp2 = false; else {        Tmp2 = (ConstSet20[s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)]] != undefined);      }    if (Tmp2) {
+      if (!(i_2430071 < (s_2430063).length)) Tmp2 = false; else {        Tmp2 = (ConstSet21[s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)]] != undefined);      }    if (Tmp2) {
     F.line = 513;
-    b_2435065[b_2435065_Idx] = 0;
+    b_2430065[b_2430065_Idx] = 0;
     L3: do {
       F.line = 514;
         L4: while (true) {
-          if (!(i_2435071 < (s_2435063).length)) Tmp5 = false; else {            Tmp5 = (ConstSet21[s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)]] != undefined);          }        if (!Tmp5) break L4;
+          if (!(i_2430071 < (s_2430063).length)) Tmp5 = false; else {            Tmp5 = (ConstSet22[s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)]] != undefined);          }        if (!Tmp5) break L4;
           F.line = 515;
-          prev_2435070 = res_2435069;
+          prev_2430070 = res_2430069;
           F.line = 516;
-          res_2435069 = ((((res_2435069 * 10) >>> 0) + subInt(s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)], 48)) >>> 0);
-          if ((res_2435069 < prev_2435070)) {
+          res_2430069 = ((((res_2430069 * 10) >>> 0) + subInt(s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)], 48)) >>> 0);
+          if ((res_2430069 < prev_2430070)) {
           F.line = 518;
-          integerOutOfRangeError_2390049();
+          integerOutOfRangeError_2385049();
           }
           
           F.line = 519;
-          i_2435071 = addInt(i_2435071, 1);
+          i_2430071 = addInt(i_2430071, 1);
           L6: do {
             F.line = 520;
               L7: while (true) {
-              if (!((i_2435071 < (s_2435063).length) && (s_2435063[chckIndx(i_2435071, 0, (s_2435063).length-1)] == 95))) break L7;
+              if (!((i_2430071 < (s_2430063).length) && (s_2430063[chckIndx(i_2430071, 0, (s_2430063).length-1)] == 95))) break L7;
                 F.line = 520;
-                i_2435071 = addInt(i_2435071, 1);
+                i_2430071 = addInt(i_2430071, 1);
               }
           } while(false);
         }
     } while(false);
     F.line = 521;
-    b_2435065[b_2435065_Idx] = res_2435069;
+    b_2430065[b_2430065_Idx] = res_2430069;
     F.line = 522;
-    result_2435068 = subInt(i_2435071, start_2435066);
+    result_2430068 = subInt(i_2430071, start_2430066);
     }
     
   framePtr = F.prev;
 
-  return result_2435068;
+  return result_2430068;
 
 }
-function npuParseBiggestUInt(s_2455028, number_2455030, number_2455030_Idx, start_2455031) {
-  var result_2455033 = 0;
+function npuParseBiggestUInt(s_2450028, number_2450030, number_2450030_Idx, start_2450031) {
+  var result_2450033 = 0;
 
   var F={procname:"parseutils.parseBiggestUInt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 535;
-    var res_2455034 = [0];
+    var res_2450034 = [0];
     F.line = 538;
-    result_2455033 = rawParseUInt_2435061(s_2455028, res_2455034, 0, start_2455031);
-    if (!((result_2455033 == 0))) {
+    result_2450033 = rawParseUInt_2430061(s_2450028, res_2450034, 0, start_2450031);
+    if (!((result_2450033 == 0))) {
     F.line = 540;
-    number_2455030[number_2455030_Idx] = res_2455034[0];
+    number_2450030[number_2450030_Idx] = res_2450034[0];
     }
     
   framePtr = F.prev;
 
-  return result_2455033;
+  return result_2450033;
 
 }
-function npuParseUInt(s_2460016, number_2460018, number_2460018_Idx, start_2460019) {
-  var result_2460021 = 0;
+function npuParseUInt(s_2455016, number_2455018, number_2455018_Idx, start_2455019) {
+  var result_2455021 = 0;
 
   var F={procname:"parseutils.parseUInt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 553;
-    var res_2460022 = [0];
+    var res_2455022 = [0];
     F.line = 554;
-    result_2460021 = npuParseBiggestUInt(s_2460016, res_2460022, 0, start_2460019);
-    if (!((result_2460021 == 0))) {
+    result_2455021 = npuParseBiggestUInt(s_2455016, res_2455022, 0, start_2455019);
+    if (!((result_2455021 == 0))) {
     F.line = 559;
-    number_2460018[number_2460018_Idx] = (res_2460022[0] >>> 0);
+    number_2455018[number_2455018_Idx] = (res_2455022[0] >>> 0);
     }
     
   framePtr = F.prev;
 
-  return result_2460021;
+  return result_2455021;
 
 }
-function parseProcedure_11228421(self_11228423, isPrivate_11228424) {
+function parseProcedure_11248421(self_11248423, isPrivate_11248424) {
     var Tmp1;
       var Tmp2;
       var Tmp3;
@@ -6980,173 +7246,212 @@ function parseProcedure_11228421(self_11228423, isPrivate_11228424) {
   var F={procname:"runtime.parseProcedure",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (!(expect_11228404(self_11228423, 29))) {
-    F.line = 117;
-    var posHEX60gensym55_11505001 = (HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].column) || []);
-    F.line = 118;
-    if (isPrivate_11228424) {
+    if (!(expect_11248404(self_11248423, 29))) {
+    F.line = 115;
+    var posHEX60gensym55_11525001 = (HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].column) || []);
+    F.line = 116;
+    if (isPrivate_11248424) {
     Tmp1 = makeNimstrLit("Private procedure name expected");
     }
     else {
     Tmp1 = makeNimstrLit("Public procedure name expected");
     }
     
-    self_11228423.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym55_11505001 || [],makeNimstrLit(") ") || [],Tmp1 || []), NTI1188013);
-    F.line = 119;
-    self_11228423.hadError = true;
-    F.line = 237;
-    break BeforeRet;
-    }
-    
-    F.line = 238;
-    self_11228423.token = ((self_11228423.token + 1) >>> 0);
-    F.line = 240;
-    var name_11505008 = nimCopy(null, self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].lexeme, NTI1188013);
-      if ((eqStrings(name_11505008, makeNimstrLit("true")) || eqStrings(name_11505008, makeNimstrLit("false")))) Tmp3 = true; else {        Tmp3 = contains_11515117(self_11228423.procs, name_11505008);      }      if (Tmp3) Tmp2 = true; else {        Tmp2 = contains_11520117(self_11228423.environment.variables, name_11505008);      }    if (Tmp2) {
+    self_11248423.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym55_11525001 || [],makeNimstrLit(") ") || [],Tmp1 || []), NTI1188013);
     F.line = 117;
-    var posHEX60gensym60_11530001 = (HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].column) || []);
-    F.line = 118;
-    if (isPrivate_11228424) {
-    Tmp4 = (makeNimstrLit("Attempted to use reserved name \"") || []).concat(name_11505008 || [],makeNimstrLit("\" for new private procedure") || []);
-    }
-    else {
-    Tmp4 = (makeNimstrLit("Attempted to use reserved name \"") || []).concat(name_11505008 || [],makeNimstrLit("\" for new public procedure") || []);
-    }
-    
-    self_11228423.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym60_11530001 || [],makeNimstrLit(") ") || [],Tmp4 || []), NTI1188013);
-    F.line = 119;
-    self_11228423.hadError = true;
-    F.line = 247;
+    self_11248423.hadError = true;
+    F.line = 234;
     break BeforeRet;
     }
     
-    F.line = 250;
-    var argCount_11530002 = [0];
-      if (!expect_11228404(self_11228423, 27)) Tmp5 = false; else {        Tmp5 = !(contains_11535002(self_11228423.tokens[chckIndx(((self_11228423.token + 1) >>> 0), 0, (self_11228423.tokens).length-1)].lexeme, 46));      }    if (Tmp5) {
-    F.line = 252;
-    var _ = npuParseUInt(self_11228423.tokens[chckIndx(((self_11228423.token + 1) >>> 0), 0, (self_11228423.tokens).length-1)].lexeme, argCount_11530002, 0, 0);
-    F.line = 253;
-    HEX5BHEX5DHEX3D_11390058(self_11228423.procs, name_11505008, {name: nimCopy(null, name_11505008, NTI1188013), content: newSeq_10721230(0), argCount: argCount_11530002[0], isPrivate: isPrivate_11228424});
+    F.line = 235;
+    self_11248423.token = ((self_11248423.token + 1) >>> 0);
+    F.line = 237;
+    var name_11525008 = nimCopy(null, self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].lexeme, NTI1188013);
+      if ((eqStrings(name_11525008, makeNimstrLit("true")) || eqStrings(name_11525008, makeNimstrLit("false")))) Tmp3 = true; else {        Tmp3 = contains_11535117(self_11248423.procs, name_11525008);      }      if (Tmp3) Tmp2 = true; else {        Tmp2 = contains_11540117(self_11248423.environment.variables, name_11525008);      }    if (Tmp2) {
+    F.line = 115;
+    var posHEX60gensym60_11550001 = (HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].column) || []);
+    F.line = 116;
+    if (isPrivate_11248424) {
+    F.line = 240;
+    var fmtRes_11550002 = [mnewString(0)];
+    F.line = 240;
+    fmtRes_11550002[0].push.apply(fmtRes_11550002[0], makeNimstrLit("Attempted to use reserved name \""));;
+    F.line = 240;
+    formatValue_10645080(fmtRes_11550002, 0, name_11525008, []);
+    F.line = 240;
+    fmtRes_11550002[0].push.apply(fmtRes_11550002[0], makeNimstrLit("\" for new private procedure"));;
+    Tmp4 = fmtRes_11550002[0];
     }
     else {
+      F.line = 241;
+      var fmtRes_11555003 = [mnewString(0)];
+      F.line = 241;
+      fmtRes_11555003[0].push.apply(fmtRes_11555003[0], makeNimstrLit("Attempted to use reserved name \""));;
+      F.line = 241;
+      formatValue_10645080(fmtRes_11555003, 0, name_11525008, []);
+      F.line = 241;
+      fmtRes_11555003[0].push.apply(fmtRes_11555003[0], makeNimstrLit("\" for new public procedure"));;
+    Tmp4 = fmtRes_11555003[0];
+    }
+    
+    self_11248423.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym60_11550001 || [],makeNimstrLit(") ") || [],Tmp4 || []), NTI1188013);
+    F.line = 117;
+    self_11248423.hadError = true;
+    F.line = 244;
+    break BeforeRet;
+    }
+    
+    F.line = 247;
+    var argCount_11560003 = [0];
+      if (!expect_11248404(self_11248423, 27)) Tmp5 = false; else {        Tmp5 = !(contains_11565002(self_11248423.tokens[chckIndx(((self_11248423.token + 1) >>> 0), 0, (self_11248423.tokens).length-1)].lexeme, 46));      }    if (Tmp5) {
+    F.line = 249;
+    var _ = npuParseUInt(self_11248423.tokens[chckIndx(((self_11248423.token + 1) >>> 0), 0, (self_11248423.tokens).length-1)].lexeme, argCount_11560003, 0, 0);
+    F.line = 250;
+    HEX5BHEX5DHEX3D_11410058(self_11248423.procs, name_11525008, {name: nimCopy(null, name_11525008, NTI1188013), content: newSeq_10716243(0), argCount: argCount_11560003[0], isPrivate: isPrivate_11248424});
+    }
+    else {
+      F.line = 115;
+      var posHEX60gensym64_11580001 = (HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].column) || []);
+      F.line = 116;
+      self_11248423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym64_11580001 || [],makeNimstrLit(") Expected non-negative integer argument count after procedure name") || []), NTI1188013);
       F.line = 117;
-      var posHEX60gensym64_11550001 = (HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].column) || []);
-      F.line = 118;
-      self_11228423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym64_11550001 || [],makeNimstrLit(") Expected non-negative integer argument count after procedure name") || []), NTI1188013);
-      F.line = 119;
-      self_11228423.hadError = true;
-      F.line = 256;
+      self_11248423.hadError = true;
+      F.line = 253;
       break BeforeRet;
     }
     
-    F.line = 258;
-    self_11228423.token = ((self_11228423.token + 1) >>> 0);
-    if (!(expect_11228404(self_11228423, 0))) {
-    F.line = 117;
-    var posHEX60gensym66_11560001 = (HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].column) || []);
-    F.line = 118;
-    if (isPrivate_11228424) {
-    Tmp6 = (makeNimstrLit("Left brace expected after \"") || []).concat(name_11505008 || [],makeNimstrLit("\" private procedure definition") || []);
+    F.line = 255;
+    self_11248423.token = ((self_11248423.token + 1) >>> 0);
+    if (!(expect_11248404(self_11248423, 0))) {
+    F.line = 115;
+    var posHEX60gensym66_11590001 = (HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].column) || []);
+    F.line = 116;
+    if (isPrivate_11248424) {
+    F.line = 259;
+    var fmtRes_11590002 = [mnewString(0)];
+    F.line = 259;
+    fmtRes_11590002[0].push.apply(fmtRes_11590002[0], makeNimstrLit("Left brace expected after \""));;
+    F.line = 259;
+    formatValue_10645080(fmtRes_11590002, 0, name_11525008, []);
+    F.line = 259;
+    fmtRes_11590002[0].push.apply(fmtRes_11590002[0], makeNimstrLit("\" private procedure definition"));;
+    Tmp6 = fmtRes_11590002[0];
     }
     else {
-      F.line = 263;
-      var fmtRes_11560002 = mnewString(0);
-      F.line = 263;
-      fmtRes_11560002.push.apply(fmtRes_11560002, makeNimstrLit("Left brace expected after \""));;
-    Tmp6 = (fmtRes_11560002 || []).concat(name_11505008 || [],makeNimstrLit("\" public procedure definition") || []);
+      F.line = 260;
+      var fmtRes_11595003 = [mnewString(0)];
+      F.line = 260;
+      fmtRes_11595003[0].push.apply(fmtRes_11595003[0], makeNimstrLit("Left brace expected after \""));;
+      F.line = 260;
+      formatValue_10645080(fmtRes_11595003, 0, name_11525008, []);
+      F.line = 260;
+      fmtRes_11595003[0].push.apply(fmtRes_11595003[0], makeNimstrLit("\" public procedure definition"));;
+    Tmp6 = fmtRes_11595003[0];
     }
     
-    self_11228423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym66_11560001 || [],makeNimstrLit(") ") || [],Tmp6 || []), NTI1188013);
-    F.line = 119;
-    self_11228423.hadError = true;
-    F.line = 265;
+    self_11248423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym66_11590001 || [],makeNimstrLit(") ") || [],Tmp6 || []), NTI1188013);
+    F.line = 117;
+    self_11248423.hadError = true;
+    F.line = 262;
     break BeforeRet;
     }
     
-    F.line = 267;
-    self_11228423.token = ((self_11228423.token + 2) >>> 0);
+    F.line = 264;
+    self_11248423.token = ((self_11248423.token + 2) >>> 0);
     L7: do {
-      F.line = 270;
+      F.line = 267;
         L8: while (true) {
-        if (!!((self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].kind == 1))) break L8;
+        if (!!((self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].kind == 1))) break L8;
+          F.line = 268;
+          (Tmp9 = HEX5BHEX5D_11410488(self_11248423.procs, name_11525008), Tmp9)[0][Tmp9[1]].content.push(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)]);;
+          F.line = 269;
+          self_11248423.token = ((self_11248423.token + 1) >>> 0);
+          if (((self_11248423.tokens).length <= addInt(chckRange(self_11248423.token, -2147483648, 2147483647), 1))) {
+          F.line = 115;
+          var posHEX60gensym71_11625001 = (HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248423.tokens[chckIndx(self_11248423.token, 0, (self_11248423.tokens).length-1)].column) || []);
+          F.line = 116;
+          if (isPrivate_11248424) {
           F.line = 271;
-          (Tmp9 = HEX5BHEX5D_11390488(self_11228423.procs, name_11505008), Tmp9)[0][Tmp9[1]].content.push(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)]);;
-          F.line = 272;
-          self_11228423.token = ((self_11228423.token + 1) >>> 0);
-          if (((self_11228423.tokens).length <= addInt(chckRange(self_11228423.token, -2147483648, 2147483647), 1))) {
-          F.line = 117;
-          var posHEX60gensym71_11590001 = (HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228423.tokens[chckIndx(self_11228423.token, 0, (self_11228423.tokens).length-1)].column) || []);
-          F.line = 118;
-          if (isPrivate_11228424) {
-          Tmp10 = (makeNimstrLit("Unterminated private procedure \"") || []).concat(name_11505008 || [],makeNimstrLit("\" implementation") || []);
+          var fmtRes_11625002 = [mnewString(0)];
+          F.line = 271;
+          fmtRes_11625002[0].push.apply(fmtRes_11625002[0], makeNimstrLit("Unterminated private procedure \""));;
+          F.line = 271;
+          formatValue_10645080(fmtRes_11625002, 0, name_11525008, []);
+          F.line = 271;
+          fmtRes_11625002[0].push.apply(fmtRes_11625002[0], makeNimstrLit("\" implementation"));;
+          Tmp10 = fmtRes_11625002[0];
           }
           else {
-          Tmp10 = (makeNimstrLit("Unterminated public procedure \"") || []).concat(name_11505008 || [],makeNimstrLit("\" implementation") || []);
+            F.line = 272;
+            var fmtRes_11630002 = [mnewString(0)];
+            F.line = 272;
+            fmtRes_11630002[0].push.apply(fmtRes_11630002[0], makeNimstrLit("Unterminated public procedure \""));;
+            F.line = 272;
+            formatValue_10645080(fmtRes_11630002, 0, name_11525008, []);
+            F.line = 272;
+            fmtRes_11630002[0].push.apply(fmtRes_11630002[0], makeNimstrLit("\" implementation"));;
+          Tmp10 = fmtRes_11630002[0];
           }
           
-          self_11228423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym71_11590001 || [],makeNimstrLit(") ") || [],Tmp10 || []), NTI1188013);
-          F.line = 119;
-          self_11228423.hadError = true;
-          F.line = 277;
+          self_11248423.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym71_11625001 || [],makeNimstrLit(") ") || [],Tmp10 || []), NTI1188013);
+          F.line = 117;
+          self_11248423.hadError = true;
+          F.line = 274;
           break BeforeRet;
           }
           
         }
     } while(false);
-    F.line = 280;
-    (Tmp11 = HEX5BHEX5D_11390488(self_11228423.procs, name_11505008), Tmp11)[0][Tmp11[1]].content.push({kind: 31, lexeme: [], line: 0, column: 0});;
-    F.line = 281;
-    self_11228423.token = ((self_11228423.token + 1) >>> 0);
+    F.line = 277;
+    (Tmp11 = HEX5BHEX5D_11410488(self_11248423.procs, name_11525008), Tmp11)[0][Tmp11[1]].content.push({kind: 31, lexeme: [], line: 0, column: 0});;
+    F.line = 278;
+    self_11248423.token = ((self_11248423.token + 1) >>> 0);
   } while (false);
   framePtr = F.prev;
 
   
 }
-function nsuParseUInt(s_9960017) {
+function nsuParseUInt(s_9955017) {
       var Tmp1;
 
-  var result_9960018 = [0];
+  var result_9955018 = [0];
 
   var F={procname:"strutils.parseUInt",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 1132;
-    result_9960018[0] = 0;
+    result_9955018[0] = 0;
     F.line = 1133;
-    var L_9960020 = npuParseUInt(s_9960017, result_9960018, 0, 0);
-      if (!((L_9960020 == (s_9960017).length))) Tmp1 = true; else {        Tmp1 = (L_9960020 == 0);      }    if (Tmp1) {
+    var L_9955020 = npuParseUInt(s_9955017, result_9955018, 0, 0);
+      if (!((L_9955020 == (s_9955017).length))) Tmp1 = true; else {        Tmp1 = (L_9955020 == 0);      }    if (Tmp1) {
     F.line = 1135;
-    raiseException({message: (makeNimstrLit("invalid unsigned integer: ") || []).concat(s_9960017 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+    raiseException({message: (makeNimstrLit("invalid unsigned integer: ") || []).concat(s_9955017 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
     }
     
   framePtr = F.prev;
 
-  return result_9960018[0];
+  return result_9955018[0];
 
 }
-function isNimException_1375704() {
-    return lastJSError && lastJSError.m_type;
-
-  
-}
-function push_11705010(self_11705014, value_11705015) {
+function push_11755024(self_11755028, value_11755029) {
   var F={procname:"push.push",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
     F.line = 61;
-    self_11705014.content.push(value_11705015);;
+    self_11755028.content.push(value_11755029);;
   framePtr = F.prev;
 
   
 }
-function newValue_11227049(value_11227051) {
-  var result_11227166 = null;
+function newValue_11247049(value_11247051) {
+  var result_11247166 = null;
 
   var F={procname:"value.newValue",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/value.nim",line:0};
   framePtr = F;
     F.line = 50;
-    result_11227166 = {kind: 1, valueAs: {num: value_11227051, str: [], boolean: false}};
+    result_11247166 = {kind: 1, valueAs: {num: value_11247051, str: [], boolean: false}};
   framePtr = F.prev;
 
-  return result_11227166;
+  return result_11247166;
 
 }
 function toFloat_1216659(i_1216661) {
@@ -7197,137 +7502,137 @@ function tenToThePowerOf_1505046(b_1505048) {
   return result_1505049;
 
 }
-function npuParseFloat(s_2470023, number_2470025, number_2470025_Idx, start_2470026) {
-  var result_2470028 = 0;
+function npuParseFloat(s_2465023, number_2465025, number_2465025_Idx, start_2465026) {
+  var result_2465028 = 0;
 
   var F={procname:"parseutils.parseFloat",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/parseutils.nim",line:0};
   framePtr = F;
     F.line = 580;
-    var bf_2470029 = [0.0];
+    var bf_2465029 = [0.0];
     F.line = 581;
-    result_2470028 = nimParseBiggestFloat(s_2470023, bf_2470029, 0, start_2470026);
-    if (!((result_2470028 == 0))) {
+    result_2465028 = nimParseBiggestFloat(s_2465023, bf_2465029, 0, start_2465026);
+    if (!((result_2465028 == 0))) {
     F.line = 583;
-    number_2470025[number_2470025_Idx] = bf_2470029[0];
+    number_2465025[number_2465025_Idx] = bf_2465029[0];
     }
     
   framePtr = F.prev;
 
-  return result_2470028;
+  return result_2465028;
 
 }
-function nsuParseFloat(s_9980017) {
+function nsuParseFloat(s_9975017) {
       var Tmp1;
 
-  var result_9980018 = [0.0];
+  var result_9975018 = [0.0];
 
   var F={procname:"strutils.parseFloat",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 1156;
-    result_9980018[0] = 0.0;
+    result_9975018[0] = 0.0;
     F.line = 1157;
-    var L_9980020 = npuParseFloat(s_9980017, result_9980018, 0, 0);
-      if (!((L_9980020 == (s_9980017).length))) Tmp1 = true; else {        Tmp1 = (L_9980020 == 0);      }    if (Tmp1) {
+    var L_9975020 = npuParseFloat(s_9975017, result_9975018, 0, 0);
+      if (!((L_9975020 == (s_9975017).length))) Tmp1 = true; else {        Tmp1 = (L_9975020 == 0);      }    if (Tmp1) {
     F.line = 1159;
-    raiseException({message: (makeNimstrLit("invalid float: ") || []).concat(s_9980017 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+    raiseException({message: (makeNimstrLit("invalid float: ") || []).concat(s_9975017 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
     }
     
   framePtr = F.prev;
 
-  return result_9980018[0];
+  return result_9975018[0];
 
 }
-function newValue_11227046(value_11227048) {
-  var result_11227074 = null;
+function newValue_11247046(value_11247048) {
+  var result_11247074 = null;
 
   var F={procname:"value.newValue",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/value.nim",line:0};
   framePtr = F;
     F.line = 44;
-    result_11227074 = {kind: 0, valueAs: {str: nimCopy(null, value_11227048, NTI1188013), num: 0.0, boolean: false}};
+    result_11247074 = {kind: 0, valueAs: {str: nimCopy(null, value_11247048, NTI1188013), num: 0.0, boolean: false}};
   framePtr = F.prev;
 
-  return result_11227074;
+  return result_11247074;
 
 }
-function newValue_11227052(value_11227054) {
-  var result_11227183 = null;
+function newValue_11247052(value_11247054) {
+  var result_11247183 = null;
 
   var F={procname:"value.newValue",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/value.nim",line:0};
   framePtr = F;
     F.line = 56;
-    result_11227183 = {kind: 2, valueAs: {boolean: value_11227054, str: [], num: 0.0}};
+    result_11247183 = {kind: 2, valueAs: {boolean: value_11247054, str: [], num: 0.0}};
   framePtr = F.prev;
 
-  return result_11227183;
+  return result_11247183;
 
 }
-function nsuNormalize(s_9650016) {
-  var result_9650017 = [];
+function nsuNormalize(s_9645016) {
+  var result_9645017 = [];
 
   var F={procname:"strutils.normalize",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 316;
-    result_9650017 = nimCopy(null, mnewString(chckRange((s_9650016).length, 0, 2147483647)), NTI1188013);
+    result_9645017 = nimCopy(null, mnewString(chckRange((s_9645016).length, 0, 2147483647)), NTI1188013);
     F.line = 317;
-    var j_9650019 = 0;
+    var j_9645019 = 0;
     L1: do {
       F.line = 318;
-      var i_9650028 = 0;
+      var i_9645028 = 0;
       F.line = 66;
-      var colontmp__12390464 = 0;
+      var colontmp__12470488 = 0;
       F.line = 318;
-      colontmp__12390464 = subInt((s_9650016).length, 1);
+      colontmp__12470488 = subInt((s_9645016).length, 1);
       F.line = 77;
-      var res_12390465 = 0;
+      var res_12470489 = 0;
       L2: do {
         F.line = 78;
           L3: while (true) {
-          if (!(res_12390465 <= colontmp__12390464)) break L3;
+          if (!(res_12470489 <= colontmp__12470488)) break L3;
             F.line = 318;
-            i_9650028 = res_12390465;
-            if ((ConstSet29[s_9650016[chckIndx(i_9650028, 0, (s_9650016).length-1)]] != undefined)) {
+            i_9645028 = res_12470489;
+            if ((ConstSet30[s_9645016[chckIndx(i_9645028, 0, (s_9645016).length-1)]] != undefined)) {
             F.line = 320;
-            result_9650017[chckIndx(j_9650019, 0, (result_9650017).length-1)] = chckRange(addInt(s_9650016[chckIndx(i_9650028, 0, (s_9650016).length-1)], 32), 0, 255);
+            result_9645017[chckIndx(j_9645019, 0, (result_9645017).length-1)] = chckRange(addInt(s_9645016[chckIndx(i_9645028, 0, (s_9645016).length-1)], 32), 0, 255);
             F.line = 321;
-            j_9650019 = addInt(j_9650019, 1);
+            j_9645019 = addInt(j_9645019, 1);
             }
             else {
-            if (!((s_9650016[chckIndx(i_9650028, 0, (s_9650016).length-1)] == 95))) {
+            if (!((s_9645016[chckIndx(i_9645028, 0, (s_9645016).length-1)] == 95))) {
             F.line = 323;
-            result_9650017[chckIndx(j_9650019, 0, (result_9650017).length-1)] = s_9650016[chckIndx(i_9650028, 0, (s_9650016).length-1)];
+            result_9645017[chckIndx(j_9645019, 0, (result_9645017).length-1)] = s_9645016[chckIndx(i_9645028, 0, (s_9645016).length-1)];
             F.line = 324;
-            j_9650019 = addInt(j_9650019, 1);
+            j_9645019 = addInt(j_9645019, 1);
             }
             }
             F.line = 80;
-            res_12390465 = addInt(res_12390465, 1);
+            res_12470489 = addInt(res_12470489, 1);
           }
       } while(false);
     } while(false);
-    if (!((j_9650019 == (s_9650016).length))) {
+    if (!((j_9645019 == (s_9645016).length))) {
     F.line = 325;
-    (result_9650017.length = chckRange(j_9650019, 0, 2147483647));
+    (result_9645017.length = chckRange(j_9645019, 0, 2147483647));
     }
     
   framePtr = F.prev;
 
-  return result_9650017;
+  return result_9645017;
 
 }
-function parseBool_10110022(s_10110024) {
-  var result_10110025 = false;
+function parseBool_10105022(s_10105024) {
+  var result_10105025 = false;
 
   var F={procname:"strutils.parseBool",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/strutils.nim",line:0};
   framePtr = F;
     F.line = 1262;
-    switch (toJSStr(nsuNormalize(s_10110024))) {
+    switch (toJSStr(nsuNormalize(s_10105024))) {
     case "y":
     case "yes":
     case "true":
     case "1":
     case "on":
       F.line = 1263;
-      result_10110025 = true;
+      result_10105025 = true;
       break;
     case "n":
     case "no":
@@ -7335,391 +7640,391 @@ function parseBool_10110022(s_10110024) {
     case "0":
     case "off":
       F.line = 1264;
-      result_10110025 = false;
+      result_10105025 = false;
       break;
     default: 
       F.line = 1265;
-      raiseException({message: (makeNimstrLit("cannot interpret as a bool: ") || []).concat(s_10110024 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
+      raiseException({message: (makeNimstrLit("cannot interpret as a bool: ") || []).concat(s_10105024 || []), parent: null, m_type: NTI1194643, name: null, trace: [], up: null}, "ValueError");
       break;
     }
   framePtr = F.prev;
 
-  return result_10110025;
+  return result_10105025;
 
 }
-function empty_11735144(self_11735147) {
-  var result_11735148 = false;
+function empty_11785144(self_11785147) {
+  var result_11785148 = false;
 
   var F={procname:"empty.empty",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
     F.line = 48;
-    result_11735148 = ((self_11735147.content).length == 0);
+    result_11785148 = ((self_11785147.content).length == 0);
   framePtr = F.prev;
 
-  return result_11735148;
+  return result_11785148;
 
 }
-function none_11735174() {
-  var result_11735191 = ({val: null});
+function none_11785174() {
+  var result_11785191 = ({val: null});
 
   var F={procname:"none.none",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
   framePtr = F.prev;
 
-  return result_11735191;
+  return result_11785191;
 
 }
-function none_11735168() {
-  var result_11735172 = ({val: null});
+function none_11785168() {
+  var result_11785172 = ({val: null});
 
   var F={procname:"none.none",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
     F.line = 140;
-    nimCopy(result_11735172, none_11735174(), NTI11735180);
+    nimCopy(result_11785172, none_11785174(), NTI11785180);
   framePtr = F.prev;
 
-  return result_11735172;
+  return result_11785172;
 
 }
-function some_11735422(val_11735425) {
-  var result_11735427 = ({val: null});
+function some_11785422(val_11785425) {
+  var result_11785427 = ({val: null});
 
   var F={procname:"some.some",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
-    if (!(!((val_11735425 == null)))) {
+    if (!(!((val_11785425 == null)))) {
     F.line = 118;
     failedAssertImpl_1305480(makeNimstrLit("/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim(118, 11) `not val.isNil` "));
     }
     
     F.line = 119;
-    result_11735427.val = val_11735425;
+    result_11785427.val = val_11785425;
   framePtr = F.prev;
 
-  return result_11735427;
+  return result_11785427;
 
 }
-function pop_11735218(s_11735223, s_11735223_Idx) {
-  var result_11735224 = null;
+function pop_11785218(s_11785223, s_11785223_Idx) {
+  var result_11785224 = null;
 
   var F={procname:"pop.pop",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 1832;
-    var L_11735230 = subInt((s_11735223[s_11735223_Idx]).length, 1);
+    var L_11785230 = subInt((s_11785223[s_11785223_Idx]).length, 1);
     F.line = 1837;
-    result_11735224 = s_11735223[s_11735223_Idx][chckIndx(L_11735230, 0, (s_11735223[s_11735223_Idx]).length-1)];
+    result_11785224 = s_11785223[s_11785223_Idx][chckIndx(L_11785230, 0, (s_11785223[s_11785223_Idx]).length-1)];
     F.line = 1838;
-    if (s_11735223[s_11735223_Idx].length < chckRange(L_11735230, 0, 2147483647)) { for (var i=s_11735223[s_11735223_Idx].length;i<chckRange(L_11735230, 0, 2147483647);++i) s_11735223[s_11735223_Idx].push(null); }
-               else { s_11735223[s_11735223_Idx].length = chckRange(L_11735230, 0, 2147483647); };
+    if (s_11785223[s_11785223_Idx].length < chckRange(L_11785230, 0, 2147483647)) { for (var i=s_11785223[s_11785223_Idx].length;i<chckRange(L_11785230, 0, 2147483647);++i) s_11785223[s_11785223_Idx].push(null); }
+               else { s_11785223[s_11785223_Idx].length = chckRange(L_11785230, 0, 2147483647); };
   framePtr = F.prev;
 
-  return result_11735224;
+  return result_11785224;
 
 }
-function pop_11735137(self_11735141) {
-  var result_11735143 = ({val: null});
+function pop_11785137(self_11785141) {
+  var result_11785143 = ({val: null});
 
   var F={procname:"pop.pop",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (empty_11735144(self_11735141)) {
+    if (empty_11785144(self_11785141)) {
     F.line = 64;
-    nimCopy(result_11735143, none_11735168(), NTI11228463);
+    nimCopy(result_11785143, none_11785168(), NTI11248463);
     break BeforeRet;
     }
     
     F.line = 65;
-    nimCopy(result_11735143, some_11735422(pop_11735218(self_11735141, "content")), NTI11228463);
+    nimCopy(result_11785143, some_11785422(pop_11785218(self_11785141, "content")), NTI11248463);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11735143;
+  return result_11785143;
 
 }
-function isSome_11745243(self_11745247) {
-  var result_11745248 = false;
+function isSome_11795243(self_11795247) {
+  var result_11795248 = false;
 
   var F={procname:"isSome.isSome",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
     F.line = 144;
-    result_11745248 = !((self_11745247.val == null));
+    result_11795248 = !((self_11795247.val == null));
   framePtr = F.prev;
 
-  return result_11745248;
+  return result_11795248;
 
 }
-function isNone_11745486(self_11745490) {
-  var result_11745491 = false;
+function isNone_11795486(self_11795490) {
+  var result_11795491 = false;
 
   var F={procname:"isNone.isNone",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
     F.line = 158;
-    result_11745491 = (self_11745490.val == null);
+    result_11795491 = (self_11795490.val == null);
   framePtr = F.prev;
 
-  return result_11745491;
+  return result_11795491;
 
 }
-function get_11745464(self_11745468) {
-  var result_11745470 = null;
-  var result_11745470_Idx = 0;
+function get_11795464(self_11795468) {
+  var result_11795470 = null;
+  var result_11795470_Idx = 0;
 
   var F={procname:"get.get",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/options.nim",line:0};
   framePtr = F;
-    if (isNone_11745486(self_11745468)) {
+    if (isNone_11795486(self_11795468)) {
     F.line = 185;
-    raiseException({message: makeNimstrLit("Can\'t obtain a value from a `none`"), parent: null, m_type: NTI2140204, name: null, trace: [], up: null}, "UnpackDefect");
+    raiseException({message: makeNimstrLit("Can\'t obtain a value from a `none`"), parent: null, m_type: NTI11245204, name: null, trace: [], up: null}, "UnpackDefect");
     }
     
     F.line = 186;
-    result_11745470 = self_11745468; result_11745470_Idx = "val";
+    result_11795470 = self_11795468; result_11795470_Idx = "val";
   framePtr = F.prev;
 
-  return [result_11745470, result_11745470_Idx];
+  return [result_11795470, result_11795470_Idx];
 
 }
-function HEX5BHEX5D_11775003(s_11775008, i_11775009) {
-  var result_11775011 = null;
-  var result_11775011_Idx = 0;
+function HEX5BHEX5D_11825003(s_11825008, i_11825009) {
+  var result_11825011 = null;
+  var result_11825011_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
     F.line = 2593;
-    result_11775011 = s_11775008; result_11775011_Idx = chckIndx(subInt((s_11775008).length, i_11775009), 0, (s_11775008).length-1);
+    result_11825011 = s_11825008; result_11825011_Idx = chckIndx(subInt((s_11825008).length, i_11825009), 0, (s_11825008).length-1);
   framePtr = F.prev;
 
-  return [result_11775011, result_11775011_Idx];
+  return [result_11825011, result_11825011_Idx];
 
 }
-function topValue_11770010(self_11770014) {
+function topValue_11820010(self_11820014) {
     var Tmp1;
 
-  var result_11770016 = ({val: null});
+  var result_11820016 = ({val: null});
 
   var F={procname:"topValue.topValue",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (empty_11735144(self_11770014)) {
+    if (empty_11785144(self_11820014)) {
     F.line = 56;
-    nimCopy(result_11770016, none_11735168(), NTI11228463);
+    nimCopy(result_11820016, none_11785168(), NTI11248463);
     break BeforeRet;
     }
     
     F.line = 57;
-    nimCopy(result_11770016, some_11735422((Tmp1 = HEX5BHEX5D_11775003(self_11770014.content, 1), Tmp1)[0][Tmp1[1]]), NTI11228463);
+    nimCopy(result_11820016, some_11785422((Tmp1 = HEX5BHEX5D_11825003(self_11820014.content, 1), Tmp1)[0][Tmp1[1]]), NTI11248463);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_11770016;
+  return result_11820016;
 
 }
-function newValue_11227068(value_11227070) {
-  var result_11227200 = null;
+function newValue_11247068(value_11247070) {
+  var result_11247200 = null;
 
   var F={procname:"value.newValue",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/value.nim",line:0};
   framePtr = F;
     F.line = 62;
-    result_11227200 = {kind: value_11227070.kind, valueAs: {str: nimCopy(null, value_11227070.valueAs.str, NTI1188013), num: value_11227070.valueAs.num, boolean: value_11227070.valueAs.boolean}};
+    result_11247200 = {kind: value_11247070.kind, valueAs: {str: nimCopy(null, value_11247070.valueAs.str, NTI1188013), num: value_11247070.valueAs.num, boolean: value_11247070.valueAs.boolean}};
   framePtr = F.prev;
 
-  return result_11227200;
+  return result_11247200;
 
 }
-function HEX3DHEX3D_12160103(x_12160106, y_12160107) {
-  var result_12160108 = false;
+function HEX3DHEX3D_12210103(x_12210106, y_12210107) {
+  var result_12210108 = false;
 
   var F={procname:"==.==",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/system.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (!(eqStrings(x_12160106.str, y_12160107.str))) {
+    if (!(eqStrings(x_12210106.str, y_12210107.str))) {
     F.line = 1844;
-    result_12160108 = false;
+    result_12210108 = false;
     break BeforeRet;
     }
     
-    if (!((x_12160106.num == y_12160107.num))) {
+    if (!((x_12210106.num == y_12210107.num))) {
     F.line = 1844;
-    result_12160108 = false;
+    result_12210108 = false;
     break BeforeRet;
     }
     
-    if (!((x_12160106.boolean == y_12160107.boolean))) {
+    if (!((x_12210106.boolean == y_12210107.boolean))) {
     F.line = 1844;
-    result_12160108 = false;
+    result_12210108 = false;
     break BeforeRet;
     }
     
     F.line = 1845;
-    result_12160108 = true;
+    result_12210108 = true;
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_12160108;
+  return result_12210108;
 
 }
-function hasKey_12200458(t_12200463, key_12200464) {
-  var result_12200465 = false;
+function hasKey_12255458(t_12255463, key_12255464) {
+  var result_12255465 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 389;
-    var hc_12200466 = [0];
+    var hc_12255466 = [0];
     F.line = 390;
-    result_12200465 = (0 <= rawGet_11330602(t_12200463, key_12200464, hc_12200466, 0));
+    result_12255465 = (0 <= rawGet_11350602(t_12255463, key_12255464, hc_12255466, 0));
   framePtr = F.prev;
 
-  return result_12200465;
+  return result_12255465;
 
 }
-function hasKey_12200197(t_12200202, key_12200203) {
-  var result_12200204 = false;
+function hasKey_12255197(t_12255202, key_12255203) {
+  var result_12255204 = false;
 
   var F={procname:"hasKey.hasKey",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 892;
-    result_12200204 = hasKey_12200458(t_12200202, key_12200203);
+    result_12255204 = hasKey_12255458(t_12255202, key_12255203);
   framePtr = F.prev;
 
-  return result_12200204;
+  return result_12255204;
 
 }
-function contains_12200117(t_12200122, key_12200123) {
-  var result_12200124 = false;
+function contains_12255117(t_12255122, key_12255123) {
+  var result_12255124 = false;
 
   var F={procname:"contains.contains",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 902;
-    result_12200124 = hasKey_12200197(t_12200122, key_12200123);
+    result_12255124 = hasKey_12255197(t_12255122, key_12255123);
     break BeforeRet;
   } while (false);
   framePtr = F.prev;
 
-  return result_12200124;
+  return result_12255124;
 
 }
-function reset_12200666(self_12200669) {
+function reset_12255666(self_12255669) {
   var F={procname:"reset.reset",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/stack.nim",line:0};
   framePtr = F;
     F.line = 50;
-    if (self_12200669.content.length < 0) { for (var i=self_12200669.content.length;i<0;++i) self_12200669.content.push(null); }
-               else { self_12200669.content.length = 0; };
+    if (self_12255669.content.length < 0) { for (var i=self_12255669.content.length;i<0;++i) self_12255669.content.push(null); }
+               else { self_12255669.content.length = 0; };
   framePtr = F.prev;
 
   
 }
-function HEX5BHEX5D_12205573(t_12205579, key_12205580) {
-  var result_12205582 = null;
-  var result_12205582_Idx = 0;
+function HEX5BHEX5D_12260573(t_12260579, key_12260580) {
+  var result_12260582 = null;
+  var result_12260582_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 257;
-    var hcHEX60gensym22_12205583 = [0];
+    var hcHEX60gensym22_12260583 = [0];
     F.line = 258;
-    var indexHEX60gensym22_12205592 = rawGet_11420602(t_12205579, key_12205580, hcHEX60gensym22_12205583, 0);
-    if ((0 <= indexHEX60gensym22_12205592)) {
+    var indexHEX60gensym22_12260592 = rawGet_11440602(t_12260579, key_12260580, hcHEX60gensym22_12260583, 0);
+    if ((0 <= indexHEX60gensym22_12260592)) {
     F.line = 259;
-    result_12205582 = t_12205579.data[chckIndx(indexHEX60gensym22_12205592, 0, (t_12205579.data).length-1)]; result_12205582_Idx = "Field2";
+    result_12260582 = t_12260579.data[chckIndx(indexHEX60gensym22_12260592, 0, (t_12260579.data).length-1)]; result_12260582_Idx = "Field2";
     }
     else {
       F.line = 262;
-      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_12205580 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
+      raiseException({message: (makeNimstrLit("key not found: ") || []).concat(key_12260580 || []), parent: null, m_type: NTI1194645, name: null, trace: [], up: null}, "KeyError");
     }
     
   framePtr = F.prev;
 
-  return [result_12205582, result_12205582_Idx];
+  return [result_12260582, result_12260582_Idx];
 
 }
-function HEX5BHEX5D_12205276(t_12205281, key_12205282) {
+function HEX5BHEX5D_12260276(t_12260281, key_12260282) {
     var Tmp1;
 
-  var result_12205284 = null;
-  var result_12205284_Idx = 0;
+  var result_12260284 = null;
+  var result_12260284_Idx = 0;
 
   var F={procname:"[].[]",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 858;
-    result_12205284 = (Tmp1 = HEX5BHEX5D_12205573(t_12205281, key_12205282), Tmp1)[0]; result_12205284_Idx = Tmp1[1];
+    result_12260284 = (Tmp1 = HEX5BHEX5D_12260573(t_12260281, key_12260282), Tmp1)[0]; result_12260284_Idx = Tmp1[1];
   framePtr = F.prev;
 
-  return [result_12205284, result_12205284_Idx];
+  return [result_12260284, result_12260284_Idx];
 
 }
-function mustRehash_11445601(t_11445604) {
-  var result_11445605 = false;
+function mustRehash_11465601(t_11465604) {
+  var result_11465605 = false;
 
   var F={procname:"mustRehash.mustRehash",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
-    if (!((t_11445604.counter < (t_11445604.data).length))) {
+    if (!((t_11465604.counter < (t_11465604.data).length))) {
     F.line = 34;
     failedAssertImpl_1305480(makeNimstrLit("/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim(34, 9) `\x0At.counter < t.dataLen` "));
     }
     
     F.line = 35;
-    result_11445605 = ((mulInt((t_11445604.data).length, 2) < mulInt(t_11445604.counter, 3)) || (subInt((t_11445604.data).length, t_11445604.counter) < 4));
+    result_11465605 = ((mulInt((t_11465604.data).length, 2) < mulInt(t_11465604.counter, 3)) || (subInt((t_11465604.data).length, t_11465604.counter) < 4));
   framePtr = F.prev;
 
-  return result_11445605;
+  return result_11465605;
 
 }
-function rawInsert_11471108(t_11471114, data_11471117, data_11471117_Idx, key_11471118, val_11471120, hc_11471121, h_11471122) {
+function rawInsert_11491108(t_11491114, data_11491117, data_11491117_Idx, key_11491118, val_11491120, hc_11491121, h_11491122) {
   var F={procname:"rawInsert.rawInsert",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tableimpl.nim",line:0};
   framePtr = F;
     F.line = 22;
-    data_11471117[data_11471117_Idx][chckIndx(h_11471122, 0, (data_11471117[data_11471117_Idx]).length-1)].Field1 = nimCopy(null, key_11471118, NTI1188013);
+    data_11491117[data_11491117_Idx][chckIndx(h_11491122, 0, (data_11491117[data_11491117_Idx]).length-1)].Field1 = nimCopy(null, key_11491118, NTI1188013);
     F.line = 23;
-    data_11471117[data_11471117_Idx][chckIndx(h_11471122, 0, (data_11471117[data_11471117_Idx]).length-1)].Field2 = val_11471120;
+    data_11491117[data_11491117_Idx][chckIndx(h_11491122, 0, (data_11491117[data_11491117_Idx]).length-1)].Field2 = val_11491120;
     F.line = 24;
-    data_11471117[data_11471117_Idx][chckIndx(h_11471122, 0, (data_11471117[data_11471117_Idx]).length-1)].Field0 = hc_11471121;
+    data_11491117[data_11491117_Idx][chckIndx(h_11491122, 0, (data_11491117[data_11491117_Idx]).length-1)].Field0 = hc_11491121;
   framePtr = F.prev;
 
   
 }
-function enlarge_11470161(t_11470167) {
+function enlarge_11490161(t_11490167) {
   var F={procname:"enlarge.enlarge",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 267;
-    var n_11470175 = [];
+    var n_11490175 = [];
     F.line = 268;
-    n_11470175 = new Array(chckRange(mulInt((t_11470167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11470167.data).length, 2), 0, 2147483647);++i) {n_11470175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
-    var Tmp1 = t_11470167.data; t_11470167.data = n_11470175; n_11470175 = Tmp1;    L2: do {
+    n_11490175 = new Array(chckRange(mulInt((t_11490167.data).length, 2), 0, 2147483647)); for (var i=0;i<chckRange(mulInt((t_11490167.data).length, 2), 0, 2147483647);++i) {n_11490175[i]={Field0: 0, Field1: [], Field2: null};}    F.line = 269;
+    var Tmp1 = t_11490167.data; t_11490167.data = n_11490175; n_11490175 = Tmp1;    L2: do {
       F.line = 270;
-      var i_11470334 = 0;
+      var i_11490334 = 0;
       F.line = 39;
-      var colontmp__12390479 = 0;
+      var colontmp__12470503 = 0;
       F.line = 270;
-      colontmp__12390479 = (n_11470175).length - 1;
+      colontmp__12470503 = (n_11490175).length - 1;
       F.line = 56;
-      var res_12390480 = 0;
+      var res_12470504 = 0;
       L3: do {
         F.line = 57;
           L4: while (true) {
-          if (!(res_12390480 <= colontmp__12390479)) break L4;
+          if (!(res_12470504 <= colontmp__12470503)) break L4;
             F.line = 270;
-            i_11470334 = res_12390480;
+            i_11490334 = res_12470504;
             F.line = 271;
-            var eh_11470483 = n_11470175[chckIndx(i_11470334, 0, (n_11470175).length-1)].Field0;
-            if (isFilled_11126218(eh_11470483)) {
+            var eh_11490483 = n_11490175[chckIndx(i_11490334, 0, (n_11490175).length-1)].Field0;
+            if (isFilled_11141218(eh_11490483)) {
             F.line = 273;
-            var j_11470490 = (eh_11470483 & (t_11470167.data).length - 1);
+            var j_11490490 = (eh_11490483 & (t_11490167.data).length - 1);
             L5: do {
               F.line = 274;
                 L6: while (true) {
-                if (!isFilled_11126218(t_11470167.data[chckIndx(j_11470490, 0, (t_11470167.data).length-1)].Field0)) break L6;
+                if (!isFilled_11141218(t_11490167.data[chckIndx(j_11490490, 0, (t_11490167.data).length-1)].Field0)) break L6;
                   F.line = 275;
-                  j_11470490 = nextTry_11130014(j_11470490, (t_11470167.data).length - 1);
+                  j_11490490 = nextTry_11145014(j_11490490, (t_11490167.data).length - 1);
                 }
             } while(false);
             F.line = 277;
-            rawInsert_11471108(t_11470167, t_11470167, "data", n_11470175[chckIndx(i_11470334, 0, (n_11470175).length-1)].Field1, n_11470175[chckIndx(i_11470334, 0, (n_11470175).length-1)].Field2, eh_11470483, j_11470490);
+            rawInsert_11491108(t_11490167, t_11490167, "data", n_11490175[chckIndx(i_11490334, 0, (n_11490175).length-1)].Field1, n_11490175[chckIndx(i_11490334, 0, (n_11490175).length-1)].Field2, eh_11490483, j_11490490);
             }
             
             F.line = 59;
-            res_12390480 = addInt(res_12390480, 1);
+            res_12470504 = addInt(res_12470504, 1);
           }
       } while(false);
     } while(false);
@@ -7727,759 +8032,783 @@ function enlarge_11470161(t_11470167) {
 
   
 }
-function rawGetKnownHC_11471594(t_11471598, key_11471599, hc_11471600) {
-  var result_11471601 = 0;
+function rawGetKnownHC_11491594(t_11491598, key_11491599, hc_11491600) {
+  var result_11491601 = 0;
 
   var F={procname:"rawGetKnownHC.rawGetKnownHC",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/hashcommon.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    if (((t_11471598.data).length == 0)) {
+    if (((t_11491598.data).length == 0)) {
     F.line = 53;
-    result_11471601 = -1;
+    result_11491601 = -1;
     break BeforeRet;
     }
     
     F.line = 54;
-    var h_11475138 = (hc_11471600 & (t_11471598.data).length - 1);
+    var h_11495138 = (hc_11491600 & (t_11491598.data).length - 1);
     L1: do {
       F.line = 55;
         L2: while (true) {
-        if (!isFilled_11126218(t_11471598.data[chckIndx(h_11475138, 0, (t_11471598.data).length-1)].Field0)) break L2;
-          if (((t_11471598.data[chckIndx(h_11475138, 0, (t_11471598.data).length-1)].Field0 == hc_11471600) && eqStrings(t_11471598.data[chckIndx(h_11475138, 0, (t_11471598.data).length-1)].Field1, key_11471599))) {
+        if (!isFilled_11141218(t_11491598.data[chckIndx(h_11495138, 0, (t_11491598.data).length-1)].Field0)) break L2;
+          if (((t_11491598.data[chckIndx(h_11495138, 0, (t_11491598.data).length-1)].Field0 == hc_11491600) && eqStrings(t_11491598.data[chckIndx(h_11495138, 0, (t_11491598.data).length-1)].Field1, key_11491599))) {
           F.line = 61;
-          result_11471601 = h_11475138;
+          result_11491601 = h_11495138;
           break BeforeRet;
           }
           
           F.line = 62;
-          h_11475138 = nextTry_11130014(h_11475138, (t_11471598.data).length - 1);
+          h_11495138 = nextTry_11145014(h_11495138, (t_11491598.data).length - 1);
         }
     } while(false);
     F.line = 63;
-    result_11471601 = subInt(-1, h_11475138);
+    result_11491601 = subInt(-1, h_11495138);
   } while (false);
   framePtr = F.prev;
 
-  return result_11471601;
+  return result_11491601;
 
 }
-function HEX5BHEX5DHEX3D_11405778(t_11405784, key_11405785, val_11405787) {
+function HEX5BHEX5DHEX3D_11425778(t_11425784, key_11425785, val_11425787) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
-    if (((t_11405784.data).length == 0)) {
+    if (((t_11425784.data).length == 0)) {
     F.line = 163;
-    var correctSizeHEX60gensym37_11415001 = slotsNeeded_11130048(32);
+    var correctSizeHEX60gensym37_11435001 = slotsNeeded_11145048(32);
     F.line = 167;
-    t_11405784.counter = 0;
+    t_11425784.counter = 0;
     F.line = 168;
-    t_11405784.data = new Array(chckRange(correctSizeHEX60gensym37_11415001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym37_11415001, 0, 2147483647);++i) {t_11405784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
+    t_11425784.data = new Array(chckRange(correctSizeHEX60gensym37_11435001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym37_11435001, 0, 2147483647);++i) {t_11425784.data[i]={Field0: 0, Field1: [], Field2: null};}    }
     
     F.line = 57;
-    var hc_11420601 = [0];
+    var hc_11440601 = [0];
     F.line = 58;
-    var index_11430620 = rawGet_11420602(t_11405784, key_11405785, hc_11420601, 0);
-    if ((0 <= index_11430620)) {
+    var index_11450620 = rawGet_11440602(t_11425784, key_11425785, hc_11440601, 0);
+    if ((0 <= index_11450620)) {
     F.line = 59;
-    t_11405784.data[chckIndx(index_11430620, 0, (t_11405784.data).length-1)].Field2 = val_11405787;
+    t_11425784.data[chckIndx(index_11450620, 0, (t_11425784.data).length-1)].Field2 = val_11425787;
     }
     else {
-      if (((t_11405784.data).length == 0)) {
+      if (((t_11425784.data).length == 0)) {
       F.line = 163;
-      var correctSizeHEX60gensym42_11440001 = slotsNeeded_11130048(32);
+      var correctSizeHEX60gensym42_11460001 = slotsNeeded_11145048(32);
       F.line = 167;
-      t_11405784.counter = 0;
+      t_11425784.counter = 0;
       F.line = 168;
-      t_11405784.data = new Array(chckRange(correctSizeHEX60gensym42_11440001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym42_11440001, 0, 2147483647);++i) {t_11405784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
+      t_11425784.data = new Array(chckRange(correctSizeHEX60gensym42_11460001, 0, 2147483647)); for (var i=0;i<chckRange(correctSizeHEX60gensym42_11460001, 0, 2147483647);++i) {t_11425784.data[i]={Field0: 0, Field1: [], Field2: null};}      }
       
-      if (mustRehash_11445601(t_11405784)) {
+      if (mustRehash_11465601(t_11425784)) {
       F.line = 49;
-      enlarge_11470161(t_11405784);
+      enlarge_11490161(t_11425784);
       F.line = 50;
-      index_11430620 = rawGetKnownHC_11471594(t_11405784, key_11405785, hc_11420601[0]);
+      index_11450620 = rawGetKnownHC_11491594(t_11425784, key_11425785, hc_11440601[0]);
       }
       
       F.line = 51;
-      index_11430620 = subInt(-1, index_11430620);
+      index_11450620 = subInt(-1, index_11450620);
       F.line = 52;
-      rawInsert_11471108(t_11405784, t_11405784, "data", key_11405785, val_11405787, hc_11420601[0], index_11430620);
+      rawInsert_11491108(t_11425784, t_11425784, "data", key_11425785, val_11425787, hc_11440601[0], index_11450620);
       F.line = 60;
-      t_11405784.counter = addInt(t_11405784.counter, 1);
+      t_11425784.counter = addInt(t_11425784.counter, 1);
     }
     
   framePtr = F.prev;
 
   
 }
-function HEX5BHEX5DHEX3D_12320162(t_12320167, key_12320168, val_12320170) {
+function HEX5BHEX5DHEX3D_12395163(t_12395168, key_12395169, val_12395171) {
   var F={procname:"[]=.[]=",prev:framePtr,filename:"/Users/antoni/.choosenim/toolchains/nim-1.4.6/lib/pure/collections/tables.nim",line:0};
   framePtr = F;
     F.line = 874;
-    HEX5BHEX5DHEX3D_11405778(t_12320167, key_12320168, val_12320170);
+    HEX5BHEX5DHEX3D_11425778(t_12395168, key_12395169, val_12395171);
   framePtr = F.prev;
 
   
 }
-function runProcedure_11228454(self_11228456) {
-                  var Tmp5;
-                var Tmp6;
-                  var Tmp7;
+function runProcedure_11248454(self_11248456) {
+                  var Tmp4;
+                var Tmp5;
+                  var Tmp6;
+                    var Tmp7;
                     var Tmp8;
-                    var Tmp9;
-                  var Tmp10;
-                    var Tmp11;
-                  var Tmp12;
-                var Tmp13;
+                  var Tmp9;
+                    var Tmp10;
+                  var Tmp11;
+                var Tmp12;
+                  var Tmp13;
                   var Tmp14;
-                  var Tmp15;
-                    var Tmp16;
+                    var Tmp15;
+                var Tmp16;
                 var Tmp17;
-                var Tmp18;
+                  var Tmp18;
                   var Tmp19;
-                  var Tmp20;
-                    var Tmp21;
+                    var Tmp20;
+                var Tmp21;
                 var Tmp22;
-                var Tmp23;
+                  var Tmp23;
                   var Tmp24;
-                  var Tmp25;
-                    var Tmp26;
+                    var Tmp25;
+                var Tmp26;
                 var Tmp27;
-                var Tmp28;
+                  var Tmp28;
                   var Tmp29;
-                  var Tmp30;
-                    var Tmp31;
+                    var Tmp30;
+                var Tmp31;
                 var Tmp32;
                 var Tmp33;
-                var Tmp34;
-                  var Tmp35;
-                    var Tmp36;
-                var Tmp37;
+                  var Tmp34;
+                    var Tmp35;
+                var Tmp36;
+                  var Tmp37;
                   var Tmp38;
-                  var Tmp39;
-                    var Tmp40;
+                    var Tmp39;
+                var Tmp40;
                 var Tmp41;
-                var Tmp42;
+                  var Tmp42;
                   var Tmp43;
                   var Tmp44;
-                  var Tmp45;
-                    var Tmp46;
+                    var Tmp45;
+                var Tmp46;
                 var Tmp47;
-                var Tmp48;
+                  var Tmp48;
                   var Tmp49;
                   var Tmp50;
                   var Tmp51;
                   var Tmp52;
-                  var Tmp53;
-                var Tmp54;
-                        var Tmp58;
-                var Tmp59;
-                  var Tmp60;
+                var Tmp53;
+                        var Tmp57;
+                var Tmp58;
+                  var Tmp59;
+                var Tmp60;
                 var Tmp61;
-                var Tmp62;
-                  var Tmp63;
+                  var Tmp62;
+                    var Tmp63;
                     var Tmp64;
                     var Tmp65;
-                    var Tmp66;
+                var Tmp66;
                 var Tmp67;
                 var Tmp68;
                 var Tmp69;
                 var Tmp70;
                 var Tmp71;
                 var Tmp72;
-                var Tmp73;
+                    var Tmp73;
                     var Tmp74;
-                    var Tmp75;
 
-  var result_11650037 = ({val: null});
+  var result_11695037 = ({val: null});
 
   var F={procname:"runtime.runProcedure",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/runtime.nim",line:0};
   framePtr = F;
   BeforeRet: do {
-    F.line = 323;
+    F.line = 321;
     L1: do {
-      F.line = 323;
+      F.line = 321;
         L2: while (true) {
-        if (!!((self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].kind == 31))) break L2;
+        if (!!((self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].kind == 31))) break L2;
           L3: do {
-            if (self_11228456.environment.condState.isSkipping) {
-            if ((self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].kind == 12)) {
-            F.line = 326;
-            self_11228456.environment.condState.ifCounter = ((self_11228456.environment.condState.ifCounter + 1) >>> 0);
+            if (self_11248456.environment.condState.isSkipping) {
+            if ((self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].kind == 12)) {
+            F.line = 324;
+            self_11248456.environment.condState.ifCounter = ((self_11248456.environment.condState.ifCounter + 1) >>> 0);
             }
             else {
-            if ((self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].kind == 11)) {
+            if ((self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].kind == 11)) {
+            F.line = 326;
+            self_11248456.environment.condState.ifCounter = ((self_11248456.environment.condState.ifCounter - 1) >>> 0);
+            if ((self_11248456.environment.condState.ifCounter == 0)) {
             F.line = 328;
-            self_11228456.environment.condState.ifCounter = ((self_11228456.environment.condState.ifCounter - 1) >>> 0);
-            if ((self_11228456.environment.condState.ifCounter == 0)) {
-            F.line = 330;
-            self_11228456.environment.condState.isSkipping = false;
+            self_11248456.environment.condState.isSkipping = false;
             }
             
             }
             }
             }
             else {
-              F.line = 333;
-              switch (self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].kind) {
+              F.line = 331;
+              switch (self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].kind) {
               case 14:
-                F.line = 336;
-                var idx_11675005 = 0;
+                F.line = 334;
+                var idx_11725005 = nsuParseUInt(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme);
+                  if ((self_11248456.environment.procedure.argCount < idx_11725005)) Tmp4 = true; else {                    Tmp4 = (idx_11725005 == 0);                  }                if (Tmp4) {
+                F.line = 115;
+                var posHEX60gensym94_11750001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
                 F.line = 338;
-++excHandler;
-                try {
-                F.line = 339;
-                idx_11675005 = nsuParseUInt(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme);
---excHandler;
-} catch (EXC) {
- var prevJSError = lastJSError;
- lastJSError = EXC;
- --excHandler;
-                framePtr = F;
-                if (lastJSError && (isObj(lastJSError.m_type, NTI1194643))) {
-                F.line = 341;
-                rawEcho(makeNimstrLit("whoops! you shouldn\'t see this, for some reason you managed to break the lexing algorithm which only accepted positive integers. here you go, have a cookie \xF0\x9F\x8D\xAA"));
-                F.line = 342;
-                exit(1);
-                }
-                else {
-                	reraiseException();
-                }
-                lastJSError = prevJSError;
-                } finally {
-                framePtr = F;
-                }
-                  if ((self_11228456.environment.procedure.argCount < idx_11675005)) Tmp5 = true; else {                    Tmp5 = (idx_11675005 == 0);                  }                if (Tmp5) {
+                var fmtRes_11750002 = [mnewString(0)];
+                F.line = 338;
+                fmtRes_11750002[0].push.apply(fmtRes_11750002[0], makeNimstrLit("Argument operator calls argument no. "));;
+                F.line = 338;
+                formatValue_10795001(fmtRes_11750002, 0, idx_11725005, []);
+                F.line = 338;
+                fmtRes_11750002[0].push.apply(fmtRes_11750002[0], makeNimstrLit(", but current procedure only accepts "));;
+                F.line = 338;
+                formatValue_10795001(fmtRes_11750002, 0, self_11248456.environment.procedure.argCount, []);
+                F.line = 338;
+                fmtRes_11750002[0].push.apply(fmtRes_11750002[0], makeNimstrLit(" arguments"));;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym94_11750001 || [],makeNimstrLit(") ") || [],fmtRes_11750002[0] || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym94_11705001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym94_11705001 || [],makeNimstrLit(") Argument operator calls argument no. ") || [],HEX24_1365066(idx_11675005) || [],makeNimstrLit(", but current procedure only accepts ") || [],HEX24_1365066(self_11228456.environment.procedure.argCount) || [],makeNimstrLit(" arguments") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 348;
+                self_11248456.hadError = true;
+                F.line = 340;
                 break BeforeRet;
                 }
                 
-                F.line = 349;
-                push_11705010(self_11228456.environment.stack, self_11228456.environment.arguments[chckIndx(((idx_11675005 - 1) >>> 0), 0, (self_11228456.environment.arguments).length-1)]);
+                F.line = 341;
+                push_11755024(self_11248456.environment.stack, self_11248456.environment.arguments[chckIndx(((idx_11725005 - 1) >>> 0), 0, (self_11248456.environment.arguments).length-1)]);
                 break;
               case 27:
-                F.line = 149;
-                var valHEX60gensym95_11715005 = newValue_11227049(nsuParseFloat(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme));
-                F.line = 150;
-                push_11705010(self_11228456.environment.stack, valHEX60gensym95_11715005);
+                F.line = 146;
+                var valHEX60gensym95_11765005 = newValue_11247049(nsuParseFloat(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme));
+                F.line = 147;
+                push_11755024(self_11248456.environment.stack, valHEX60gensym95_11765005);
                 break;
               case 28:
-                F.line = 149;
-                var valHEX60gensym97_11725005 = newValue_11227046(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme);
-                F.line = 150;
-                push_11705010(self_11228456.environment.stack, valHEX60gensym97_11725005);
+                F.line = 146;
+                var valHEX60gensym97_11775005 = newValue_11247046(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme);
+                F.line = 147;
+                push_11755024(self_11248456.environment.stack, valHEX60gensym97_11775005);
                 break;
               case 22:
               case 23:
-                F.line = 149;
-                var valHEX60gensym99_11735005 = newValue_11227052(parseBool_10110022(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme));
-                F.line = 150;
-                push_11705010(self_11228456.environment.stack, valHEX60gensym99_11735005);
+                F.line = 146;
+                var valHEX60gensym99_11785005 = newValue_11247052(parseBool_10105022(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme));
+                F.line = 147;
+                push_11755024(self_11248456.environment.stack, valHEX60gensym99_11785005);
                 break;
               case 15:
-                F.line = 358;
-                var val_11745227 = pop_11735137(self_11228456.environment.stack);
-                if (isSome_11745243(val_11745227)) {
-                F.line = 360;
-                switch ((Tmp6 = get_11745464(val_11745227), Tmp6)[0][Tmp6[1]].kind) {
+                F.line = 350;
+                var val_11795227 = pop_11785137(self_11248456.environment.stack);
+                if (isSome_11795243(val_11795227)) {
+                F.line = 352;
+                switch ((Tmp5 = get_11795464(val_11795227), Tmp5)[0][Tmp5[1]].kind) {
                 case 0:
-                  F.line = 361;
-                  self_11228456.output.push.apply(self_11228456.output, (Tmp7 = get_11745464(val_11745227), Tmp7)[0][Tmp7[1]].valueAs.str);;
+                  F.line = 353;
+                  rawEcho((Tmp6 = get_11795464(val_11795227), Tmp6)[0][Tmp6[1]].valueAs.str);
                   break;
                 case 1:
-                  if ((Math.floor((Tmp8 = get_11745464(val_11745227), Tmp8)[0][Tmp8[1]].valueAs.num) == (Tmp9 = get_11745464(val_11745227), Tmp9)[0][Tmp9[1]].valueAs.num)) {
-                  F.line = 364;
-                  self_11228456.output.push.apply(self_11228456.output, cstrToNimstr(((((Tmp10 = get_11745464(val_11745227), Tmp10)[0][Tmp10[1]].valueAs.num)|0))+""));;
+                  if ((Math.floor((Tmp7 = get_11795464(val_11795227), Tmp7)[0][Tmp7[1]].valueAs.num) == (Tmp8 = get_11795464(val_11795227), Tmp8)[0][Tmp8[1]].valueAs.num)) {
+                  F.line = 356;
+                  rawEcho(cstrToNimstr(((((Tmp9 = get_11795464(val_11795227), Tmp9)[0][Tmp9[1]].valueAs.num)|0))+""));
                   }
                   else {
-                    F.line = 366;
-                  self_11228456.output.push.apply(self_11228456.output, cstrToNimstr(nimFloatToString((Tmp11 = get_11745464(val_11745227), Tmp11)[0][Tmp11[1]].valueAs.num)));;
+                    F.line = 358;
+                  rawEcho(cstrToNimstr(nimFloatToString((Tmp10 = get_11795464(val_11795227), Tmp10)[0][Tmp10[1]].valueAs.num)));
                   }
                   
                   break;
                 case 2:
-                  F.line = 367;
-                  self_11228456.output.push.apply(self_11228456.output, nimBoolToStr((Tmp12 = get_11745464(val_11745227), Tmp12)[0][Tmp12[1]].valueAs.boolean));;
+                  F.line = 359;
+                  rawEcho(nimBoolToStr((Tmp11 = get_11795464(val_11795227), Tmp11)[0][Tmp11[1]].valueAs.boolean));
                   break;
                 }
-                F.line = 369;
-                self_11228456.output.push.apply(self_11228456.output, makeNimstrLit("\x0A"));;
                 }
                 else {
-                  F.line = 370;
-                self_11228456.output.push.apply(self_11228456.output, makeNimstrLit("void\x0A"));;
+                  F.line = 360;
+                rawEcho(makeNimstrLit("void"));
                 }
                 
                 break;
               case 16:
+                F.line = 115;
+                var posHEX60gensym107_11820001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym107_11820001 || [],makeNimstrLit(") `in` keyword not implemented in JS backend") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym107_11770001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym107_11770001 || [],makeNimstrLit(") `in` keyword not implemented in JS backend") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 387;
+                self_11248456.hadError = true;
+                F.line = 376;
                 break BeforeRet;
                 break;
               case 17:
-                F.line = 391;
-                var val_11775072 = topValue_11770010(self_11228456.environment.stack);
-                if (isSome_11745243(val_11775072)) {
-                F.line = 393;
-                push_11705010(self_11228456.environment.stack, newValue_11227068((Tmp13 = get_11745464(val_11775072), Tmp13)[0][Tmp13[1]]));
+                F.line = 380;
+                var val_11825072 = topValue_11820010(self_11248456.environment.stack);
+                if (isSome_11795243(val_11825072)) {
+                F.line = 382;
+                push_11755024(self_11248456.environment.stack, newValue_11247068((Tmp12 = get_11795464(val_11825072), Tmp12)[0][Tmp12[1]]));
                 }
                 
                 break;
               case 2:
-                F.line = 129;
-                var val1HEX60gensym109_11780124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym109_11780248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym109_11780124) || isNone_11745486(val2HEX60gensym109_11780248))) {
+                F.line = 127;
+                var val1HEX60gensym109_11830124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym109_11830248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym109_11830124) || isNone_11795486(val2HEX60gensym109_11830248))) {
+                F.line = 115;
+                var posHEX60gensym110_11850005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym110_11850005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym110_11800005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym110_11800005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp14 = get_11795464(val1HEX60gensym109_11830124), Tmp14)[0][Tmp14[1]].kind == 1))) Tmp13 = true; else {                    Tmp13 = !(((Tmp15 = get_11795464(val2HEX60gensym109_11830248), Tmp15)[0][Tmp15[1]].kind == 1));                  }                if (Tmp13) {
+                F.line = 115;
+                var posHEX60gensym116_11880005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym116_11880005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp15 = get_11745464(val1HEX60gensym109_11780124), Tmp15)[0][Tmp15[1]].kind == 1))) Tmp14 = true; else {                    Tmp14 = !(((Tmp16 = get_11745464(val2HEX60gensym109_11780248), Tmp16)[0][Tmp16[1]].kind == 1));                  }                if (Tmp14) {
-                F.line = 117;
-                var posHEX60gensym116_11830005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym116_11830005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                push_11705010(self_11228456.environment.stack, newValue_11227049(((Tmp17 = get_11745464(val1HEX60gensym109_11780124), Tmp17)[0][Tmp17[1]].valueAs.num + (Tmp18 = get_11745464(val2HEX60gensym109_11780248), Tmp18)[0][Tmp18[1]].valueAs.num)));
+                F.line = 138;
+                push_11755024(self_11248456.environment.stack, newValue_11247049(((Tmp16 = get_11795464(val1HEX60gensym109_11830124), Tmp16)[0][Tmp16[1]].valueAs.num + (Tmp17 = get_11795464(val2HEX60gensym109_11830248), Tmp17)[0][Tmp17[1]].valueAs.num)));
                 break;
               case 4:
-                F.line = 129;
-                var val1HEX60gensym120_11835124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym120_11835248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym120_11835124) || isNone_11745486(val2HEX60gensym120_11835248))) {
+                F.line = 127;
+                var val1HEX60gensym120_11885124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym120_11885248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym120_11885124) || isNone_11795486(val2HEX60gensym120_11885248))) {
+                F.line = 115;
+                var posHEX60gensym121_11905005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym121_11905005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym121_11855005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym121_11855005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp19 = get_11795464(val1HEX60gensym120_11885124), Tmp19)[0][Tmp19[1]].kind == 1))) Tmp18 = true; else {                    Tmp18 = !(((Tmp20 = get_11795464(val2HEX60gensym120_11885248), Tmp20)[0][Tmp20[1]].kind == 1));                  }                if (Tmp18) {
+                F.line = 115;
+                var posHEX60gensym127_11935005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym127_11935005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp20 = get_11745464(val1HEX60gensym120_11835124), Tmp20)[0][Tmp20[1]].kind == 1))) Tmp19 = true; else {                    Tmp19 = !(((Tmp21 = get_11745464(val2HEX60gensym120_11835248), Tmp21)[0][Tmp21[1]].kind == 1));                  }                if (Tmp19) {
-                F.line = 117;
-                var posHEX60gensym127_11885005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym127_11885005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                push_11705010(self_11228456.environment.stack, newValue_11227049(((Tmp22 = get_11745464(val1HEX60gensym120_11835124), Tmp22)[0][Tmp22[1]].valueAs.num * (Tmp23 = get_11745464(val2HEX60gensym120_11835248), Tmp23)[0][Tmp23[1]].valueAs.num)));
+                F.line = 138;
+                push_11755024(self_11248456.environment.stack, newValue_11247049(((Tmp21 = get_11795464(val1HEX60gensym120_11885124), Tmp21)[0][Tmp21[1]].valueAs.num * (Tmp22 = get_11795464(val2HEX60gensym120_11885248), Tmp22)[0][Tmp22[1]].valueAs.num)));
                 break;
               case 3:
-                F.line = 129;
-                var val1HEX60gensym131_11890124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym131_11890248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym131_11890124) || isNone_11745486(val2HEX60gensym131_11890248))) {
+                F.line = 127;
+                var val1HEX60gensym131_11940124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym131_11940248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym131_11940124) || isNone_11795486(val2HEX60gensym131_11940248))) {
+                F.line = 115;
+                var posHEX60gensym132_11960005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym132_11960005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym132_11910005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym132_11910005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp24 = get_11795464(val1HEX60gensym131_11940124), Tmp24)[0][Tmp24[1]].kind == 1))) Tmp23 = true; else {                    Tmp23 = !(((Tmp25 = get_11795464(val2HEX60gensym131_11940248), Tmp25)[0][Tmp25[1]].kind == 1));                  }                if (Tmp23) {
+                F.line = 115;
+                var posHEX60gensym138_11990005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym138_11990005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp25 = get_11745464(val1HEX60gensym131_11890124), Tmp25)[0][Tmp25[1]].kind == 1))) Tmp24 = true; else {                    Tmp24 = !(((Tmp26 = get_11745464(val2HEX60gensym131_11890248), Tmp26)[0][Tmp26[1]].kind == 1));                  }                if (Tmp24) {
-                F.line = 117;
-                var posHEX60gensym138_11940005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym138_11940005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                push_11705010(self_11228456.environment.stack, newValue_11227049(((Tmp27 = get_11745464(val1HEX60gensym131_11890124), Tmp27)[0][Tmp27[1]].valueAs.num - (Tmp28 = get_11745464(val2HEX60gensym131_11890248), Tmp28)[0][Tmp28[1]].valueAs.num)));
+                F.line = 138;
+                push_11755024(self_11248456.environment.stack, newValue_11247049(((Tmp26 = get_11795464(val1HEX60gensym131_11940124), Tmp26)[0][Tmp26[1]].valueAs.num - (Tmp27 = get_11795464(val2HEX60gensym131_11940248), Tmp27)[0][Tmp27[1]].valueAs.num)));
                 break;
               case 5:
-                F.line = 129;
-                var val1HEX60gensym142_11945124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym142_11945248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym142_11945124) || isNone_11745486(val2HEX60gensym142_11945248))) {
+                F.line = 127;
+                var val1HEX60gensym142_11995124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym142_11995248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym142_11995124) || isNone_11795486(val2HEX60gensym142_11995248))) {
+                F.line = 115;
+                var posHEX60gensym143_12015005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym143_12015005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym143_11965005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym143_11965005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp29 = get_11795464(val1HEX60gensym142_11995124), Tmp29)[0][Tmp29[1]].kind == 1))) Tmp28 = true; else {                    Tmp28 = !(((Tmp30 = get_11795464(val2HEX60gensym142_11995248), Tmp30)[0][Tmp30[1]].kind == 1));                  }                if (Tmp28) {
+                F.line = 115;
+                var posHEX60gensym149_12045005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym149_12045005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp30 = get_11745464(val1HEX60gensym142_11945124), Tmp30)[0][Tmp30[1]].kind == 1))) Tmp29 = true; else {                    Tmp29 = !(((Tmp31 = get_11745464(val2HEX60gensym142_11945248), Tmp31)[0][Tmp31[1]].kind == 1));                  }                if (Tmp29) {
-                F.line = 117;
-                var posHEX60gensym149_11995005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym149_11995005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                push_11705010(self_11228456.environment.stack, newValue_11227049(((Tmp32 = get_11745464(val1HEX60gensym142_11945124), Tmp32)[0][Tmp32[1]].valueAs.num / (Tmp33 = get_11745464(val2HEX60gensym142_11945248), Tmp33)[0][Tmp33[1]].valueAs.num)));
+                F.line = 138;
+                push_11755024(self_11248456.environment.stack, newValue_11247049(((Tmp31 = get_11795464(val1HEX60gensym142_11995124), Tmp31)[0][Tmp31[1]].valueAs.num / (Tmp32 = get_11795464(val2HEX60gensym142_11995248), Tmp32)[0][Tmp32[1]].valueAs.num)));
                 break;
               case 6:
-                F.line = 401;
-                var val_11995245 = pop_11735137(self_11228456.environment.stack);
-                if (isSome_11745243(val_11995245)) {
-                F.line = 403;
-                push_11705010(self_11228456.environment.stack, newValue_11227052(((Tmp34 = get_11745464(val_11995245), Tmp34)[0][Tmp34[1]].valueAs.num < 0.0)));
+                F.line = 390;
+                var val_12045245 = pop_11785137(self_11248456.environment.stack);
+                if (isSome_11795243(val_12045245)) {
+                F.line = 392;
+                push_11755024(self_11248456.environment.stack, newValue_11247052(((Tmp33 = get_11795464(val_12045245), Tmp33)[0][Tmp33[1]].valueAs.num < 0.0)));
                 }
                 
                 break;
               case 26:
-                F.line = 407;
-                var val_11995454 = pop_11735137(self_11228456.environment.stack);
-                  if (isNone_11745486(val_11995454)) Tmp35 = true; else {                    Tmp35 = !(((Tmp36 = get_11745464(val_11995454), Tmp36)[0][Tmp36[1]].kind == 2));                  }                if (Tmp35) {
+                F.line = 396;
+                var val_12045454 = pop_11785137(self_11248456.environment.stack);
+                  if (isNone_11795486(val_12045454)) Tmp34 = true; else {                    Tmp34 = !(((Tmp35 = get_11795464(val_12045454), Tmp35)[0][Tmp35[1]].kind == 2));                  }                if (Tmp34) {
+                F.line = 115;
+                var posHEX60gensym157_12070001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym157_12070001 || [],makeNimstrLit(") Expected boolean value when using \"not\" operator") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym157_12020001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym157_12020001 || [],makeNimstrLit(") Expected boolean value when using \"not\" operator") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 410;
+                self_11248456.hadError = true;
+                F.line = 399;
                 break L1;
                 }
                 
-                F.line = 411;
-                var res_12020053 = (Tmp37 = get_11745464(val_11995454), Tmp37)[0][Tmp37[1]];
-                F.line = 412;
-                res_12020053.valueAs.boolean = !(res_12020053.valueAs.boolean);
-                F.line = 413;
-                push_11705010(self_11228456.environment.stack, res_12020053);
+                F.line = 400;
+                var res_12070053 = (Tmp36 = get_11795464(val_12045454), Tmp36)[0][Tmp36[1]];
+                F.line = 401;
+                res_12070053.valueAs.boolean = !(res_12070053.valueAs.boolean);
+                F.line = 402;
+                push_11755024(self_11248456.environment.stack, res_12070053);
                 break;
               case 24:
-                F.line = 129;
-                var val1HEX60gensym158_12025124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym158_12025248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym158_12025124) || isNone_11745486(val2HEX60gensym158_12025248))) {
+                F.line = 127;
+                var val1HEX60gensym158_12075124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym158_12075248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym158_12075124) || isNone_11795486(val2HEX60gensym158_12075248))) {
+                F.line = 115;
+                var posHEX60gensym159_12095005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym159_12095005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym159_12045005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym159_12045005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp38 = get_11795464(val1HEX60gensym158_12075124), Tmp38)[0][Tmp38[1]].kind == 2))) Tmp37 = true; else {                    Tmp37 = !(((Tmp39 = get_11795464(val2HEX60gensym158_12075248), Tmp39)[0][Tmp39[1]].kind == 2));                  }                if (Tmp37) {
+                F.line = 115;
+                var posHEX60gensym165_12125005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym165_12125005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp39 = get_11745464(val1HEX60gensym158_12025124), Tmp39)[0][Tmp39[1]].kind == 2))) Tmp38 = true; else {                    Tmp38 = !(((Tmp40 = get_11745464(val2HEX60gensym158_12025248), Tmp40)[0][Tmp40[1]].kind == 2));                  }                if (Tmp38) {
-                F.line = 117;
-                var posHEX60gensym165_12075005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym165_12075005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                if (!(Tmp42 = get_11745464(val1HEX60gensym158_12025124), Tmp42)[0][Tmp42[1]].valueAs.boolean) Tmp41 = false; else {                  Tmp41 = (Tmp43 = get_11745464(val2HEX60gensym158_12025248), Tmp43)[0][Tmp43[1]].valueAs.boolean;                }                push_11705010(self_11228456.environment.stack, newValue_11227052(Tmp41));
+                F.line = 138;
+                if (!(Tmp41 = get_11795464(val1HEX60gensym158_12075124), Tmp41)[0][Tmp41[1]].valueAs.boolean) Tmp40 = false; else {                  Tmp40 = (Tmp42 = get_11795464(val2HEX60gensym158_12075248), Tmp42)[0][Tmp42[1]].valueAs.boolean;                }                push_11755024(self_11248456.environment.stack, newValue_11247052(Tmp40));
                 break;
               case 25:
-                F.line = 129;
-                var val1HEX60gensym169_12080124 = pop_11735137(self_11228456.environment.stack);
-                F.line = 130;
-                var val2HEX60gensym169_12080248 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1HEX60gensym169_12080124) || isNone_11745486(val2HEX60gensym169_12080248))) {
+                F.line = 127;
+                var val1HEX60gensym169_12130124 = pop_11785137(self_11248456.environment.stack);
+                F.line = 128;
+                var val2HEX60gensym169_12130248 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1HEX60gensym169_12130124) || isNone_11795486(val2HEX60gensym169_12130248))) {
+                F.line = 115;
+                var posHEX60gensym170_12150005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym170_12150005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym170_12100005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym170_12100005 || [],makeNimstrLit(") Expected two operands for binary operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
+                self_11248456.hadError = true;
+                F.line = 133;
+                break BeforeRet;
+                }
+                
+                  if (!(((Tmp44 = get_11795464(val1HEX60gensym169_12130124), Tmp44)[0][Tmp44[1]].kind == 2))) Tmp43 = true; else {                    Tmp43 = !(((Tmp45 = get_11795464(val2HEX60gensym169_12130248), Tmp45)[0][Tmp45[1]].kind == 2));                  }                if (Tmp43) {
+                F.line = 115;
+                var posHEX60gensym176_12180005 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym176_12180005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 136;
                 break BeforeRet;
                 }
                 
-                  if (!(((Tmp45 = get_11745464(val1HEX60gensym169_12080124), Tmp45)[0][Tmp45[1]].kind == 2))) Tmp44 = true; else {                    Tmp44 = !(((Tmp46 = get_11745464(val2HEX60gensym169_12080248), Tmp46)[0][Tmp46[1]].kind == 2));                  }                if (Tmp44) {
-                F.line = 117;
-                var posHEX60gensym176_12130005 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym176_12130005 || [],makeNimstrLit(") Invalid types for binary operation") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 139;
-                break BeforeRet;
-                }
-                
-                F.line = 141;
-                if ((Tmp48 = get_11745464(val1HEX60gensym169_12080124), Tmp48)[0][Tmp48[1]].valueAs.boolean) Tmp47 = true; else {                  Tmp47 = (Tmp49 = get_11745464(val2HEX60gensym169_12080248), Tmp49)[0][Tmp49[1]].valueAs.boolean;                }                push_11705010(self_11228456.environment.stack, newValue_11227052(Tmp47));
+                F.line = 138;
+                if ((Tmp47 = get_11795464(val1HEX60gensym169_12130124), Tmp47)[0][Tmp47[1]].valueAs.boolean) Tmp46 = true; else {                  Tmp46 = (Tmp48 = get_11795464(val2HEX60gensym169_12130248), Tmp48)[0][Tmp48[1]].valueAs.boolean;                }                push_11755024(self_11248456.environment.stack, newValue_11247052(Tmp46));
                 break;
               case 10:
-                F.line = 418;
-                var val1_12130245 = pop_11735137(self_11228456.environment.stack);
-                F.line = 419;
-                var val2_12130369 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1_12130245) || isNone_11745486(val2_12130369))) {
+                F.line = 407;
+                var val1_12180245 = pop_11785137(self_11248456.environment.stack);
+                F.line = 408;
+                var val2_12180369 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1_12180245) || isNone_11795486(val2_12180369))) {
+                F.line = 115;
+                var posHEX60gensym183_12200001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym183_12200001 || [],makeNimstrLit(") Expected two operands for equality operation, one or less given") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym183_12150001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym183_12150001 || [],makeNimstrLit(") Expected two operands for equality operation, one or less given") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 422;
+                self_11248456.hadError = true;
+                F.line = 411;
                 break L3;
                 }
                 
-                if (!(((Tmp50 = get_11745464(val1_12130245), Tmp50)[0][Tmp50[1]].kind == (Tmp51 = get_11745464(val2_12130369), Tmp51)[0][Tmp51[1]].kind))) {
-                F.line = 423;
-                push_11705010(self_11228456.environment.stack, newValue_11227052(false));
+                if (!(((Tmp49 = get_11795464(val1_12180245), Tmp49)[0][Tmp49[1]].kind == (Tmp50 = get_11795464(val2_12180369), Tmp50)[0][Tmp50[1]].kind))) {
+                F.line = 412;
+                push_11755024(self_11248456.environment.stack, newValue_11247052(false));
                 }
                 else {
-                if (!(HEX3DHEX3D_12160103((Tmp52 = get_11745464(val1_12130245), Tmp52)[0][Tmp52[1]].valueAs, (Tmp53 = get_11745464(val2_12130369), Tmp53)[0][Tmp53[1]].valueAs))) {
-                F.line = 424;
-                push_11705010(self_11228456.environment.stack, newValue_11227052(false));
+                if (!(HEX3DHEX3D_12210103((Tmp51 = get_11795464(val1_12180245), Tmp51)[0][Tmp51[1]].valueAs, (Tmp52 = get_11795464(val2_12180369), Tmp52)[0][Tmp52[1]].valueAs))) {
+                F.line = 413;
+                push_11755024(self_11248456.environment.stack, newValue_11247052(false));
                 }
                 else {
-                  F.line = 425;
-                push_11705010(self_11228456.environment.stack, newValue_11227052(true));
+                  F.line = 414;
+                push_11755024(self_11248456.environment.stack, newValue_11247052(true));
                 }
                 }
                 break;
               case 29:
-                F.line = 429;
-                var id_12165005 = nimCopy(null, self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme, NTI1188013);
-                if (contains_11515117(self_11228456.procs, id_12165005)) {
-                F.line = 431;
-                var old_12170124 = nimCopy(null, self_11228456.environment, NTI11228023);
-                F.line = 433;
-                nimCopy(self_11228456.environment, {procedure: (Tmp54 = HEX5BHEX5D_11390488(self_11228456.procs, self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].lexeme), Tmp54)[0][Tmp54[1]], arguments: newSeq_11385985(0), variables: newTable_11475778(32), stack: old_12170124.stack, condState: {isSkipping: false, ifCounter: 0}, pc: 0}, NTI11228023);
-                L55: do {
-                  F.line = 445;
-                  var i_12175116 = 0;
+                F.line = 418;
+                var id_12215005 = nimCopy(null, self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme, NTI1188013);
+                if (contains_11535117(self_11248456.procs, id_12215005)) {
+                F.line = 420;
+                var old_12220124 = nimCopy(null, self_11248456.environment, NTI11248023);
+                F.line = 422;
+                nimCopy(self_11248456.environment, {procedure: (Tmp53 = HEX5BHEX5D_11410488(self_11248456.procs, self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].lexeme), Tmp53)[0][Tmp53[1]], arguments: newSeq_11405985(0), variables: newTable_11495778(32), stack: old_12220124.stack, condState: {isSkipping: false, ifCounter: 0}, pc: 0}, NTI11248023);
+                L54: do {
+                  F.line = 434;
+                  var i_12225116 = 0;
                   F.line = 39;
-                  var colontmp__12390435 = 0;
-                  F.line = 445;
-                  colontmp__12390435 = chckRange(self_11228456.environment.procedure.argCount, -2147483648, 2147483647);
+                  var colontmp__12470462 = 0;
+                  F.line = 434;
+                  colontmp__12470462 = chckRange(self_11248456.environment.procedure.argCount, -2147483648, 2147483647);
                   F.line = 56;
-                  var res_12390436 = 1;
-                  L56: do {
+                  var res_12470463 = 1;
+                  L55: do {
                     F.line = 57;
-                      L57: while (true) {
-                      if (!(res_12390436 <= colontmp__12390435)) break L57;
-                        F.line = 445;
-                        i_12175116 = res_12390436;
-                        F.line = 446;
-                        var val_12175240 = pop_11735137(self_11228456.environment.stack);
-                        if (isNone_11745486(val_12175240)) {
+                      L56: while (true) {
+                      if (!(res_12470463 <= colontmp__12470462)) break L56;
+                        F.line = 434;
+                        i_12225116 = res_12470463;
+                        F.line = 435;
+                        var val_12225240 = pop_11785137(self_11248456.environment.stack);
+                        if (isNone_11795486(val_12225240)) {
+                        F.line = 115;
+                        var posHEX60gensym192_12245001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                        F.line = 116;
+                        F.line = 437;
+                        var fmtRes_12245002 = [mnewString(0)];
+                        F.line = 437;
+                        fmtRes_12245002[0].push.apply(fmtRes_12245002[0], makeNimstrLit("Invalid number of arguments provided for public procedure \""));;
+                        F.line = 437;
+                        formatValue_10645080(fmtRes_12245002, 0, self_11248456.environment.procedure.name, []);
+                        F.line = 437;
+                        fmtRes_12245002[0].push.apply(fmtRes_12245002[0], makeNimstrLit("\""));;
+                        self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym192_12245001 || [],makeNimstrLit(") ") || [],fmtRes_12245002[0] || []), NTI1188013);
                         F.line = 117;
-                        var posHEX60gensym192_12195001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                        F.line = 118;
-                        self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym192_12195001 || [],makeNimstrLit(") Invalid number of arguments provided for public procedure \"") || [],self_11228456.environment.procedure.name || [],makeNimstrLit("\"") || []), NTI1188013);
-                        F.line = 119;
-                        self_11228456.hadError = true;
-                        F.line = 449;
+                        self_11248456.hadError = true;
+                        F.line = 438;
                         break BeforeRet;
                         }
                         
-                        F.line = 450;
-                        self_11228456.environment.arguments.push((Tmp58 = get_11745464(val_12175240), Tmp58)[0][Tmp58[1]]);;
+                        F.line = 439;
+                        self_11248456.environment.arguments.push((Tmp57 = get_11795464(val_12225240), Tmp57)[0][Tmp57[1]]);;
                         F.line = 59;
-                        res_12390436 = addInt(res_12390436, 1);
+                        res_12470463 = addInt(res_12470463, 1);
                       }
                   } while(false);
                 } while(false);
-                if (self_11228456.environment.procedure.isPrivate) {
-                if (contains_12200117(self_11228456.stacks, HEX24_1365066(self_11228456.nestation))) {
-                F.line = 454;
-                reset_12200666((Tmp59 = HEX5BHEX5D_11476067(self_11228456.stacks, HEX24_1365066(self_11228456.nestation)), Tmp59)[0][Tmp59[1]]);
+                if (self_11248456.environment.procedure.isPrivate) {
+                if (contains_12255117(self_11248456.stacks, HEX24_1365066(self_11248456.nestation))) {
+                F.line = 443;
+                reset_12255666((Tmp58 = HEX5BHEX5D_11496067(self_11248456.stacks, HEX24_1365066(self_11248456.nestation)), Tmp58)[0][Tmp58[1]]);
                 }
                 else {
-                  F.line = 456;
-                HEX5BHEX5DHEX3D_11386096(self_11228456.stacks, HEX24_1365066(self_11228456.nestation), newStack_11385975());
+                  F.line = 445;
+                HEX5BHEX5DHEX3D_11406096(self_11248456.stacks, HEX24_1365066(self_11248456.nestation), newStack_11405975());
                 }
                 
                 }
                 
-                F.line = 458;
-                self_11228456.nestation = ((self_11228456.nestation + 1) >>> 0);
-                F.line = 459;
-                var val_12200819 = runProcedure_11228454(self_11228456);
-                F.line = 460;
-                self_11228456.nestation = ((self_11228456.nestation - 1) >>> 0);
-                if (self_11228456.hadError) {
-                F.line = 461;
+                F.line = 447;
+                self_11248456.nestation = ((self_11248456.nestation + 1) >>> 0);
+                F.line = 448;
+                var val_12255819 = runProcedure_11248454(self_11248456);
+                F.line = 449;
+                self_11248456.nestation = ((self_11248456.nestation - 1) >>> 0);
+                if (self_11248456.hadError) {
+                F.line = 450;
                 break BeforeRet;
                 }
                 
-                  if (!self_11228456.environment.procedure.isPrivate) Tmp60 = false; else {                    Tmp60 = isSome_11745243(val_12200819);                  }                if (Tmp60) {
-                F.line = 464;
-                push_11705010(old_12170124.stack, (Tmp61 = get_11745464(val_12200819), Tmp61)[0][Tmp61[1]]);
+                  if (!self_11248456.environment.procedure.isPrivate) Tmp59 = false; else {                    Tmp59 = isSome_11795243(val_12255819);                  }                if (Tmp59) {
+                F.line = 453;
+                push_11755024(old_12220124.stack, (Tmp60 = get_11795464(val_12255819), Tmp60)[0][Tmp60[1]]);
                 }
                 
-                F.line = 466;
-                nimCopy(self_11228456.environment, old_12170124, NTI11228023);
+                F.line = 455;
+                nimCopy(self_11248456.environment, old_12220124, NTI11248023);
                 }
                 else {
-                if (contains_11520117(self_11228456.environment.variables, id_12165005)) {
-                F.line = 469;
-                push_11705010(self_11228456.environment.stack, (Tmp62 = HEX5BHEX5D_12205276(self_11228456.environment.variables, id_12165005), Tmp62)[0][Tmp62[1]]);
+                if (contains_11540117(self_11248456.environment.variables, id_12215005)) {
+                F.line = 458;
+                push_11755024(self_11248456.environment.stack, (Tmp61 = HEX5BHEX5D_12260276(self_11248456.environment.variables, id_12215005), Tmp61)[0][Tmp61[1]]);
                 }
                 else {
+                  F.line = 115;
+                  var posHEX60gensym199_12285001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                  F.line = 116;
+                  F.line = 461;
+                  var fmtRes_12285002 = [mnewString(0)];
+                  F.line = 461;
+                  fmtRes_12285002[0].push.apply(fmtRes_12285002[0], makeNimstrLit("Unknown identifier \""));;
+                  F.line = 461;
+                  formatValue_10645080(fmtRes_12285002, 0, id_12215005, []);
+                  F.line = 461;
+                  fmtRes_12285002[0].push.apply(fmtRes_12285002[0], makeNimstrLit("\""));;
+                  self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym199_12285001 || [],makeNimstrLit(") ") || [],fmtRes_12285002[0] || []), NTI1188013);
                   F.line = 117;
-                  var posHEX60gensym199_12230001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                  F.line = 118;
-                  self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym199_12230001 || [],makeNimstrLit(") Unknown identifier \"") || [],id_12165005 || [],makeNimstrLit("\"") || []), NTI1188013);
-                  F.line = 119;
-                  self_11228456.hadError = true;
-                  F.line = 473;
+                  self_11248456.hadError = true;
+                  F.line = 462;
                   break BeforeRet;
                 }
                 }
                 break;
               case 13:
+                F.line = 465;
+                self_11248456.environment.pc = ((self_11248456.environment.pc + 1) >>> 0);
+                F.line = 466;
+                var tok_12295005 = self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)];
+                if (!((tok_12295005.kind == 29))) {
+                F.line = 115;
+                var posHEX60gensym205_12320001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                F.line = 468;
+                var fmtRes_12320002 = [mnewString(0)];
+                F.line = 468;
+                fmtRes_12320002[0].push.apply(fmtRes_12320002[0], makeNimstrLit("Expected identifier when assigning to variable, got "));;
+                F.line = 468;
+                formatValue_10645080(fmtRes_12320002, 0, TOKEN_AS_WORD_11248019[chckIndx(tok_12295005.kind, 0, (TOKEN_AS_WORD_11248019).length-1)], []);
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym205_12320001 || [],makeNimstrLit(") ") || [],fmtRes_12320002[0] || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
+                F.line = 469;
+                break BeforeRet;
+                }
+                
+                  if (!!(contains_11540117(self_11248456.environment.variables, tok_12295005.lexeme))) Tmp62 = false; else {                    if (eqStrings(tok_12295005.lexeme, makeNimstrLit("true"))) Tmp65 = true; else {                      Tmp65 = eqStrings(tok_12295005.lexeme, makeNimstrLit("false"));                    }                    if (Tmp65) Tmp64 = true; else {                      Tmp64 = contains_11535117(self_11248456.procs, tok_12295005.lexeme);                    }                    if (Tmp64) Tmp63 = true; else {                      Tmp63 = contains_11540117(self_11248456.environment.variables, tok_12295005.lexeme);                    }                    Tmp62 = Tmp63;                  }                if (Tmp62) {
+                F.line = 115;
+                var posHEX60gensym213_12365001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                F.line = 471;
+                var fmtRes_12365002 = [mnewString(0)];
+                F.line = 471;
+                fmtRes_12365002[0].push.apply(fmtRes_12365002[0], makeNimstrLit("Tried to use reserved name \""));;
+                F.line = 471;
+                formatValue_10645080(fmtRes_12365002, 0, tok_12295005.lexeme, []);
+                F.line = 471;
+                fmtRes_12365002[0].push.apply(fmtRes_12365002[0], makeNimstrLit("\" for variable name"));;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym213_12365001 || [],makeNimstrLit(") ") || [],fmtRes_12365002[0] || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
+                F.line = 472;
+                break BeforeRet;
+                }
+                
+                F.line = 473;
+                var val_12370126 = pop_11785137(self_11248456.environment.stack);
+                if (isNone_11795486(val_12370126)) {
+                F.line = 115;
+                var posHEX60gensym217_12390001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                F.line = 475;
+                var fmtRes_12390002 = [mnewString(0)];
+                F.line = 475;
+                fmtRes_12390002[0].push.apply(fmtRes_12390002[0], makeNimstrLit("Did not provide value to assign to variable \""));;
+                F.line = 475;
+                formatValue_10645080(fmtRes_12390002, 0, tok_12295005.lexeme, []);
+                F.line = 475;
+                fmtRes_12390002[0].push.apply(fmtRes_12390002[0], makeNimstrLit("\""));;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym217_12390001 || [],makeNimstrLit(") ") || [],fmtRes_12390002[0] || []), NTI1188013);
+                F.line = 117;
+                self_11248456.hadError = true;
                 F.line = 476;
-                self_11228456.environment.pc = ((self_11228456.environment.pc + 1) >>> 0);
+                break BeforeRet;
+                }
+                
                 F.line = 477;
-                var tok_12235005 = self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)];
-                if (!((tok_12235005.kind == 29))) {
-                F.line = 117;
-                var posHEX60gensym205_12260001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym205_12260001 || [],makeNimstrLit(") Expected identifier when assigning to variable, got ") || [],TOKEN_AS_WORD_11228019[chckIndx(tok_12235005.kind, 0, (TOKEN_AS_WORD_11228019).length-1)] || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 480;
-                break BeforeRet;
-                }
-                
-                  if (!!(contains_11520117(self_11228456.environment.variables, tok_12235005.lexeme))) Tmp63 = false; else {                    if (eqStrings(tok_12235005.lexeme, makeNimstrLit("true"))) Tmp66 = true; else {                      Tmp66 = eqStrings(tok_12235005.lexeme, makeNimstrLit("false"));                    }                    if (Tmp66) Tmp65 = true; else {                      Tmp65 = contains_11515117(self_11228456.procs, tok_12235005.lexeme);                    }                    if (Tmp65) Tmp64 = true; else {                      Tmp64 = contains_11520117(self_11228456.environment.variables, tok_12235005.lexeme);                    }                    Tmp63 = Tmp64;                  }                if (Tmp63) {
-                F.line = 117;
-                var posHEX60gensym213_12300001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym213_12300001 || [],makeNimstrLit(") Tried to use reserved name \"") || [],tok_12235005.lexeme || [],makeNimstrLit("\" for variable name") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 483;
-                break BeforeRet;
-                }
-                
-                F.line = 484;
-                var val_12300125 = pop_11735137(self_11228456.environment.stack);
-                if (isNone_11745486(val_12300125)) {
-                F.line = 117;
-                var posHEX60gensym217_12320001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym217_12320001 || [],makeNimstrLit(") Did not provide value to assign to variable \"") || [],tok_12235005.lexeme || [],makeNimstrLit("\"") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 487;
-                break BeforeRet;
-                }
-                
-                F.line = 488;
-                HEX5BHEX5DHEX3D_12320162(self_11228456.environment.variables, tok_12235005.lexeme, (Tmp67 = get_11745464(val_12300125), Tmp67)[0][Tmp67[1]]);
+                HEX5BHEX5DHEX3D_12395163(self_11248456.environment.variables, tok_12295005.lexeme, (Tmp66 = get_11795464(val_12370126), Tmp66)[0][Tmp66[1]]);
                 break;
               case 18:
-                F.line = 490;
-                var _ = pop_11735137(self_11228456.environment.stack);
+                F.line = 479;
+                var _ = pop_11785137(self_11248456.environment.stack);
                 break;
               case 19:
-                F.line = 492;
-                var val1_12320694 = pop_11735137(self_11228456.environment.stack);
-                F.line = 493;
-                var val2_12320818 = pop_11735137(self_11228456.environment.stack);
-                if ((isNone_11745486(val1_12320694) || isNone_11745486(val2_12320818))) {
+                F.line = 481;
+                var val1_12395695 = pop_11785137(self_11248456.environment.stack);
+                F.line = 482;
+                var val2_12395819 = pop_11785137(self_11248456.environment.stack);
+                if ((isNone_11795486(val1_12395695) || isNone_11795486(val2_12395819))) {
+                F.line = 115;
+                var posHEX60gensym221_12415001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym221_12415001 || [],makeNimstrLit(") Expected two operands for \"swap\" operation, got one or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym221_12340001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym221_12340001 || [],makeNimstrLit(") Expected two operands for \"swap\" operation, got one or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 496;
+                self_11248456.hadError = true;
+                F.line = 485;
                 break BeforeRet;
                 }
                 
-                F.line = 497;
-                push_11705010(self_11228456.environment.stack, (Tmp68 = get_11745464(val1_12320694), Tmp68)[0][Tmp68[1]]);
-                F.line = 498;
-                push_11705010(self_11228456.environment.stack, (Tmp69 = get_11745464(val2_12320818), Tmp69)[0][Tmp69[1]]);
+                F.line = 486;
+                push_11755024(self_11248456.environment.stack, (Tmp67 = get_11795464(val1_12395695), Tmp67)[0][Tmp67[1]]);
+                F.line = 487;
+                push_11755024(self_11248456.environment.stack, (Tmp68 = get_11795464(val2_12395819), Tmp68)[0][Tmp68[1]]);
                 break;
               case 20:
-                F.line = 500;
-                var val1_12340255 = pop_11735137(self_11228456.environment.stack);
-                F.line = 501;
-                var val2_12340379 = pop_11735137(self_11228456.environment.stack);
-                F.line = 502;
-                var val3_12340503 = pop_11735137(self_11228456.environment.stack);
-                if (((isNone_11745486(val1_12340255) || isNone_11745486(val2_12340379)) || isNone_11745486(val3_12340503))) {
+                F.line = 489;
+                var val1_12415255 = pop_11785137(self_11248456.environment.stack);
+                F.line = 490;
+                var val2_12415379 = pop_11785137(self_11248456.environment.stack);
+                F.line = 491;
+                var val3_12415503 = pop_11785137(self_11248456.environment.stack);
+                if (((isNone_11795486(val1_12415255) || isNone_11795486(val2_12415379)) || isNone_11795486(val3_12415503))) {
+                F.line = 115;
+                var posHEX60gensym225_12435001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym225_12435001 || [],makeNimstrLit(") Expected three operands for \"rotate\" operation, got two or less") || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym225_12360001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym225_12360001 || [],makeNimstrLit(") Expected three operands for \"rotate\" operation, got two or less") || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 505;
+                self_11248456.hadError = true;
+                F.line = 494;
                 break BeforeRet;
                 }
                 
-                F.line = 506;
-                push_11705010(self_11228456.environment.stack, (Tmp70 = get_11745464(val2_12340379), Tmp70)[0][Tmp70[1]]);
-                F.line = 507;
-                push_11705010(self_11228456.environment.stack, (Tmp71 = get_11745464(val1_12340255), Tmp71)[0][Tmp71[1]]);
-                F.line = 508;
-                push_11705010(self_11228456.environment.stack, (Tmp72 = get_11745464(val3_12340503), Tmp72)[0][Tmp72[1]]);
+                F.line = 495;
+                push_11755024(self_11248456.environment.stack, (Tmp69 = get_11795464(val2_12415379), Tmp69)[0][Tmp69[1]]);
+                F.line = 496;
+                push_11755024(self_11248456.environment.stack, (Tmp70 = get_11795464(val1_12415255), Tmp70)[0][Tmp70[1]]);
+                F.line = 497;
+                push_11755024(self_11248456.environment.stack, (Tmp71 = get_11795464(val3_12415503), Tmp71)[0][Tmp71[1]]);
                 break;
               case 12:
-                F.line = 517;
-                var val_12360320 = pop_11735137(self_11228456.environment.stack);
-                if (isSome_11745243(val_12360320)) {
-                F.line = 520;
-                switch ((Tmp73 = get_11745464(val_12360320), Tmp73)[0][Tmp73[1]].kind) {
+                F.line = 506;
+                var val_12435320 = pop_11785137(self_11248456.environment.stack);
+                if (isSome_11795243(val_12435320)) {
+                F.line = 509;
+                switch ((Tmp72 = get_11795464(val_12435320), Tmp72)[0][Tmp72[1]].kind) {
                 case 2:
-                  if (!((Tmp74 = get_11745464(val_12360320), Tmp74)[0][Tmp74[1]].valueAs.boolean)) {
-                  F.line = 523;
-                  self_11228456.environment.condState.isSkipping = true;
-                  F.line = 524;
-                  self_11228456.environment.condState.ifCounter = ((self_11228456.environment.condState.ifCounter + 1) >>> 0);
+                  if (!((Tmp73 = get_11795464(val_12435320), Tmp73)[0][Tmp73[1]].valueAs.boolean)) {
+                  F.line = 512;
+                  self_11248456.environment.condState.isSkipping = true;
+                  F.line = 513;
+                  self_11248456.environment.condState.ifCounter = ((self_11248456.environment.condState.ifCounter + 1) >>> 0);
                   }
                   
                   break;
                 case 1:
-                  if (((Tmp75 = get_11745464(val_12360320), Tmp75)[0][Tmp75[1]].valueAs.num == 0.0)) {
-                  F.line = 527;
-                  self_11228456.environment.condState.isSkipping = true;
-                  F.line = 528;
-                  self_11228456.environment.condState.ifCounter = ((self_11228456.environment.condState.ifCounter + 1) >>> 0);
+                  if (((Tmp74 = get_11795464(val_12435320), Tmp74)[0][Tmp74[1]].valueAs.num == 0.0)) {
+                  F.line = 516;
+                  self_11248456.environment.condState.isSkipping = true;
+                  F.line = 517;
+                  self_11248456.environment.condState.ifCounter = ((self_11248456.environment.condState.ifCounter + 1) >>> 0);
                   }
                   
                   break;
@@ -8492,36 +8821,42 @@ function runProcedure_11228454(self_11228456) {
               case 11:
                 break;
               case 21:
-                F.line = 533;
-                nimCopy(result_11650037, topValue_11770010(self_11228456.environment.stack), NTI11228463);
+                F.line = 522;
+                nimCopy(result_11695037, topValue_11820010(self_11248456.environment.stack), NTI11248463);
                 break BeforeRet;
                 break;
               default: 
+                F.line = 115;
+                var posHEX60gensym229_12455001 = (HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].column) || []);
+                F.line = 116;
+                F.line = 525;
+                var fmtRes_12455002 = [mnewString(0)];
+                F.line = 525;
+                fmtRes_12455002[0].push.apply(fmtRes_12455002[0], makeNimstrLit("Unexpected "));;
+                F.line = 525;
+                formatValue_10645080(fmtRes_12455002, 0, TOKEN_AS_WORD_11248019[chckIndx(self_11248456.environment.procedure.content[chckIndx(self_11248456.environment.pc, 0, (self_11248456.environment.procedure.content).length-1)].kind, 0, (TOKEN_AS_WORD_11248019).length-1)], []);
+                self_11248456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym229_12455001 || [],makeNimstrLit(") ") || [],fmtRes_12455002[0] || []), NTI1188013);
                 F.line = 117;
-                var posHEX60gensym229_12380001 = (HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].column) || []);
-                F.line = 118;
-                self_11228456.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym229_12380001 || [],makeNimstrLit(") Unexpected ") || [],TOKEN_AS_WORD_11228019[chckIndx(self_11228456.environment.procedure.content[chckIndx(self_11228456.environment.pc, 0, (self_11228456.environment.procedure.content).length-1)].kind, 0, (TOKEN_AS_WORD_11228019).length-1)] || []), NTI1188013);
-                F.line = 119;
-                self_11228456.hadError = true;
-                F.line = 537;
+                self_11248456.hadError = true;
+                F.line = 526;
                 break BeforeRet;
                 break;
               }
             }
             
-            F.line = 539;
-            self_11228456.environment.pc = ((self_11228456.environment.pc + 1) >>> 0);
+            F.line = 528;
+            self_11248456.environment.pc = ((self_11248456.environment.pc + 1) >>> 0);
           } while(false);
         }
     } while(false);
-    nimCopy(result_11650037, topValue_11770010(self_11228456.environment.stack), NTI11228463);
+    nimCopy(result_11695037, topValue_11820010(self_11248456.environment.stack), NTI11248463);
   } while (false);
   framePtr = F.prev;
 
-  return result_11650037;
+  return result_11695037;
 
 }
-function run_11228438(self_11228440) {
+function run_11248438(self_11248440) {
               var Tmp3;
                   var Tmp6;
             var Tmp7;
@@ -8531,148 +8866,153 @@ function run_11228438(self_11228440) {
   framePtr = F;
   BeforeRet: do {
     L1: do {
-      F.line = 286;
+      F.line = 283;
         L2: while (true) {
-        if (!!(self_11228440.hadError)) break L2;
-          F.line = 287;
-          switch (self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].kind) {
+        if (!!(self_11248440.hadError)) break L2;
+          F.line = 284;
+          switch (self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].kind) {
           case 7:
-            if (!((((Tmp3 = HEX5BHEX5D_11390488(self_11228440.procs, makeNimstrLit("global")), Tmp3)[0][Tmp3[1]].content).length == 0))) {
+            if (!((((Tmp3 = HEX5BHEX5D_11410488(self_11248440.procs, makeNimstrLit("global")), Tmp3)[0][Tmp3[1]].content).length == 0))) {
+            F.line = 115;
+            var posHEX60gensym74_11650001 = (HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].column) || []);
+            F.line = 116;
+            self_11248440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym74_11650001 || [],makeNimstrLit(") Global stack implementation already given") || []), NTI1188013);
             F.line = 117;
-            var posHEX60gensym74_11605001 = (HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].column) || []);
-            F.line = 118;
-            self_11228440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym74_11605001 || [],makeNimstrLit(") Global stack implementation already given") || []), NTI1188013);
-            F.line = 119;
-            self_11228440.hadError = true;
+            self_11248440.hadError = true;
+            F.line = 288;
+            break BeforeRet;
+            }
+            
+            if (!(expect_11248404(self_11248440, 0))) {
+            F.line = 115;
+            var posHEX60gensym76_11660001 = (HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].column) || []);
+            F.line = 116;
+            self_11248440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym76_11660001 || [],makeNimstrLit(") Left brace expected after global keyword") || []), NTI1188013);
+            F.line = 117;
+            self_11248440.hadError = true;
             F.line = 291;
             break BeforeRet;
             }
             
-            if (!(expect_11228404(self_11228440, 0))) {
-            F.line = 117;
-            var posHEX60gensym76_11615001 = (HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].column) || []);
-            F.line = 118;
-            self_11228440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym76_11615001 || [],makeNimstrLit(") Left brace expected after global keyword") || []), NTI1188013);
-            F.line = 119;
-            self_11228440.hadError = true;
-            F.line = 294;
-            break BeforeRet;
-            }
-            
-            F.line = 295;
-            self_11228440.token = ((self_11228440.token + 2) >>> 0);
+            F.line = 292;
+            self_11248440.token = ((self_11248440.token + 2) >>> 0);
             L4: do {
-              F.line = 297;
+              F.line = 294;
                 L5: while (true) {
-                if (!!((self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].kind == 1))) break L5;
-                  F.line = 298;
-                  (Tmp6 = HEX5BHEX5D_11390488(self_11228440.procs, makeNimstrLit("global")), Tmp6)[0][Tmp6[1]].content.push(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)]);;
-                  F.line = 299;
-                  self_11228440.token = ((self_11228440.token + 1) >>> 0);
-                  if (((self_11228440.tokens).length <= addInt(chckRange(self_11228440.token, -2147483648, 2147483647), 1))) {
+                if (!!((self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].kind == 1))) break L5;
+                  F.line = 295;
+                  (Tmp6 = HEX5BHEX5D_11410488(self_11248440.procs, makeNimstrLit("global")), Tmp6)[0][Tmp6[1]].content.push(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)]);;
+                  F.line = 296;
+                  self_11248440.token = ((self_11248440.token + 1) >>> 0);
+                  if (((self_11248440.tokens).length <= addInt(chckRange(self_11248440.token, -2147483648, 2147483647), 1))) {
+                  F.line = 115;
+                  var posHEX60gensym80_11680001 = makeNimstrLit("0:0");
+                  F.line = 116;
+                  self_11248440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym80_11680001 || [],makeNimstrLit(") Unterminated global stack implementation") || []), NTI1188013);
                   F.line = 117;
-                  var posHEX60gensym80_11635001 = makeNimstrLit("0:0");
-                  F.line = 118;
-                  self_11228440.output = nimCopy(null, (makeNimstrLit("(runtime error, ") || []).concat(posHEX60gensym80_11635001 || [],makeNimstrLit(") Unterminated global stack implementation") || []), NTI1188013);
-                  F.line = 119;
-                  self_11228440.hadError = true;
-                  F.line = 302;
+                  self_11248440.hadError = true;
+                  F.line = 299;
                   break BeforeRet;
                   }
                   
                 }
             } while(false);
-            F.line = 303;
-            (Tmp7 = HEX5BHEX5D_11390488(self_11228440.procs, makeNimstrLit("global")), Tmp7)[0][Tmp7[1]].content.push({kind: 31, lexeme: [], line: 0, column: 0});;
-            F.line = 305;
-            self_11228440.token = ((self_11228440.token + 1) >>> 0);
+            F.line = 300;
+            (Tmp7 = HEX5BHEX5D_11410488(self_11248440.procs, makeNimstrLit("global")), Tmp7)[0][Tmp7[1]].content.push({kind: 31, lexeme: [], line: 0, column: 0});;
+            F.line = 302;
+            self_11248440.token = ((self_11248440.token + 1) >>> 0);
             break;
           case 8:
-            F.line = 307;
-            parseProcedure_11228421(self_11228440, false);
+            F.line = 304;
+            parseProcedure_11248421(self_11248440, false);
             break;
           case 9:
-            F.line = 308;
-            parseProcedure_11228421(self_11228440, true);
+            F.line = 305;
+            parseProcedure_11248421(self_11248440, true);
             break;
           case 30:
-            F.line = 309;
+            F.line = 306;
             break L1;
             break;
           default: 
+            F.line = 115;
+            var posHEX60gensym82_11690001 = (HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].column) || []);
+            F.line = 116;
+            self_11248440.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym82_11690001 || [],makeNimstrLit(") Unexpected ") || [],TOKEN_AS_WORD_11248019[chckIndx(self_11248440.tokens[chckIndx(self_11248440.token, 0, (self_11248440.tokens).length-1)].kind, 0, (TOKEN_AS_WORD_11248019).length-1)] || []), NTI1188013);
             F.line = 117;
-            var posHEX60gensym82_11645001 = (HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].line) || []).concat(makeNimstrLit(":") || [],HEX24_1365066(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].column) || []);
-            F.line = 118;
-            self_11228440.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym82_11645001 || [],makeNimstrLit(") Unexpected ") || [],TOKEN_AS_WORD_11228019[chckIndx(self_11228440.tokens[chckIndx(self_11228440.token, 0, (self_11228440.tokens).length-1)].kind, 0, (TOKEN_AS_WORD_11228019).length-1)] || []), NTI1188013);
-            F.line = 119;
-            self_11228440.hadError = true;
-            F.line = 313;
+            self_11248440.hadError = true;
+            F.line = 310;
             break BeforeRet;
             break;
           }
         }
     } while(false);
-    if ((((Tmp8 = HEX5BHEX5D_11390488(self_11228440.procs, makeNimstrLit("global")), Tmp8)[0][Tmp8[1]].content).length == 0)) {
-    F.line = 117;
-    var posHEX60gensym83_11650001 = makeNimstrLit("0:0");
-    F.line = 118;
-    self_11228440.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym83_11650001 || [],makeNimstrLit(") No global procedure definition given") || []), NTI1188013);
-    F.line = 119;
-    self_11228440.hadError = true;
-    F.line = 317;
+    if (self_11248440.hadError) {
+    F.line = 312;
     break BeforeRet;
     }
     
-    F.line = 319;
-    var _ = runProcedure_11228454(self_11228440);
+    if ((((Tmp8 = HEX5BHEX5D_11410488(self_11248440.procs, makeNimstrLit("global")), Tmp8)[0][Tmp8[1]].content).length == 0)) {
+    F.line = 115;
+    var posHEX60gensym83_11695001 = makeNimstrLit("0:0");
+    F.line = 116;
+    self_11248440.output = nimCopy(null, (makeNimstrLit("(parsing error, ") || []).concat(posHEX60gensym83_11695001 || [],makeNimstrLit(") No global procedure definition given") || []), NTI1188013);
+    F.line = 117;
+    self_11248440.hadError = true;
+    F.line = 316;
+    break BeforeRet;
+    }
+    
+    F.line = 318;
+    var _ = runProcedure_11248454(self_11248440);
   } while (false);
   framePtr = F.prev;
 
   
 }
-function run_12386014(button_12386016) {
+function run_12466014(button_12466016) {
   var F={procname:"pancake.run",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/pancake.nim",line:0};
   framePtr = F;
   BeforeRet: do {
     F.line = 7;
-    var textarea_12386017 = document.getElementById("source");
+    var textarea_12466017 = document.getElementById("source");
     F.line = 8;
-    var source_12386018 = textarea_12386017.value;
+    var source_12466018 = textarea_12466017.value;
     F.line = 9;
-    var output_12386019 = document.getElementById("output");
+    var output_12466019 = document.getElementById("output");
     F.line = 11;
-    button_12386016.disabled = true;
+    button_12466016.disabled = true;
     F.line = 13;
-    var l_12386020 = newLexer_10721149(cstrToNimstr(source_12386018));
+    var l_12466020 = newLexer_10716162(cstrToNimstr(source_12466018));
     F.line = 14;
-    run_10721213(l_12386020);
-    if (l_12386020.hadError) {
+    run_10716226(l_12466020);
+    if (l_12466020.hadError) {
     F.line = 16;
-    output_12386019.value = toJSStr(l_12386020.output);
+    output_12466019.value = toJSStr(l_12466020.output);
     F.line = 17;
-    button_12386016.disabled = false;
+    button_12466016.disabled = false;
     F.line = 18;
     break BeforeRet;
     }
     
     F.line = 20;
-    var r_12386021 = newRuntime_11228387(l_12386020.tokens);
+    var r_12466021 = newRuntime_11248387(l_12466020.tokens);
     F.line = 21;
-    run_11228438(r_12386021);
+    run_11248438(r_12466021);
     F.line = 28;
-    output_12386019.value = toJSStr(r_12386021.output);
+    output_12466019.value = toJSStr(r_12466021.output);
     F.line = 30;
-    button_12386016.disabled = false;
+    button_12466016.disabled = false;
   } while (false);
   framePtr = F.prev;
 
   
 }
-function HEX3Aanonymous_12390001(ev_12390003) {
+function HEX3Aanonymous_12470001(ev_12470003) {
   var F={procname:"pancake.:anonymous",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/pancake.nim",line:0};
   framePtr = F;
     F.line = 35;
-    run_12386014(button_12386065);
+    run_12466014(button_12466065);
   framePtr = F.prev;
 
   
@@ -8680,9 +9020,9 @@ function HEX3Aanonymous_12390001(ev_12390003) {
 var F={procname:"module pancake",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/pancake.nim",line:0};
 framePtr = F;
 F.line = 34;
-var button_12386065 = document.getElementById("run");
+var button_12466065 = document.getElementById("run");
 F.line = 35;
-button_12386065.addEventListener("mousedown", HEX3Aanonymous_12390001, false);
+button_12466065.addEventListener("mousedown", HEX3Aanonymous_12470001, false);
 framePtr = F.prev;
 var F={procname:"module pancake",prev:framePtr,filename:"/Users/antoni/Documents/nim/pancake/src/pancake.nim",line:0};
 framePtr = F;

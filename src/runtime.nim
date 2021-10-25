@@ -1,4 +1,3 @@
-# import jsconsole
 from strutils import parseFloat, parseBool, parseUInt
 from parseutils import parseFloat, parseUInt
 from math import floor
@@ -8,7 +7,6 @@ import tables
 import options
 
 
-# import error
 from token import Token, TokenKind
 from stack import Stack, newStack, push, pop, topValue, reset
 from value import Value, ValueKind, newValue
@@ -132,7 +130,6 @@ template binaryOperator(operator: typed, k: typed, val: untyped): untyped =
 
     if val1.isNone() or val2.isNone():
         constructError("Expected two operands for binary operation, got one or less", runPosition)
-        # self.error = PancakeError(message: "Expected two operands for binary operation, got one or less", pos: runPosition, kind: "runtime error")
         return
     if val1.get().kind != k or val2.get().kind != k:
         constructError("Invalid types for binary operation", runPosition)
@@ -240,8 +237,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
     let name = self.tokens[self.token].lexeme
     # then check if the name is available
     if name.isReservedName():
-        constructError(if isPrivate: "Attempted to use reserved name \"" & name & "\" for new private procedure"
-            else: "Attempted to use reserved name \"" & name & "\" for new public procedure",
+        constructError(if isPrivate: &"Attempted to use reserved name \"{name}\" for new private procedure"
+            else: &"Attempted to use reserved name \"{name}\" for new public procedure",
             sourcePosition
         )
         return
@@ -259,8 +256,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
 
     # expect the opening brace
     if not self.expect(TK_LeftBrace):
-        constructError(if isPrivate: "Left brace expected after \"" & name & "\" private procedure definition"
-            else: &"Left brace expected after \"" & name & "\" public procedure definition",
+        constructError(if isPrivate: &"Left brace expected after \"{name}\" private procedure definition"
+            else: &"Left brace expected after \"{name}\" public procedure definition",
         sourcePosition, "parsing error")
         return
         
@@ -271,8 +268,8 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
         self.procs[name].content.add(self.tokens[self.token])
         inc self.token
         if self.isPastEndOfSource():
-            constructError(if isPrivate: "Unterminated private procedure \"" & name & "\" implementation"
-                else: "Unterminated public procedure \"" & name & "\" implementation",
+            constructError(if isPrivate: &"Unterminated private procedure \"{name}\" implementation"
+                else: &"Unterminated public procedure \"{name}\" implementation",
             sourcePosition, "parsing error")
             return
     
@@ -304,7 +301,7 @@ proc run*(self: Runtime) =
             
             inc self.token # go past right brace
         
-        of TK_Public:  self.parseProcedure(false)
+        of TK_Public: self.parseProcedure(false)
         of TK_Private: self.parseProcedure(true)
         of TK_EOF:     break
 
@@ -312,12 +309,13 @@ proc run*(self: Runtime) =
             constructError("Unexpected " & TOKEN_AS_WORD[self.tokens[self.token].kind.ord], sourcePosition, "parsing error")
             return
 
+    if self.hadError: return
+
     if self.procs["global"].content.len() == 0:
         constructError("No global procedure definition given", "0:0", "parsing error") # we don't have anywhere specific to point to
         return
 
     discard self.runProcedure() # so long, brother
-
 
 proc runProcedure(self: Runtime): Option[Value] =
     while pcVal.kind != TK_EOP:
@@ -333,17 +331,11 @@ proc runProcedure(self: Runtime): Option[Value] =
             case pcVal.kind
             # argument calling
             of TK_Argument:
-                var idx: uint
-
-                try:
-                    idx = strutils.parseUInt(pcVal.lexeme)
-                except ValueError:
-                    echo "whoops! you shouldn't see this, for some reason you managed to break the lexing algorithm which only accepted positive integers. here you go, have a cookie 🍪"
-                    quit(1)
+                var idx = strutils.parseUInt(pcVal.lexeme)
                 
                 if idx > self.environment.procedure.argCount or idx == 0:
                     constructError(
-                        "Argument operator calls argument no. " & $idx & ", but current procedure only accepts " & $self.environment.procedure.argCount & " arguments", runPosition
+                        &"Argument operator calls argument no. {idx}, but current procedure only accepts {self.environment.procedure.argCount} arguments", runPosition
                     )
                     return
                 self.environment.stack.push(self.environment.arguments[idx-1])
@@ -358,17 +350,14 @@ proc runProcedure(self: Runtime): Option[Value] =
                 let val = self.environment.stack.pop()
                 if val.isSome():
                     case val.get().kind
-                    of VK_String: self.output.add(val.get().valueAs.str)
+                    of VK_String: echo val.get().valueAs.str
                     of VK_Number:
                         if floor(val.get().valueAs.num) == val.get().valueAs.num:
-                            self.output.add($int(val.get().valueAs.num))
+                            echo int(val.get().valueAs.num)
                         else:
-                            self.output.add($val.get().valueAs.num)
-                    of VK_Bool: self.output.add($val.get().valueAs.boolean)
-
-                    self.output.add("\n")
-                else: self.output.add("void\n")
-
+                            echo val.get().valueAs.num
+                    of VK_Bool: echo val.get().valueAs.boolean
+                else: echo("void")
             
             of TK_In:
                 # let input = stdin.readLine()
@@ -445,7 +434,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                     for i in countup(1, int(self.environment.procedure.argCount)):
                         let val = self.environment.stack.pop()
                         if val.isNone():
-                            constructError("Invalid number of arguments provided for public procedure \"" & self.environment.procedure.name & "\"", runPosition)
+                            constructError(&"Invalid number of arguments provided for public procedure \"{self.environment.procedure.name}\"", runPosition)
                             return
                         self.environment.arguments.add(val.get())
 
@@ -469,21 +458,21 @@ proc runProcedure(self: Runtime): Option[Value] =
                     self.environment.stack.push(self.environment.variables[id])
                 
                 else:
-                    constructError("Unknown identifier \"" & id & "\"", runPosition)
+                    constructError(&"Unknown identifier \"{id}\"", runPosition)
                     return
 
             of TK_To:
                 inc self.environment.pc
                 let tok = pcVal
                 if tok.kind != TK_Identifier:
-                    constructError("Expected identifier when assigning to variable, got " & TOKEN_AS_WORD[tok.kind.ord], runPosition)
+                    constructError(&"Expected identifier when assigning to variable, got {TOKEN_AS_WORD[tok.kind.ord]}", runPosition)
                     return
                 if tok.lexeme notin self.environment.variables and tok.lexeme.isReservedName():
-                    constructError("Tried to use reserved name \"" & tok.lexeme & "\" for variable name", runPosition)
+                    constructError(&"Tried to use reserved name \"{tok.lexeme}\" for variable name", runPosition)
                     return
                 let val = self.environment.stack.pop()
                 if val.isNone():
-                    constructError("Did not provide value to assign to variable \"" & tok.lexeme & "\"", runPosition)
+                    constructError(&"Did not provide value to assign to variable \"{tok.lexeme}\"", runPosition)
                     return
                 self.environment.variables[tok.lexeme] = val.get()
 
@@ -533,7 +522,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                 return self.environment.stack.topValue() # simply abort executing this procedure
             
             else:
-                constructError("Unexpected " & TOKEN_AS_WORD[pcVal.kind.ord], runPosition)
+                constructError(&"Unexpected {TOKEN_AS_WORD[pcVal.kind.ord]}", runPosition)
                 return
 
         inc self.environment.pc # advance

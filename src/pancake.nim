@@ -1,4 +1,4 @@
-from options import isSome, get
+# from options import isSome, get
 import sugar
 import dom
 import lexer, runtime
