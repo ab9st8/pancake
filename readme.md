@@ -40,11 +40,11 @@ Because
 **Prerequisites:**
 * the Nim toolchain (Nim compiler >= 1.4.0, Nimble).
 
-To install Pancake, clone this repository and run
+To install Pancake, and run
 ```
-nimble install
+nimble install https://github.com/c1m5j/pancake
 ```
-This will install the release Pancake interpreter. Now you can interpret Pancake source files using
+This will install the release-version Pancake interpreter. Now you can interpret Pancake source files using
 ```
 pancake FILENAME
 ```
@@ -154,6 +154,8 @@ All variables are mutable. In order to change the value of a variable, simply as
 Variables are """"""function-scoped"""""". Variables are unique to their procedure and a variable called `name` in `global` is different than a variable called `name` in a private or public procedure.
 
 ## Surprises!
+*(This treats about Pancake v0.1.1)*
+
 After I cleaned up this code for the first time and built a release binary, I decided to benchmark Pancake against Python 3.7.6, just for fun. The benchmarks I ran were
 
 * naïve calculation of 20!,
@@ -180,8 +182,14 @@ Something which is interesting, to me at least, is the contrast between the two 
 I put the code I used for both of the benchmarks in the "benchmarks" directory. There are also some other Pancake examples in the "examples" directory. If you have ideas for some other ways to represent how Pancake works with code snippets, feel free to contribute some examples.
 
 ## Future
-Features expected in the future are
+<!-- Features expected in the future are
 * data structures — I can't really tell if arrays have a place in this language, but at the same time it's odd to not have them,
 * a way to import Pancake files into other Pancake files in order to use its procedures. That brings us to
 * a standard library with common stuff that Pancake doesn't have and that could be defined using Pancake itself. Other than that, if we want stuff that can't be defined using Pancake, we also want
-* foreign function interfacing with Nim — just a way to write Pancake procedures in Nim and be able to call them in Pancake code.
+* foreign function interfacing with Nim — just a way to write Pancake procedures in Nim and be able to call them in Pancake code. -->
+What I'm planning to work on is
+* tail-recursive procedure optimisation for public procedures (because we can),
+* allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
+* making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
+* implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
+* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers).
