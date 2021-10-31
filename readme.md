@@ -192,4 +192,5 @@ What I'm planning to work on is
 * allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
 * making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
 * implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
-* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.).
+* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.),
+* allow for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator would have to be implemented as well. Candidates are `'`, `:`, and `,`.
