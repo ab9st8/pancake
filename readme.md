@@ -153,33 +153,18 @@ All variables are mutable. In order to change the value of a variable, simply as
 
 Variables are """"""function-scoped"""""". Variables are unique to their procedure and a variable called `name` in `global` is different than a variable called `name` in a private or public procedure.
 
-## Surprises!
-*(This treats about Pancake v0.1.0)*
+## Benchmarks
+*(This treats about Pancake v0.1.5)*
 
-After I cleaned up this code for the first time and built a release binary, I decided to benchmark Pancake against Python 3.7.6, just for fun. The benchmarks I ran were
+After implement tail recursion optimisation, I decided to benchmark Pancake against Python 3.9.6 once again (the first time Python had won in Fibonacci and Pancake in factorials), only this time using tail-recursive versions of those algorithms (really just trying to exploit the fact that Python doesn't optimise that).
 
-* naïve calculation of 20!,
-* naïve calculation of the 25th Fibonacci number.
+Tested with `hyperfine --warmup 10 "pancake benchmark.pancake" "python3 benchmark.py"` on a 2019 MacBook Pro with a 2.4 Ghz quad-core Intel i5 and 16 GB of RAM (no other apps running), results are as follows:
 
-If you have any other ideas for benchmarks both Pancake and Python could handle, shoot! I'm excited to compare Python and Pancake because...
-
-**Pancake did not lose both benchmarks!** The results I got with
-```
-hyperfine --warmup 5 "python3 benchmark.py" "pancake benchmark.pancake"
-```
-for both benchmarks were
-
-|             | 22!           | fib(25)        |
-|-------------|---------------|----------------|
-| **Pancake** | **2.1 ± 0.5 ms**  | 457.0 ± 2.8 ms |
-| **Python**  | 35.2 ± 1.7 ms | **59.7 ± 2.0 ms**  |
-| **result** | Pancake 16.4× faster | Python 7.7× faster|
-
-Which is really surprising!! I never would've thought Pancake would even work as I intended it to in the beginning, and here it turns out it beats Python in a benchmark — although a puny one, if we're being frank.
-
-Something which is interesting, to me at least, is the contrast between the two benchmarks. I wonder what makes Pancake slow down so much with Fibonacci and speed up so much with the factorial. I implemented both Fibonacci and the factorial as a public procedure in order to minimize private stack-related shenanigans in the runtime.
-
-I put the code I used for both of the benchmarks in the "benchmarks" directory. There are also some other Pancake examples in the "examples" directory. If you have ideas for some other ways to represent how Pancake works with code snippets, feel free to contribute some examples.
+| | **20!** | **fib(20)**|
+|-|---------|------------|
+|**Pancake v0.1.5**|**2.0 ms ± 0.4 ms**|**1.9 ms ± 0.4 ms**|
+|**Python v3.9.6**|34.6 ms ± 1.6 ms|34.5 ms ±   1.3 ms|
+|**result**|Pancake **17.3× faster**|Pancake **7.7× faster**|
 
 ## Future
 <!-- Features expected in the future are
@@ -188,9 +173,10 @@ I put the code I used for both of the benchmarks in the "benchmarks" directory. 
 * a standard library with common stuff that Pancake doesn't have and that could be defined using Pancake itself. Other than that, if we want stuff that can't be defined using Pancake, we also want
 * foreign function interfacing with Nim — just a way to write Pancake procedures in Nim and be able to call them in Pancake code. -->
 What I'm planning to work on is
-* tail-recursive procedure optimisation for public procedures (because we can),
-* allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
-* making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
-* implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
-* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.),
-* allowing for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator would have to be implemented as well. Candidates are `'`, `:`, and `,`.
+* [X] _(implemented in v0.1.5)_ tail-recursive procedure optimisation for public procedures (because we can),
+* [ ] allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
+* [ ] making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
+* [ ] implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
+* [ ] creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.),
+* [ ] allowing for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator would have to be implemented as well. Candidates are `'`, `:`, and `,`,
+* [ ] supporting named parameters in procedures as well, probably written down with `private proc(a, b, c)`. Might make numbered parameters be written down as `private proc(3)` (for 3 parameters) as well.
