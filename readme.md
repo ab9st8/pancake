@@ -164,7 +164,7 @@ Tested with `hyperfine --warmup 10 "pancake benchmark.pancake" "python3 benchmar
 |-|---------|------------|
 |**Pancake v0.1.5**|**2.0 ms ± 0.4 ms**|**1.9 ms ± 0.4 ms**|
 |**Python v3.9.6**|34.6 ms ± 1.6 ms|34.5 ms ±   1.3 ms|
-|**result**|Pancake **17.3× faster**|Pancake **7.7× faster**|
+|**result**|Pancake **17.3× faster**|Pancake **17.9× faster**|
 
 ## Future
 <!-- Features expected in the future are
