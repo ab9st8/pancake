@@ -156,7 +156,7 @@ Variables are """"""function-scoped"""""". Variables are unique to their procedu
 ## Benchmarks
 *(This treats about Pancake v0.1.5)*
 
-After implement tail recursion optimisation, I decided to benchmark Pancake against Python 3.9.6 once again (the first time Python had won in Fibonacci and Pancake in factorials), only this time using tail-recursive versions of those algorithms (really just trying to exploit the fact that Python doesn't optimise that).
+After I had implemented tail recursion optimisation, I decided to benchmark Pancake against Python 3.9.6 once again (the first time Python had won in Fibonacci and Pancake in factorials), only this time using tail-recursive versions of those algorithms (really just trying to exploit the fact that Python doesn't optimise that).
 
 Tested with `hyperfine --warmup 10 "pancake benchmark.pancake" "python3 benchmark.py"` on a 2019 MacBook Pro with a 2.4 Ghz quad-core Intel i5 and 16 GB of RAM (no other apps running), results are as follows:
 
