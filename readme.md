@@ -154,7 +154,7 @@ All variables are mutable. In order to change the value of a variable, simply as
 Variables are """"""function-scoped"""""". Variables are unique to their procedure and a variable called `name` in `global` is different than a variable called `name` in a private or public procedure.
 
 ## Surprises!
-*(This treats about Pancake v0.1.1)*
+*(This treats about Pancake v0.1.0)*
 
 After I cleaned up this code for the first time and built a release binary, I decided to benchmark Pancake against Python 3.7.6, just for fun. The benchmarks I ran were
 
@@ -192,4 +192,4 @@ What I'm planning to work on is
 * allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
 * making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
 * implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
-* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers).
+* creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.).
