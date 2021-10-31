@@ -166,6 +166,10 @@ Tested with `hyperfine --warmup 10 "pancake benchmark.pancake" "python3 benchmar
 |**Python v3.9.6**|34.6 ms ± 1.6 ms|34.5 ms ±   1.3 ms|
 |**result**|Pancake **17.3× faster**|Pancake **17.9× faster**|
 
+Don't think that this means that Pancake is "faster" than Python in any way. Time will tell whether Pancake is even competent enough to make it into further development stages, listed below.
+
+Code used for the benchmarks (these specifically) is located in the "benchmarks" directory.
+
 ## Future
 <!-- Features expected in the future are
 * data structures — I can't really tell if arrays have a place in this language, but at the same time it's odd to not have them,
