@@ -189,16 +189,20 @@ proc newRuntime*(tokens: seq[Token]): Runtime =
 
 ## "Expects" a specific token kind (`kind`). If the next token
 ## is not of `kind`, false is returned. Used in parsing.
-proc expect(self: Runtime, kind: TokenKind): bool =
+proc expectParse(self: Runtime, kind: TokenKind): bool =
     return if self.isAtEndOfSource() or self.isPastEndOfSource(): false
     else: self.tokens[self.token + 1].kind == kind
 
+## "Expects" a specific token kind (`kind`). If the next token
+## is not of `kind`, false is returned. Used in runtime.
+proc expectRun(self: Runtime, kind: TokenKind): bool =
+    return self.environment.procedure.content[self.environment.pc + 1].kind == kind
 
 
 ## Parses a private / public procedure definition.
 proc parseProcedure(self: Runtime, isPrivate: bool) =
     # first, expect the procedure's name
-    if not self.expect(TK_Identifier):
+    if not self.expectParse(TK_Identifier):
         self.constructError(if isPrivate: "Private procedure name expected"
             else: "Public procedure name expected",
             self.sourcePosition()
@@ -217,7 +221,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
 
     # get the argument count of the procedure; make sure it's a non-negative integer
     var argCount: uint = 0
-    if self.expect(TK_Number) and '.' notin self.tokens[self.token + 1].lexeme:
+    if self.expectParse(TK_Number) and '.' notin self.tokens[self.token + 1].lexeme:
         discard parseutils.parseUInt(self.tokens[self.token + 1].lexeme, argCount)
         self.procs[name] = newProc(name, newSeq[Token](), argCount, isPrivate)
     else:
@@ -227,7 +231,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
     inc self.token
 
     # expect the opening brace
-    if not self.expect(TK_LeftBrace):
+    if not self.expectParse(TK_LeftBrace):
         self.constructError(if isPrivate: &"Left brace expected after \"{name}\" private procedure definition"
             else: &"Left brace expected after \"{name}\" public procedure definition",
         self.sourcePosition(), "parsing error")
@@ -357,8 +361,13 @@ proc runProcedure(self: Runtime): Option[Value] =
                 if id in self.procs:
                     let old = self.environment
 
+                    # These are the only two ways a procedure call can be the final action
+                    # in a procedure; either the next instruction is an end-of-procedure
+                    # or a `ret`.
+                    let optimiseTailRec = self.expectRun(TK_EOP) or self.expectRun(TK_Return)
+
                     self.environment = Environment(
-                        procedure: self.procs[pcVal.lexeme],
+                        procedure: self.procs[id],
                         arguments: newSeq[Value](),
                         variables: newTable[string, Value](),
                         stack: old.stack, # public procedures keep executing on their local stack
@@ -369,6 +378,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                         pc: 0
                     )
 
+                    # Collect arguments
                     for i in countup(1, int(self.environment.procedure.argCount)):
                         let val = self.environment.stack.pop()
                         if val.isNone():
@@ -377,15 +387,18 @@ proc runProcedure(self: Runtime): Option[Value] =
                         self.environment.arguments.add(val.get())
 
                     
+                    # Advance within nestation
+                    inc self.nestation
+
+                    # Switch stack if needed
                     if self.environment.procedure.isPrivate:
-                        inc self.nestation # Advance within nestation
 
                         # If we're deeper than ever before, increase the max nestation
                         if self.nestation > self.maxNestation:
                             self.maxNestation = self.nestation
                             self.stacks[self.nestation] = newStack[Value]() # Add a new stack (we haven't been here before)
                         else:
-                            # Reset the stack (we've been here before)
+                            # Reset the stack, don't allocate a new one (we've been here before)
                             self.stacks[self.nestation].reset()
                         
                         # Error out if we are taking up too many stacks
@@ -394,12 +407,26 @@ proc runProcedure(self: Runtime): Option[Value] =
                             return
 
                         self.environment.stack = self.stacks[self.nestation]
-                    
+                    else:
+                        # If this is the last call in the procedure and the procedure we're
+                        # calling is public, simply start executing it from the beginning
+                        # without having to recursively call Runtime.runProcedure.
+                        # Saves both memory (doesn't have to allocate new internal stack frames)
+                        # as well as time (doesn't have to return from each recursive Runtime.runProcedure
+                        # call).
+                        if optimiseTailRec:
+                            dec self.nestation # go back one level, we aren't recurring in any way, just jumping back to the beginning
+                            continue
+
                     let val = self.runProcedure()
                     dec self.nestation
                     if self.hadError(): return
 
-                    if self.environment.procedure.isPrivate and val.isSome():
+                    # Better to check this way than checking whether the procedure
+                    # we've just finished with was private because of tail recursion
+                    # optimisation, which could trick the runtime into thinking
+                    # it finished with a public procedure.
+                    if self.environment.stack != old.stack and val.isSome():
                         old.stack.push(val.get())
 
                     self.environment = old
@@ -492,7 +519,7 @@ proc run*(self: Runtime) =
             if self.procs["global"].content.len() != 0:
                 self.constructError("Global stack implementation already given", self.sourcePosition())
                 return
-            if not self.expect(TK_LeftBrace):
+            if not self.expectParse(TK_LeftBrace):
                 self.constructError("Left brace expected after global keyword", self.sourcePosition())
                 return
             self.token = self.token + 2
