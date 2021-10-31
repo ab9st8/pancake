@@ -43,18 +43,17 @@ type
     ## Packages data regarding Pancake runtime.
     Runtime = ref object
         when defined(js):
-            ok*:     bool                                ## whether the program is okay or if it has encountered an error
-            output*: string                              ## denotes the standard output of the program in the JS backend which we would normally print out
+            ok*:      bool                        ## whether the program is okay or if it has encountered an error
+            output*:  string                      ## denotes the standard output of the program in the JS backend which we would normally print out
         else:
-            error*:  Option[PancakeError]                ## Potential runtime error container
-        tokens:      seq[Token]                     ## Our token list which we parse and execute
-        nestation:   uint                           ## Informs us about the level of private procedure call nestation, also the index of the current private stack in Runtime.stacks
-        maxNestation: uint                          ## The highest level of private procedure call nestation we've ever reached
-        token:       uint                           ## The current token pointer (during parsing)
-        environment: Environment                    ## Our runtime environment
-        procs:       TableRef[string, Procedure]    ## Runtime procedure collection
-        # stacks:      TableRef[string, Stack[Value]] ## Runtime stack collection (stacks["global"] for global stack, stacks[$nestation] for any private stack, will be updated with an ARRAY soon)
-        stacks: seq[Stack[Value]]
+            error*:   Option[PancakeError]        ## Potential runtime error container
+        tokens:       seq[Token]                  ## Our token list which we parse and execute
+        nestation:    uint                        ## Informs us about the level of private procedure call nestation, also the index of the current private stack in Runtime.stacks
+        maxNestation: uint                        ## The highest level of private procedure call nestation we've ever reached
+        token:        uint                        ## The current token pointer (during parsing)
+        environment:  Environment                 ## Our runtime environment
+        procs:        TableRef[string, Procedure] ## Runtime procedure collection
+        stacks:       seq[Stack[Value]]           ## Runtime stack collection
 
 #==================================#
 # TEMPLATES -----------------------#
@@ -138,7 +137,7 @@ template print(self: Runtime, val: typed): untyped =
 proc newRuntime*(tokens: seq[Token]): Runtime =
     result = Runtime(
         tokens: tokens,
-        stacks: @[newStack[Value]()],
+        stacks: newSeq[Stack[Value]](30),
         procs: newTable[string, Procedure](),
         nestation: 0,
         maxNestation: 0,
@@ -149,6 +148,8 @@ proc newRuntime*(tokens: seq[Token]): Runtime =
         result.output = ""
     else:
         result.error = none[PancakeError]()
+
+    result.stacks[0] = newStack[Value]()
 
     var argCount: uint = 0
     when not defined(js):
@@ -382,13 +383,13 @@ proc runProcedure(self: Runtime): Option[Value] =
                         # If we're deeper than ever before, increase the max nestation
                         if self.nestation > self.maxNestation:
                             self.maxNestation = self.nestation
-                            self.stacks.add(newStack[Value]()) # Add a new stack (we haven't been here before)
+                            self.stacks[self.nestation] = newStack[Value]() # Add a new stack (we haven't been here before)
                         else:
                             # Reset the stack (we've been here before)
                             self.stacks[self.nestation].reset()
                         
                         # Error out if we are taking up too many stacks
-                        if self.nestation > 30:
+                        if self.nestation > 29:
                             self.constructError("Private procedure recursion overflow: max number of private recursive calls allowed is 30", self.runPosition())
                             return
 
@@ -398,7 +399,7 @@ proc runProcedure(self: Runtime): Option[Value] =
                     dec self.nestation
                     if self.hadError(): return
 
-                    if self.environment.procedure.isPrivate and val.isSome:
+                    if self.environment.procedure.isPrivate and val.isSome():
                         old.stack.push(val.get())
 
                     self.environment = old
@@ -453,7 +454,7 @@ proc runProcedure(self: Runtime): Option[Value] =
             
             of TK_BeginIf:
                 let val = self.environment.stack.pop()
-                if val.isSome:
+                if val.isSome():
                     # see if value is falsey. if it is, skip to corresponding end-if operator
                     case val.get().kind
                     of VK_Bool:
