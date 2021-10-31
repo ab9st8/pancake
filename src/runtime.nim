@@ -48,11 +48,13 @@ type
         else:
             error*:  Option[PancakeError]                ## Potential runtime error container
         tokens:      seq[Token]                     ## Our token list which we parse and execute
-        nestation:   uint                           ## Informs us about the level of procedure call nestation, also the name of the local private stack
+        nestation:   uint                           ## Informs us about the level of private procedure call nestation, also the index of the current private stack in Runtime.stacks
+        maxNestation: uint                          ## The highest level of private procedure call nestation we've ever reached
         token:       uint                           ## The current token pointer (during parsing)
         environment: Environment                    ## Our runtime environment
         procs:       TableRef[string, Procedure]    ## Runtime procedure collection
-        stacks:      TableRef[string, Stack[Value]] ## Runtime stack collection (stacks["global"] for global stack, stacks[$nestation] for any private stack, will be updated with an ARRAY soon)
+        # stacks:      TableRef[string, Stack[Value]] ## Runtime stack collection (stacks["global"] for global stack, stacks[$nestation] for any private stack, will be updated with an ARRAY soon)
+        stacks: seq[Stack[Value]]
 
 #==================================#
 # TEMPLATES -----------------------#
@@ -136,9 +138,10 @@ template print(self: Runtime, val: typed): untyped =
 proc newRuntime*(tokens: seq[Token]): Runtime =
     result = Runtime(
         tokens: tokens,
-        stacks: newTable[string, Stack[Value]](),
+        stacks: @[newStack[Value]()],
         procs: newTable[string, Procedure](),
         nestation: 0,
+        maxNestation: 0,
         token: 0
     )
     when defined(js):
@@ -151,13 +154,12 @@ proc newRuntime*(tokens: seq[Token]): Runtime =
     when not defined(js):
         argCount = uint(paramCount())
 
-    result.stacks["global"] = newStack[Value]()
     result.procs["global"] = newProc("global", newSeq[Token](), argCount, false)
 
     result.environment = Environment(
         procedure: result.procs["global"],
         variables: newTable[string, Value](),
-        stack: result.stacks["global"],
+        stack: result.stacks[0],
         condState: ConditionalState(
             isSkipping: false,
             ifCounter: 0
@@ -369,17 +371,29 @@ proc runProcedure(self: Runtime): Option[Value] =
                     for i in countup(1, int(self.environment.procedure.argCount)):
                         let val = self.environment.stack.pop()
                         if val.isNone():
-                            self.constructError(&"Invalid number of arguments provided for public procedure \"{self.environment.procedure.name}\"", self.runPosition())
+                            self.constructError(&"Invalid number of arguments provided for procedure \"{self.environment.procedure.name}\"", self.runPosition())
                             return
                         self.environment.arguments.add(val.get())
 
-                    if self.environment.procedure.isPrivate:
-                        if $self.nestation in self.stacks:
-                            self.stacks[$self.nestation].reset()
-                        else:
-                            self.stacks[$self.nestation] = newStack[Value]()
                     
-                    inc self.nestation
+                    if self.environment.procedure.isPrivate:
+                        inc self.nestation # Advance within nestation
+
+                        # If we're deeper than ever before, increase the max nestation
+                        if self.nestation > self.maxNestation:
+                            self.maxNestation = self.nestation
+                            self.stacks.add(newStack[Value]()) # Add a new stack (we haven't been here before)
+                        else:
+                            # Reset the stack (we've been here before)
+                            self.stacks[self.nestation].reset()
+                        
+                        # Error out if we are taking up too many stacks
+                        if self.nestation > 30:
+                            self.constructError("Private procedure recursion overflow: max number of private recursive calls allowed is 30", self.runPosition())
+                            return
+
+                        self.environment.stack = self.stacks[self.nestation]
+                    
                     let val = self.runProcedure()
                     dec self.nestation
                     if self.hadError(): return
