@@ -1,0 +1,29 @@
+; we make these two procedures in order to utilise something called
+; tail call elimination which speeds up public tail recursive procedures
+; a lot.
+; this "private proc calling recursive public proc" is prevalent in
+; these kind of optimised programs.
+; however an appropriate `mod` stack operator should be implemented
+; sometime soon as it's pretty essential.
+
+public modBody 2 {
+    $2 $1 - neg? $1 ret.
+    $2 dup $1 - modBody
+}
+private mod 2 {
+    $2 $1 modBody
+}
+
+; we don't need a private caller here cause we basically want 
+public fizzbuzz 2 {
+    $1 $2 1 + =? ret.
+    $1 out
+    3 $1 mod 0 =? "Fizz" out.
+    5 $1 mod 0 =? "Buzz" out.
+    $2 1 $1 + fizzbuzz
+}
+
+global {
+    "Give me a number, and I'll fizzbuzz all the way from 1 up to it:" out
+    in 1 fizzbuzz
+}
