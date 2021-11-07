@@ -14,7 +14,8 @@ private mod 2 {
     $2 $1 modBody
 }
 
-; we don't need a private caller here cause we basically want 
+; we don't need a private caller here cause we basically want this proc
+; to act like a loop.
 public fizzbuzz 2 {
     $1 $2 1 + =? ret.
     $1 out
