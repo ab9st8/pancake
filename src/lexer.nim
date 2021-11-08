@@ -6,7 +6,7 @@ import strformat, strutils
 
 type
     ## Packages data regarding the lexing process.
-    Lexer* = ref object
+    Lexer* = object
         when defined(js):
             ok*:     bool                     ## whether the program is okay or if it has encountered an error
             output*: string                   ## possible error of the program, `output` instead of `error` for consistency with the runtime
@@ -39,7 +39,7 @@ template hadError*(self: Lexer): bool =
     else:             self.error.isSome()
 
 ## Constructs an error in the lexer with the given position and message.
-template constructError(self: Lexer, m: string, p: string) =
+template constructError(self: var Lexer, m: string, p: string) =
     when defined(js):
         self.output = "(lexing error, " & p & ") " & m
         self.ok = false
@@ -71,13 +71,13 @@ proc newLexer*(source: string): Lexer =
 
 
 ## "Warps" Lexer.start to Lexer.current and takes care of columns.
-proc warp(self: Lexer) =
+proc warp(self: var Lexer) =
     self.column += self.current - self.start
     self.start = self.current
 
 
 ## Advances through whitespace and stops at a non-whitespace character.
-proc skipWhitespace(self: Lexer) =
+proc skipWhitespace(self: var Lexer) =
     var comment = false
     while not self.isPastEnd():
         case self.getCurrent()
@@ -96,7 +96,7 @@ proc skipWhitespace(self: Lexer) =
 
 ## "Chomps" on input and stops Lexer.current at a place such that
 ## getSlice() forms a valid lexeme.
-proc chomp(self: Lexer) =
+proc chomp(self: var Lexer) =
     if self.getCurrent() in Digits or
     (self.getCurrent() == '-' and
     not self.isAtEnd() and
@@ -132,12 +132,12 @@ proc chomp(self: Lexer) =
     elif self.getCurrent() in IdentStartChars:
         while not self.isPastEnd() and self.getCurrent() in IdentStartChars: inc self.current # (we don't allow numbers in identifiers)
     else:
-        self.constructError(&"Unrecognized token", sourcePosition)
+        self.constructError("Unrecognized token", sourcePosition)
         return
 
 
 ## Processes the input.
-proc run*(self: Lexer) =
+proc run*(self: var Lexer) =
     while not self.isPastEnd():
         self.skipWhitespace()
         if self.isPastEnd(): break
