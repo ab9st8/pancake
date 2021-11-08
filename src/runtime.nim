@@ -36,12 +36,12 @@ type
     ## Helps determine the state of the machine in conditional
     ## clause terms; whether we've entered a false if-clause and
     ## should skip to the next end-if operator.
-    ConditionalState = ref object
+    ConditionalState = object
         isSkipping: bool                            ## Whether we should skip execution because of a false if-clause.
         ifCounter:  uint                            ## Helps us skip if-statements inside false if-clauses (if not for this, we'd stop skipping at the first end-if operator).
 
     ## Packages data regarding Pancake runtime.
-    Runtime = ref object
+    Runtime = object
         when defined(js):
             ok*:      bool                        ## whether the program is okay or if it has encountered an error
             output*:  string                      ## denotes the standard output of the program in the JS backend which we would normally print out
@@ -74,7 +74,7 @@ template isReservedName(name: typed): untyped =
     name in self.environment.variables
 
 ## Constructs an error in the runtime with the given position, message, and error kind.
-proc constructError(self: Runtime, m: string, p: string, k: string = "runtime error") =
+proc constructError(self: var Runtime, m: string, p: string, k: string = "runtime error") =
     when defined(js):
         self.output = "(" & k & ", " & p & ") " & m
         self.ok = false
@@ -200,7 +200,7 @@ proc expectRun(self: Runtime, kind: TokenKind): bool =
 
 
 ## Parses a private / public procedure definition.
-proc parseProcedure(self: Runtime, isPrivate: bool) =
+proc parseProcedure(self: var Runtime, isPrivate: bool) =
     # first, expect the procedure's name
     if not self.expectParse(TK_Identifier):
         self.constructError(if isPrivate: "Private procedure name expected"
@@ -256,7 +256,7 @@ proc parseProcedure(self: Runtime, isPrivate: bool) =
 
 
 ## Runs a specific procedure signature from Runtime.procs.
-proc runProcedure(self: Runtime): Option[Value] =
+proc runProcedure(self: var Runtime): Option[Value] =
     while pcVal.kind != TK_EOP:
         # Check for branch skipping (and stop skipping if we're after a full false if-clause)
         if self.environment.condState.isSkipping:
@@ -510,7 +510,7 @@ proc runProcedure(self: Runtime): Option[Value] =
 
 
 ## Parses and runs the whole program.
-proc run*(self: Runtime) =
+proc run*(self: var Runtime) =
     # This first while loop parses (just slices from left to right brace) stack definitions and plops
     # them into Runtime.procs. They are run afterwards (starting from global).
     while not self.hadError():

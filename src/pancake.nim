@@ -24,18 +24,18 @@ when isMainModule and not defined(js):
 #==================================#
 # LEXING --------------------------#
 #==================================#
-        let lex = newLexer(source)
-        lex.run()
-        if lex.hadError():
-            raise lex.error.get()
+        var l = newLexer(source)
+        l.run()
+        if l.hadError():
+            raise l.error.get()
         
 #==================================#
 # RUNTIME -------------------------#
 #==================================#
-        let runt = newRuntime(lex.tokens)
-        runt.run()
-        if runt.hadError():
-            raise runt.error.get()
+        var r = newRuntime(l.tokens)
+        r.run()
+        if r.hadError():
+            raise r.error.get()
 
 #==================================#
 # ERROR HANDLING ------------------#
