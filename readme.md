@@ -183,4 +183,5 @@ What I'm planning to work on is
 * [ ] implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
 * [ ] creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.),
 * [ ] allowing for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator would have to be implemented as well. Candidates are `'`, `:`, and `,`,
-* [ ] supporting named parameters in procedures as well, probably written down with `private proc(a, b, c)`. Might make numbered parameters be written down as `private proc(3)` (for 3 parameters) as well.
+* [ ] supporting named parameters in procedures as well, probably written down with `private proc(a, b, c)`. Might make numbered parameters be written down as `private proc(3)` (for 3 parameters) as well,
+* [ ] splitting up the current runtime into a parser (to implement: optimising conditional jumps so the runtime doesn't have to check whether to skip every other instruction) and a runtime.
