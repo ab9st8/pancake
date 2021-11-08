@@ -184,6 +184,10 @@ proc run*(self: Lexer) =
             if slice.startsWith("\""):
                 # get rid of beginning quote
                 tok.lexeme = tok.lexeme[1..^1]
+                tok.lexeme = tok.lexeme.replace("\\n", "\n")
+                tok.lexeme = tok.lexeme.replace("\\t", "\t")
+                tok.lexeme = tok.lexeme.replace("\\r", "\r")
+
                 tok.kind = TK_String
                 inc self.current # get past closing quote
             elif slice[0] in Digits + {'-'}:
