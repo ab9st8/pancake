@@ -63,8 +63,7 @@ type
         ## any characters from {a..z} | {A..Z} | {_}
         TK_Identifier = "identifier",
 
-        TK_EOF = "end of file",                           
-        TK_EOP = "end of procedure"
+        TK_EOF = "end of file",
 
     ## Packages data regarding a token. A seq[Token]
     ## is the result of the process of lexing and it does not
