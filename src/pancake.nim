@@ -9,7 +9,7 @@ when defined(js):
     import sugar
     import dom
 
-import lexer, runtime
+import lexer, runtime, parser as pancakeparser
 
 ## For C backend
 when isMainModule and not defined(js):
@@ -28,11 +28,19 @@ when isMainModule and not defined(js):
         l.run()
         if l.hadError():
             raise l.error.get()
-        
+
+#==================================#
+# PARSING -------------------------#
+#==================================#        
+        var p = pancakeparser.newParser(l.tokens)
+        p.run()
+        if p.hadError():
+            raise p.error.get()
+
 #==================================#
 # RUNTIME -------------------------#
 #==================================#
-        var r = newRuntime(l.tokens)
+        var r = newRuntime(l.tokens, p.procedures)
         r.run()
         if r.hadError():
             raise r.error.get()
@@ -53,7 +61,7 @@ when isMainModule and not defined(js):
 
 ## For JavaScript backend
 when isMainModule and defined(js):
-    ## Runs the program, taking its source code from the left-side #source div.
+    ## Runs the program, taking its source code from the left-hand-side #source div.
     proc run(button: Element) =
         let textarea = document.getElementById("source")
         let source = textarea.value
@@ -64,7 +72,7 @@ when isMainModule and defined(js):
 #==================================#
 # LEXING --------------------------#
 #==================================#
-        let l = newLexer($source)
+        var l = newLexer($source)
         l.run()
         if l.hadError():
             output.value = l.output
@@ -72,9 +80,18 @@ when isMainModule and defined(js):
             return
 
 #==================================#
+# PARSING -------------------------#
+#==================================#        
+        var p = pancakeparser.newParser(l.tokens)
+        p.run()
+        if p.hadError():
+            output.value = p.output
+            button.disabled = false
+
+#==================================#
 # RUNTIME -------------------------#
 #==================================#
-        let r = newRuntime(l.tokens)
+        var r = newRuntime(l.tokens)
         r.run()
 
         output.value = r.output

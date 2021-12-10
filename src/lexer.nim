@@ -85,7 +85,7 @@ proc skipWhitespace(self: var Lexer) =
         of '\n', '\r':
             inc self.line
             self.column = 1
-            if comment: comment = false
+            comment = false
         of ';':
             comment = true
         else:
@@ -117,7 +117,7 @@ proc chomp(self: var Lexer) =
         inc self.current
         while self.getCurrent() != '"':
             if self.isPastEnd() or self.getCurrent() == '\n':
-                self.constructError(&"Unterminated string", sourcePosition)
+                self.constructError("Unterminated string", sourcePosition)
                 break
             inc self.current
     
@@ -199,7 +199,7 @@ proc run*(self: var Lexer) =
                 tok.lexeme = tok.lexeme[1..^1]
                 tok.kind = TK_Argument
             else:
-                self.constructError(&"Unrecognized token", sourcePosition)
+                self.constructError("Unrecognized token", sourcePosition)
                 break
         self.tokens.add(tok)
         self.warp()
