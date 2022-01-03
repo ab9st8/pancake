@@ -1,6 +1,7 @@
 public cat 1 {
     in dup $1 =!?   ; if the input is NOT equal to the argument...
-        out $1 cat. ; print it out and recur
+        out         ; print it out
+        $1 cat.     ; and recur
 }
 
 global {

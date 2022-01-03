@@ -1,5 +1,5 @@
 # Pancake
-Pancake is the result of a month-or-two of tinkering around in Nim with an idea for a toy language I had. It's a[n almost purely!] stack-oriented interpreted programming language.
+Pancake is a stack-oriented programming language.
 
 ```
 private factorial 1 {
@@ -17,43 +17,28 @@ global {
     input factorial out
 }
 ```
-
-**Pancake isn't:**
-* serious,
-* well-made,
-* performant,
-* bugless,
-* a proper demostration of Nim's capabilities in language development,
-* idiomatic Nim code.
-
-**Pancake is:**
-* fun to play around with,
-* an interesting concept that could be expanded into even more interesting territory.
-
-## Name etymology
-Because
-> a Pancake stack is the best kind of stack.
-
-*— Robert Nystrom, paraphrase*
+This is not a very mature project just yet! A lot of crucial design choices with many potential ramifications are being made right now and the codebase still isn't as efficient as I'd want it to be.
 
 ## Installing and using
 **Prerequisites:**
 * the Nim toolchain (Nim compiler >= 1.4.0, Nimble).
 
-To install Pancake, and run
+To install Pancake, run
+
 ```
 nimble install https://github.com/c1m5j/pancake
 ```
+
 This will install the release-version Pancake interpreter. Now you can interpret Pancake source files using
+
 ```
 pancake FILENAME
 ```
-I'm planning on compiling this project with the JS backend and somehow make a playground site so you don't have to install Nim just to play around with Pancake.
 
 If this goes into more "stable" territory I'll also try to add this repo to the Nimble register so you can just run `nimble install pancake`.
 
 ## Design and syntax, or "How to Pancake"
-Every Pancake source file consists of a number of private and public procedure definitions and a single global procedure definition. The global procedure is the entrypoint of the program; you can think of it like "main" in C/C++. Everything inside `global` is Pancake code, which consists either of stack operations, conditional clauses, variable assigments or procedure calls. That is also what other procedures are made up of.
+Every Pancake source file consists of a number of private and public procedure definitions and a single global procedure definition. The global procedure is the entrypoint of the program; you can think of it like "main" in C/C++. Everything inside `global` is Pancake code, which consists either of stack operations, conditional clauses, variable assigments / calls or procedure calls. That is also what other procedures are made up of.
 
 ### Comments
 Comments span one line each, they start with a semi-colon `;`.
@@ -83,35 +68,35 @@ A value is placed on its local stack simply by being referenced in the code. You
 * `~` pops a single value from the stack (use discouraged, not even sure if this has a place in the language).
 
 Values in Pancake have one of three types:
-* string (UTF-8 characters enclosed by two `"`s, no newlines allowed),
+* string (characters enclosed by two `"`s, no newlines allowed),
 * number (floating-point and integer),
 * boolean (either `true` or `false`).
 
 ### I/O
 For now the only input/output supported is that through the console. You can use the following keywords:
 * `in` gets a single line of input from stdin, parses it to its corresponding Pancake type, and emplaces it on the local stack,
-* `out` expects a single value on the stack and prints it to stdout.
+* `out` expects a single value on the stack and prints it to stdout. Concatenation of strings nor parsing values into strings is not yet implemented.
 
 ### Procedures
 Pancake supports delegating tasks in a reusable way using the concept of *private and public procedures* which I came up with.
 
-The syntax of the definition of a public procedure looks like this:
+The definition of a public procedure looks like this:
 ```
 public procedure n {
     code
 }
 ```
-where `procedure` is the name of the procedure and `n` is the number of arguments the procedure accepts. The syntax for defining a private procedure is identical, except `public` is replaced with `private`.
+where `procedure` is the name of the procedure and `n` is the number (non-negative integer) of arguments the procedure accepts. The syntax for defining a private procedure is identical, except `public` is replaced with `private`.
 
-When a procedure is called, it pops `n` arguments from its local stack and can then access them in its code using `$x`, `x` ranging between `1` and `n`. Arguments are numbered from the top to the bottom; or right to left:
+When a procedure is called, it pops `n` arguments from its local stack and can then access them in its code using `$x`, `x` ranging between `1` and `n`. Arguments are numbered top to bottom; or right to left:
 ```
-|$3|  |$2|  |$1|
- 1     2     3   sumThree
+($3)  ($2)  ($1)
+ 3     9     2   sumThree
 ```
 
-The difference between public and private procedures is where they operate. When you call a public procedure, it acts as if you pasted its code wherever you just called it from; sort of like a C macro, but not exactly. That is to say, if you reference values in a public procedure, they will be pushed to the stack of the procedure in which you called it. If you call a public procedure in `global`, it will operate on the `global` stack.
+The difference between public and private procedures is where they operate. When you call a public procedure, it does not create a new stack. If you reference values in a public procedure, they will be pushed to the stack of the procedure in which you called it. If you call a public procedure in `global`, it will operate on the `global` stack.
 
-Private procedures, in contrast, will operate on their own stack when they get called. The top value from that stack, if it exists, will be pushed to the stack of the procedure where it was called, kind of like a `return` statement.
+Private procedures, in contrast, will operate on their own stack when they get called. The top value from that stack, if it exists, will be pushed to the stack of the procedure in which the call occured — kind of like a `return` value.
 
 Thus the etymological dichotomy of "public" and "private": public procedures operate "publicly", private procedures operate "privately" on their own stacks.
 
@@ -119,12 +104,15 @@ The reason you'd want to distinguish these two types of procedures (I think) is 
 
 The keyword `ret` can be used to abort executing a procedure (and in the case of private procedures, return the top value from the stack at that time). It is somewhat equivalent to `return` in other languages.
 
-Another note about public procedures is; even if you're not planning on using any arguments, you can still make the argument count match however many arguments you want your procedure to *expect*.
+Another note about public procedures is; even if you're not planning on using any arguments, you can still make the argument count match however many arguments you want your procedure to *expect*. For example, a replacement for the `~` pop operator might look something like this:
+```
+public pop 1 {}
+```
 
 ### Conditional structures
-Along with variable assignment, conditional structures are the only type of Pancake code which is not deterministic in a reverse-Polish notation sense. That is to say, you can't really say how many instructions an if-clause should have. You could let the theoretical `if` operator know how many instructions it should execute (or skip if the condition is false), but that is like playing oracle. As I've said, conditionals in Pancake are not truly reverse-Polish notation compatible, but they're implemented in a comfy (in my opinion) manner which disguises its relative design flaws.
+Along with variable assignment, conditional structures are the only type of Pancake code which is not deterministic in a reverse-Polish notation sense. You can't really say how many instructions an if-clause should have. You could let the theoretical `if` operator know how many instructions it should execute (or skip if the condition is false), but that is pretty uncomfortable. However I still think they're implemented in a comfy (in my opinion) manner which disguises its relative design flaws.
 
-An if-clause begins with the `?` operator and ends at the `.` operator. The `?` operator pops a single value from its local stack and checks for its falseyness. A falsey value in Pancake is either 0 or false. If the value is false, runtime simply skips to the next `.` token. If the value is true, runtime proceeds. As an example, a simple stoppable `cat` program:
+An if-clause begins with the `?` operator and ends at the `.` operator. The `?` operator pops a single value from its local stack and checks for its falseyness (a falsey value in Pancake is either 0 or false). If the value is falsey, execution simply jumps to the next `.` token. If the value is true, runtime proceeds. As an example, a simple stoppable `cat` program (also in "examples/cat.pancake"):
 
 ```
 public cat 1 {
@@ -140,7 +128,7 @@ In this case, the single argument of the `cat` procedure is the string which wil
 ### Variables
 **Warning: this is the least developed part of the language and the least thought about. I decided to implement it on a whim and I'm not sure if it's even exactly right.**
 
-Pancake supports a crippled way of storing values for a longer amount of time with some kind of "variables". Assigning to them is done with the keyword `to`. `to` pops a value from the local stack and *expects an identifier* past it, the name of the variable. For example,
+Pancake supports a crippled way of storing values for a longer amount of time with some kind of "variables". Assigning to them is done with the keyword `to`. `to` pops a value from the local stack and *expects an identifier* past it, the name of the variable. The name must not be the name of a procedure. For example,
 ```
 global {
     2 to c
@@ -151,7 +139,9 @@ prints 5.
 
 All variables are mutable. In order to change the value of a variable, simply assign to it with `to` again.
 
-Variables are """"""function-scoped"""""". Variables are unique to their procedure and a variable called `name` in `global` is different than a variable called `name` in a private or public procedure.
+Variables are """"""function-scoped"""""". Variables are unique to their procedure and a variable called `x` in `global` is different than a variable called `x` in a private or public procedure.
+
+That also means that you cannot call values of a parent procedure in a call. If you create a variable `a` in `global` and then call a procedure, that procedure does not have access to `a`. The planned way to implement giving access is reference literals which are only an idea for now.
 
 ## Benchmarks
 *(This treats about Pancake v0.1.5)*
@@ -166,8 +156,6 @@ Tested with `hyperfine --warmup 10 "pancake benchmark.pancake" "python3 benchmar
 |**Python v3.9.6**|34.6 ms ± 1.6 ms|34.5 ms ±   1.3 ms|
 |**result**|Pancake **17.3× faster**|Pancake **17.9× faster**|
 
-Don't think that this means that Pancake is "faster" than Python in any way. Time will tell whether Pancake is even competent enough to make it into further development stages, listed below.
-
 Code used for the benchmarks (these specifically) is located in the "benchmarks" directory.
 
 ## Future
@@ -178,10 +166,13 @@ Code used for the benchmarks (these specifically) is located in the "benchmarks"
 * foreign function interfacing with Nim — just a way to write Pancake procedures in Nim and be able to call them in Pancake code. -->
 What I'm planning to work on is
 * [X] _(implemented in v0.1.5)_ tail-recursive procedure optimisation for public procedures (because we can),
-* [ ] allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs,
-* [ ] making the runtime a bit of its own thing (like a language backend), and then having a lexer as an additional helper to read and parse source code, so we can have languages that compile to Pancake — with that, we'd generate JS code by itself from Pancake instead of having to compile the Nim VM source code to JS,
-* [ ] implementing more complex data types in a no-nonsense way (thinking of arrays specifically),
-* [ ] creating a standard library with some sort of foreign function interfacing (to allow reading files, creating servers etc.),
-* [ ] allowing for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator would have to be implemented as well. Candidates are `'`, `:`, and `,`,
-* [ ] supporting named parameters in procedures as well, probably written down with `private proc(a, b, c)`. Might make numbered parameters be written down as `private proc(3)` (for 3 parameters) as well,
-* [ ] splitting up the current runtime into a parser (to implement: optimising conditional jumps so the runtime doesn't have to check whether to skip every other instruction) and a runtime.
+* [X] ("master-runtime-splitup" branch) splitting up the current runtime into a parser (to implement: optimising conditional jumps so the runtime doesn't have to check whether to skip every other instruction) and a runtime,
+* [ ] implementing more complex data types in a no-nonsense way (thinking of arrays and maybe objects/tables/dictionaries/whatever you want to call them specifically),
+* [ ] (1) implementing other control flow structures, such as loops and other conditional structures ("while" loops have been designed and are to be implemented),
+* [ ] (related to (1)) extending and implementing the idea of *marker-based programming*, which would justify non-reverse-Polish notation constructs such as "while" loops and conditional clauses,
+* [ ] allowing the runtime to generate a binary file with the all the info another runtime would need in order to run the program, basically allow redistribution of Pancake programs in compiled form,
+* [ ] creating a standard library in Nim,
+* [ ] allowing for identifiers to be treated as literals and be pushed to the stack, just as numbers and strings and booleans. That way we can make them procedure arguments and have procedures call other procedures. An appropriate "call" operator (most probably `'`) would have to be implemented as well,
+* [ ] having a "reference" operator which would expect a single identifier and push a single *reference literal*. This is a large idea that I can't fully fit into a single bullet point, but it's interesting,
+* [ ] (2) switching the procedure definition format to `fn name(a b ... -- c d ...)`, where `a` and `b` are arguments and `c` and `d` are the values being returned — by utilising this we can have 1. named parameters, 2. the stack effect of the procedure, 3. a different number of return values than just one.
+* [ ] (in contradiction to (2)) switching the procedure definition format to something that is reverse-Polish notation compatible. That way we achieve a form of homoiconicity.
